@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: #0A0A0A;
+  --color-secondary: #121212;
+  --color-card: #121A2A;
+  --color-surface: #161F31;
+  --color-primary-text: #FFFFFF;
+  --color-secondary-text: #94A3B8;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-accent-blue: #D4FF00;
+  --color-accent-violet: #9FCC00;
+  
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0A0A0A;
+    --foreground: #FFFFFF;
+    --primary: #D4FF00;
+    --secondary: #9FCC00;
+    --primary-rgb: 212, 255, 0;
+    --secondary-rgb: 159, 204, 0;
+  }
+
+  [data-theme="purple"] {
+    --primary: #F72585;
+    --secondary: #7209B7;
+    --primary-rgb: 247, 37, 133;
+    --secondary-rgb: 114, 9, 183;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.6;
+    color: #94A3B8;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-gradient-accent {
+    background-image: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  }
+
+  .glass-card {
+    background: rgba(18, 26, 42, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
 }
