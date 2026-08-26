@@ -63,7 +63,7 @@ export default function WhiteLabelPage() {
                             <div className="relative w-full max-w-lg aspect-square">
                                 {/* Background Glows */}
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[var(--primary)]/20 to-[var(--secondary)]/20 rounded-full blur-[80px] pointer-events-none z-0"></div>
-                                
+
                                 {/* Main Dashboard Card */}
                                 <div className="relative z-10 w-full h-full glass-card rounded-2xl border border-white/10 p-6 flex flex-col shadow-2xl overflow-hidden transform perspective-1000 rotate-y-[-5deg] rotate-x-[5deg] hover:rotate-0 transition-transform duration-500">
                                     {/* Top Nav */}
@@ -105,14 +105,14 @@ export default function WhiteLabelPage() {
                                     <div className="flex-1 bg-gradient-to-b from-[#0A0A0A]/80 to-[#0A0A0A]/20 rounded-xl border border-white/5 p-5 flex flex-col justify-end relative overflow-hidden group">
                                         <div className="absolute top-5 left-5 h-2 w-32 bg-white/20 rounded"></div>
                                         <div className="absolute top-5 right-5 h-2 w-12 bg-white/10 rounded"></div>
-                                        
+
                                         <div className="flex items-end gap-3 h-32 mt-8">
                                             {[40, 60, 45, 80, 55, 90, 75, 100, 65, 85].map((h, i) => (
                                                 <div key={i} className="flex-1 bg-gradient-to-t from-[var(--primary)]/40 to-[var(--primary)]/10 rounded-t-sm hover:from-[var(--primary)]/80 transition-colors cursor-pointer" style={{ height: `${h}%` }}></div>
                                             ))}
                                         </div>
                                     </div>
-                                    
+
                                     {/* Floating Element */}
                                     <div className="absolute -right-4 top-1/3 glass-card rounded-xl p-4 border border-[var(--secondary)]/30 shadow-[0_0_30px_rgba(var(--secondary-rgb),0.3)] animate-[bounce_3s_infinite]">
                                         <div className="flex items-center gap-3">
@@ -141,7 +141,7 @@ export default function WhiteLabelPage() {
                             </div>
                             <h2 className="text-4xl font-bold text-white mb-6">Why Choose White Label iGaming Software Solutions?</h2>
                             <div className="w-12 h-1 bg-gradient-accent rounded-full mb-8"></div>
-                            
+
                             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
                                 Building an iGaming platform independently is complex, costly, and time-consuming. Our white-label solutions eliminate these hurdles by providing a robust, established technology foundation. Move from planning to deployment in record time while maintaining full control over your brand identity.
                             </p>
@@ -171,7 +171,7 @@ export default function WhiteLabelPage() {
                             <div className="relative w-full h-[600px] flex items-center justify-center">
                                 {/* Decorative elements */}
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[var(--primary)]/10 to-[var(--secondary)]/10 rounded-full blur-[100px] pointer-events-none"></div>
-                                
+
                                 <div className="relative z-10 w-full h-full glass-card rounded-3xl border border-white/10 p-6 flex flex-col overflow-hidden shadow-2xl">
                                     {/* Top Nav */}
                                     <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
@@ -215,13 +215,13 @@ export default function WhiteLabelPage() {
                                             </div>
                                         ))}
                                     </div>
-                                    
+
                                     {/* Bottom status bar */}
                                     <div className="mt-6 pt-5 border-t border-white/10 flex items-center justify-between text-xs text-gray-400 font-medium tracking-wide uppercase">
                                         <div className="flex items-center gap-2">
                                             <span className="relative flex h-2.5 w-2.5">
-                                              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
                                             </span>
                                             System Online
                                         </div>
@@ -251,45 +251,45 @@ export default function WhiteLabelPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
                         {[
-                            { 
-                                icon: LayoutDashboard, 
-                                title: "Complete Platform Architecture", 
-                                desc: "Player management, wallets, administration, and platform controls integrated seamlessly into one powerful ecosystem." 
+                            {
+                                icon: LayoutDashboard,
+                                title: "Complete Platform Architecture",
+                                desc: "Player management, wallets, administration, and platform controls integrated seamlessly into one powerful ecosystem."
                             },
-                            { 
-                                icon: Gamepad2, 
-                                title: "Casino & Sportsbook Ready", 
-                                desc: "Instant access to top-tier casino games, live dealer tables, and global sportsbook markets via integrated premium providers." 
+                            {
+                                icon: Gamepad2,
+                                title: "Casino & Sportsbook Ready",
+                                desc: "Instant access to top-tier casino games, live dealer tables, and global sportsbook markets via integrated premium providers."
                             },
-                            { 
-                                icon: Settings, 
-                                title: "Custom Branding", 
-                                desc: "Logo, colors, domains, and UI fully aligned with your business identity." 
+                            {
+                                icon: Settings,
+                                title: "Custom Branding",
+                                desc: "Logo, colors, domains, and UI fully aligned with your business identity."
                             },
-                            { 
-                                icon: Wallet, 
-                                title: "Payment & Wallet", 
-                                desc: "Manage deposits and player wallets through secure, integrated providers." 
+                            {
+                                icon: Wallet,
+                                title: "Payment & Wallet",
+                                desc: "Manage deposits and player wallets through secure, integrated providers."
                             },
-                            { 
-                                icon: ShieldCheck, 
-                                title: "KYC & Verification", 
-                                desc: "Automated identity checks and compliance requirements built natively into the platform." 
+                            {
+                                icon: ShieldCheck,
+                                title: "KYC & Verification",
+                                desc: "Automated identity checks and compliance requirements built natively into the platform."
                             },
-                            { 
-                                icon: CheckCircle2, 
-                                title: "Bonus Management", 
-                                desc: "Manage complex promotional campaigns, rewards, and multi-tier wagering requirements." 
+                            {
+                                icon: CheckCircle2,
+                                title: "Bonus Management",
+                                desc: "Manage complex promotional campaigns, rewards, and multi-tier wagering requirements."
                             },
-                            { 
-                                icon: BarChart3, 
-                                title: "Admin Dashboard", 
-                                desc: "Real-time analytics and detailed reporting for transactions and gaming activity." 
+                            {
+                                icon: BarChart3,
+                                title: "Admin Dashboard",
+                                desc: "Real-time analytics and detailed reporting for transactions and gaming activity."
                             },
-                            { 
-                                icon: HelpCircle, 
-                                title: "Responsible Gaming", 
-                                desc: "Configurable player controls, session limits, and market-specific monitoring." 
+                            {
+                                icon: HelpCircle,
+                                title: "Responsible Gaming",
+                                desc: "Configurable player controls, session limits, and market-specific monitoring."
                             }
                         ].map((feature, idx) => (
                             <div key={idx} className="flex gap-6 group relative">
@@ -335,23 +335,25 @@ export default function WhiteLabelPage() {
                                 image: "/images/sweepstakes_model.png"
                             }
                         ].map((model, idx) => (
-                            <div key={idx} className="group relative h-[320px] rounded-3xl overflow-hidden border border-white/10 cursor-pointer shadow-2xl bg-[#0A0A0A]">
+                            <label key={idx} className="group relative h-[320px] rounded-3xl overflow-hidden border border-white/10 cursor-pointer shadow-2xl bg-[#0A0A0A] block">
+                                <input type="checkbox" className="peer hidden" />
+                                
                                 {/* Base Image */}
-                                <div 
-                                    className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:blur-[2px]"
+                                <div
+                                    className="absolute inset-0 bg-cover bg-center transition-all duration-700 lg:group-hover:scale-110 lg:group-hover:blur-[2px] peer-checked:scale-110 peer-checked:blur-[2px]"
                                     style={{ backgroundImage: `url(${model.image})` }}
                                 ></div>
-                                
+
                                 {/* Overlay gradient */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-500"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent opacity-80 lg:group-hover:opacity-95 peer-checked:opacity-95 transition-opacity duration-500 pointer-events-none"></div>
 
                                 {/* Content container */}
-                                <div className="absolute inset-0 flex flex-col justify-end p-6">
-                                    <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                                <div className="absolute inset-0 flex flex-col justify-end p-6 pointer-events-none">
+                                    <div className="transform translate-y-8 lg:group-hover:translate-y-0 peer-checked:translate-y-0 transition-transform duration-500 ease-out">
                                         <h3 className="text-2xl font-bold text-white drop-shadow-md leading-tight">{model.title}</h3>
-                                        
-                                        {/* Description that reveals on hover */}
-                                        <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out">
+
+                                        {/* Description that reveals on hover or tap */}
+                                        <div className="grid grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] peer-checked:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out">
                                             <div className="overflow-hidden">
                                                 <div className="pt-3">
                                                     <p className="text-gray-300 text-sm leading-relaxed">
@@ -362,10 +364,10 @@ export default function WhiteLabelPage() {
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 {/* Decorative Top Line */}
-                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                            </div>
+                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-accent opacity-0 lg:group-hover:opacity-100 peer-checked:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                            </label>
                         ))}
                     </div>
                 </div>
@@ -391,7 +393,7 @@ export default function WhiteLabelPage() {
                             { step: "5", title: "Launch & Support", desc: "Deploy your platform with reliable ongoing technical maintenance." }
                         ].map((item, idx) => (
                             <div key={idx} className="relative p-6 rounded-2xl bg-[#121212] border border-white/5 hover:border-[var(--primary)]/40 transition-all duration-300 group flex flex-col h-full hover:-translate-y-2 shadow-xl overflow-hidden">
-                                
+
                                 {/* Massive Background Number Watermark */}
                                 <div className="absolute -bottom-8 -right-4 text-[8rem] font-black text-white/[0.03] group-hover:text-[var(--primary)]/[0.05] transition-colors duration-500 pointer-events-none select-none z-0 leading-none">
                                     0{item.step}
@@ -402,7 +404,7 @@ export default function WhiteLabelPage() {
                                     <div className="h-2 w-12 rounded-full bg-[var(--primary)]/20 group-hover:bg-[var(--primary)] transition-colors duration-300 shadow-[0_0_15px_rgba(var(--primary-rgb),0)] group-hover:shadow-[0_0_15px_rgba(var(--primary-rgb),0.5)]"></div>
                                     {idx < 4 && <div className="h-[1px] flex-1 bg-white/5 hidden lg:block"></div>}
                                 </div>
-                                
+
                                 <h3 className="text-xl font-bold text-white mb-3 leading-snug group-hover:text-[var(--primary)] transition-colors relative z-10">{item.title}</h3>
                                 <p className="text-sm text-gray-400 leading-relaxed flex-1 relative z-10">{item.desc}</p>
                             </div>
@@ -420,7 +422,7 @@ export default function WhiteLabelPage() {
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start relative">
-                        
+
                         {/* Left Side: Container that sticks */}
                         <div className="lg:col-span-5 lg:sticky lg:top-[15vh] flex flex-col justify-start">
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
@@ -487,7 +489,7 @@ export default function WhiteLabelPage() {
             </section>
 
             {/* Final CTA */}
-            <CTASection 
+            <CTASection
                 title="Want a Fast Entry Into"
                 highlightText="The iGaming Market?"
                 description="Launch your own fully operational casino and sportsbook in record time with our comprehensive, ready-to-go White Label iGaming solutions."

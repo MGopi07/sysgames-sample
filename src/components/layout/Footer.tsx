@@ -47,14 +47,14 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <h4 className="text-white font-semibold mb-6">Services</h4>
             <ul className="space-y-3">
-              <FooterLink href="#">iGaming</FooterLink>
-              <FooterLink href="#">Casino Games</FooterLink>
-              <FooterLink href="#">Sports Book</FooterLink>
-              <FooterLink href="#">Casino Platform</FooterLink>
-              <FooterLink href="#">Retail Betting Shops</FooterLink>
-              <FooterLink href="#">Betting Kiosks</FooterLink>
-              <FooterLink href="#">Slot Games</FooterLink>
-              <FooterLink href="#">Casino Game Aggregator</FooterLink>
+              <FooterLink href="/services/white-label-igaming-software-solutions">iGaming</FooterLink>
+              <FooterLink href="/services/online-casino-game-development-company">Casino Games</FooterLink>
+              <FooterLink href="/services/sportsbook-software-development-company">Sports Book</FooterLink>
+              <FooterLink href="/services/casino-platform-development-company">Casino Platform</FooterLink>
+              <FooterLink href="/services/retail-betting-shop-software-provider">Retail Betting Shops</FooterLink>
+              <FooterLink href="/services/sportsbook-kiosk-software-provider">Betting Kiosks</FooterLink>
+              <FooterLink href="/services/slot-game-software-provider">Slot Games</FooterLink>
+              <FooterLink href="/services/casino-game-aggregation-provider">Casino Game Aggregator</FooterLink>
             </ul>
           </div>
 
@@ -78,6 +78,7 @@ export default function Footer() {
               <FooterLink href="#">Contact Us</FooterLink>
             </ul>
           </div>
+
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
