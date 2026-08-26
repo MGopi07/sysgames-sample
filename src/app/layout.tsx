@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   }
 };
 
-import ThemeSwitcher from "@/components/ThemeSwitcher";
+
 
 export default function RootLayout({
   children,
@@ -40,7 +40,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <ThemeSwitcher />
+
       </body>
     </html>
   );
