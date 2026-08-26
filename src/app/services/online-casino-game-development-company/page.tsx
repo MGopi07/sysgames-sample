@@ -58,13 +58,13 @@ export default function OnlineCasinoGameDevPage() {
                             </div>
                         </div>
 
-                        <div className="lg:w-[45%] relative mt-8 lg:mt-0">
+                        <div className="w-full lg:w-[45%] relative mt-12 lg:mt-0 flex justify-center scale-75 md:scale-90 lg:scale-100 origin-center">
                             {/* Graphic Container */}
                             <div className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
                                 <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 to-transparent mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-700"></div>
                                 <Image
-                                    src="/images/casino_slot_ui_green.png"
-                                    alt="Casino Slot UI Mockup"
+                                    src="/images/casino-games.png"
+                                    alt="Casino Games Development"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                                     sizes="(max-width: 768px) 100vw, 50vw"

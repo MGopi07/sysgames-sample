@@ -51,7 +51,7 @@ export default function CasinoPlatformDevPage() {
             </div>
 
             {/* Right Side Abstract Graphic */}
-            <div className="hidden lg:block lg:w-2/5 relative">
+            <div className="w-full lg:w-2/5 relative flex justify-center scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
               <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 to-[var(--secondary)]/20 blur-[100px] rounded-full"></div>
               <div className="relative w-full aspect-square perspective-1000">
                 {/* Floating Glass Panels */}
@@ -407,12 +407,12 @@ export default function CasinoPlatformDevPage() {
 
                 {/* Accent Footer */}
                 {section.extraTitle && (
-                  <div className="bg-[#121212]/90 backdrop-blur-md px-8 py-5 border-t border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 group-hover:bg-[var(--primary)]/5 transition-colors duration-500 relative z-10">
-                    <div>
+                  <div className="bg-[#121212] px-6 md:px-8 py-5 border-t border-white/5 flex flex-row items-center justify-between gap-4 group-hover:bg-[var(--primary)]/5 transition-colors duration-500 relative z-10">
+                    <div className="flex-1">
                       <h4 className="text-white font-bold text-sm mb-1">{section.extraTitle}</h4>
-                      <p className="text-gray-500 text-xs italic leading-relaxed">{section.extraDesc}</p>
+                      <p className="text-gray-400 text-[13px] leading-relaxed">{section.extraDesc}</p>
                     </div>
-                    <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--primary)] group-hover:text-black transition-all">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-[var(--primary)] group-hover:text-[#0A0A0A] shadow-md transition-all">
                       <ChevronRight size={18} />
                     </div>
                   </div>

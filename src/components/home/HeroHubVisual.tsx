@@ -23,7 +23,7 @@ export default function HeroHubVisual() {
   ];
 
   return (
-    <div className="relative w-full h-[500px] flex items-center justify-center lg:translate-x-2 xl:translate-x-6">
+    <div className="relative w-full h-[500px] flex items-center justify-center scale-[0.6] sm:scale-100 lg:translate-x-2 xl:translate-x-6">
       
       {/* Background Rings */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">

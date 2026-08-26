@@ -1,10 +1,11 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { ChevronRight, Gamepad2, Cable, Database, LayoutDashboard, Layers, BarChart3, MonitorSmartphone } from "lucide-react";
 
 export default function AdvantagesCarousel() {
     const sliderRef = useRef<HTMLDivElement>(null);
+    const [isHovered, setIsHovered] = useState(false);
 
     const scroll = (direction: "left" | "right") => {
         if (sliderRef.current && sliderRef.current.children.length > 0) {
@@ -32,20 +33,46 @@ export default function AdvantagesCarousel() {
     // Duplicate array 10 times (70 items) to create a faux-infinite track
     const items = Array(10).fill(coreItems).flat();
 
-    // On mount, jump to the exact middle of the massive track
+    // On mount, jump to the exact middle of the massive track and start auto-slide on mobile
     useEffect(() => {
-        if (sliderRef.current) {
-            const container = sliderRef.current;
-            // Delay slightly to ensure layout and scrollWidth are fully computed
-            setTimeout(() => {
-                const middlePos = (container.scrollWidth - container.clientWidth) / 2;
-                container.scrollLeft = middlePos;
-            }, 50);
-        }
-    }, []);
+        const container = sliderRef.current;
+        if (!container) return;
+
+        // Delay slightly to ensure layout and scrollWidth are fully computed
+        setTimeout(() => {
+            const middlePos = (container.scrollWidth - container.clientWidth) / 2;
+            container.scrollLeft = middlePos;
+        }, 50);
+
+        // Auto-slide logic
+        const slideInterval = setInterval(() => {
+            if (isHovered) return; // Pause on hover
+
+            const card = container.children[0] as HTMLElement;
+            if (!card) return;
+
+            const scrollAmount = card.offsetWidth + 24; // 24px is gap-6
+            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+
+            // Faux-infinite reset check
+            if (container.scrollLeft >= container.scrollWidth - container.clientWidth - scrollAmount * 5) {
+                // If getting close to the end, instantly jump back to the middle
+                setTimeout(() => {
+                    const middlePos = (container.scrollWidth - container.clientWidth) / 2;
+                    container.scrollTo({ left: middlePos, behavior: 'instant' as any });
+                }, 500);
+            }
+        }, 3000);
+
+        return () => clearInterval(slideInterval);
+    }, [isHovered]);
 
     return (
-        <div className="container mx-auto px-6 lg:px-12 relative z-10">
+        <div 
+            className="container mx-auto px-6 lg:px-12 relative z-10"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
             <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
                 <div className="max-w-2xl">
                     <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">

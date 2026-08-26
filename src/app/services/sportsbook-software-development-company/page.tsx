@@ -50,7 +50,7 @@ export default function SportsbookSoftwareDevPage() {
               </div>
             </div>
 
-            <div className="lg:w-[40%] hidden lg:flex justify-end relative group" style={{ perspective: "1000px" }}>
+            <div className="w-full lg:w-[40%] flex justify-center lg:justify-end relative group scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0" style={{ perspective: "1000px" }}>
               {/* Visual representation of a Sportsbook UI */}
               <div
                 className="relative w-full max-w-md aspect-[4/5] bg-[#0A0A0A] rounded-[2rem] border border-[var(--primary)]/30 p-4 flex flex-col overflow-hidden transition-all duration-700 ease-out [transform:rotateY(-25deg)_rotateX(15deg)_rotateZ(5deg)] group-hover:[transform:rotateY(0deg)_rotateX(0deg)_rotateZ(0deg)_translateY(-10px)] shadow-[-20px_20px_40px_rgba(0,0,0,0.7)] group-hover:shadow-[0_20px_50px_rgba(var(--primary-rgb),0.2)]"
@@ -141,7 +141,7 @@ export default function SportsbookSoftwareDevPage() {
               <p className="text-gray-400 mb-8 leading-relaxed">
                 A sportsbook requires more than a simple betting interface. Operators need reliable technology that manage markets, odds, player activity, liabilities, payments, and promotional campaigns from a centralized environment.
               </p>
-              <div className="relative w-full h-[320px] mt-12 hidden lg:flex items-center justify-center group" style={{ perspective: "1000px" }}>
+              <div className="relative w-full h-[320px] mt-12 flex items-center justify-center group scale-75 md:scale-90 lg:scale-100 origin-center" style={{ perspective: "1000px" }}>
                 {/* 3D Isometric UI Graphic */}
                 <div 
                   className="relative w-[260px] h-[260px] transition-all duration-700 ease-out [transform:rotateX(55deg)_rotateZ(-45deg)] group-hover:[transform:rotateX(55deg)_rotateZ(-45deg)_translateY(-10px)]"

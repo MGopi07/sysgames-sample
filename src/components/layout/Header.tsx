@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Home, Info, Layers, BookOpen, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
@@ -116,24 +116,60 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden absolute top-full left-0 w-full bg-[#0A0A0A] border-t border-white/5 overflow-y-auto pb-24"
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="lg:hidden absolute top-full left-0 w-full bg-[#0A0A0A] border-t border-white/10 overflow-y-auto pb-32 z-50"
           >
-            <div className="flex flex-col p-6 gap-4">
-              <Link href="/" className={`text-lg font-medium py-2 border-b border-white/5 ${pathname === '/' ? 'text-[var(--primary)]' : 'text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-              <Link href="/about" className={`text-lg font-medium py-2 border-b border-white/5 ${pathname === '/about' ? 'text-[var(--primary)]' : 'text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>About</Link>
-              <div className="py-2 border-b border-white/5">
-                <div className={`text-lg font-medium mb-3 block cursor-default ${pathname?.startsWith('/services') ? 'text-[var(--primary)]' : 'text-white'}`}>Services</div>
-                <div className="flex flex-col gap-3 pl-4">
-                  {servicesList.map((item, idx) => (
-                    <Link key={idx} href={item.href} className={`hover:text-white ${pathname === item.href ? 'text-white font-bold' : 'text-gray-400'}`} onClick={() => setIsMobileMenuOpen(false)}>{item.name}</Link>
-                  ))}
+            <div className="flex flex-col p-6">
+              {/* Home */}
+              <Link href="/" className={`flex items-center gap-4 py-4 border-b border-white/5 transition-colors ${pathname === '/' ? 'text-[var(--primary)]' : 'text-gray-300 hover:text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>
+                <Home size={22} className={pathname === '/' ? 'text-[var(--primary)]' : 'text-gray-500'} />
+                <span className="text-xl font-medium tracking-wide">Home</span>
+              </Link>
+
+              {/* About */}
+              <Link href="/about" className={`flex items-center gap-4 py-4 border-b border-white/5 transition-colors ${pathname === '/about' ? 'text-[var(--primary)]' : 'text-gray-300 hover:text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>
+                <Info size={22} className={pathname === '/about' ? 'text-[var(--primary)]' : 'text-gray-500'} />
+                <span className="text-xl font-medium tracking-wide">About</span>
+              </Link>
+
+              {/* Services Dropdown */}
+              <div className="py-4 border-b border-white/5">
+                <div className={`flex items-center gap-4 mb-4 cursor-default ${pathname?.startsWith('/services') ? 'text-[var(--primary)]' : 'text-gray-300'}`}>
+                  <Layers size={22} className={pathname?.startsWith('/services') ? 'text-[var(--primary)]' : 'text-gray-500'} />
+                  <span className="text-xl font-medium tracking-wide">Services</span>
+                </div>
+                <div className="flex flex-col pl-10 gap-3 border-l-2 border-white/10 ml-3 relative">
+                  {pathname?.startsWith('/services') && (
+                    <div className="absolute left-[-2px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-[var(--primary)] to-transparent"></div>
+                  )}
+                  {servicesList.map((item, idx) => {
+                    const isActive = pathname === item.href;
+                    return (
+                      <Link key={idx} href={item.href} className={`flex items-center justify-between py-2 transition-colors ${isActive ? 'text-[var(--primary)] font-bold' : 'text-gray-400 hover:text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>
+                        <span className="text-base">{item.name}</span>
+                        {isActive && <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] shadow-[0_0_8px_rgba(var(--primary-rgb),1)] mr-2"></div>}
+                      </Link>
+                    )
+                  })}
                 </div>
               </div>
-              <Link href="/blog" className={`text-lg font-medium py-2 border-b border-white/5 ${pathname === '/blog' ? 'text-[var(--primary)]' : 'text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
-              <Link href="/contact" className={`text-lg font-medium py-2 border-b border-white/5 ${pathname === '/contact' ? 'text-[var(--primary)]' : 'text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
-              <div className="pt-4">
-                <Link href="#contact" className="flex items-center justify-center w-full px-6 py-3 bg-gradient-accent text-[var(--btn-text)] font-medium rounded-full" onClick={() => setIsMobileMenuOpen(false)}>
-                  Let's connect
+
+              {/* Blog */}
+              <Link href="/blog" className={`flex items-center gap-4 py-4 border-b border-white/5 transition-colors ${pathname === '/blog' ? 'text-[var(--primary)]' : 'text-gray-300 hover:text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>
+                <BookOpen size={22} className={pathname === '/blog' ? 'text-[var(--primary)]' : 'text-gray-500'} />
+                <span className="text-xl font-medium tracking-wide">Blog</span>
+              </Link>
+
+              {/* Contact Us */}
+              <Link href="/contact" className={`flex items-center gap-4 py-4 border-b border-white/5 transition-colors ${pathname === '/contact' ? 'text-[var(--primary)]' : 'text-gray-300 hover:text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>
+                <Mail size={22} className={pathname === '/contact' ? 'text-[var(--primary)]' : 'text-gray-500'} />
+                <span className="text-xl font-medium tracking-wide">Contact Us</span>
+              </Link>
+
+              {/* CTA Button */}
+              <div className="pt-8">
+                <Link href="#contact" className="flex items-center justify-center w-full py-4 bg-[var(--primary)] text-[#0A0A0A] font-black rounded-xl shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)] active:scale-95 transition-all uppercase tracking-widest" onClick={() => setIsMobileMenuOpen(false)}>
+                  Let's Connect
                 </Link>
               </div>
             </div>

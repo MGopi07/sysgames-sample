@@ -4,6 +4,7 @@ import { CheckCircle2, ChevronRight, MonitorSmartphone, Layers, Globe, ShieldChe
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTASection from "@/components/ui/CTASection";
 import AdvantagesCarousel from "@/components/ui/AdvantagesCarousel";
+import ProviderSolutionsSlider from "@/components/ui/ProviderSolutionsSlider";
 
 export const metadata: Metadata = {
     title: "Casino Game Aggregation Provider | Connect Multiple Casino Games",
@@ -50,7 +51,7 @@ export default function CasinoGameAggregationPage() {
                             </div>
                         </div>
 
-                        <div className="lg:w-[45%] hidden lg:flex justify-center relative">
+                        <div className="w-full lg:w-[45%] flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
                             <style>{`
                                 @keyframes float-slow {
                                     0% { transform: translateY(0px); }
@@ -192,7 +193,7 @@ export default function CasinoGameAggregationPage() {
                             { icon: ShieldCheck, title: "Centralized Management", desc: "Manage game availability, provider connections, configurations, supported content through centralized administration environment." },
                             { icon: BarChart3, title: "Reporting & Data", desc: "Access relevant gaming and operational information through supported reporting functionality, helping operators understand content performance and platform activity." }
                         ].map((module, idx) => (
-                            <div key={idx} className="group relative flex-none lg:flex-[1] lg:hover:flex-[5] lg:max-w-[380px] min-h-[220px] lg:min-h-0 lg:h-full transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] overflow-hidden bg-[#121212] border border-white/5 hover:border-[var(--primary)]/30 rounded-3xl cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.1)]">
+                            <div key={idx} className="group relative flex-none lg:flex-[1] lg:hover:flex-[5] lg:max-w-[380px] h-auto lg:h-full transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] overflow-hidden bg-[#121212] border border-white/5 hover:border-[var(--primary)]/30 rounded-3xl cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.1)]">
                                 
                                 {/* Vertical Slim State */}
                                 <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-between py-10 opacity-100 group-hover:opacity-0 transition-opacity duration-500">
@@ -209,17 +210,17 @@ export default function CasinoGameAggregationPage() {
                                 </div>
 
                                 {/* Expanded State */}
-                                <div className="absolute inset-0 flex flex-col justify-end p-8 lg:p-10 opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 bg-gradient-to-t from-[#0A0A0A]/90 via-[#0A0A0A]/20 to-transparent">
-                                    <div className="absolute top-0 right-0 p-8 opacity-10 lg:opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none">
-                                        <div className="text-8xl font-black text-white">0{idx + 1}</div>
+                                <div className="relative lg:absolute inset-0 flex flex-col justify-end p-6 lg:p-10 opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 bg-gradient-to-t from-[#0A0A0A]/90 via-[#0A0A0A]/20 to-transparent">
+                                    <div className="absolute top-0 right-0 p-6 lg:p-8 opacity-10 lg:opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none">
+                                        <div className="text-6xl lg:text-8xl font-black text-white">0{idx + 1}</div>
                                     </div>
                                     
                                     {/* Fixed width inner container prevents text re-wrapping during flex expansion */}
-                                    <div className="w-full lg:w-[300px] max-w-[calc(100vw-4rem)]">
-                                        <div className="w-16 h-16 rounded-2xl bg-[var(--primary)]/20 flex items-center justify-center mb-6 border border-[var(--primary)]/30 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
-                                            <module.icon className="text-[var(--primary)]" size={32} />
+                                    <div className="w-full lg:w-[300px] max-w-full">
+                                        <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-2xl bg-[var(--primary)]/20 flex items-center justify-center mb-4 lg:mb-6 border border-[var(--primary)]/30 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
+                                            <module.icon className="text-[var(--primary)]" size={28} />
                                         </div>
-                                        <h3 className="text-2xl lg:text-3xl font-black text-white mb-4 leading-tight whitespace-normal">{module.title}</h3>
+                                        <h3 className="text-xl lg:text-3xl font-black text-white mb-3 lg:mb-4 leading-tight whitespace-normal">{module.title}</h3>
                                         <p className="text-gray-400 leading-relaxed text-sm lg:text-base whitespace-normal opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-500 delay-150 lg:translate-y-4 group-hover:translate-y-0">
                                             {module.desc}
                                         </p>
@@ -613,25 +614,7 @@ export default function CasinoGameAggregationPage() {
                         <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">Why Choose Our Provider Solutions?</h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {[
-                            { title: "Centralized Integration", desc: "Connect supported casino providers through one aggregation layer.", icon: Cable },
-                            { title: "Broad Content Access", desc: "Expand your casino lobby with available slots, live casino, table games, jackpots, and specialty content.", icon: Globe },
-                            { title: "Flexible API Architecture", desc: "Integrate compatible gaming content with your existing platform.", icon: Database },
-                            { title: "Scalable Platform", desc: "Add providers and content as your casino business expands.", icon: BarChart3 },
-                            { title: "Mobile Compatibility", desc: "Support available gaming content across supported mobile and desktop environments.", icon: MonitorSmartphone },
-                            { title: "Centralized Administration", desc: "Manage supported content and provider integrations from one environment.", icon: LayoutDashboard },
-                            { title: "Technical Support", desc: "Receive assistance with integration, configuration, troubleshooting, and ongoing platform requirements.", icon: ShieldCheck }
-                        ].map((item, idx) => (
-                            <div key={idx} className={`glass-card rounded-2xl p-8 border border-white/5 hover:border-[var(--primary)]/40 hover:bg-[#1a1a1a] transition-all duration-300 group ${idx === 0 ? 'md:col-span-2 lg:col-span-3 bg-gradient-to-r from-white/[0.02] to-[var(--primary)]/5' : ''}`}>
-                                <div className={`w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform ${idx === 0 ? 'bg-[var(--primary)]/20 border-[var(--primary)]/30' : 'group-hover:border-[var(--primary)]/30 group-hover:bg-[var(--primary)]/10'}`}>
-                                    <item.icon className={idx === 0 ? 'text-[var(--primary)]' : 'text-gray-400 group-hover:text-[var(--primary)]'} size={24} />
-                                </div>
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[var(--primary)] transition-colors">{item.title}</h3>
-                                <p className="text-gray-400 leading-relaxed text-sm">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <ProviderSolutionsSlider />
                 </div>
             </section>
 

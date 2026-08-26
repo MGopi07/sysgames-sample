@@ -51,7 +51,7 @@ export default function SportsbookKioskProviderPage() {
                             </div>
                         </div>
 
-                        <div className="lg:w-[45%] hidden lg:flex justify-center relative">
+                        <div className="w-full lg:w-[45%] flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
                             {/* Visual representation of a Kiosk UI */}
                             <div className="relative w-full max-w-md aspect-[3/4] bg-[#121212] border-4 border-gray-800 rounded-[2.5rem] shadow-2xl p-3 flex flex-col">
                                 <div className="absolute -inset-1 bg-gradient-to-b from-[var(--primary)]/20 to-transparent rounded-[3rem] -z-10 blur-xl"></div>
@@ -224,8 +224,8 @@ export default function SportsbookKioskProviderPage() {
                             </p>
                             <p className="text-gray-400 mb-6 font-medium">Customization options can include:</p>
                             <div className="overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-b from-white/[0.04] to-black/40 mt-6 shadow-[inset_0_0_20px_rgba(255,255,255,0.02),0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-sm">
-                                <table className="w-full text-left text-[13px] sm:text-sm text-gray-300">
-                                    <tbody className="divide-y divide-white/[0.05]">
+                                <table className="w-full text-left text-[13px] sm:text-sm text-gray-300 block md:table">
+                                    <tbody className="divide-y divide-white/[0.05] block md:table-row-group">
                                         {[
                                             ["Kiosk interface design", "Brand colors and logos"],
                                             ["Sportsbook API integration", "Odds feed integration"],
@@ -235,14 +235,14 @@ export default function SportsbookKioskProviderPage() {
                                             ["Administrative controls", "Reporting dashboards"],
                                             ["Kiosk monitoring", "Remote configuration"]
                                         ].map((row, idx) => (
-                                            <tr key={idx} className="hover:bg-white/[0.06] even:bg-white/[0.01] transition-colors group/row">
-                                                <td className="px-5 py-3.5 sm:px-6 sm:py-4 border-r border-white/[0.05] w-1/2">
+                                            <tr key={idx} className="hover:bg-white/[0.06] even:bg-white/[0.01] transition-colors group/row block md:table-row border-b border-white/5 md:border-b-0">
+                                                <td className="px-5 py-3.5 sm:px-6 sm:py-4 border-b md:border-b-0 md:border-r border-white/[0.05] block md:table-cell w-full md:w-1/2">
                                                     <div className="flex items-center gap-3">
                                                         <CheckCircle2 size={16} strokeWidth={2.5} className="text-[var(--secondary)]/70 group-hover/row:text-[var(--secondary)] group-hover/row:shadow-[0_0_10px_var(--secondary)] transition-all shrink-0 rounded-full" />
                                                         <span className="font-medium group-hover/row:text-white transition-colors">{row[0]}</span>
                                                     </div>
                                                 </td>
-                                                <td className="px-5 py-3.5 sm:px-6 sm:py-4 w-1/2">
+                                                <td className="px-5 py-3.5 sm:px-6 sm:py-4 block md:table-cell w-full md:w-1/2">
                                                     {row[1] && (
                                                         <div className="flex items-center gap-3">
                                                             <CheckCircle2 size={16} strokeWidth={2.5} className="text-[var(--secondary)]/70 group-hover/row:text-[var(--secondary)] group-hover/row:shadow-[0_0_10px_var(--secondary)] transition-all shrink-0 rounded-full" />
@@ -408,14 +408,14 @@ export default function SportsbookKioskProviderPage() {
                         {/* Ambient Table Glow */}
                         <div className="absolute top-0 right-0 w-96 h-96 bg-[var(--primary)]/5 rounded-full blur-[100px] pointer-events-none"></div>
                         
-                        <table className="w-full text-left border-collapse relative z-10">
-                            <thead>
+                        <table className="w-full text-left border-collapse relative z-10 block md:table">
+                            <thead className="hidden md:table-header-group">
                                 <tr className="bg-black/40 border-b border-white/10">
                                     <th className="py-6 px-8 font-bold text-gray-400 text-sm uppercase tracking-widest w-1/3">Feature</th>
                                     <th className="py-6 px-8 font-bold text-gray-400 text-sm uppercase tracking-widest">Description</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-white/5">
+                            <tbody className="divide-y divide-white/5 block md:table-row-group">
                                 {[
                                     { f: "Self-Service Betting", d: "Enables customers to complete supported betting workflows independently." },
                                     { f: "Sportsbook Integration", d: "Connects kiosks with supported sportsbook platforms and services." },
@@ -430,8 +430,8 @@ export default function SportsbookKioskProviderPage() {
                                     { f: "Custom Branding", d: "Aligns the kiosk interface with the sportsbook brand." },
                                     { f: "Multi-Language Support", d: "Supports localized kiosk experiences where required." }
                                 ].map((row, idx) => (
-                                    <tr key={idx} className="hover:bg-[var(--primary)]/5 even:bg-white/[0.01] transition-colors duration-300 group/row">
-                                        <td className="py-5 px-8 font-bold text-white group-hover/row:text-[var(--primary)] transition-colors border-r border-white/5">
+                                    <tr key={idx} className="hover:bg-[var(--primary)]/5 even:bg-white/[0.01] transition-colors duration-300 group/row block md:table-row border-b border-white/5 md:border-b-0">
+                                        <td className="py-4 md:py-5 px-6 md:px-8 font-bold text-white group-hover/row:text-[var(--primary)] transition-colors border-b md:border-b-0 md:border-r border-white/5 block md:table-cell w-full md:w-auto">
                                             <div className="flex items-center gap-4">
                                                 <div className="w-8 h-8 rounded-full bg-white/[0.02] flex items-center justify-center group-hover/row:bg-[var(--primary)]/10 transition-colors shrink-0 border border-white/5 group-hover/row:border-[var(--primary)]/30">
                                                     <CheckCircle2 size={16} strokeWidth={2.5} className="text-gray-500 group-hover/row:text-[var(--primary)] transition-colors" />
@@ -439,7 +439,7 @@ export default function SportsbookKioskProviderPage() {
                                                 <span className="text-[15px]">{row.f}</span>
                                             </div>
                                         </td>
-                                        <td className="py-5 px-8 text-[15px] text-gray-400 group-hover/row:text-gray-300 transition-colors leading-relaxed">
+                                        <td className="py-4 md:py-5 px-6 md:px-8 text-[15px] text-gray-400 group-hover/row:text-gray-300 transition-colors leading-relaxed block md:table-cell w-full md:w-auto">
                                             {row.d}
                                         </td>
                                     </tr>

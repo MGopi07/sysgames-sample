@@ -28,7 +28,7 @@ export default function HeroSlider() {
   }, [currentIndex, isPlaying]);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-[#0A0A0A] flex items-center pt-32 pb-40">
+    <div className="relative min-h-screen w-full overflow-hidden bg-[#0A0A0A] flex items-center pt-24 pb-32 lg:pt-32 lg:pb-40">
       {/* Abstract Backgrounds based on slide visual */}
       <div className="absolute inset-0 z-0 opacity-40">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--secondary)]/30 rounded-full blur-[150px]"></div>
@@ -47,7 +47,7 @@ export default function HeroSlider() {
           className="container mx-auto px-6 lg:px-12 relative z-10 grid lg:grid-cols-2 gap-12 items-center h-full"
         >
           {/* Content */}
-          <div className="space-y-6 max-w-3xl lg:pr-8 min-h-[450px] lg:min-h-[480px] flex flex-col justify-center">
+          <div className="space-y-6 max-w-3xl lg:pr-8 lg:min-h-[480px] flex flex-col justify-center">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -94,7 +94,7 @@ export default function HeroSlider() {
           </div>
 
           {/* Visual abstract representation */}
-          <div className="hidden lg:flex justify-center items-center h-[500px]">
+          <div className="flex justify-center items-center h-[350px] md:h-[400px] lg:h-[500px] mt-8 lg:mt-0 w-full scale-75 md:scale-90 lg:scale-100 origin-center">
             {currentIndex === 0 && <HeroHubVisual />}
             {currentIndex === 1 && <CasinoVisual />}
             {currentIndex === 2 && <PredictionVisual />}

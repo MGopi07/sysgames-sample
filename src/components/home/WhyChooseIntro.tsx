@@ -76,7 +76,7 @@ export default function WhyChooseIntro() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="relative h-[600px] hidden lg:flex items-center justify-center w-full"
+            className="relative h-[350px] md:h-[450px] lg:h-[600px] mt-12 lg:mt-0 flex items-center justify-center w-full scale-75 md:scale-90 lg:scale-100 origin-center"
             style={{ perspective: '2000px' }}
           >
             <div 

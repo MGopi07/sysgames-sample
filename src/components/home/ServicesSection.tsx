@@ -35,7 +35,7 @@ export default function ServicesSection() {
             scale: useTransform(smoothProgress, [0, 0.03], [1, 0.9]),
             pointerEvents: useTransform(smoothProgress, (v: any) => v < 0.03 ? "auto" : "none") as any
           }}
-          className="absolute inset-0 flex flex-col items-center justify-center z-50 text-center px-6"
+          className="absolute inset-0 flex flex-col items-center justify-center z-50 text-center px-6 pb-32 lg:pb-0"
         >
           <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/30 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6 shadow-[0_0_20px_rgba(var(--secondary-rgb),0.15)]">
             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
@@ -105,8 +105,8 @@ function CircularNodes({ progress, total }: { progress: any, total: number }) {
       >
         <div className="absolute inset-0 bg-[var(--primary)]/10 blur-[100px] rounded-full"></div>
         <div className="w-12 h-1.5 bg-gradient-accent rounded-full mb-6 shadow-[0_0_15px_rgba(var(--primary-rgb),0.5)]"></div>
-        <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 mb-4 leading-tight drop-shadow-2xl">
-          Explore Our<br className="hidden sm:block" /> Services
+        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 mb-4 leading-tight drop-shadow-2xl px-2">
+          Explore Our<br /> Services
         </h3>
         <p className="text-gray-400 text-sm md:text-base px-2">
           Scroll down to discover our end-to-end iGaming solutions.
@@ -173,16 +173,18 @@ function CenterServiceCard({ service, index, total, progress }: any) {
 
   const isReversed = index % 2 !== 0;
 
+  const isLast = index === total - 1;
+
   const opacity = useTransform(
     progress,
     [start - segment * 0.1, fullyActive, end - segment * 0.1, fullyExit],
-    [0, 1, 1, 0]
+    [0, 1, 1, isLast ? 1 : 0]
   );
 
   const y = useTransform(
     progress,
     [start - segment * 0.1, fullyActive, end - segment * 0.1, fullyExit],
-    [100, 0, 0, -100]
+    [100, 0, 0, isLast ? 0 : -100]
   );
 
   const scale = useTransform(
@@ -198,41 +200,23 @@ function CenterServiceCard({ service, index, total, progress }: any) {
       style={{ opacity, y, scale, pointerEvents }}
       className="absolute inset-0 flex items-center justify-center px-4"
     >
-      <div className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center justify-between gap-10 lg:gap-16 w-full max-w-6xl mx-auto`}>
+      <div className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center justify-between gap-4 lg:gap-16 w-full max-w-6xl mx-auto`}>
 
         {/* Visual Panel */}
         <div className="w-full lg:w-5/12 perspective-1000">
-          <div className={`relative rounded-3xl overflow-hidden glass-card border border-white/10 group h-[400px] lg:h-[450px] bg-[#121212]/80 backdrop-blur-xl shadow-2xl w-full max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] mx-auto ${isReversed ? 'lg:ml-0' : 'lg:mr-0'}`}>
-            <div className="absolute inset-0 bg-gradient-to-br from-[var(--secondary)]/10 to-[var(--primary)]/10 opacity-50"></div>
+          <div className={`relative rounded-3xl overflow-hidden glass-card border border-white/10 group h-[240px] sm:h-[280px] lg:h-[450px] bg-[#121212]/80 backdrop-blur-xl shadow-2xl w-full max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] mx-auto ${isReversed ? 'lg:ml-0' : 'lg:mr-0'}`}>
+            <div className="absolute inset-0 bg-gradient-to-br from-[var(--secondary)]/10 to-[var(--primary)]/10 opacity-50 z-0"></div>
 
-            <div className="absolute inset-0 p-8 flex flex-col">
-              <div className={`text-7xl font-bold text-white/5 absolute top-4 select-none ${isReversed ? 'left-8' : 'right-8'}`}>
+            <img
+              src={`/images/${service.id}.png`}
+              alt={service.heading}
+              className="absolute inset-0 w-full h-full object-cover z-0 opacity-70 group-hover:opacity-100 transition-opacity duration-500"
+              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+            />
+
+            <div className="absolute inset-0 p-4 lg:p-8 flex flex-col z-10">
+              <div className={`text-5xl lg:text-7xl font-bold text-white/5 absolute top-2 lg:top-4 select-none ${isReversed ? 'left-4 lg:left-8' : 'right-4 lg:right-8'}`}>
                 0{index + 1}
-              </div>
-
-              {/* Abstract UI representing the service */}
-              <div className="mt-auto h-2/3 w-full border border-white/10 rounded-xl bg-[#0A0A0A]/80 backdrop-blur-md p-6 flex flex-col gap-4 shadow-2xl relative overflow-hidden">
-                <div className="flex gap-2 border-b border-white/10 pb-4">
-                  <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
-                </div>
-                <div className="flex gap-4 h-full">
-                  <div className="w-1/3 bg-white/5 rounded-lg flex flex-col gap-2 p-3">
-                    <div className="h-4 w-2/3 bg-white/10 rounded"></div>
-                    <div className="h-4 w-full bg-white/5 rounded"></div>
-                    <div className="h-4 w-5/6 bg-white/5 rounded"></div>
-                  </div>
-                  <div className="w-2/3 flex flex-col gap-4">
-                    <div className="h-1/2 w-full bg-gradient-accent opacity-20 rounded-lg"></div>
-                    <div className="h-1/2 w-full bg-white/5 rounded-lg flex items-end p-3 gap-2">
-                      <div className="w-1/4 h-[30%] bg-white/10 rounded-t"></div>
-                      <div className="w-1/4 h-[60%] bg-[var(--primary)]/40 rounded-t"></div>
-                      <div className="w-1/4 h-[80%] bg-[var(--secondary)]/40 rounded-t"></div>
-                      <div className="w-1/4 h-[40%] bg-white/10 rounded-t"></div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -240,31 +224,31 @@ function CenterServiceCard({ service, index, total, progress }: any) {
 
         {/* Content Panel */}
         <div className={`w-full lg:w-7/12 flex justify-center ${isReversed ? 'lg:justify-end' : 'lg:justify-start'}`}>
-          <div className="space-y-6 lg:space-y-8 max-w-xl px-4 lg:px-0">
+          <div className="space-y-3 lg:space-y-8 max-w-xl px-4 lg:px-0">
             <div>
-              <div className="inline-block px-3 py-1.5 mb-5 rounded-full border border-[var(--secondary)]/30 bg-[var(--secondary)]/10 text-xs font-bold tracking-widest text-[var(--primary)] uppercase">
+              <div className="inline-block px-2 lg:px-3 py-1 lg:py-1.5 mb-2 lg:mb-5 rounded-full border border-[var(--secondary)]/30 bg-[var(--secondary)]/10 text-[10px] lg:text-xs font-bold tracking-widest text-[var(--primary)] uppercase">
                 {service.category}
               </div>
-              <h3 className="text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">{service.heading}</h3>
-              <div className="w-12 h-1 bg-gradient-accent rounded-full mb-6"></div>
-              <p className="text-gray-400 text-lg leading-relaxed">
+              <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold text-white mb-2 lg:mb-5 leading-tight">{service.heading}</h3>
+              <div className="w-8 lg:w-12 h-1 bg-gradient-accent rounded-full mb-3 lg:mb-6"></div>
+              <p className="text-gray-400 text-xs sm:text-sm lg:text-lg leading-relaxed line-clamp-3 sm:line-clamp-none">
                 {service.description}
               </p>
             </div>
 
-            <ul className="space-y-4">
-              {service.features.map((feature: string, idx: number) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <div className="mt-1 flex-shrink-0">
-                    <CheckCircle2 size={20} className="text-[var(--primary)]" />
+            <ul className="space-y-2 lg:space-y-4">
+              {service.features.slice(0, 3).map((feature: string, idx: number) => (
+                <li key={idx} className="flex items-start gap-2 lg:gap-4">
+                  <div className="mt-0.5 lg:mt-1 flex-shrink-0">
+                    <CheckCircle2 size={16} className="text-[var(--primary)] lg:w-5 lg:h-5" />
                   </div>
-                  <span className="text-gray-300 font-medium">{feature}</span>
+                  <span className="text-gray-300 font-medium text-xs sm:text-sm lg:text-base leading-tight">{feature}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="pt-4">
-              <Link href={service.link || "#contact"} className="inline-flex items-center px-6 py-3 rounded-full bg-[var(--primary)] text-[var(--btn-text)] font-bold hover:brightness-110 transition-all duration-300 group shadow-[0_0_15px_rgba(var(--primary-rgb),0.3)]">
+            <div className="pt-2 lg:pt-4">
+              <Link href={service.link || "#contact"} className="inline-flex items-center px-4 py-2 lg:px-6 lg:py-3 rounded-full bg-[var(--primary)] text-[var(--btn-text)] text-xs lg:text-base font-bold hover:brightness-110 transition-all duration-300 group shadow-[0_0_15px_rgba(var(--primary-rgb),0.3)]">
                 {service.cta}
                 <span className="ml-2 flex items-center justify-center group-hover:translate-x-1 transition-transform duration-300">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>

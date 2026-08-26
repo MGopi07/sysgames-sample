@@ -190,7 +190,7 @@ export default function RetailBettingShopProviderPage() {
                             </div>
                         </div>
 
-                        <div className="lg:w-1/2 hidden lg:flex justify-center relative">
+                        <div className="w-full lg:w-1/2 flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
                             <div className="relative w-full max-w-lg aspect-square glass-card rounded-3xl border border-white/10 p-8 shadow-2xl flex flex-col">
                                 <div className="flex justify-between items-center border-b border-white/10 pb-4 mb-6">
                                     <div className="flex items-center gap-3">

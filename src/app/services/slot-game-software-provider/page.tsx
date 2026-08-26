@@ -51,7 +51,7 @@ export default function SlotGameProviderPage() {
                             </div>
                         </div>
 
-                        <div className="lg:w-[45%] hidden lg:flex justify-center relative">
+                        <div className="w-full lg:w-[45%] flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
                             {/* Visual representation of Slot Mechanics */}
                             <div className="relative w-full max-w-lg aspect-square glass-card rounded-3xl border border-white/10 p-8 shadow-2xl flex flex-col justify-center overflow-hidden">
                                 <div className="absolute -inset-1 bg-gradient-to-tr from-[var(--primary)]/20 to-[var(--secondary)]/20 rounded-[3rem] -z-10 blur-xl"></div>

@@ -59,7 +59,7 @@ export default function WhiteLabelPage() {
                         </div>
 
                         {/* Right side Abstract UI / Image */}
-                        <div className="lg:w-1/2 hidden lg:flex justify-center relative">
+                        <div className="w-full lg:w-1/2 flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
                             <div className="relative w-full max-w-lg aspect-square">
                                 {/* Background Glows */}
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[var(--primary)]/20 to-[var(--secondary)]/20 rounded-full blur-[80px] pointer-events-none z-0"></div>
