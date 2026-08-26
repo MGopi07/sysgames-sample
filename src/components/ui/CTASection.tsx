@@ -46,7 +46,7 @@ export default function CTASection({
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="#contact" className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-bold text-gray-900 rounded-full group bg-gradient-accent shadow-[0_0_30px_rgba(var(--secondary-rgb),0.4)] hover:shadow-[0_0_50px_rgba(var(--primary-rgb),0.6)] transition-all w-full sm:w-auto text-base">
+              <Link href="#contact" className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-bold text-[var(--btn-text)] rounded-full group bg-gradient-accent shadow-[0_0_30px_rgba(var(--secondary-rgb),0.4)] hover:shadow-[0_0_50px_rgba(var(--primary-rgb),0.6)] transition-all w-full sm:w-auto text-base">
                 <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-10"></span>
                 <span className="relative z-10 flex items-center gap-2">{buttonText} <ArrowRight size={20} /></span>
               </Link>

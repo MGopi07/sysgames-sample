@@ -34,7 +34,7 @@ export default function Header() {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-[#0A0A0A]/80 backdrop-blur-md py-3" : "bg-transparent py-5"}`}>
       <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center font-bold text-gray-900 shadow-[0_0_15px_rgba(var(--secondary-rgb),0.5)]">
+          <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center font-bold text-[var(--btn-text)] shadow-[0_0_15px_rgba(var(--secondary-rgb),0.5)]">
             S
           </div>
           <span className="font-bold text-xl tracking-tight text-white transition-all uppercase">SYSGAMES</span>
@@ -130,7 +130,7 @@ export default function Header() {
               <Link href="#global-solutions" className="text-lg font-medium text-white py-2 border-b border-white/5" onClick={() => setIsMobileMenuOpen(false)}>Global Solutions</Link>
               <Link href="#company" className="text-lg font-medium text-white py-2 border-b border-white/5" onClick={() => setIsMobileMenuOpen(false)}>Company</Link>
               <div className="pt-4">
-                <Link href="#contact" className="flex items-center justify-center w-full px-6 py-3 bg-gradient-accent text-gray-900 font-medium rounded-full" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="#contact" className="flex items-center justify-center w-full px-6 py-3 bg-gradient-accent text-[var(--btn-text)] font-medium rounded-full" onClick={() => setIsMobileMenuOpen(false)}>
                   Contact Us
                 </Link>
               </div>

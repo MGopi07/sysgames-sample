@@ -195,7 +195,7 @@ export default function RetailBettingShopProviderPage() {
                             </div>
 
                             <div className="flex flex-wrap gap-4">
-                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-gray-900 bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
                                     Talk to Our Retail Betting Experts <ChevronRight className="ml-2" />
                                 </Link>
                             </div>
@@ -387,7 +387,7 @@ export default function RetailBettingShopProviderPage() {
                             <p className="text-gray-400 mb-8 leading-relaxed">
                                 Partnering with a specialized retail betting shop software provider gives operators access to dedicated retail sportsbook technology. The right provider brings multiple retail sportsbook components together through one technology ecosystem.
                             </p>
-                            <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-gray-900 bg-gradient-accent rounded-full hover:scale-105 transition-transform">
+                            <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform">
                                 Partner With Us <ChevronRight className="ml-2" />
                             </Link>
                         </div>
@@ -439,7 +439,7 @@ export default function RetailBettingShopProviderPage() {
                             <div className="hidden lg:block p-8 rounded-2xl bg-[#121212] border border-white/5">
                                 <h3 className="text-xl font-bold text-white mb-2">Still have questions?</h3>
                                 <p className="text-gray-400 mb-6">Our enterprise integration specialists are available 24/7.</p>
-                                <button className="w-full py-4 rounded-xl font-bold text-gray-900 bg-gradient-accent hover:opacity-90 transition-opacity">
+                                <button className="w-full py-4 rounded-xl font-bold text-[var(--btn-text)] bg-gradient-accent hover:opacity-90 transition-opacity">
                                     Contact Support
                                 </button>
                             </div>

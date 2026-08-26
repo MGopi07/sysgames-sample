@@ -86,7 +86,7 @@ export default function HeroSlider() {
               transition={{ delay: 0.5 }}
               className="pt-4"
             >
-              <button className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium text-gray-900 rounded-full group bg-gradient-accent shadow-[0_0_30px_rgba(var(--secondary-rgb),0.3)] hover:shadow-[0_0_40px_rgba(var(--primary-rgb),0.5)] transition-all">
+              <button className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium text-[var(--btn-text)] rounded-full group bg-gradient-accent shadow-[0_0_30px_rgba(var(--secondary-rgb),0.3)] hover:shadow-[0_0_40px_rgba(var(--primary-rgb),0.5)] transition-all">
                 <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-10"></span>
                 <span className="relative z-10 font-semibold">{heroSlides[currentIndex].cta}</span>
               </button>

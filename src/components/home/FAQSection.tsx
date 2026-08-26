@@ -78,7 +78,7 @@ export default function FAQSection() {
             >
               <h3 className="text-xl font-bold text-white mb-2">Still have questions?</h3>
               <p className="text-gray-400 mb-6">Our enterprise integration specialists are available 24/7.</p>
-              <button className="w-full py-4 rounded-xl font-bold text-gray-900 bg-gradient-accent hover:opacity-90 transition-opacity">
+              <button className="w-full py-4 rounded-xl font-bold text-[var(--btn-text)] bg-gradient-accent hover:opacity-90 transition-opacity">
                 Contact Support
               </button>
             </motion.div>

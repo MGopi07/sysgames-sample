@@ -52,7 +52,7 @@ export default function OnlineCasinoGameDevPage() {
                             </div>
 
                             <div className="flex flex-wrap gap-4">
-                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-gray-900 bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
                                     Talk to Our Team <ChevronRight className="ml-2" />
                                 </Link>
                             </div>
@@ -486,29 +486,45 @@ export default function OnlineCasinoGameDevPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-32 bg-[#121212] border-t border-white/5">
-                <div className="container mx-auto px-6 lg:px-12">
-                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+            <section className="py-24 lg:py-32 bg-[#0A0A0A] relative border-t border-white/5">
+                {/* Background glow wrapped to prevent overflow without breaking sticky */}
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--primary)]/5 rounded-full blur-[150px]"></div>
+                </div>
+
+                <div className="container mx-auto px-6 lg:px-12 relative z-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start relative">
                         
-                        {/* Sticky Left Sidebar */}
-                        <div className="lg:w-1/3">
-                            <div className="sticky top-32">
-                                <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
-                                    <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
-                                    <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Answers</span>
-                                </div>
-                                <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">Frequently Asked Questions</h2>
-                                <p className="text-gray-400 text-lg mb-10 leading-relaxed">
-                                    Everything you need to know about our casino game development services and custom software process.
-                                </p>
-                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white border border-white/20 rounded-full hover:bg-white/10 hover:border-white/40 transition-colors">
-                                    Contact Our Team <ChevronRight className="ml-2 w-4 h-4" />
-                                </Link>
+                        {/* Left Side: Container that sticks */}
+                        <div className="lg:col-span-5 lg:sticky lg:top-[15vh] flex flex-col justify-start">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--primary)]"></span>
+                                </span>
+                                <span className="text-sm font-semibold text-[var(--primary)] tracking-widest uppercase">Answers</span>
+                            </div>
+
+                            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                                Frequently Asked Questions
+                            </h2>
+
+                            <p className="text-gray-400 text-lg leading-relaxed mb-8">
+                                Everything you need to know about our casino game development services and custom software process.
+                            </p>
+
+                            <div className="hidden lg:block p-8 rounded-3xl glass-card border border-white/10 bg-gradient-to-br from-white/[0.02] to-transparent shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden group">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <h3 className="text-xl font-bold text-white mb-3 relative z-10">Still have questions?</h3>
+                                <p className="text-gray-400 mb-8 relative z-10">Our enterprise integration specialists are available 24/7 to discuss your platform requirements.</p>
+                                <button className="w-full py-4 rounded-xl font-bold text-[var(--btn-text)] bg-[var(--primary)] hover:bg-[var(--primary)]/90 transition-colors shadow-[0_0_20px_rgba(var(--primary-rgb),0.3)] hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.5)] relative z-10">
+                                    Contact Support
+                                </button>
                             </div>
                         </div>
 
                         {/* Accordion Right Side */}
-                        <div className="lg:w-2/3">
+                        <div className="lg:col-span-7">
                             <FAQAccordion items={[
                                 { q: "What Does an Online Casino Game Development Company Do?", a: "Designs, develops, tests, integrates, and maintains casino games for operators. Services include slots, table games, live-style games, math, UI/UX, and QA." },
                                 { q: "Why Choose Custom Development Instead of Pre-Made Games?", a: "Custom development gives operators greater control over themes, mechanics, visual identity, and features, creating games specifically around your brand and audience." },

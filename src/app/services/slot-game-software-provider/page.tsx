@@ -45,7 +45,7 @@ export default function SlotGameProviderPage() {
                             </div>
 
                             <div className="flex flex-wrap gap-4">
-                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-gray-900 bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
                                     Discuss Your Slot Game Project <ChevronRight className="ml-2" />
                                 </Link>
                             </div>
@@ -456,7 +456,7 @@ export default function SlotGameProviderPage() {
 
                                 {/* Header with Step Node & Connecting Line */}
                                 <div className="flex items-center gap-4 mb-8 relative z-10">
-                                    <div className="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/10 flex items-center justify-center font-black text-xl text-white group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 group-hover:text-[var(--primary)] shadow-[0_0_0_rgba(0,0,0,0)] group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.3)] transition-all duration-500">
+                                    <div className="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/10 flex items-center justify-center font-black text-xl text-gray-500 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 group-hover:text-[var(--primary)] shadow-[0_0_0_rgba(0,0,0,0)] group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.3)] transition-all duration-500">
                                         0{item.step}
                                     </div>
                                     <div className="flex-1 h-px border-t border-dashed border-white/10 group-hover:border-[var(--primary)]/30 transition-colors duration-500 relative overflow-hidden">

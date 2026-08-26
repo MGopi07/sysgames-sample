@@ -22,6 +22,7 @@
     --secondary: #9FCC00;
     --primary-rgb: 212, 255, 0;
     --secondary-rgb: 159, 204, 0;
+    --btn-text: #111827;
   }
 
   [data-theme="purple"] {
@@ -29,6 +30,7 @@
     --secondary: #7209B7;
     --primary-rgb: 247, 37, 133;
     --secondary-rgb: 114, 9, 183;
+    --btn-text: #ffffff;
   }
 
   body {

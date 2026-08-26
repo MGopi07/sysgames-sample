@@ -22,7 +22,7 @@ export default function Footer() {
           {/* Column 1 */}
           <div className="lg:col-span-4 space-y-6 lg:pr-8">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center font-bold text-gray-900 shadow-[0_0_15px_rgba(var(--secondary-rgb),0.5)]">
+              <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center font-bold text-[var(--btn-text)] shadow-[0_0_15px_rgba(var(--secondary-rgb),0.5)]">
                 S
               </div>
               <span className="font-bold text-xl tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-accent transition-all uppercase">SYSGAMES</span>
