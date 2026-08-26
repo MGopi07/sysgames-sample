@@ -77,8 +77,8 @@ export default function OnlineCasinoGameDevPage() {
                                 </div>
                                 <div className="absolute bottom-6 right-6 z-20 glass-card px-4 py-2 flex items-center gap-3 rounded-full border border-white/20">
                                     <span className="relative flex h-3 w-3">
-                                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
-                                      <span className="relative inline-flex rounded-full h-3 w-3 bg-[var(--primary)]"></span>
+                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
+                                        <span className="relative inline-flex rounded-full h-3 w-3 bg-[var(--primary)]"></span>
                                     </span>
                                     <span className="text-xs font-bold text-white tracking-wider uppercase">Live Rendering Engine</span>
                                 </div>
@@ -112,7 +112,7 @@ export default function OnlineCasinoGameDevPage() {
                                 <div className="relative glass-card p-8 rounded-2xl border border-white/10 bg-[#0A0A0A]/80 backdrop-blur-xl shadow-2xl">
                                     <div className="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
                                         <h3 className="text-xl font-bold text-white flex items-center gap-3">
-                                            <Code className="text-[var(--primary)]" size={20} /> 
+                                            <Code className="text-[var(--primary)]" size={20} />
                                             Custom Development Scope
                                         </h3>
                                         <div className="flex gap-1.5">
@@ -121,7 +121,7 @@ export default function OnlineCasinoGameDevPage() {
                                             <div className="w-2 h-2 rounded-full bg-[var(--primary)]/20"></div>
                                         </div>
                                     </div>
-                                    
+
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                         {[
                                             "Game concept creation", "Gameplay mechanics", "Mathematical modeling", "UI/UX design",
@@ -270,7 +270,7 @@ export default function OnlineCasinoGameDevPage() {
 
                         {/* Architectural Grid Container */}
                         <div className="col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-px bg-white/10 border border-white/10 rounded-3xl overflow-hidden shadow-2xl">
-                            
+
                             {/* Math */}
                             <div className="bg-[#0A0A0A] p-10 lg:p-14 relative group hover:bg-[#0f0f0f] transition-colors duration-500">
                                 <div className="absolute -top-4 right-8 text-[8rem] font-black text-white/[0.02] group-hover:text-white/[0.04] group-hover:scale-105 transition-all duration-700 pointer-events-none select-none">
@@ -401,7 +401,7 @@ export default function OnlineCasinoGameDevPage() {
                             <div key={idx} className="bg-white/[0.02] border border-white/[0.05] hover:border-[var(--primary)]/50 rounded-2xl p-6 relative overflow-hidden group transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_30px_-10px_rgba(var(--primary-rgb),0.3)]">
                                 {/* Inner Neon Glow */}
                                 <div className="absolute -top-12 -right-12 w-32 h-32 bg-[var(--primary)]/0 group-hover:bg-[var(--primary)]/20 blur-[40px] rounded-full transition-all duration-700 pointer-events-none"></div>
-                                
+
                                 <div className="relative z-10 flex flex-col h-full">
                                     <div className="flex justify-between items-start mb-6">
                                         <div className="w-12 h-12 rounded-xl bg-[#0A0A0A] border border-white/10 flex items-center justify-center text-white group-hover:border-[var(--primary)] group-hover:text-[var(--primary)] group-hover:shadow-[inset_0_0_15px_rgba(var(--primary-rgb),0.3)] transition-all duration-300">
@@ -439,12 +439,12 @@ export default function OnlineCasinoGameDevPage() {
                             <div className="relative h-full bg-[#0A0A0A] p-10 rounded-[23px] overflow-hidden flex flex-col">
                                 {/* Inner Corner Glow */}
                                 <div className="absolute top-0 right-0 w-40 h-40 bg-[var(--primary)]/10 blur-[50px] rounded-full translate-x-1/3 -translate-y-1/3 group-hover:bg-[var(--primary)]/30 transition-all duration-700 pointer-events-none"></div>
-                                
+
                                 {/* Icon Node */}
                                 <div className="w-16 h-16 rounded-2xl bg-[#121212] border border-white/5 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-[var(--primary)]/40 group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)] transition-all duration-500 relative z-10">
                                     <Code className="text-[var(--primary)]" size={32} />
                                 </div>
-                                
+
                                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors relative z-10">Casino Game Integration</h3>
                                 <p className="text-gray-400 leading-relaxed relative z-10 flex-grow">Developing the game is only part of the process. We support seamless integration with PAM systems, wallets, APIs, aggregators, and analytics platforms.</p>
                             </div>
@@ -455,12 +455,12 @@ export default function OnlineCasinoGameDevPage() {
                             <div className="relative h-full bg-[#0A0A0A] p-10 rounded-[23px] overflow-hidden flex flex-col">
                                 {/* Inner Corner Glow */}
                                 <div className="absolute top-0 right-0 w-40 h-40 bg-[var(--primary)]/10 blur-[50px] rounded-full translate-x-1/3 -translate-y-1/3 group-hover:bg-[var(--primary)]/30 transition-all duration-700 pointer-events-none"></div>
-                                
+
                                 {/* Icon Node */}
                                 <div className="w-16 h-16 rounded-2xl bg-[#121212] border border-white/5 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-[var(--primary)]/40 group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)] transition-all duration-500 relative z-10">
                                     <ShieldCheck className="text-[var(--primary)]" size={32} />
                                 </div>
-                                
+
                                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors relative z-10">Testing and QA</h3>
                                 <p className="text-gray-400 leading-relaxed relative z-10 flex-grow">Quality assurance is essential. We use structured testing processes to identify functional, mathematical, performance, compatibility, and security issues.</p>
                             </div>
@@ -471,12 +471,12 @@ export default function OnlineCasinoGameDevPage() {
                             <div className="relative h-full bg-[#0A0A0A] p-10 rounded-[23px] overflow-hidden flex flex-col">
                                 {/* Inner Corner Glow */}
                                 <div className="absolute top-0 right-0 w-40 h-40 bg-[var(--primary)]/10 blur-[50px] rounded-full translate-x-1/3 -translate-y-1/3 group-hover:bg-[var(--primary)]/30 transition-all duration-700 pointer-events-none"></div>
-                                
+
                                 {/* Icon Node */}
                                 <div className="w-16 h-16 rounded-2xl bg-[#121212] border border-white/5 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-[var(--primary)]/40 group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)] transition-all duration-500 relative z-10">
                                     <Zap className="text-[var(--primary)]" size={32} />
                                 </div>
-                                
+
                                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors relative z-10">High-Performance Build</h3>
                                 <p className="text-gray-400 leading-relaxed relative z-10 flex-grow">Game assets, animations, interfaces, and backend architecture are optimized to provide smooth, responsive gameplay and reduced resource consumption.</p>
                             </div>
@@ -494,7 +494,7 @@ export default function OnlineCasinoGameDevPage() {
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start relative">
-                        
+
                         {/* Left Side: Container that sticks */}
                         <div className="lg:col-span-5 lg:sticky lg:top-[15vh] flex flex-col justify-start">
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
@@ -541,7 +541,7 @@ export default function OnlineCasinoGameDevPage() {
             </section>
 
             {/* Final CTA */}
-            <CTASection 
+            <CTASection
                 title="Ready to Build Your"
                 highlightText="Next Casino Game?"
                 description="From initial concept and math design to development and testing, our team delivers high-quality casino games that players love."

@@ -94,8 +94,6 @@ export default function SportsbookKioskProviderPage() {
                         <h2 className="text-4xl font-bold text-white mb-6">Why Choose Our Sportsbook Kiosk Software Provider Solutions?</h2>
                         <p className="text-gray-400 mb-4">
                             Traditional retail betting operations require staff to manage customer requests, betting slips, transactions, and ticket processing. Self-service sportsbook kiosks help operators create a more efficient betting experience reducing dependence on manual processes.
-                        </p>
-                        <p className="text-gray-400">
                             Our Sportsbook Kiosk Software Provider solutions are built to help operators manage self-service betting experiences through modern software, intuitive interfaces, centralized administration, sportsbook integrations.
                         </p>
                     </div>

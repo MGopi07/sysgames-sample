@@ -47,6 +47,11 @@ export default function Header() {
             <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left ${pathname === '/' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
           </Link>
 
+          <Link href="/about" className={`relative text-sm font-medium transition-colors py-2 group ${pathname === '/about' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
+            About
+            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left ${pathname === '/about' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
+          </Link>
+
           <div className="relative" onMouseEnter={() => setIsServicesOpen(true)} onMouseLeave={() => setIsServicesOpen(false)}>
             <button onClick={() => setIsServicesOpen(!isServicesOpen)} className={`relative flex items-center gap-1 text-sm font-medium transition-colors py-2 group outline-none ${pathname?.startsWith('/services') ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
               Services <ChevronDown size={14} className={`transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
@@ -80,24 +85,21 @@ export default function Header() {
             </AnimatePresence>
           </div>
 
-          <Link href="#technology" className={`relative text-sm font-medium transition-colors py-2 group text-white hover:text-[var(--primary)]`}>
-            Technology
-            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left scale-x-0 group-hover:scale-x-100`}></span>
+          <Link href="/blog" className={`relative text-sm font-medium transition-colors py-2 group ${pathname === '/blog' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
+            Blog
+            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left ${pathname === '/blog' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
           </Link>
-          <Link href="#global-solutions" className={`relative text-sm font-medium transition-colors py-2 group text-white hover:text-[var(--primary)]`}>
-            Global Solutions
-            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left scale-x-0 group-hover:scale-x-100`}></span>
-          </Link>
-          <Link href="#company" className={`relative text-sm font-medium transition-colors py-2 group text-white hover:text-[var(--primary)]`}>
-            Company
-            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left scale-x-0 group-hover:scale-x-100`}></span>
+
+          <Link href="/contact" className={`relative text-sm font-medium transition-colors py-2 group ${pathname === '/contact' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
+            Contact Us
+            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left ${pathname === '/contact' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
           </Link>
         </nav>
 
         <div className="hidden lg:block">
           <Link href="#contact" className="relative inline-flex items-center justify-center px-6 py-2.5 overflow-hidden font-medium text-white rounded-full group bg-white/5 border border-white/10 hover:border-[var(--primary)]/50 transition-all hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
             <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-gradient-accent rounded-full group-hover:w-56 group-hover:h-56"></span>
-            <span className="relative z-10 text-sm group-hover:text-gray-900 transition-colors">Contact Us</span>
+            <span className="relative z-10 text-sm group-hover:text-gray-900 transition-colors">Let's connect</span>
           </Link>
         </div>
 
@@ -117,21 +119,21 @@ export default function Header() {
             className="lg:hidden absolute top-full left-0 w-full bg-[#0A0A0A] border-t border-white/5 overflow-y-auto pb-24"
           >
             <div className="flex flex-col p-6 gap-4">
-              <Link href="/" className="text-lg font-medium text-white py-2 border-b border-white/5" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+              <Link href="/" className={`text-lg font-medium py-2 border-b border-white/5 ${pathname === '/' ? 'text-[var(--primary)]' : 'text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+              <Link href="/about" className={`text-lg font-medium py-2 border-b border-white/5 ${pathname === '/about' ? 'text-[var(--primary)]' : 'text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>About</Link>
               <div className="py-2 border-b border-white/5">
-                <div className="text-lg font-medium text-white mb-3 block cursor-default">Services</div>
+                <div className={`text-lg font-medium mb-3 block cursor-default ${pathname?.startsWith('/services') ? 'text-[var(--primary)]' : 'text-white'}`}>Services</div>
                 <div className="flex flex-col gap-3 pl-4">
                   {servicesList.map((item, idx) => (
-                    <Link key={idx} href={item.href} className="text-gray-400 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>{item.name}</Link>
+                    <Link key={idx} href={item.href} className={`hover:text-white ${pathname === item.href ? 'text-white font-bold' : 'text-gray-400'}`} onClick={() => setIsMobileMenuOpen(false)}>{item.name}</Link>
                   ))}
                 </div>
               </div>
-              <Link href="#technology" className="text-lg font-medium text-white py-2 border-b border-white/5" onClick={() => setIsMobileMenuOpen(false)}>Technology</Link>
-              <Link href="#global-solutions" className="text-lg font-medium text-white py-2 border-b border-white/5" onClick={() => setIsMobileMenuOpen(false)}>Global Solutions</Link>
-              <Link href="#company" className="text-lg font-medium text-white py-2 border-b border-white/5" onClick={() => setIsMobileMenuOpen(false)}>Company</Link>
+              <Link href="/blog" className={`text-lg font-medium py-2 border-b border-white/5 ${pathname === '/blog' ? 'text-[var(--primary)]' : 'text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
+              <Link href="/contact" className={`text-lg font-medium py-2 border-b border-white/5 ${pathname === '/contact' ? 'text-[var(--primary)]' : 'text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
               <div className="pt-4">
                 <Link href="#contact" className="flex items-center justify-center w-full px-6 py-3 bg-gradient-accent text-[var(--btn-text)] font-medium rounded-full" onClick={() => setIsMobileMenuOpen(false)}>
-                  Contact Us
+                  Let's connect
                 </Link>
               </div>
             </div>
