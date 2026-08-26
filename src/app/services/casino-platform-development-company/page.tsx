@@ -367,14 +367,6 @@ export default function CasinoPlatformDevPage() {
                 features: ["Data encryption", "Secure authentication", "Access controls", "API security", "Transaction monitoring", "Anti-fraud functionality", "Administrative permissions", "Activity monitoring", "Secure infrastructure"],
                 extraTitle: "The Security Advantage",
                 extraDesc: "A security-focused casino platform development company can implement multiple layers of protection across the casino ecosystem."
-              },
-              {
-                title: "Scalable Casino Platform Architecture",
-                icon: <Server size={28} className="text-[var(--primary)]" />,
-                desc: "A growing casino business needs technology capable of handling increasing numbers of players, transactions, games, and integrations. Our casino platform development company develops scalable architectures designed around future expansion.",
-                features: ["Modular architecture", "API-driven integrations", "Cloud-ready infrastructure", "Load management", "Scalable databases", "Game aggregation", "Centralized administration", "Performance monitoring", "Multi-market support"],
-                extraTitle: "The Scalability Advantage",
-                extraDesc: "A scalable casino platform development company helps operators prepare their technology for future business growth."
               }
             ].map((section, idx) => (
               <div key={idx} className="group relative bg-[#0A0A0A] border border-white/5 rounded-3xl overflow-hidden transition-all duration-500 hover:border-[var(--primary)]/30 hover:shadow-[0_20px_50px_rgba(var(--primary-rgb),0.05)] flex flex-col hover:-translate-y-1">

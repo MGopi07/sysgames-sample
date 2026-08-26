@@ -110,16 +110,7 @@ const modulesData = [
         features: ["Shop performance", "Terminal activity", "Betting activity", "Transaction reports", "Sports performance", "Market performance", "Revenue reporting", "Risk reports", "Operational analytics", "Location comparisons"],
         outro: "The retail betting shop software provider platform gives operators a centralized view of retail performance."
     },
-    {
-        title: "Omnichannel Retail Betting Software",
-        icon: MonitorSmartphone,
-        intro: [
-            "Customers increasingly interact betting brands through physical shops, websites & mobile applications.",
-            "Our retail betting shop software provider solution can connect retail operations with online and mobile sportsbook environments."
-        ],
-        features: ["Retail sportsbook", "Online sportsbook", "Mobile sportsbook", "Shared backend", "Shared odds infrastructure", "Player account integration", "CRM integration", "Payment connectivity", "Centralized reporting", "Cross-channel analytics"],
-        outro: "An omnichannel approach allows a retail betting shop software provider to connect physical and digital betting experiences through shared technology."
-    },
+   
     {
         title: "Custom Retail Betting Shop Software",
         icon: Settings,
@@ -189,9 +180,7 @@ export default function RetailBettingShopProviderPage() {
                                 <p>
                                     As a retail betting shop software provider, we deliver flexible technology solutions designed to help operators manage modern retail sportsbook operations from a centralized environment. Our solutions support individual betting locations, growing retail networks, and operators looking to connect physical betting shops with online and mobile sportsbook channels.
                                 </p>
-                                <p>
-                                    From real-time odds and betting terminals to reporting and risk management, our platform provides the technology foundation required for efficient retail betting operations.
-                                </p>
+                                
                             </div>
 
                             <div className="flex flex-wrap gap-4">

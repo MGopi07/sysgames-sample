@@ -235,8 +235,7 @@ export default function SportsbookKioskProviderPage() {
                                             ["Payment integrations", "Player account functionality"],
                                             ["Multi-language interfaces", "Multi-currency functionality"],
                                             ["Administrative controls", "Reporting dashboards"],
-                                            ["Kiosk monitoring", "Remote configuration"],
-                                            ["Promotional features", ""]
+                                            ["Kiosk monitoring", "Remote configuration"]
                                         ].map((row, idx) => (
                                             <tr key={idx} className="hover:bg-white/[0.06] even:bg-white/[0.01] transition-colors group/row">
                                                 <td className="px-5 py-3.5 sm:px-6 sm:py-4 border-r border-white/[0.05] w-1/2">
