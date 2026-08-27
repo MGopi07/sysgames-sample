@@ -37,7 +37,7 @@ export default function Header() {
           <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center font-bold text-[var(--btn-text)] shadow-[0_0_15px_rgba(var(--secondary-rgb),0.5)]">
             S
           </div>
-          <span className="font-bold text-xl tracking-tight text-white transition-all uppercase">SYSGAMES</span>
+          <span className="font-bold text-xl tracking-tight text-white uppercase">SYSGAMES</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -64,7 +64,7 @@ export default function Header() {
                   animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                   exit={{ opacity: 0, y: 15, filter: 'blur(10px)' }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="absolute top-full left-0 mt-4 w-80 bg-[#0A0A0A]/95 backdrop-blur-xl rounded-2xl p-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10"
+                  className="absolute top-full left-0 mt-4 w-80 bg-[#111111] rounded-2xl p-3 shadow-[0_20px_50px_rgba(0,0,0,0.8)] border border-white/10 z-[100]"
                 >
                   {/* Invisible bridge to prevent hover loss when moving mouse */}
                   <div className="absolute -top-4 left-0 w-full h-4 bg-transparent"></div>
@@ -117,7 +117,7 @@ export default function Header() {
             animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="lg:hidden absolute top-full left-0 w-full bg-[#0A0A0A] border-t border-white/10 overflow-y-auto pb-32 z-50"
+            className="lg:hidden absolute top-full left-0 w-full bg-[#121212] border-t border-white/10 overflow-y-auto pb-32 z-50"
           >
             <div className="flex flex-col p-6">
               {/* Home */}

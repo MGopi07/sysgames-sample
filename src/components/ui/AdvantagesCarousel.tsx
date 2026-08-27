@@ -75,7 +75,7 @@ export default function AdvantagesCarousel() {
         >
             <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
                 <div className="max-w-2xl">
-                    <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                    <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                         <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                         <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                     </div>

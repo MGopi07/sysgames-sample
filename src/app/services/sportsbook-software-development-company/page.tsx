@@ -22,7 +22,7 @@ export default function SportsbookSoftwareDevPage() {
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center">
             <div className="lg:w-[60%]">
-              <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+              <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advanced Betting Tech</span>
               </div>
@@ -133,7 +133,7 @@ export default function SportsbookSoftwareDevPage() {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2">
-              <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+              <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
               </div>
@@ -221,7 +221,7 @@ export default function SportsbookSoftwareDevPage() {
         
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-24">
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">What We Build</span>
             </div>
@@ -357,9 +357,9 @@ export default function SportsbookSoftwareDevPage() {
             {/* Sticky Left Column */}
             <div className="lg:w-1/3">
               <div className="sticky top-32">
-                <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-                  <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                  <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Workflow</span>
+                <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                  <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                  <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Workflow</span>
                 </div>
                 <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">How Our Sportsbook Development Process Works</h2>
                 <p className="text-gray-400 text-lg leading-relaxed mb-8">From initial market research to deployment and ongoing support, we ensure a seamless execution of your vision.</p>
@@ -421,7 +421,7 @@ export default function SportsbookSoftwareDevPage() {
       <section className="py-24">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Solutions</span>
             </div>
@@ -527,14 +527,14 @@ export default function SportsbookSoftwareDevPage() {
                    </h4>
                    <div className="flex flex-wrap gap-2 mb-8">
                      {feature.features.map((f, i) => (
-                       <span key={i} className="px-3 py-1.5 rounded-full bg-[#0A0A0A] border border-white/5 text-gray-400 text-[13px] font-medium hover:border-[var(--primary)]/30 hover:text-white transition-colors cursor-default">
+                       <span key={i} className="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-gray-200 text-[13px] font-medium hover:bg-[var(--primary)] hover:border-[var(--primary)] hover:text-[var(--btn-text)] transition-all cursor-default shadow-sm">
                          {f}
                        </span>
                      ))}
                    </div>
                  </div>
 
-                 <div className="p-5 bg-[var(--primary)]/5 rounded-xl border border-[var(--primary)]/10 text-[14px] text-gray-300">
+                 <div className="p-5 bg-gradient-to-r from-[var(--primary)]/10 to-transparent rounded-xl border-l-2 border-[var(--primary)]/50 text-[14px] text-gray-200 shadow-[inset_0_0_20px_rgba(var(--primary-rgb),0.05)]">
                    <strong className="text-white block mb-1">Advantage:</strong> {feature.conclusion}
                  </div>
               </div>
@@ -608,7 +608,7 @@ export default function SportsbookSoftwareDevPage() {
               "Real-time odds", "Live betting", "50+ sports", "100+ betting markets", "Risk management",
               "AI-assisted tools", "PAM", "CRM", "Cash Out"
             ].map((tag, idx) => (
-              <span key={idx} className="px-8 py-4 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/5 text-[15px] text-white font-semibold hover:border-[var(--primary)] hover:bg-[var(--primary)]/20 transition-all duration-300 cursor-default whitespace-nowrap shadow-[0_0_20px_rgba(var(--primary-rgb),0.05)]">
+              <span key={idx} className="px-8 py-3.5 rounded-full border border-white/5 bg-[#121212] text-[15px] text-gray-400 font-medium hover:border-[var(--primary)]/40 hover:bg-[#1A1A1A] hover:text-white transition-all duration-500 cursor-default whitespace-nowrap hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.15)]">
                 {tag}
               </span>
             ))}
@@ -620,7 +620,7 @@ export default function SportsbookSoftwareDevPage() {
               "Bet Builder", "Payment integrations", "Crypto wallet support", "Mobile compatibility", "Custom branding", "Scalable infrastructure", "Ongoing technical support",
               "Bet Builder", "Payment integrations", "Crypto wallet support", "Mobile compatibility", "Custom branding", "Scalable infrastructure", "Ongoing technical support"
             ].map((tag, idx) => (
-              <span key={idx} className="px-8 py-4 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/5 text-[15px] text-white font-semibold hover:border-[var(--secondary)] hover:bg-[var(--secondary)]/20 transition-all duration-300 cursor-default whitespace-nowrap shadow-[0_0_20px_rgba(var(--secondary-rgb),0.05)]">
+              <span key={idx} className="px-8 py-3.5 rounded-full border border-white/5 bg-[#121212] text-[15px] text-gray-400 font-medium hover:border-[var(--primary)]/40 hover:bg-[#1A1A1A] hover:text-white transition-all duration-500 cursor-default whitespace-nowrap hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.15)]">
                 {tag}
               </span>
             ))}

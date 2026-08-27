@@ -76,104 +76,98 @@ export default function WhyChooseIntro() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="relative h-[350px] md:h-[450px] lg:h-[600px] mt-12 lg:mt-0 flex items-center justify-center w-full scale-75 md:scale-90 lg:scale-100 origin-center"
+            className="relative h-[350px] md:h-[450px] lg:h-[600px] mt-12 lg:mt-0 flex items-center justify-center w-full scale-[0.65] md:scale-75 lg:scale-[0.85] origin-center"
             style={{ perspective: '2000px' }}
           >
             <div 
               className="relative w-full max-w-[420px] aspect-square" 
-              style={{ transformStyle: 'preserve-3d', transform: 'rotateX(55deg) rotateZ(-45deg)' }}
+              style={{ transformStyle: 'preserve-3d', transform: 'rotateX(50deg) rotateZ(-35deg)' }}
             >
               {/* Base Dashboard Layer */}
               <motion.div 
                 animate={{ translateZ: [0, -10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute inset-0 bg-[#0A0A0A]/90 backdrop-blur-xl rounded-2xl border border-white/10 shadow-[30px_30px_50px_rgba(0,0,0,0.9)] p-5 flex flex-col"
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute inset-0 bg-[#0A0A0A]/80 backdrop-blur-3xl rounded-2xl border-t border-l border-white/15 shadow-[30px_30px_60px_rgba(0,0,0,0.9)] flex overflow-hidden"
                 style={{ transform: 'translateZ(0px)' }}
               >
-                {/* Header */}
-                <div className="flex justify-between items-center mb-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-[var(--primary)]/20 border border-[var(--primary)]/30"></div>
-                    <div className="h-4 w-24 bg-white/10 rounded-md"></div>
+                {/* Sidebar */}
+                <div className="w-[25%] h-full bg-white/[0.02] border-r border-white/5 p-4 flex flex-col gap-4">
+                  <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center mb-4">
+                    <div className="w-4 h-4 bg-white rounded-sm"></div>
                   </div>
-                  <div className="flex gap-2">
-                    <div className="w-8 h-8 rounded-full bg-white/5 border border-white/5"></div>
-                    <div className="w-8 h-8 rounded-full bg-white/5 border border-white/5"></div>
-                  </div>
-                </div>
-                
-                {/* Stats row */}
-                <div className="flex gap-4 mb-6">
-                  {[1, 2, 3].map(i => (
-                    <div key={i} className="flex-1 bg-white/5 rounded-xl border border-white/5 p-3">
-                      <div className="h-2 w-12 bg-white/20 rounded-full mb-3"></div>
-                      <div className="h-5 w-20 bg-white/40 rounded-md"></div>
-                    </div>
+                  {[1, 2, 3, 4, 5].map(i => (
+                    <div key={i} className={`h-2 rounded-full ${i === 2 ? 'w-full bg-[var(--primary)]' : 'w-[70%] bg-white/20'}`}></div>
                   ))}
+                  <div className="mt-auto h-8 w-8 rounded-full bg-white/10"></div>
                 </div>
 
-                {/* Main Content Area */}
-                <div className="flex-1 bg-[#121212] rounded-xl border border-white/5 p-4 flex flex-col gap-3">
-                  {[1, 2, 3, 4].map(i => (
-                    <div key={i} className="h-10 bg-white/5 rounded-lg flex items-center px-3 gap-3">
-                      <div className="w-5 h-5 rounded-full bg-white/10"></div>
-                      <div className="h-2 w-32 bg-white/10 rounded-full"></div>
-                      <div className="ml-auto h-2 w-12 bg-white/10 rounded-full"></div>
+                {/* Main Content */}
+                <div className="flex-1 h-full p-5 flex flex-col">
+                  {/* Top Nav */}
+                  <div className="flex justify-between items-center mb-6">
+                    <div className="h-4 w-32 bg-white/20 rounded-md"></div>
+                    <div className="flex gap-2">
+                      <div className="w-6 h-6 rounded-full bg-white/10"></div>
+                      <div className="w-6 h-6 rounded-full bg-white/10"></div>
                     </div>
-                  ))}
+                  </div>
+                  
+                  {/* Hero Stat Chart */}
+                  <div className="w-full h-[40%] bg-white/5 rounded-xl border border-white/5 p-4 mb-4 flex items-end justify-between gap-2 relative overflow-hidden">
+                    <div className="absolute top-4 left-4 h-3 w-20 bg-white/30 rounded-md"></div>
+                    {[40, 60, 30, 80, 50, 90, 70].map((h, i) => (
+                      <div key={i} className="w-full bg-gradient-to-t from-[var(--primary)]/60 to-[var(--primary)] rounded-t-sm" style={{ height: `${h}%` }}></div>
+                    ))}
+                  </div>
+
+                  {/* Bottom Grid */}
+                  <div className="flex gap-4 flex-1">
+                    <div className="flex-1 bg-white/5 rounded-xl border border-white/5 p-3 flex flex-col justify-center items-center">
+                       <div className="w-12 h-12 rounded-full border-[4px] border-[var(--secondary)]/30 border-t-[var(--secondary)] flex items-center justify-center">
+                          <div className="w-1 h-1 rounded-full bg-white"></div>
+                       </div>
+                    </div>
+                    <div className="flex-[1.5] bg-white/5 rounded-xl border border-white/5 p-3 flex flex-col gap-2 justify-center">
+                       <div className="h-2 w-full bg-white/10 rounded-full"><div className="h-full w-[70%] bg-[var(--primary)] rounded-full"></div></div>
+                       <div className="h-2 w-full bg-white/10 rounded-full"><div className="h-full w-[40%] bg-white/40 rounded-full"></div></div>
+                       <div className="h-2 w-full bg-white/10 rounded-full"><div className="h-full w-[85%] bg-[var(--secondary)] rounded-full"></div></div>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
 
-              {/* Floating Analytics Card - Layer 2 */}
+              {/* Floating Glass Panel 1 */}
               <motion.div 
-                animate={{ translateZ: [60, 75, 60] }}
+                animate={{ translateZ: [50, 70, 50] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                className="absolute top-[25%] left-[-15%] w-[65%] h-[45%] bg-[#121212]/95 backdrop-blur-xl rounded-2xl border border-[var(--primary)]/40 shadow-[20px_20px_40px_rgba(0,0,0,0.6)] p-4 flex flex-col"
-                style={{ transform: 'translateZ(60px)' }}
+                className="absolute top-[10%] left-[-20%] w-[50%] h-[40%] bg-white/5 backdrop-blur-2xl rounded-2xl border-t border-l border-white/20 shadow-[20px_20px_40px_rgba(0,0,0,0.6)] p-5 flex flex-col"
+                style={{ transform: 'translateZ(50px)' }}
               >
-                <div className="flex justify-between items-center mb-4">
-                  <div className="h-3 w-20 bg-white/20 rounded-full"></div>
-                  <div className="h-4 w-12 bg-[var(--primary)]/20 rounded-md border border-[var(--primary)]/30"></div>
-                </div>
-                <div className="flex-1 flex items-end gap-2">
-                  {[30, 50, 40, 70, 55, 85, 65].map((h, i) => (
-                    <div key={i} className="flex-1 bg-gradient-to-t from-[var(--primary)]/80 to-[var(--primary)]/20 rounded-t-sm" style={{ height: `${h}%` }}></div>
-                  ))}
-                </div>
-              </motion.div>
-
-              {/* Floating Mini Card 1 - Layer 3 */}
-              <motion.div 
-                animate={{ translateZ: [110, 125, 110] }}
-                transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute top-[-5%] right-[-10%] w-[45%] h-[35%] bg-gradient-to-br from-[#18181b] to-[#121212] rounded-2xl border border-[var(--secondary)]/50 shadow-[15px_15px_30px_rgba(0,0,0,0.6)] p-5 flex flex-col justify-center items-center"
-                style={{ transform: 'translateZ(110px)' }}
-              >
-                <div className="w-12 h-12 rounded-full bg-[var(--secondary)]/20 flex items-center justify-center mb-3 border border-[var(--secondary)]/30">
-                  <svg className="w-6 h-6 text-[var(--secondary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                  </svg>
-                </div>
-                <div className="text-white font-black text-xl mb-1">+245%</div>
-                <div className="text-[10px] text-gray-400 font-medium tracking-wide uppercase">Revenue</div>
-              </motion.div>
-
-              {/* Floating Mini Card 2 - Layer 4 */}
-              <motion.div 
-                animate={{ translateZ: [80, 90, 80] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-                className="absolute bottom-[-5%] right-[-5%] w-[60%] h-[25%] bg-[#0A0A0A]/95 backdrop-blur-xl rounded-2xl border border-white/20 shadow-[15px_15px_30px_rgba(0,0,0,0.7)] p-4 flex items-center gap-4"
-                style={{ transform: 'translateZ(80px)' }}
-              >
-                <div className="w-10 h-10 rounded-full bg-white/5 shrink-0 flex items-center justify-center border border-white/10">
+                <div className="w-10 h-10 rounded-xl bg-[var(--primary)]/20 border border-[var(--primary)]/30 flex items-center justify-center mb-auto">
                   <Shield size={20} className="text-[var(--primary)]" />
                 </div>
-                <div className="flex flex-col gap-2 w-full">
-                  <div className="flex justify-between items-center w-full">
-                     <div className="w-[50%] h-2.5 bg-white/20 rounded-full"></div>
-                     <div className="w-[20%] h-2.5 bg-[var(--primary)]/60 rounded-full"></div>
+                <div>
+                  <div className="text-white font-black text-2xl tracking-tight mb-1">99.9%</div>
+                  <div className="text-[10px] text-gray-400 font-bold tracking-widest uppercase">Uptime SLA</div>
+                </div>
+              </motion.div>
+
+              {/* Floating Glass Panel 2 */}
+              <motion.div 
+                animate={{ translateZ: [90, 110, 90] }}
+                transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                className="absolute bottom-[-10%] right-[-10%] w-[55%] h-[35%] bg-gradient-to-br from-[var(--secondary)] to-[var(--primary)] rounded-2xl border-t border-l border-white/30 shadow-[20px_20px_50px_rgba(var(--primary-rgb),0.4)] p-5 flex flex-col justify-between"
+                style={{ transform: 'translateZ(90px)' }}
+              >
+                <div className="flex justify-between items-start">
+                  <div className="h-4 w-16 bg-white/30 rounded-md"></div>
+                  <div className="w-2 h-2 rounded-full bg-white animate-pulse shadow-[0_0_10px_#fff]"></div>
+                </div>
+                <div>
+                  <div className="text-white font-black text-3xl mb-1 drop-shadow-md">€2.4M</div>
+                  <div className="w-full h-1 bg-white/20 rounded-full overflow-hidden mt-2">
+                    <div className="w-[85%] h-full bg-white rounded-full"></div>
                   </div>
-                  <div className="w-[80%] h-1.5 bg-white/10 rounded-full"></div>
                 </div>
               </motion.div>
 

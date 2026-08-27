@@ -3,19 +3,19 @@ import { motion } from "framer-motion";
 import { benefits } from "@/data/benefits";
 import { Key, TrendingUp, Rocket, Network, Blocks, ShieldCheck, Wallet, Headphones, BrainCircuit, Scale } from "lucide-react";
 
-const getIcon = (iconName: string) => {
+const getIcon = (iconName: string, className: string = "") => {
   switch (iconName) {
-    case "Key": return <Key size={32} className="text-[var(--primary)]" />;
-    case "TrendingUp": return <TrendingUp size={32} className="text-[var(--secondary)]" />;
-    case "Rocket": return <Rocket size={32} className="text-[var(--primary)]" />;
-    case "Network": return <Network size={32} className="text-[var(--secondary)]" />;
-    case "Blocks": return <Blocks size={32} className="text-[var(--primary)]" />;
-    case "ShieldCheck": return <ShieldCheck size={32} className="text-[var(--secondary)]" />;
-    case "Wallet": return <Wallet size={32} className="text-[var(--primary)]" />;
-    case "Headphones": return <Headphones size={32} className="text-[var(--secondary)]" />;
-    case "BrainCircuit": return <BrainCircuit size={32} className="text-[var(--primary)]" />;
-    case "Scale": return <Scale size={32} className="text-[var(--secondary)]" />;
-    default: return <ShieldCheck size={32} className="text-[var(--primary)]" />;
+    case "Key": return <Key size={32} className={className} />;
+    case "TrendingUp": return <TrendingUp size={32} className={className} />;
+    case "Rocket": return <Rocket size={32} className={className} />;
+    case "Network": return <Network size={32} className={className} />;
+    case "Blocks": return <Blocks size={32} className={className} />;
+    case "ShieldCheck": return <ShieldCheck size={32} className={className} />;
+    case "Wallet": return <Wallet size={32} className={className} />;
+    case "Headphones": return <Headphones size={32} className={className} />;
+    case "BrainCircuit": return <BrainCircuit size={32} className={className} />;
+    case "Scale": return <Scale size={32} className={className} />;
+    default: return <ShieldCheck size={32} className={className} />;
   }
 };
 
@@ -32,7 +32,7 @@ export default function BenefitsSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]"
           >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
@@ -83,8 +83,8 @@ export default function BenefitsSection() {
                   {index + 1}
                 </div>
 
-                <div className="w-16 h-16 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 relative z-10 group-hover:scale-110 transition-transform duration-300">
-                  {getIcon(benefit.icon)}
+                <div className="w-16 h-16 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 relative z-10 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-[var(--secondary)] group-hover:to-[var(--primary)] group-hover:border-transparent group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.5)] transition-all duration-300">
+                  {getIcon(benefit.icon, "text-gray-400 group-hover:text-white transition-colors duration-300")}
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-4 relative z-10">{benefit.title}</h3>
@@ -92,7 +92,7 @@ export default function BenefitsSection() {
                 <ul className="space-y-3 relative z-10 mt-auto flex-grow">
                   {benefit.bullets.map((bullet, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] mt-2 flex-shrink-0"></span>
+                      <span className="w-1.5 h-1.5 rotate-45 bg-[var(--primary)] mt-2 flex-shrink-0 group-hover:shadow-[0_0_8px_rgba(var(--primary-rgb),0.8)] transition-shadow duration-300"></span>
                       <span className="text-sm text-gray-400 leading-snug">{bullet}</span>
                     </li>
                   ))}

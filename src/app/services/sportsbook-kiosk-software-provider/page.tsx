@@ -23,7 +23,7 @@ export default function SportsbookKioskProviderPage() {
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-[55%]">
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Self-Service Solutions</span>
                             </div>
@@ -87,7 +87,7 @@ export default function SportsbookKioskProviderPage() {
             <section className="py-24 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                         </div>
@@ -133,9 +133,9 @@ export default function SportsbookKioskProviderPage() {
             <section className="py-24 bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-                            <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                            <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Capabilities</span>
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                            <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Capabilities</span>
                         </div>
                         <h2 className="text-4xl font-bold text-white mb-6">Complete Sportsbook Kiosk Software Solutions</h2>
                         <p className="text-gray-400 mb-4">
@@ -157,15 +157,15 @@ export default function SportsbookKioskProviderPage() {
                             { icon: LayoutDashboard, title: "Centralized Admin Dashboard", desc: "Manage your sportsbook kiosk network from a centralized administrative environment. Operators can monitor kiosk status, configurations, transactions, reports, and operational activity." },
                             { icon: Globe, title: "Remote Kiosk Management", desc: "Manage multiple kiosks without having to configure every terminal individually. Centralized controls help operators maintain consistent configurations across their retail network." }
                         ].map((module, idx) => (
-                            <div key={idx} className="group h-full relative rounded-[2rem] bg-[#121212] border border-white/5 p-8 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] hover:border-[var(--secondary)]/30 transition-all duration-500 overflow-hidden flex flex-col">
+                            <div key={idx} className="group h-full relative rounded-[2rem] bg-[#121212] border border-white/5 p-8 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(var(--primary-rgb),0.1)] hover:border-[var(--primary)]/30 transition-all duration-500 overflow-hidden flex flex-col">
                                 {/* Ambient Glow */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-[var(--secondary)]/0 to-[var(--secondary)]/0 group-hover:from-[var(--secondary)]/5 group-hover:to-transparent transition-colors duration-500"></div>
+                                <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/0 to-[var(--primary)]/0 group-hover:from-[var(--primary)]/5 group-hover:to-transparent transition-colors duration-500"></div>
 
                                 <div className="relative z-10 flex flex-col flex-1">
-                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[var(--secondary)]/20 to-[var(--secondary)]/5 border border-[var(--secondary)]/20 flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 group-hover:rotate-3 group-hover:border-[var(--secondary)]/50 transition-all duration-300">
-                                        <module.icon className="text-[var(--secondary)] drop-shadow-[0_0_10px_rgba(var(--secondary-rgb),0.5)]" size={28} strokeWidth={1.5} />
+                                    <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 shadow-[inset_0_0_20px_rgba(255,255,255,0.02)] group-hover:bg-[var(--primary)]/10 group-hover:scale-110 group-hover:rotate-3 group-hover:border-[var(--primary)]/30 transition-all duration-300">
+                                        <module.icon className="text-[var(--primary)] drop-shadow-[0_0_10px_rgba(var(--primary-rgb),0.5)]" size={28} strokeWidth={1.5} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[var(--secondary)] transition-colors">{module.title}</h3>
+                                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors">{module.title}</h3>
                                     <p className="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors flex-1">{module.desc}</p>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@ export default function SportsbookKioskProviderPage() {
                         
                         {/* Retail Shops */}
                         <div>
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Target Markets</span>
                             </div>
@@ -238,14 +238,14 @@ export default function SportsbookKioskProviderPage() {
                                             <tr key={idx} className="hover:bg-white/[0.06] even:bg-white/[0.01] transition-colors group/row block md:table-row border-b border-white/5 md:border-b-0">
                                                 <td className="px-5 py-3.5 sm:px-6 sm:py-4 border-b md:border-b-0 md:border-r border-white/[0.05] block md:table-cell w-full md:w-1/2">
                                                     <div className="flex items-center gap-3">
-                                                        <CheckCircle2 size={16} strokeWidth={2.5} className="text-[var(--secondary)]/70 group-hover/row:text-[var(--secondary)] group-hover/row:shadow-[0_0_10px_var(--secondary)] transition-all shrink-0 rounded-full" />
+                                                        <CheckCircle2 size={16} strokeWidth={2.5} className="text-[var(--primary)]/70 group-hover/row:text-[var(--primary)] group-hover/row:shadow-[0_0_10px_var(--primary)] transition-all shrink-0 rounded-full" />
                                                         <span className="font-medium group-hover/row:text-white transition-colors">{row[0]}</span>
                                                     </div>
                                                 </td>
                                                 <td className="px-5 py-3.5 sm:px-6 sm:py-4 block md:table-cell w-full md:w-1/2">
                                                     {row[1] && (
                                                         <div className="flex items-center gap-3">
-                                                            <CheckCircle2 size={16} strokeWidth={2.5} className="text-[var(--secondary)]/70 group-hover/row:text-[var(--secondary)] group-hover/row:shadow-[0_0_10px_var(--secondary)] transition-all shrink-0 rounded-full" />
+                                                            <CheckCircle2 size={16} strokeWidth={2.5} className="text-[var(--primary)]/70 group-hover/row:text-[var(--primary)] group-hover/row:shadow-[0_0_10px_var(--primary)] transition-all shrink-0 rounded-full" />
                                                             <span className="font-medium group-hover/row:text-white transition-colors">{row[1]}</span>
                                                         </div>
                                                     )}
@@ -268,9 +268,9 @@ export default function SportsbookKioskProviderPage() {
             <section className="py-24 bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-                            <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                            <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Process</span>
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                            <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Process</span>
                         </div>
                         <h2 className="text-4xl font-bold text-white mb-4">How Our Sportsbook Kiosk Software Works</h2>
                     </div>
@@ -280,7 +280,7 @@ export default function SportsbookKioskProviderPage() {
                         <div className="hidden md:block absolute top-[42px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-transparent via-white/10 to-transparent overflow-hidden">
                             {/* Animated Energy Beam */}
                             <div 
-                                className="absolute top-0 h-full w-[30%] bg-gradient-to-r from-transparent via-[var(--secondary)] to-transparent opacity-60"
+                                className="absolute top-0 h-full w-[30%] bg-gradient-to-r from-transparent via-[var(--primary)] to-transparent opacity-60"
                                 style={{ animation: 'timeline-beam 3s infinite linear' }}
                             ></div>
                         </div>
@@ -302,21 +302,21 @@ export default function SportsbookKioskProviderPage() {
                                 <div key={idx} className="relative group flex flex-col h-full">
                                     {/* Timeline Node */}
                                     <div className="flex justify-center mb-6 relative z-10">
-                                        <div className="w-[84px] h-[84px] rounded-full bg-[#0A0A0A] border border-white/10 flex items-center justify-center group-hover:border-[var(--secondary)]/50 group-hover:shadow-[0_0_20px_rgba(var(--secondary-rgb),0.2)] transition-all duration-500 relative">
-                                            <div className="w-14 h-14 rounded-full bg-white/[0.02] flex items-center justify-center group-hover:bg-[var(--secondary)]/10 transition-colors">
-                                                <span className="text-xl font-black text-gray-400 group-hover:text-[var(--secondary)] transition-colors">0{item.step}</span>
+                                        <div className="w-[84px] h-[84px] rounded-full bg-[#0A0A0A] border border-white/10 flex items-center justify-center group-hover:border-[var(--primary)]/50 group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)] transition-all duration-500 relative">
+                                            <div className="w-14 h-14 rounded-full bg-white/[0.02] flex items-center justify-center group-hover:bg-[var(--primary)]/10 transition-colors">
+                                                <span className="text-xl font-black text-gray-400 group-hover:text-[var(--primary)] transition-colors">0{item.step}</span>
                                             </div>
                                             {/* Glowing pulse on hover */}
-                                            <div className="absolute inset-0 rounded-full bg-[var(--secondary)]/0 group-hover:bg-[var(--secondary)]/10 group-hover:animate-ping opacity-30 duration-1000 pointer-events-none"></div>
+                                            <div className="absolute inset-0 rounded-full bg-[var(--primary)]/0 group-hover:bg-[var(--primary)]/10 group-hover:animate-ping opacity-30 duration-1000 pointer-events-none"></div>
                                         </div>
                                     </div>
                                     
                                     {/* Card Content */}
-                                    <div className="flex-1 bg-[#121212] border border-white/5 rounded-3xl p-6 text-center hover:-translate-y-2 hover:border-[var(--secondary)]/30 hover:shadow-[0_15px_30px_-15px_rgba(var(--secondary-rgb),0.2)] transition-all duration-500 relative overflow-hidden flex flex-col">
+                                    <div className="flex-1 bg-[#121212] border border-white/5 rounded-3xl p-6 text-center hover:-translate-y-2 hover:border-[var(--primary)]/30 hover:shadow-[0_15px_30px_-15px_rgba(var(--primary-rgb),0.2)] transition-all duration-500 relative overflow-hidden flex flex-col">
                                         {/* Ambient Top Glow */}
-                                        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[var(--secondary)]/0 to-transparent group-hover:via-[var(--secondary)]/50 transition-all duration-500"></div>
+                                        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[var(--primary)]/0 to-transparent group-hover:via-[var(--primary)]/50 transition-all duration-500"></div>
                                         
-                                        <h3 className="text-base font-bold text-white mb-3 group-hover:text-[var(--secondary)] transition-colors">{item.title}</h3>
+                                        <h3 className="text-base font-bold text-white mb-3 group-hover:text-[var(--primary)] transition-colors">{item.title}</h3>
                                         <p className="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors flex-1">{item.desc}</p>
                                     </div>
                                 </div>
@@ -397,7 +397,7 @@ export default function SportsbookKioskProviderPage() {
             <section className="py-24 bg-[#0A0A0A] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Features</span>
                         </div>
@@ -452,12 +452,12 @@ export default function SportsbookKioskProviderPage() {
             
             {/* NEW SECTION: Different Environments */}
             <section className="py-24 bg-[#121212] border-t border-white/5 relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[var(--secondary)]/5 to-transparent pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/5 to-transparent pointer-events-none"></div>
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-                            <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                            <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Environments</span>
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                            <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Environments</span>
                         </div>
                         <h2 className="text-4xl font-bold text-white mb-6">Kiosk Software Provider for Different Betting Environments</h2>
                     </div>
@@ -469,21 +469,21 @@ export default function SportsbookKioskProviderPage() {
                             { title: "Gaming & Entertainment Venues", desc: "Where permitted, deploy branded sportsbook kiosks within suitable entertainment environments.", icon: Layers },
                             { title: "Large-Scale Kiosk Networks", desc: "Use centralized monitoring, reporting, and configuration tools to manage sportsbook kiosks across multiple locations.", icon: Globe }
                         ].map((item, idx) => (
-                            <div key={idx} className="group relative rounded-3xl p-[1px] bg-white/5 hover:bg-gradient-to-br hover:from-[var(--secondary)] hover:to-[var(--secondary)]/10 transition-all duration-700 hover:shadow-[0_0_40px_rgba(var(--secondary-rgb),0.15)] hover:-translate-y-2 cursor-default">
+                            <div key={idx} className="group relative rounded-3xl p-[1px] bg-white/5 hover:bg-gradient-to-br hover:from-[var(--primary)] hover:to-[var(--primary)]/10 transition-all duration-700 hover:shadow-[0_0_40px_rgba(var(--primary-rgb),0.15)] hover:-translate-y-2 cursor-default">
                                 {/* Inner Card Container */}
                                 <div className="bg-[#0A0A0A] rounded-[23px] h-full p-8 md:p-10 relative overflow-hidden z-10 flex flex-col justify-between">
                                     
                                     {/* Massive Watermark Icon */}
-                                    <div className="absolute -top-6 -right-6 text-white/5 group-hover:text-[var(--secondary)]/5 group-hover:scale-125 transition-all duration-700 pointer-events-none group-hover:rotate-12">
+                                    <div className="absolute -top-6 -right-6 text-white/5 group-hover:text-[var(--primary)]/5 group-hover:scale-125 transition-all duration-700 pointer-events-none group-hover:rotate-12">
                                         <item.icon size={160} strokeWidth={1} />
                                     </div>
                                     
                                     <div className="relative z-20">
-                                        <div className="w-16 h-16 rounded-2xl bg-[var(--secondary)]/5 border border-[var(--secondary)]/20 flex items-center justify-center mb-8 group-hover:bg-[var(--secondary)] group-hover:border-[var(--secondary)] transition-all duration-500 shadow-lg">
-                                            <item.icon className="text-[var(--secondary)] group-hover:text-black transition-colors duration-500" size={28} strokeWidth={1.5} />
+                                        <div className="w-16 h-16 rounded-2xl bg-[var(--primary)]/5 border border-[var(--primary)]/20 flex items-center justify-center mb-8 group-hover:bg-[var(--primary)] group-hover:border-[var(--primary)] transition-all duration-500 shadow-lg">
+                                            <item.icon className="text-[var(--primary)] group-hover:text-black transition-colors duration-500" size={28} strokeWidth={1.5} />
                                         </div>
                                         
-                                        <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--secondary)] transition-colors duration-500">{item.title}</h3>
+                                        <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors duration-500">{item.title}</h3>
                                         <p className="text-[16px] text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">{item.desc}</p>
                                     </div>
                                 </div>

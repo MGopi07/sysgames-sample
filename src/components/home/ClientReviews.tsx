@@ -104,7 +104,7 @@ export default function ClientReviews() {
               >
                 <Quote size={40} className="text-white/5 absolute top-6 right-6" />
                 
-                <div className="inline-flex px-3 py-1 rounded-full bg-[var(--secondary)]/10 text-[var(--secondary)] text-xs font-semibold mb-6 border border-[var(--secondary)]/20 uppercase tracking-wide self-start">
+                <div className="inline-flex px-3 py-1 rounded-full bg-white/5 text-white text-xs font-semibold mb-6 border border-white/10 uppercase tracking-wide self-start">
                   {testimonial.service}
                 </div>
                 

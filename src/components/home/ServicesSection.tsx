@@ -143,7 +143,7 @@ function CircularNodes({ progress, total }: { progress: any, total: number }) {
             <img
               src={`/images/${services[i].id}.png`}
               alt=""
-              className="absolute inset-0 w-full h-full object-cover z-10 opacity-70 group-hover:opacity-100 transition-opacity duration-500"
+              className="absolute inset-0 w-full h-full object-cover z-10 opacity-70 group-hover:opacity-100 transition-all duration-500 hue-rotate-[250deg] saturate-150"
               onError={(e) => { e.currentTarget.style.display = 'none'; }}
             />
 
@@ -210,7 +210,7 @@ function CenterServiceCard({ service, index, total, progress }: any) {
             <img
               src={`/images/${service.id}.png`}
               alt={service.heading}
-              className="absolute inset-0 w-full h-full object-cover z-0 opacity-70 group-hover:opacity-100 transition-opacity duration-500"
+              className="absolute inset-0 w-full h-full object-cover z-0 opacity-70 group-hover:opacity-100 transition-all duration-500 hue-rotate-[250deg] saturate-150"
               onError={(e) => { e.currentTarget.style.display = 'none'; }}
             />
 
@@ -248,10 +248,16 @@ function CenterServiceCard({ service, index, total, progress }: any) {
             </ul>
 
             <div className="pt-2 lg:pt-4">
-              <Link href={service.link || "#contact"} className="inline-flex items-center px-4 py-2 lg:px-6 lg:py-3 rounded-full bg-[var(--primary)] text-[var(--btn-text)] text-xs lg:text-base font-bold hover:brightness-110 transition-all duration-300 group shadow-[0_0_15px_rgba(var(--primary-rgb),0.3)]">
-                {service.cta}
-                <span className="ml-2 flex items-center justify-center group-hover:translate-x-1 transition-transform duration-300">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+              <Link href={service.link || "#contact"} className="relative inline-flex items-center justify-center px-6 py-2.5 lg:px-8 lg:py-3.5 overflow-hidden font-bold text-white rounded-full group bg-white/5 border border-white/10 hover:border-[var(--primary)]/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)] hover:-translate-y-1 text-xs lg:text-sm">
+                {/* Expanding Background from Center */}
+                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 transition-all duration-500 ease-out bg-gradient-to-r from-[var(--secondary)] to-[var(--primary)] rounded-full group-hover:w-64 group-hover:h-64 opacity-0 group-hover:opacity-100"></span>
+
+                {/* Content */}
+                <span className="relative z-10 flex items-center group-hover:text-white transition-colors">
+                  {service.cta}
+                  <span className="ml-2 flex items-center justify-center group-hover:translate-x-1 transition-transform duration-300">
+                    <svg className="w-4 h-4 lg:w-4 lg:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+                  </span>
                 </span>
               </Link>
             </div>

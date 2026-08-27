@@ -164,7 +164,7 @@ export default function RetailBettingShopProviderPage() {
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-1/2">
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Premium Technology</span>
                             </div>
@@ -225,7 +225,7 @@ export default function RetailBettingShopProviderPage() {
             <section className="py-24 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                         </div>
@@ -265,9 +265,9 @@ export default function RetailBettingShopProviderPage() {
             <section className="py-24 bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-4xl mx-auto mb-20">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6 shadow-[0_0_15px_rgba(var(--secondary-rgb),0.1)]">
-                            <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                            <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Platform Ecosystem</span>
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6 shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
+                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                            <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Platform Ecosystem</span>
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">Retail Betting Shop Software</h2>
                         <p className="text-gray-400 text-lg leading-relaxed">
@@ -276,23 +276,23 @@ export default function RetailBettingShopProviderPage() {
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {modulesData.map((mod, idx) => (
-                            <div key={idx} className="group relative bg-[#0D0D0D] border border-white/5 rounded-[2rem] p-8 lg:p-10 overflow-hidden hover:bg-[#111] transition-all duration-500 flex flex-col h-full shadow-lg hover:shadow-2xl hover:border-[var(--secondary)]/30">
+                            <div key={idx} className="group relative bg-[#0D0D0D] border border-white/5 rounded-[2rem] p-8 lg:p-10 overflow-hidden hover:bg-[#111] transition-all duration-500 flex flex-col h-full shadow-lg hover:shadow-2xl hover:border-[var(--primary)]/30">
 
                                 {/* Bottom right abstract number */}
-                                <div className="absolute -bottom-8 -right-6 text-[10rem] font-black text-white/[0.02] pointer-events-none group-hover:text-[var(--secondary)]/[0.03] transition-colors duration-500 leading-none select-none z-0">
+                                <div className="absolute -bottom-8 -right-6 text-[10rem] font-black text-white/[0.02] pointer-events-none group-hover:text-[var(--primary)]/[0.05] transition-colors duration-500 leading-none select-none z-0">
                                     {(idx + 1).toString().padStart(2, '0')}
                                 </div>
 
                                 {/* Hover Glow */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-[var(--secondary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"></div>
+                                <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"></div>
 
                                 <div className="relative z-10 flex flex-col h-full">
                                     {/* Header */}
                                     <div className="flex items-center gap-5 mb-8">
-                                        <div className="w-14 h-14 rounded-2xl bg-[#1A1A1A] border border-white/5 flex items-center justify-center text-[var(--secondary)] group-hover:scale-110 group-hover:bg-[var(--secondary)]/10 transition-all shadow-md shrink-0">
+                                        <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[var(--primary)] group-hover:scale-110 group-hover:bg-[var(--primary)]/20 transition-all shadow-[inset_0_0_20px_rgba(255,255,255,0.02)] shrink-0">
                                             <mod.icon size={24} strokeWidth={2} />
                                         </div>
-                                        <h3 className="text-2xl font-bold text-white group-hover:text-[var(--secondary)] transition-colors leading-tight">{mod.title}</h3>
+                                        <h3 className="text-2xl font-bold text-white group-hover:text-[var(--primary)] transition-colors leading-tight">{mod.title}</h3>
                                     </div>
 
                                     {/* Intro */}
@@ -303,15 +303,15 @@ export default function RetailBettingShopProviderPage() {
                                     </div>
 
                                     {/* Features Box */}
-                                    <div className="mb-8 mt-auto bg-black/40 border border-white/5 rounded-2xl p-6 backdrop-blur-sm group-hover:border-white/10 transition-colors">
+                                    <div className="mb-8 mt-auto bg-black/40 border border-white/5 rounded-2xl p-6 backdrop-blur-sm group-hover:border-[var(--primary)]/20 transition-colors">
                                         <h4 className="text-[11px] font-bold text-white/50 uppercase tracking-[0.2em] mb-5">Included Features</h4>
                                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6">
                                             {mod.features.map((f, i) => (
                                                 <li key={i} className="flex items-start gap-2.5 text-[13px] text-gray-300">
-                                                    <div className="w-4 h-4 rounded-full bg-[var(--secondary)]/10 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[var(--secondary)]/20 transition-colors">
-                                                        <div className="w-1.5 h-1.5 rounded-full bg-[var(--secondary)]"></div>
+                                                    <div className="w-4 h-4 rounded-full bg-[var(--primary)]/20 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[var(--primary)]/40 transition-colors">
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] shadow-[0_0_8px_rgba(var(--primary-rgb),0.8)]"></div>
                                                     </div>
-                                                    <span className="leading-snug">{f}</span>
+                                                    <span className="leading-snug group-hover:text-white transition-colors">{f}</span>
                                                 </li>
                                             ))}
                                         </ul>
@@ -319,7 +319,7 @@ export default function RetailBettingShopProviderPage() {
 
                                     {/* Outro */}
                                     <div className="pt-6 border-t border-white/5 mt-auto">
-                                        <p className="text-gray-400 font-medium text-[14px] leading-relaxed border-l-2 border-[var(--secondary)]/30 pl-4 group-hover:border-[var(--secondary)] transition-colors">{mod.outro}</p>
+                                        <p className="text-gray-400 font-medium text-[14px] leading-relaxed border-l-2 border-[var(--primary)]/40 pl-4 group-hover:border-[var(--primary)] transition-colors">{mod.outro}</p>
                                     </div>
                                 </div>
                             </div>
@@ -331,7 +331,7 @@ export default function RetailBettingShopProviderPage() {
             <section className="py-24 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Workflow</span>
                         </div>
@@ -409,7 +409,7 @@ export default function RetailBettingShopProviderPage() {
 
                         {/* Left Side: Container that sticks */}
                         <div className="lg:col-span-5 lg:sticky lg:top-[15vh] flex flex-col justify-start">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
                                 <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--primary)]"></span>

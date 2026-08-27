@@ -23,7 +23,7 @@ export default function OnlineCasinoGameDevPage() {
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-[55%] lg:pr-8">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Expert Game Studio</span>
                             </div>
@@ -93,7 +93,7 @@ export default function OnlineCasinoGameDevPage() {
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-1/2">
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Bespoke Solutions</span>
                             </div>
@@ -147,9 +147,9 @@ export default function OnlineCasinoGameDevPage() {
             <section className="py-24">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-                            <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                            <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Game Formats</span>
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                            <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Game Formats</span>
                         </div>
                         <h2 className="text-4xl font-bold text-white mb-6">Our Game Development Expertise</h2>
                         <p className="text-gray-400">We develop diverse, high-performance gaming portfolios across all major casino categories.</p>
@@ -259,7 +259,7 @@ export default function OnlineCasinoGameDevPage() {
             <section className="py-20 bg-[#121212]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Core Disciplines</span>
                         </div>
@@ -377,9 +377,9 @@ export default function OnlineCasinoGameDevPage() {
             <section className="py-24 relative bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-                            <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                            <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Workflow</span>
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                            <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Workflow</span>
                         </div>
                         <h2 className="text-4xl font-bold text-white mb-4">Our Game Development Process</h2>
                         <p className="text-gray-400">A structured workflow to move ideas from concept to deployment.</p>
@@ -425,7 +425,7 @@ export default function OnlineCasinoGameDevPage() {
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Post-Production</span>
                         </div>
@@ -497,7 +497,7 @@ export default function OnlineCasinoGameDevPage() {
 
                         {/* Left Side: Container that sticks */}
                         <div className="lg:col-span-5 lg:sticky lg:top-[15vh] flex flex-col justify-start">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
                                 <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--primary)]"></span>

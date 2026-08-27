@@ -24,7 +24,7 @@ export default function WhiteLabelPage() {
                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                         {/* Left Content */}
                         <div className="lg:w-1/2">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Premium Solutions</span>
                             </div>
@@ -135,7 +135,7 @@ export default function WhiteLabelPage() {
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
                         <div className="lg:w-1/2">
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Why Choose Us</span>
                             </div>
@@ -241,9 +241,9 @@ export default function WhiteLabelPage() {
             <section className="py-24">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-                            <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                            <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Core Features</span>
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                            <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Core Features</span>
                         </div>
                         <h2 className="text-4xl font-bold text-white mb-6">What's Included in Our Solutions?</h2>
                         <p className="text-gray-400">Everything you need to launch and operate a successful iGaming platform under one unified environment.</p>
@@ -311,7 +311,7 @@ export default function WhiteLabelPage() {
             <section className="py-20 bg-[#121212]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center mb-12">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Business Models</span>
                         </div>
@@ -340,20 +340,20 @@ export default function WhiteLabelPage() {
                                 
                                 {/* Base Image */}
                                 <div
-                                    className="absolute inset-0 bg-cover bg-center transition-all duration-700 lg:group-hover:scale-110 lg:group-hover:blur-[2px] peer-checked:scale-110 peer-checked:blur-[2px]"
+                                    className="absolute inset-0 bg-cover bg-center transition-all duration-700 scale-110 blur-[2px] lg:scale-100 lg:blur-none lg:group-hover:scale-110 lg:group-hover:blur-[2px] peer-checked:scale-110 peer-checked:blur-[2px] hue-rotate-[250deg] saturate-150"
                                     style={{ backgroundImage: `url(${model.image})` }}
                                 ></div>
 
                                 {/* Overlay gradient */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent opacity-80 lg:group-hover:opacity-95 peer-checked:opacity-95 transition-opacity duration-500 pointer-events-none"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent opacity-95 lg:opacity-80 lg:group-hover:opacity-95 peer-checked:opacity-95 transition-opacity duration-500 pointer-events-none"></div>
 
                                 {/* Content container */}
                                 <div className="absolute inset-0 flex flex-col justify-end p-6 pointer-events-none">
-                                    <div className="transform translate-y-8 lg:group-hover:translate-y-0 peer-checked:translate-y-0 transition-transform duration-500 ease-out">
+                                    <div className="transform translate-y-0 lg:translate-y-8 lg:group-hover:translate-y-0 peer-checked:translate-y-0 transition-transform duration-500 ease-out">
                                         <h3 className="text-2xl font-bold text-white drop-shadow-md leading-tight">{model.title}</h3>
 
                                         {/* Description that reveals on hover or tap */}
-                                        <div className="grid grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] peer-checked:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out">
+                                        <div className="grid grid-rows-[1fr] lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] peer-checked:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out">
                                             <div className="overflow-hidden">
                                                 <div className="pt-3">
                                                     <p className="text-gray-300 text-sm leading-relaxed">
@@ -366,7 +366,7 @@ export default function WhiteLabelPage() {
                                 </div>
 
                                 {/* Decorative Top Line */}
-                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-accent opacity-0 lg:group-hover:opacity-100 peer-checked:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-accent opacity-100 lg:opacity-0 lg:group-hover:opacity-100 peer-checked:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             </label>
                         ))}
                     </div>
@@ -376,9 +376,9 @@ export default function WhiteLabelPage() {
             <section className="py-24 relative bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-                            <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                            <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Workflow</span>
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                            <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Workflow</span>
                         </div>
                         <h2 className="text-4xl font-bold text-white mb-4">The Launch Process</h2>
                         <p className="text-gray-400 max-w-2xl mx-auto">A streamlined, transparent, and proven methodology to get your custom iGaming brand to market quickly.</p>
@@ -425,7 +425,7 @@ export default function WhiteLabelPage() {
 
                         {/* Left Side: Container that sticks */}
                         <div className="lg:col-span-5 lg:sticky lg:top-[15vh] flex flex-col justify-start">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
                                 <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--primary)]"></span>

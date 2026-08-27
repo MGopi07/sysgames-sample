@@ -24,7 +24,7 @@ export default function CasinoGameAggregationPage() {
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-[55%]">
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">One Integration. Thousands of Games.</span>
                             </div>
@@ -173,9 +173,9 @@ export default function CasinoGameAggregationPage() {
             <section className="py-24 bg-[#0A0A0A] relative overflow-hidden">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-                            <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                            <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Capabilities</span>
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                            <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Capabilities</span>
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">
                             What Does Our Aggregation <br className="hidden lg:block" />
@@ -361,7 +361,7 @@ export default function CasinoGameAggregationPage() {
                     {/* Casino Game Aggregation API */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Connectivity</span>
                             </div>
@@ -501,7 +501,7 @@ export default function CasinoGameAggregationPage() {
                         
                         {/* Left Side: Benefits */}
                         <div>
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                             </div>
@@ -574,7 +574,7 @@ export default function CasinoGameAggregationPage() {
             <section className="py-24 bg-[#0A0A0A] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Workflow</span>
                         </div>
@@ -607,7 +607,7 @@ export default function CasinoGameAggregationPage() {
                 <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                         </div>
@@ -624,9 +624,9 @@ export default function CasinoGameAggregationPage() {
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-16 items-start">
                         <div className="lg:w-1/3 lg:sticky lg:top-32 relative">
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-                                <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-                                <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Scalability</span>
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                                <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+                                <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Scalability</span>
                             </div>
                             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Built for Different Business Models</h2>
                             <p className="text-gray-400 leading-relaxed mb-12">
@@ -704,7 +704,7 @@ export default function CasinoGameAggregationPage() {
                         
                         {/* Left Side: Container that sticks */}
                         <div className="lg:col-span-5 lg:sticky lg:top-[15vh] flex flex-col justify-start">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
                                 <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--primary)]"></span>

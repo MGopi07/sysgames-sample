@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen pt-40 pb-20 px-6 bg-[#0A0A0A]">
       <div className="container mx-auto max-w-4xl text-center">
-        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">About SysGames</span>
         </div>

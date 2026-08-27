@@ -102,7 +102,7 @@ export default function CasinoPlatformDevPage() {
 
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">The Edge</span>
             </div>
@@ -228,9 +228,9 @@ export default function CasinoPlatformDevPage() {
       <section className="py-24 border-t border-white/5 bg-[#0A0A0A]">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center max-w-4xl mx-auto mb-16 relative z-10">
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/10 backdrop-blur-sm mb-6">
-              <span className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse"></span>
-              <span className="text-sm font-bold text-[var(--secondary)] tracking-widest uppercase">Comprehensive Capabilities</span>
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+              <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
+              <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Comprehensive Capabilities</span>
             </div>
             <h2 className="text-4xl lg:text-6xl font-black text-white mb-6">Comprehensive Casino Platform Capabilities</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
@@ -250,7 +250,7 @@ export default function CasinoPlatformDevPage() {
               },
               {
                 title: "Online Casino Platform Development",
-                icon: <Globe size={28} className="text-[var(--secondary)]" />,
+                icon: <Globe size={28} className="text-[var(--primary)]" />,
                 desc: "Our casino platform development company creates online casino technology designed to bring games, players, payments, and administration together in one environment. The platform can be structured around your preferred casino products and target audience.",
                 features: ["Casino lobby", "Game categories", "Search and filtering", "Player registration", "Player wallet", "Deposit and withdrawal functionality", "Bonuses", "Promotions", "Player profiles", "Game history", "Transaction history", "Reporting", "Back-office management"],
                 extraTitle: "The Online Advantage",
@@ -266,7 +266,7 @@ export default function CasinoPlatformDevPage() {
               },
               {
                 title: "Casino Wallet Development",
-                icon: <Coins size={28} className="text-[var(--secondary)]" />,
+                icon: <Coins size={28} className="text-[var(--primary)]" />,
                 desc: "Our casino platform development company can develop wallet functionality for managing player balances and supported transactions. The wallet can be connected to payment providers and other platform modules to create a streamlined financial workflow.",
                 features: ["Player balance management", "Deposit management", "Withdrawal management", "Transaction history", "Multiple currency support", "Wallet reporting", "Payment status tracking", "Bonus balance management", "Transaction controls"],
                 extraTitle: "The Wallet Advantage",
@@ -282,7 +282,7 @@ export default function CasinoPlatformDevPage() {
               },
               {
                 title: "Casino Game Integration",
-                icon: <Settings size={28} className="text-[var(--secondary)]" />,
+                icon: <Settings size={28} className="text-[var(--primary)]" />,
                 desc: "A casino platform needs an engaging and diverse content library. Our casino platform development company can integrate casino games from supported providers and aggregators.",
                 features: ["Slots", "Table games", "Roulette", "Blackjack", "Baccarat", "Poker", "Live casino", "Crash games", "Arcade games", "Instant games", "Specialty games"],
                 extraTitle: "The Gaming Advantage",
@@ -298,7 +298,7 @@ export default function CasinoPlatformDevPage() {
               },
               {
                 title: "Live Casino Platform Development",
-                icon: <Users size={28} className="text-[var(--secondary)]" />,
+                icon: <Users size={28} className="text-[var(--primary)]" />,
                 desc: "Live casino provides players with an interactive experience through live dealer games and real-time gameplay. Our casino platform development company can integrate supported live casino technologies and game providers into the casino environment.",
                 features: ["Live Blackjack", "Live Roulette", "Live Baccarat", "Game shows", "Multiple table options", "Live dealer interfaces", "Real-time game information", "Responsive gameplay"],
                 extraTitle: "The Live Advantage",
@@ -314,7 +314,7 @@ export default function CasinoPlatformDevPage() {
               },
               {
                 title: "Casino Bonus Management",
-                icon: <Gift size={28} className="text-[var(--secondary)]" />,
+                icon: <Gift size={28} className="text-[var(--primary)]" />,
                 desc: "Our casino platform development company can provide bonus and promotional management tools for creating configurable campaigns. Operators can configure promotional mechanics according to their business strategy and applicable market requirements.",
                 features: ["Welcome bonuses", "Deposit promotions", "Free spins", "Loyalty rewards", "Promotional campaigns", "Player-specific offers", "Bonus rules", "Campaign tracking", "Reward management"],
                 extraTitle: "The Bonus Advantage",
@@ -330,7 +330,7 @@ export default function CasinoPlatformDevPage() {
               },
               {
                 title: "Casino Back-Office Development",
-                icon: <Settings size={28} className="text-[var(--secondary)]" />,
+                icon: <Settings size={28} className="text-[var(--primary)]" />,
                 desc: "A powerful back office allows operators to manage casino operations from a centralized environment. Our casino platform development company develops administrative functionality managing players, games, payments, bonuses, content, reports, and platform settings.",
                 features: ["Player management", "Game management", "Provider management", "Payment management", "Bonus management", "Content management", "Reporting", "User permissions", "Configuration tools", "Operational dashboards"],
                 extraTitle: "The Back-Office Advantage",
@@ -346,7 +346,7 @@ export default function CasinoPlatformDevPage() {
               },
               {
                 title: "White Label Casino Platform",
-                icon: <Settings size={28} className="text-[var(--secondary)]" />,
+                icon: <Settings size={28} className="text-[var(--primary)]" />,
                 desc: "A white-label casino platform provides businesses with pre-developed technology that can be customized with their own branding and selected features. Our casino platform development company can provide customizable white-label casino solutions for your route to market.",
                 features: ["Custom branding", "Casino frontend", "Game library", "PAM", "Wallet", "Payment integration", "CRM", "Bonuses", "Analytics", "Back office", "Mobile compatibility"],
                 extraTitle: "The White-Label Advantage",
@@ -362,7 +362,7 @@ export default function CasinoPlatformDevPage() {
               },
               {
                 title: "Casino Platform Security",
-                icon: <ShieldCheck size={28} className="text-[var(--secondary)]" />,
+                icon: <ShieldCheck size={28} className="text-[var(--primary)]" />,
                 desc: "Security should be incorporated throughout the casino platform architecture. Our casino platform development company uses security-focused development practices and technologies to help protect the platform and player information.",
                 features: ["Data encryption", "Secure authentication", "Access controls", "API security", "Transaction monitoring", "Anti-fraud functionality", "Administrative permissions", "Activity monitoring", "Secure infrastructure"],
                 extraTitle: "The Security Advantage",
@@ -375,7 +375,7 @@ export default function CasinoPlatformDevPage() {
 
                 <div className="p-8 md:p-10 flex-1 flex flex-col relative z-10">
                   <div className="flex items-center gap-5 mb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-[#121212] border border-white/10 flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/5 transition-all duration-500 shrink-0">
+                    <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 transition-all duration-500 shrink-0 shadow-[inset_0_0_20px_rgba(255,255,255,0.02)]">
                       {section.icon}
                     </div>
                     <h3 className="text-2xl font-bold text-white group-hover:text-[var(--primary)] transition-colors duration-300">
@@ -387,16 +387,15 @@ export default function CasinoPlatformDevPage() {
                     {section.desc}
                   </p>
 
-                  {/* Glassmorphic Feature Block */}
                   {section.features && (
-                    <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 backdrop-blur-sm">
-                      <h4 className="text-[11px] font-black text-gray-500 uppercase tracking-widest mb-5 flex items-center gap-2">
-                        <Settings size={14} className="text-gray-500 group-hover:text-[var(--primary)] transition-colors duration-300 animate-[spin_10s_linear_infinite]" /> Key Features
+                    <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 backdrop-blur-sm hover:border-[var(--primary)]/20 transition-colors duration-500">
+                      <h4 className="text-[11px] font-black text-[var(--primary)] uppercase tracking-widest mb-5 flex items-center gap-2 drop-shadow-[0_0_10px_rgba(var(--primary-rgb),0.3)]">
+                        <Settings size={14} className="text-[var(--primary)] transition-colors duration-300 animate-[spin_10s_linear_infinite]" /> Key Features
                       </h4>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         {section.features.map((f, i) => (
                           <li key={i} className="flex items-start gap-3 text-sm text-gray-300 group/item">
-                            <span className="w-1.5 h-1.5 rounded-full bg-gray-700 group-hover/item:bg-[var(--primary)] mt-1.5 shrink-0 transition-colors"></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/50 group-hover/item:bg-[var(--primary)] group-hover/item:shadow-[0_0_8px_rgba(var(--primary-rgb),0.8)] mt-1.5 shrink-0 transition-all duration-300"></span>
                             <span className="group-hover/item:text-white transition-colors">{f}</span>
                           </li>
                         ))}
@@ -431,7 +430,7 @@ export default function CasinoPlatformDevPage() {
 
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-20">
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6">
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Methodology</span>
             </div>
@@ -541,14 +540,12 @@ export default function CasinoPlatformDevPage() {
                 ].map((benefit, idx) => (
                 <div
                     key={idx}
-                    className="group bg-[#0A0A0A] hover:bg-[#111111] py-4 px-6 flex items-center gap-4 transition-colors duration-300"
+                    className="group bg-[#0A0A0A] hover:bg-white/[0.02] py-5 px-6 flex items-center gap-4 transition-all duration-300"
                 >
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] p-[1px] shrink-0">
-                    <div className="w-full h-full bg-[#121212] rounded-[11px] flex items-center justify-center group-hover:bg-transparent transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-xl bg-[var(--primary)]/10 border border-[var(--primary)]/20 flex items-center justify-center shrink-0 group-hover:bg-[var(--primary)] group-hover:border-[var(--primary)] group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.4)] transition-all duration-500">
                         <CheckCircle2 size={18} className="text-[var(--primary)] group-hover:text-black transition-colors duration-300" />
                     </div>
-                    </div>
-                    <span className="text-[15px] font-bold text-white tracking-wide">
+                    <span className="text-[15px] font-medium text-gray-300 group-hover:text-white tracking-wide transition-colors duration-300">
                     {benefit}
                     </span>
                 </div>
@@ -611,9 +608,6 @@ export default function CasinoPlatformDevPage() {
         </div>
 
         <div className="relative flex flex-col gap-5 marquee-hover py-4">
-          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#121212] to-transparent z-10"></div>
-          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#121212] to-transparent z-10"></div>
-
           <div className="flex w-max animate-marquee gap-5">
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex gap-5">
@@ -621,7 +615,7 @@ export default function CasinoPlatformDevPage() {
                   "Custom casino platform development", "Game aggregation", "Online casino software", "PAM", "Player wallets",
                   "Payment integration", "CRM", "Bonus management"
                 ].map((tag, idx) => (
-                  <span key={idx} className="px-8 py-4 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/5 text-lg text-white font-bold hover:border-[var(--primary)]/50 hover:bg-[var(--primary)]/20 transition-all cursor-default shadow-[0_0_15px_rgba(var(--primary-rgb),0.05)] hover:shadow-[0_0_25px_rgba(var(--primary-rgb),0.2)] whitespace-nowrap">
+                  <span key={idx} className="px-8 py-3.5 rounded-full border border-white/5 bg-[#121212] text-[15px] text-gray-400 font-medium hover:border-[var(--primary)]/40 hover:bg-[#1A1A1A] hover:text-white transition-all duration-500 cursor-default whitespace-nowrap hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.15)]">
                     {tag}
                   </span>
                 ))}
@@ -635,7 +629,7 @@ export default function CasinoPlatformDevPage() {
                   "Live casino integration", "Analytics", "Back-office management",
                   "Mobile optimization", "API integrations", "Scalable architecture", "Security-focused technology"
                 ].map((tag, idx) => (
-                  <span key={idx} className="px-8 py-4 rounded-full border border-[var(--secondary)]/20 bg-[var(--secondary)]/5 text-lg text-white font-bold hover:border-[var(--secondary)]/50 hover:bg-[var(--secondary)]/20 transition-all cursor-default shadow-[0_0_15px_rgba(var(--secondary-rgb),0.05)] hover:shadow-[0_0_25px_rgba(var(--secondary-rgb),0.2)] whitespace-nowrap">
+                  <span key={idx} className="px-8 py-3.5 rounded-full border border-white/5 bg-[#121212] text-[15px] text-gray-400 font-medium hover:border-[var(--primary)]/40 hover:bg-[#1A1A1A] hover:text-white transition-all duration-500 cursor-default whitespace-nowrap hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.15)]">
                     {tag}
                   </span>
                 ))}
@@ -658,7 +652,7 @@ export default function CasinoPlatformDevPage() {
 
             {/* Left Side: Container that sticks */}
             <div className="lg:col-span-5 lg:sticky lg:top-[15vh] flex flex-col justify-start">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 backdrop-blur-sm mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--primary)]"></span>

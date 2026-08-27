@@ -4,7 +4,7 @@ import { Globe, Briefcase, Mail, ChevronRight } from "lucide-react";
 const FooterLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
   <li>
     <Link href={href} className="group flex items-center gap-2 text-sm text-gray-400 hover:text-[var(--primary)] transition-all duration-300 hover:translate-x-2">
-      <ChevronRight size={14} className="text-[var(--secondary)]/50 group-hover:text-[var(--primary)] transition-colors flex-shrink-0" />
+      <ChevronRight size={14} className="text-[var(--primary)]/70 group-hover:text-[var(--primary)] transition-colors flex-shrink-0" />
       <span>{children}</span>
     </Link>
   </li>
@@ -25,7 +25,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center font-bold text-[var(--btn-text)] shadow-[0_0_15px_rgba(var(--secondary-rgb),0.5)]">
                 S
               </div>
-              <span className="font-bold text-xl tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-accent transition-all uppercase">SYSGAMES</span>
+              <span className="font-bold text-xl tracking-tight text-white uppercase">SYSGAMES</span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Global B2B technology company providing premium iGaming software solutions built for scalability, security, and exceptional user experiences.

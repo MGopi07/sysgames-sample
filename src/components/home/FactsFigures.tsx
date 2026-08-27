@@ -54,7 +54,7 @@ const Counter = ({ value, label }: { value: string, label: string }) => {
     <div ref={ref} className="py-4 lg:py-6 px-4 relative group flex flex-col items-center justify-center text-center h-full cursor-default">
       {/* Floating Icon */}
       <div className="mb-6 transform group-hover:-translate-y-2 group-hover:scale-110 transition-all duration-500 relative z-10">
-        {getIcon(label, "text-gray-600 group-hover:text-[var(--primary)] transition-colors duration-500 drop-shadow-[0_0_0_rgba(var(--primary-rgb),0)] group-hover:drop-shadow-[0_0_15px_rgba(var(--primary-rgb),0.6)]")}
+        {getIcon(label, "text-[var(--secondary)] group-hover:text-[var(--primary)] transition-colors duration-500 drop-shadow-[0_0_0_rgba(var(--primary-rgb),0)] group-hover:drop-shadow-[0_0_15px_rgba(var(--primary-rgb),0.6)]")}
       </div>
       
       <div className="relative z-10 transform group-hover:-translate-y-1 transition-transform duration-500">
