@@ -42,18 +42,18 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8">
-          <Link href="/" className={`relative text-sm font-medium transition-colors py-2 group ${pathname === '/' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
+          <Link href="/" className={`relative text-base font-medium transition-colors py-2 group ${pathname === '/' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
             Home
             <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left ${pathname === '/' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
           </Link>
 
-          <Link href="/about" className={`relative text-sm font-medium transition-colors py-2 group ${pathname === '/about' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
+          <Link href="/about" className={`relative text-base font-medium transition-colors py-2 group ${pathname === '/about' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
             About
             <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left ${pathname === '/about' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
           </Link>
 
           <div className="relative" onMouseEnter={() => setIsServicesOpen(true)} onMouseLeave={() => setIsServicesOpen(false)}>
-            <button onClick={() => setIsServicesOpen(!isServicesOpen)} className={`relative flex items-center gap-1 text-sm font-medium transition-colors py-2 group outline-none ${pathname?.startsWith('/services') ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
+            <button onClick={() => setIsServicesOpen(!isServicesOpen)} className={`relative flex items-center gap-1 text-base font-medium transition-colors py-2 group outline-none ${pathname?.startsWith('/services') ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
               Services <ChevronDown size={14} className={`transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
               <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left ${pathname?.startsWith('/services') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
             </button>
@@ -85,12 +85,12 @@ export default function Header() {
             </AnimatePresence>
           </div>
 
-          <Link href="/blog" className={`relative text-sm font-medium transition-colors py-2 group ${pathname === '/blog' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
+          <Link href="/blog" className={`relative text-base font-medium transition-colors py-2 group ${pathname === '/blog' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
             Blog
             <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left ${pathname === '/blog' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
           </Link>
 
-          <Link href="/contact" className={`relative text-sm font-medium transition-colors py-2 group ${pathname === '/contact' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
+          <Link href="/contact" className={`relative text-base font-medium transition-colors py-2 group ${pathname === '/contact' ? 'text-[var(--primary)]' : 'text-white hover:text-[var(--primary)]'}`}>
             Contact Us
             <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[var(--primary)] transition-transform duration-300 origin-left ${pathname === '/contact' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
           </Link>
