@@ -471,14 +471,14 @@ export default function CasinoPlatformDevPage() {
                 </div>
 
                 {/* EXPANDED STATE */}
-                <div className="absolute inset-0 p-6 xl:p-8 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100 z-20 w-full min-w-[300px] pr-6">
-                  <div className="transform -translate-y-6 group-hover:translate-y-0 transition-transform duration-700 ease-out">
+                <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[280px] xl:w-[320px] flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none group-hover:pointer-events-auto z-20">
+                  <div className="transform -translate-y-6 group-hover:translate-y-0 transition-transform duration-700">
                     <item.icon size={40} className="text-[var(--primary)] mb-4 drop-shadow-[0_0_15px_rgba(var(--primary-rgb),0.5)]" />
                     <span className="text-xs font-black text-gray-400 uppercase tracking-widest mb-2 block">Phase {item.step}</span>
                     <h3 className="text-2xl font-black text-white mb-3 leading-tight">{item.title}</h3>
                   </div>
 
-                  <div className="transform translate-y-6 group-hover:translate-y-0 transition-transform duration-700 ease-out delay-75">
+                  <div className="transform translate-y-6 group-hover:translate-y-0 transition-transform duration-700 delay-75">
                     <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
                       {item.desc}
                     </p>

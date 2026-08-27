@@ -3,13 +3,26 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Server, Shield, Globe } from "lucide-react";
 
-export default function FinalCTA() {
+interface FinalCTAProps {
+  title?: React.ReactNode;
+  description?: React.ReactNode;
+}
+
+export default function FinalCTA({
+  title = (
+    <>
+      Ready to Build Your <br />
+      <span className="text-transparent bg-clip-text bg-gradient-accent">Global iGaming Empire?</span>
+    </>
+  ),
+  description = "Partner with the leading iGaming software development company and launch a highly scalable, secure, and fully customized platform today."
+}: FinalCTAProps) {
   return (
     <section className="py-24 relative overflow-hidden bg-[#0A0A0A]">
       {/* Dynamic Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[var(--secondary)]/20 rounded-full blur-[150px]"></div>
-        
+
         {/* Technology grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_20%,transparent_100%)]"></div>
       </div>
@@ -19,30 +32,29 @@ export default function FinalCTA() {
           {/* Internal glowing elements */}
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-[var(--primary)]/30 rounded-full blur-[100px]"></div>
           <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[var(--secondary)]/30 rounded-full blur-[100px]"></div>
-          
+
           <div className="relative z-10 max-w-4xl mx-auto space-y-8">
-            
-            <motion.h2 
+
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight"
             >
-              Ready to Build Your <br />
-              <span className="text-transparent bg-clip-text bg-gradient-accent">Global iGaming Empire?</span>
+              {title}
             </motion.h2>
-            
-            <motion.p 
+
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg text-gray-300 max-w-2xl mx-auto"
+              className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
             >
-              Partner with the leading iGaming software development company and launch a highly scalable, secure, and fully customized platform today.
+              {description}
             </motion.p>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -56,7 +68,7 @@ export default function FinalCTA() {
             </motion.div>
 
             {/* Floating UI Badges */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -64,16 +76,16 @@ export default function FinalCTA() {
               className="pt-5 flex flex-wrap justify-center gap-6 lg:gap-12 opacity-70"
             >
               <div className="flex items-center gap-2 text-white/80 font-medium">
-                 <Server size={20} className="text-[var(--primary)]" /> 100% Platform Ownership
+                <Server size={20} className="text-[var(--primary)]" /> 100% Platform Ownership
               </div>
               <div className="flex items-center gap-2 text-white/80 font-medium">
-                 <Shield size={20} className="text-[var(--secondary)]" /> Zero GGR Share
+                <Shield size={20} className="text-[var(--secondary)]" /> Zero GGR Share
               </div>
               <div className="flex items-center gap-2 text-white/80 font-medium">
-                 <Globe size={20} className="text-[var(--primary)]" /> Global Reach
+                <Globe size={20} className="text-[var(--primary)]" /> Global Reach
               </div>
             </motion.div>
-            
+
           </div>
         </div>
       </div>

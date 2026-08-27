@@ -73,7 +73,7 @@ export const services: Service[] = [
   {
     id: "retail-betting-shops",
     category: "Retail Betting Shops",
-    heading: "Retail Betting Shop Software Provider for Modern Betting Operations",
+    heading: "Retail Betting Shop Software Provider for Modern Betting",
     description: "Partner with a retail betting shop software provider for terminals, real-time odds, sportsbook management, payments, risk controls, analytics, and support.",
     features: [
       "Omnichannel Integration with Online Platforms",

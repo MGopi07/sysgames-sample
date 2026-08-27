@@ -1,5 +1,12 @@
+import { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+    title: "iGaming Blog | Casino, Sportsbook & Gaming Technology",
+    description: "Explore latest iGaming insights, casino software trends, sportsbook technology, gaming solutions, industry updates, and expert tips our blog.",
+    keywords: "iGaming Blog, iGaming Industry Blog, iGaming News, iGaming Insights, iGaming Technology, iGaming Trends, Casino Software Blog, Online Casino Technology, Sportsbook Software Blog, Sports Betting Technology",
+};
 
 export default function BlogPage() {
   const posts = [1, 2, 3]; // Dummy data

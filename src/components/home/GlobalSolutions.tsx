@@ -111,7 +111,7 @@ export default function GlobalSolutions() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: idx * 0.1, duration: 0.4 }}
                       key={idx}
-                      className="flex items-start gap-4 group/item bg-white/[0.02] hover:bg-white/[0.06] p-5 rounded-2xl border border-white/5 hover:border-[var(--secondary)]/30 transition-all duration-300 shadow-sm hover:shadow-[0_4px_20px_rgba(var(--secondary-rgb),0.15)] relative overflow-hidden"
+                      className="flex items-start gap-4 group/item bg-white/[0.02] hover:bg-white/[0.06] p-5 rounded-2xl border border-white/5 hover:border-[var(--secondary)]/30 transition-all duration-300 relative overflow-hidden"
                     >
                       <div className="absolute top-0 left-0 w-1 h-full bg-gradient-accent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
                       <div className="mt-0.5 bg-[var(--secondary)]/10 p-1.5 rounded-lg border border-[var(--secondary)]/20 text-[var(--primary)] group-hover/item:scale-110 transition-transform flex-shrink-0">

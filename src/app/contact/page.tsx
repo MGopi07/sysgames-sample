@@ -1,4 +1,11 @@
+import { Metadata } from 'next';
 import React from 'react';
+
+export const metadata: Metadata = {
+    title: "Contact Us | iGaming Software Development Company",
+    description: "Contact our iGaming software development team discuss casino, sportsbook, white label, slot game, game aggregation custom iGaming software solutions.",
+    keywords: "Contact iGaming Software Company, iGaming Software Development Company, iGaming Software Provider, iGaming Technology Provider, iGaming Solutions, Casino Software Development, Sportsbook Software Development",
+};
 
 export default function ContactPage() {
   return (

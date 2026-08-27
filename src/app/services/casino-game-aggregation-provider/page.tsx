@@ -210,18 +210,14 @@ export default function CasinoGameAggregationPage() {
                                 </div>
 
                                 {/* Expanded State */}
-                                <div className="relative lg:absolute inset-0 flex flex-col justify-end p-6 lg:p-10 opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 bg-gradient-to-t from-[#0A0A0A]/90 via-[#0A0A0A]/20 to-transparent">
-                                    <div className="absolute top-0 right-0 p-6 lg:p-8 opacity-10 lg:opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none">
-                                        <div className="text-6xl lg:text-8xl font-black text-white">0{idx + 1}</div>
-                                    </div>
-                                    
+                                <div className="relative lg:absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[280px] lg:w-[320px] flex flex-col justify-center opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none group-hover:pointer-events-auto z-20">
                                     {/* Fixed width inner container prevents text re-wrapping during flex expansion */}
-                                    <div className="w-full lg:w-[300px] max-w-full">
+                                    <div className="w-full">
                                         <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-2xl bg-[var(--primary)]/20 flex items-center justify-center mb-4 lg:mb-6 border border-[var(--primary)]/30 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
                                             <module.icon className="text-[var(--primary)]" size={28} />
                                         </div>
-                                        <h3 className="text-xl lg:text-3xl font-black text-white mb-3 lg:mb-4 leading-tight whitespace-normal">{module.title}</h3>
-                                        <p className="text-gray-400 leading-relaxed text-sm lg:text-base whitespace-normal opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-500 delay-150 lg:translate-y-4 group-hover:translate-y-0">
+                                        <h3 className="text-xl lg:text-3xl font-black text-white mb-3 lg:mb-4 leading-tight whitespace-normal translate-y-4 group-hover:translate-y-0 transition-transform duration-700">{module.title}</h3>
+                                        <p className="text-gray-400 leading-relaxed text-sm lg:text-base whitespace-normal opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-700 delay-75 lg:translate-y-4 group-hover:translate-y-0">
                                             {module.desc}
                                         </p>
                                     </div>
