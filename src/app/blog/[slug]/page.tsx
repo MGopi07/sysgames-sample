@@ -7,7 +7,7 @@ export default function BlogSinglePage({ params }: { params: { slug: string } })
   const relatedPosts = [1, 2, 3, 4];
 
   return (
-    <div className="min-h-screen pt-32 pb-20 bg-[#050505] font-sans relative overflow-hidden">
+    <div className="min-h-screen pt-32 pb-20 bg-[#050505] relative overflow-hidden">
         {/* Subtle Background Elements */}
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-b from-[var(--primary)]/5 to-transparent pointer-events-none"></div>
         <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[var(--primary)]/10 blur-[120px] rounded-full pointer-events-none"></div>

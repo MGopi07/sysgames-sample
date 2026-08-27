@@ -164,7 +164,7 @@ export default function AboutPage() {
                 <div className="p-6 mt-8 rounded-2xl bg-[#111111] border border-white/5 shadow-2xl relative overflow-hidden group">
                   <div className="absolute inset-0 bg-gradient-to-r from-[var(--primary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-[var(--primary)]"></div>
-                  <p className="text-[var(--primary)] font-bold text-lg relative z-10">
+                  <p className="text-[var(--primary)] font-bold text-base relative z-10">
                     Whether you are launching a gaming brand or expanding an existing operation, our team provides technology designed to support your journey from concept to deployment and beyond.
                   </p>
                 </div>

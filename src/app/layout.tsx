@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} antialiased min-h-screen flex flex-col relative`}>
+      <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col relative`}>
         <Header />
         <main className="flex-grow">
           {children}
