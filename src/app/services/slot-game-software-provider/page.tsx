@@ -17,7 +17,7 @@ export default function SlotGameProviderPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -29,7 +29,7 @@ export default function SlotGameProviderPage() {
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Premium Slot Development</span>
                             </div>
 
-                            <h1 className="text-4xl lg:text-[3.5rem] font-black text-white mb-6 leading-[1.1]">
+                            <h1 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
                                 Slot Game Software Provider for <span className="text-transparent bg-clip-text bg-gradient-accent">Modern Casinos</span>
                             </h1>
 
@@ -56,7 +56,7 @@ export default function SlotGameProviderPage() {
                         <div className="w-full lg:w-[45%] relative flex justify-center scale-90 lg:scale-100 mt-12 lg:mt-0">
                           {/* Image Asset with Blend Mode to remove dark backgrounds */}
                           <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
-                             <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105 mix-blend-screen">
+                             <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105">
                                 <Image
                                   src="/images/all_service/7-1.png"
                                   alt="Slot Game Software Provider"
@@ -77,7 +77,7 @@ export default function SlotGameProviderPage() {
             </section>
 
             {/* Why Choose Us */}
-            <section className="py-24 bg-[#121212] border-t border-white/5">
+            <section className="py-16 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
                         
@@ -96,7 +96,7 @@ export default function SlotGameProviderPage() {
 
                             {/* Image Graphic Bottom */}
                             <div className="mt-16 w-full max-w-md mx-auto relative hidden lg:block group scale-110 2xl:scale-125">
-                                <div className="relative w-full aspect-square transition-transform duration-700 mix-blend-screen">
+                                <div className="relative w-full aspect-square transition-transform duration-700">
                                     <Image
                                         src="/images/all_service/7-2.png"
                                         alt="Slot Game Software Solutions"
@@ -157,7 +157,7 @@ export default function SlotGameProviderPage() {
             </section>
 
             {/* Complete Solutions Grid */}
-            <section className="py-24 bg-[#0A0A0A]">
+            <section className="py-16 bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -190,7 +190,7 @@ export default function SlotGameProviderPage() {
             </section>
 
             {/* Custom Development & API Integration Split */}
-            <section className="py-24 bg-[#121212] border-y border-white/5 relative overflow-hidden">
+            <section className="py-16 bg-[#121212] border-y border-white/5 relative overflow-hidden">
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--primary)]/5 rounded-full blur-[100px] pointer-events-none"></div>
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -265,7 +265,7 @@ export default function SlotGameProviderPage() {
             </section>
 
             {/* Platforms & Audiences */}
-            <section className="py-24 bg-[#0A0A0A]">
+            <section className="py-16 bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -330,7 +330,7 @@ export default function SlotGameProviderPage() {
             </section>
 
             {/* Key Features Table */}
-            <section className="py-24 bg-[#121212] border-t border-white/5">
+            <section className="py-16 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -386,7 +386,7 @@ export default function SlotGameProviderPage() {
             </section>
 
             {/* Development Process */}
-            <section className="py-24 border-t border-white/5 relative overflow-hidden bg-[#0A0A0A]">
+            <section className="py-16 border-t border-white/5 relative overflow-hidden bg-[#0A0A0A]">
                 {/* Background Elements */}
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[var(--primary)]/10 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
@@ -445,7 +445,7 @@ export default function SlotGameProviderPage() {
             </section>
 
             {/* Why Work With Us & Benefits */}
-            <section className="py-24 bg-[#0A0A0A]">
+            <section className="py-16 bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                         <div className="flex flex-col">
@@ -536,7 +536,7 @@ export default function SlotGameProviderPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-32 bg-[#121212] border-t border-white/5">
+            <section className="py-20 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
                         <div className="lg:w-5/12 relative">

@@ -18,7 +18,7 @@ export default function FinalCTA({
   description = "Partner with the leading iGaming software development company and launch a highly scalable, secure, and fully customized platform today."
 }: FinalCTAProps) {
   return (
-    <section className="py-24 relative overflow-hidden bg-[#0A0A0A]">
+    <section className="py-16 relative overflow-hidden bg-[#0A0A0A]">
       {/* Dynamic Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[var(--secondary)]/20 rounded-full blur-[150px]"></div>

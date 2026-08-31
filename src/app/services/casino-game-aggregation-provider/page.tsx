@@ -18,7 +18,7 @@ export default function CasinoGameAggregationPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -30,7 +30,7 @@ export default function CasinoGameAggregationPage() {
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">One Integration. Thousands of Games.</span>
                             </div>
 
-                            <h1 className="text-4xl lg:text-[3.2rem] xl:text-[3.5rem] font-black text-white mb-6 leading-[1.1]">
+                            <h1 className="text-4xl lg:text-5xl xl:text-5xl font-black text-white mb-6 leading-[1.1]">
                                 Casino Game <br className="hidden lg:block" />
                                 Aggregation Provider
                                 for a <span className="text-transparent bg-clip-text bg-gradient-accent">Broader Portfolio</span>
@@ -165,13 +165,13 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Why Choose Us - Carousel UI */}
-            <section className="py-24 bg-[#0A0A0A] relative overflow-hidden border-t border-white/5">
+            <section className="py-16 bg-[#0A0A0A] relative overflow-hidden border-t border-white/5">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none"></div>
                 <AdvantagesCarousel />
             </section>
 
             {/* Platform Features Grid -> Expanding Accordion */}
-            <section className="py-24 bg-[#0A0A0A] relative overflow-hidden">
+            <section className="py-16 bg-[#0A0A0A] relative overflow-hidden">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -230,11 +230,11 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Operator & Platform Sections (Zigzag) */}
-            <section className="py-24 bg-[#121212] border-t border-white/5 relative overflow-hidden">
+            <section className="py-16 bg-[#121212] border-t border-white/5 relative overflow-hidden">
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
 
                     {/* Online Casino Operators */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
                         <div>
                             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation Provider for Online Casino Operators</h2>
                             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -265,7 +265,7 @@ export default function CasinoGameAggregationPage() {
                         {/* Image Graphic Right */}
                         <div className="relative flex justify-center mt-12 lg:mt-0">
                             <div className="relative w-full aspect-square max-w-[500px] mx-auto group">
-                                <div className="relative w-full h-full transition-transform duration-700 mix-blend-screen">
+                                <div className="relative w-full h-full transition-transform duration-700">
                                     <Image
                                         src="/images/all_service/8-2.png"
                                         alt="Casino Game Aggregation Provider"
@@ -284,45 +284,21 @@ export default function CasinoGameAggregationPage() {
                     </div>
 
                     {/* iGaming Platforms */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
-                        <div className="order-2 lg:order-1 relative flex items-center justify-center">
-                            <style>{`
-                                @keyframes float-layer-mid-2 {
-                                    0%, 100% { transform: translateZ(60px); }
-                                    50% { transform: translateZ(70px); }
-                                }
-                                @keyframes float-layer-top-2 {
-                                    0%, 100% { transform: translateZ(120px); }
-                                    50% { transform: translateZ(140px); }
-                                }
-                            `}</style>
-                            <div className="relative w-[280px] h-[280px] md:w-[360px] md:h-[360px] transition-transform duration-1000 ease-out hover:scale-105" style={{ perspective: '1200px' }}>
-                                <div className="absolute inset-0" style={{ transformStyle: 'preserve-3d', transform: 'rotateX(60deg) rotateZ(45deg)' }}>
-                                    
-                                    {/* Base Layer: Game Providers */}
-                                    <div className="absolute inset-0 bg-[#0A0A0A] border border-white/10 rounded-[2.5rem] shadow-[20px_20px_40px_rgba(0,0,0,0.8)] grid grid-cols-2 gap-6 p-8 overflow-hidden" style={{ transform: 'translateZ(0px)' }}>
-                                        <div className="bg-white/5 rounded-2xl border border-white/5 flex items-center justify-center"><Layers className="text-white/20" size={32} /></div>
-                                        <div className="bg-white/5 rounded-2xl border border-white/5 flex items-center justify-center"><Layers className="text-white/20" size={32} /></div>
-                                        <div className="bg-white/5 rounded-2xl border border-white/5 flex items-center justify-center"><Layers className="text-white/20" size={32} /></div>
-                                        <div className="bg-white/5 rounded-2xl border border-white/5 flex items-center justify-center"><Layers className="text-white/20" size={32} /></div>
-                                    </div>
-                                    
-                                    {/* Middle API Layer */}
-                                    <div className="absolute inset-0 bg-gradient-to-bl from-[var(--secondary)]/20 to-[var(--secondary)]/5 backdrop-blur-md border border-[var(--secondary)]/40 rounded-[2.5rem] flex flex-col items-center justify-center shadow-[0_20px_40px_rgba(var(--secondary-rgb),0.15)]" style={{ animation: 'float-layer-mid-2 6s ease-in-out infinite' }}>
-                                        <Database className="text-[var(--secondary)] mb-3" size={64} />
-                                        <div className="text-[var(--secondary)] font-bold tracking-widest uppercase text-sm">Data Layer</div>
-                                    </div>
-
-                                    {/* Top iGaming Platform Layer */}
-                                    <div className="absolute inset-0 bg-white/[0.02] backdrop-blur-xl border border-white/20 rounded-[2.5rem] flex items-center justify-center shadow-[0_30px_50px_rgba(0,0,0,0.3)]" style={{ animation: 'float-layer-top-2 6s ease-in-out infinite 0.5s' }}>
-                                        <div className="text-center flex flex-col items-center">
-                                            <div className="w-20 h-20 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-4">
-                                                <LayoutDashboard className="text-white" size={40} />
-                                            </div>
-                                            <div className="text-white font-black tracking-widest uppercase text-xl">Platform</div>
-                                        </div>
-                                    </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
+                        <div className="order-2 lg:order-1 relative flex justify-center mt-12 lg:mt-0">
+                            <div className="relative w-full aspect-square max-w-[500px] mx-auto group flex items-center justify-center">
+                                <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105">
+                                    <Image
+                                        src="/images/all_service/8-3.png"
+                                        alt="iGaming Platforms Casino Game Aggregation"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        quality={85}
+                                        className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+                                    />
                                 </div>
+                                {/* Decorative Glow Behind Image */}
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--secondary)]/15 blur-[120px] -z-10 rounded-full opacity-60 transition-opacity duration-700 group-hover:opacity-100"></div>
                             </div>
                         </div>
                         <div className="order-1 lg:order-2">
@@ -399,7 +375,7 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Game Categories */}
-            <section className="py-24 bg-[#0A0A0A] border-t border-white/5 relative overflow-hidden">
+            <section className="py-16 bg-[#0A0A0A] border-t border-white/5 relative overflow-hidden">
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="space-y-16 md:space-y-20">
 
@@ -472,7 +448,7 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Benefits & Key Features */}
-            <section className="py-24 bg-[#121212] border-t border-white/5 relative overflow-hidden">
+            <section className="py-16 bg-[#121212] border-t border-white/5 relative overflow-hidden">
                 {/* Background accents */}
                 <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-[#0A0A0A] to-transparent pointer-events-none"></div>
                 <div className="absolute -left-[20%] top-1/4 w-[600px] h-[600px] bg-[var(--primary)]/5 rounded-full blur-[120px] pointer-events-none"></div>
@@ -552,7 +528,7 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Development Process */}
-            <section className="py-24 bg-[#0A0A0A] border-t border-white/5">
+            <section className="py-16 bg-[#0A0A0A] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -584,7 +560,7 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Why Choose Our... Solutions */}
-            <section className="py-24 bg-[#121212] border-t border-white/5 relative overflow-hidden">
+            <section className="py-16 bg-[#121212] border-t border-white/5 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
@@ -600,7 +576,7 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Business Models */}
-            <section className="py-24 bg-[#0A0A0A] border-t border-white/5 relative overflow-hidden">
+            <section className="py-16 bg-[#0A0A0A] border-t border-white/5 relative overflow-hidden">
                 <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[var(--secondary)]/5 rounded-full blur-[100px] pointer-events-none"></div>
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-16 items-start">
@@ -674,7 +650,7 @@ export default function CasinoGameAggregationPage() {
 
             {/* FAQs */}
             {/* FAQs */}
-            <section className="py-24 lg:py-32 bg-[#0A0A0A] relative border-t border-white/5">
+            <section className="py-16 lg:py-20 bg-[#0A0A0A] relative border-t border-white/5">
                 {/* Background glow wrapped to prevent overflow without breaking sticky */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--primary)]/5 rounded-full blur-[150px]"></div>

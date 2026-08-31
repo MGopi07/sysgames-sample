@@ -29,7 +29,7 @@ export default function HeroSlider() {
   }, [currentIndex, isPlaying]);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-[#0A0A0A] flex items-center pt-24 pb-32 lg:pt-32 lg:pb-40">
+    <div className="relative min-h-screen w-full overflow-hidden bg-[#0A0A0A] flex items-center pt-16 pb-12 lg:pt-16 lg:pb-16">
       {/* Abstract Backgrounds based on slide visual */}
       <div className="absolute inset-0 z-0 opacity-40">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--secondary)]/30 rounded-full blur-[150px]"></div>

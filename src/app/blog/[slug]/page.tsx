@@ -7,7 +7,7 @@ export default function BlogSinglePage({ params }: { params: { slug: string } })
   const relatedPosts = [1, 2, 3, 4];
 
   return (
-    <div className="min-h-screen pt-32 pb-20 bg-[#050505] relative overflow-hidden">
+    <div className="min-h-screen pt-24 pb-12 bg-[#050505] relative overflow-hidden">
         {/* Subtle Background Elements */}
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-b from-[var(--primary)]/5 to-transparent pointer-events-none"></div>
         <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[var(--primary)]/10 blur-[120px] rounded-full pointer-events-none"></div>
@@ -15,7 +15,7 @@ export default function BlogSinglePage({ params }: { params: { slug: string } })
 
         {/* Top Header */}
         <div className="container mx-auto max-w-4xl px-6 lg:px-12 mb-12 text-center relative z-10 flex flex-col items-center">
-            <h1 className="text-3xl md:text-5xl lg:text-[54px] leading-[1.1] font-black text-white uppercase tracking-wider mb-6">
+            <h1 className="text-3xl md:text-5xl lg:text-5xl leading-[1.1] font-black text-white uppercase tracking-wider mb-6">
                 The Future Of Enterprise Casino Platforms
             </h1>
             <div className="flex items-center justify-center gap-3 text-sm">

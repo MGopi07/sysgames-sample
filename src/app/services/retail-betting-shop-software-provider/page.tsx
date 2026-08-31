@@ -158,7 +158,7 @@ export default function RetailBettingShopProviderPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -195,7 +195,7 @@ export default function RetailBettingShopProviderPage() {
                         <div className="w-full lg:w-1/2 relative flex justify-center scale-90 lg:scale-100 mt-12 lg:mt-0">
                           {/* Image Asset with Blend Mode to remove dark backgrounds */}
                           <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
-                             <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105 mix-blend-screen">
+                             <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105">
                                 <Image
                                   src="/images/all_service/5-1.png"
                                   alt="Retail Betting Shop Software"
@@ -216,7 +216,7 @@ export default function RetailBettingShopProviderPage() {
             </section>
 
             {/* Why Choose Us */}
-            <section className="py-24 bg-[#121212] border-t border-white/5">
+            <section className="py-16 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -256,7 +256,7 @@ export default function RetailBettingShopProviderPage() {
             </section>
 
             {/* Detailed Core Modules Section */}
-            <section className="py-24 bg-[#0A0A0A]">
+            <section className="py-16 bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-4xl mx-auto mb-20">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6 shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
@@ -322,7 +322,7 @@ export default function RetailBettingShopProviderPage() {
                 </div>
             </section>
             {/* Development Process */}
-            <section className="py-24 bg-[#121212] border-t border-white/5">
+            <section className="py-16 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -361,7 +361,7 @@ export default function RetailBettingShopProviderPage() {
             </section>
 
             {/* Benefits */}
-            <section className="py-24 bg-[#0A0A0A]">
+            <section className="py-16 bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-1/2">
@@ -392,7 +392,7 @@ export default function RetailBettingShopProviderPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-24 bg-[#0A0A0A] relative border-t border-white/5">
+            <section className="py-16 bg-[#0A0A0A] relative border-t border-white/5">
                 {/* Background glow */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--secondary)]/10 rounded-full blur-[150px]"></div>

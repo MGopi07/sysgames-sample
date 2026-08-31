@@ -23,7 +23,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-24 bg-[#0A0A0A] relative">
+    <section className="py-16 bg-[#0A0A0A] relative">
       {/* Background glow wrapped to prevent overflow without breaking sticky */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--secondary)]/10 rounded-full blur-[150px]"></div>

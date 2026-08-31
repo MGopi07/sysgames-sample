@@ -16,7 +16,7 @@ export default function SportsbookKioskProviderPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -28,7 +28,7 @@ export default function SportsbookKioskProviderPage() {
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Self-Service Solutions</span>
                             </div>
 
-                            <h1 className="text-4xl lg:text-[3.5rem] font-black text-white mb-6 leading-[1.1]">
+                            <h1 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
                                 Sportsbook Kiosk Software Provider for <span className="text-transparent bg-clip-text bg-gradient-accent">Modern Betting Businesses</span>
                             </h1>
 
@@ -53,30 +53,13 @@ export default function SportsbookKioskProviderPage() {
 
                         <div className="w-full lg:w-[45%] flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
                             {/* Visual representation of a Kiosk UI */}
-                            <div className="relative w-full max-w-md aspect-[3/4] bg-[#121212] border-4 border-gray-800 rounded-[2.5rem] shadow-2xl p-3 flex flex-col">
-                                <div className="absolute -inset-1 bg-gradient-to-b from-[var(--primary)]/20 to-transparent rounded-[3rem] -z-10 blur-xl"></div>
-                                <div className="flex-1 bg-[#0A0A0A] rounded-[2rem] border border-white/5 overflow-hidden flex flex-col relative">
-                                    <div className="absolute top-0 w-full h-1 bg-gradient-to-r from-[var(--secondary)] to-[var(--primary)]"></div>
-                                    <div className="p-5 border-b border-white/10 flex justify-between items-center bg-white/[0.02]">
-                                        <div className="h-5 w-24 bg-white/20 rounded-md"></div>
-                                        <div className="h-6 w-16 bg-[var(--primary)]/20 rounded-md"></div>
-                                    </div>
-                                    <div className="p-4 grid grid-cols-2 gap-3 flex-1">
-                                        {[1, 2, 3, 4, 5, 6].map(i => (
-                                            <div key={i} className="bg-white/5 rounded-xl border border-white/5 p-3 flex flex-col gap-2">
-                                                <div className="h-3 w-16 bg-white/20 rounded"></div>
-                                                <div className="flex justify-between items-end mt-auto">
-                                                    <div className="h-2 w-10 bg-white/10 rounded"></div>
-                                                    <div className="h-5 w-12 bg-[var(--primary)]/40 rounded"></div>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                    <div className="p-4 border-t border-white/10 bg-white/[0.02] flex gap-3">
-                                        <div className="h-10 w-full bg-white/10 rounded-xl"></div>
-                                        <div className="h-10 w-full bg-[var(--primary)]/80 rounded-xl"></div>
-                                    </div>
-                                </div>
+                            <div className="relative w-full max-w-[500px] flex justify-center items-center">
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/20 rounded-full blur-[80px] -z-10"></div>
+                                <img
+                                    src="/images/all_service/6-1.png"
+                                    alt="Sportsbook Kiosk Software Provider Interface"
+                                    className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
+                                />
                             </div>
                         </div>
                     </div>
@@ -84,7 +67,7 @@ export default function SportsbookKioskProviderPage() {
             </section>
 
             {/* Why Choose Us */}
-            <section className="py-24 bg-[#121212] border-t border-white/5">
+            <section className="py-16 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -130,7 +113,7 @@ export default function SportsbookKioskProviderPage() {
             </section>
 
             {/* Core Features */}
-            <section className="py-24 bg-[#0A0A0A]">
+            <section className="py-16 bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -175,7 +158,7 @@ export default function SportsbookKioskProviderPage() {
             </section>
 
             {/* Split Content: Retail Shops & Customization */}
-            <section className="py-24 bg-[#121212] border-y border-white/5 relative overflow-hidden">
+            <section className="py-16 bg-[#121212] border-y border-white/5 relative overflow-hidden">
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--primary)]/5 rounded-full blur-[100px] pointer-events-none"></div>
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -265,7 +248,7 @@ export default function SportsbookKioskProviderPage() {
             </section>
 
             {/* How it Works / Development Process */}
-            <section className="py-24 bg-[#0A0A0A]">
+            <section className="py-16 bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -327,7 +310,7 @@ export default function SportsbookKioskProviderPage() {
             </section>
 
             {/* Why Work With Us & Scalability */}
-            <section className="py-24 bg-[#121212] border-t border-white/5">
+            <section className="py-16 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
@@ -394,7 +377,7 @@ export default function SportsbookKioskProviderPage() {
             </section>
             
             {/* NEW SECTION: Key Features Table */}
-            <section className="py-24 bg-[#0A0A0A] border-t border-white/5">
+            <section className="py-16 bg-[#0A0A0A] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -451,7 +434,7 @@ export default function SportsbookKioskProviderPage() {
             </section>
             
             {/* NEW SECTION: Different Environments */}
-            <section className="py-24 bg-[#121212] border-t border-white/5 relative">
+            <section className="py-16 bg-[#121212] border-t border-white/5 relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/5 to-transparent pointer-events-none"></div>
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
@@ -494,7 +477,7 @@ export default function SportsbookKioskProviderPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-32 bg-[#0A0A0A] border-t border-white/5">
+            <section className="py-20 bg-[#0A0A0A] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
                         <div className="lg:w-5/12 relative">

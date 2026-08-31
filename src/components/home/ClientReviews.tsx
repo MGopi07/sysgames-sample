@@ -35,7 +35,7 @@ export default function ClientReviews() {
   ];
 
   return (
-    <section className="py-24 bg-[#121212] relative overflow-hidden">
+    <section className="py-16 bg-[#121212] relative overflow-hidden">
       {/* Decorative */}
       <div className="absolute -left-40 top-20 w-80 h-80 bg-[var(--primary)]/10 rounded-full blur-[100px]"></div>
       

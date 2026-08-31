@@ -12,7 +12,7 @@ export default function BlogPage() {
   const posts = Array.from({ length: 9 }, (_, i) => i + 1); // 9 posts dummy data
 
   return (
-    <div className="min-h-screen pt-40 pb-20 bg-[#0A0A0A] relative overflow-hidden">
+    <div className="min-h-screen pt-40 pb-12 bg-[#0A0A0A] relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-[var(--primary)]/5 rounded-full blur-[120px]"></div>
@@ -25,7 +25,7 @@ export default function BlogPage() {
                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse shadow-[0_0_10px_var(--primary)]"></span>
                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Insights & News</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-black text-white mb-6 tracking-tight">
+            <h1 className="text-5xl md:text-5xl font-black text-white mb-6 tracking-tight">
             Our <span className="text-transparent bg-clip-text bg-gradient-accent drop-shadow-[0_0_15px_rgba(var(--primary-rgb),0.3)]">Blog</span>
             </h1>
             <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">

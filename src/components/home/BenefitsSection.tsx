@@ -21,7 +21,7 @@ const getIcon = (iconName: string, className: string = "") => {
 
 export default function BenefitsSection() {
   return (
-    <section className="py-24 bg-[#121212] relative overflow-hidden" id="company">
+    <section className="py-16 bg-[#121212] relative overflow-hidden" id="company">
       {/* Background elements */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+CgkJPHBhdGggZD0iTTAgMGg2MHY2MEgweiIgZmlsbD0ibm9uZSIvPgoJCTxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHptMTAgMTB2MTBoMTBWMTB6IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDIpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KCTwvc3ZnPg==')] opacity-50"></div>
 

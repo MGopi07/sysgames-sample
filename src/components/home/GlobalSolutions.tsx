@@ -21,7 +21,7 @@ export default function GlobalSolutions() {
   const activeContent = globalSolutions.find(s => s.id === activeTab) || globalSolutions[0];
 
   return (
-    <section className="py-24 bg-[#121212] relative" id="global-solutions">
+    <section className="py-16 bg-[#121212] relative" id="global-solutions">
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
 
         <div className="text-center max-w-4xl mx-auto mb-16">

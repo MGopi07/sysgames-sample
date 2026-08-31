@@ -23,7 +23,7 @@ export default function ContactPage() {
                     <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-pulse"></span>
                     <span className="text-[10px] font-bold text-[var(--primary)] tracking-widest uppercase">Global Support 24/7</span>
                 </div>
-                <h1 className="text-3xl md:text-4xl lg:text-[48px] leading-[1.1] font-black text-white uppercase tracking-wider mb-6">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-black text-white uppercase tracking-wider mb-6">
                     Let's Build The Future
                 </h1>
                 <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-medium">

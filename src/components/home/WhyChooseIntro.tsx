@@ -5,7 +5,7 @@ import { Network, Shield, Zap } from "lucide-react";
 
 export default function WhyChooseIntro() {
   return (
-    <section className="py-24 bg-[#121212] relative overflow-hidden">
+    <section className="pt-16 pb-8 bg-[#121212] relative overflow-hidden">
       <div className="absolute top-1/2 left-0 w-[800px] h-[800px] bg-[var(--secondary)]/5 rounded-full blur-[150px] -translate-y-1/2 pointer-events-none"></div>
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
@@ -76,7 +76,7 @@ export default function WhyChooseIntro() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="relative min-h-[350px] md:min-h-[450px] lg:h-auto lg:aspect-square mt-12 lg:mt-0 flex items-center justify-center w-full"
+            className="relative min-h-[350px] md:min-h-[450px] lg:h-[450px] mt-12 lg:mt-0 flex items-center justify-center w-full"
           >
             {/* Subtle atmospheric glow behind the image */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-[var(--primary)]/10 rounded-full blur-[100px] pointer-events-none"></div>

@@ -16,7 +16,7 @@ export default function OnlineCasinoGameDevPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -28,7 +28,7 @@ export default function OnlineCasinoGameDevPage() {
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Expert Game Studio</span>
                             </div>
 
-                            <h1 className="text-4xl lg:text-[3.5rem] font-black text-white mb-6 leading-[1.1]">
+                            <h1 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
                                 Build Engaging Casino Games
                                 <span className="block text-xl lg:text-2xl mt-4 font-bold text-gray-300">
                                     With an <span className="text-transparent bg-clip-text bg-gradient-accent">Online Casino Game Development Company</span>
@@ -139,7 +139,7 @@ export default function OnlineCasinoGameDevPage() {
             </section>
 
             {/* Game Formats Grid */}
-            <section className="py-24">
+            <section className="py-16">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -369,7 +369,7 @@ export default function OnlineCasinoGameDevPage() {
             </section>
 
             {/* 10-Step Development Process */}
-            <section className="py-24 relative bg-[#0A0A0A]">
+            <section className="py-16 relative bg-[#0A0A0A]">
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -414,7 +414,7 @@ export default function OnlineCasinoGameDevPage() {
             </section>
 
             {/* Integration, Testing, Performance */}
-            <section className="py-24 relative overflow-hidden bg-[#050505] border-t border-white/5">
+            <section className="py-16 relative overflow-hidden bg-[#050505] border-t border-white/5">
                 {/* Immersive Background Glow */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[var(--primary)]/[0.03] blur-[100px] rounded-full pointer-events-none"></div>
 
@@ -481,7 +481,7 @@ export default function OnlineCasinoGameDevPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-24 lg:py-32 bg-[#0A0A0A] relative border-t border-white/5">
+            <section className="py-16 lg:py-20 bg-[#0A0A0A] relative border-t border-white/5">
                 {/* Background glow wrapped to prevent overflow without breaking sticky */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--primary)]/5 rounded-full blur-[150px]"></div>

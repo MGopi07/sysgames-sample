@@ -8,7 +8,7 @@ const nodeIcons = [Gamepad2, Dices, Trophy, Layers, Store, MonitorUp, Coins, Net
 
 export default function ServicesSection() {
   return (
-    <section className="pt-24 lg:pt-32 pb-24 lg:pb-32 bg-[#0A0A0A] relative" id="solutions">
+    <section className="pt-8 lg:pt-12 pb-16 lg:pb-12 bg-[#0A0A0A] relative" id="solutions">
       {/* Background elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-[var(--primary)]/5 rounded-full blur-[120px]"></div>
@@ -18,7 +18,7 @@ export default function ServicesSection() {
       <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
 
         {/* Header */}
-        <div className="text-center max-w-4xl mx-auto mb-20 lg:mb-32">
+        <div className="text-center max-w-4xl mx-auto mb-20 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

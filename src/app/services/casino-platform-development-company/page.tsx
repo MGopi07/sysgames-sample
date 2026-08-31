@@ -16,7 +16,7 @@ export default function CasinoPlatformDevPage() {
     <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center pt-24 pb-12 overflow-hidden">
         {/* Background Grid & Glow */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_20%,transparent_100%)]"></div>
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[var(--primary)]/10 rounded-full blur-[150px] pointer-events-none"></div>
@@ -31,7 +31,7 @@ export default function CasinoPlatformDevPage() {
                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Scalable Technology</span>
               </div>
 
-              <h1 className="text-4xl lg:text-5xl xl:text-[3.5rem] font-black text-white mb-8 leading-[1.15] tracking-tight">
+              <h1 className="text-4xl lg:text-5xl xl:text-5xl font-black text-white mb-8 leading-[1.15] tracking-tight">
                 A <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)]">Casino Platform Development Company</span><br /> for Scalable Online Casino Businesses
               </h1>
 
@@ -55,7 +55,7 @@ export default function CasinoPlatformDevPage() {
             <div className="w-full lg:w-2/5 relative flex justify-center scale-90 lg:scale-100 mt-12 lg:mt-0">
               {/* Image Asset with Blend Mode to remove dark backgrounds */}
               <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
-                 <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105 mix-blend-screen">
+                 <div className="relative w-full h-full transition-transform duration-700">
                     <Image
                       src="/images/all_service/4-1.png"
                       alt="Casino Platform Development"
@@ -77,7 +77,7 @@ export default function CasinoPlatformDevPage() {
       </section>
 
       {/* Why Choose Us - Bento Box UI */}
-      <section className="py-24 border-t border-white/5 bg-[#121212]/50 relative overflow-hidden">
+      <section className="py-16 border-t border-white/5 bg-[#121212]/50 relative overflow-hidden">
         {/* Abstract Background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none"></div>
 
@@ -206,14 +206,14 @@ export default function CasinoPlatformDevPage() {
       </section>
 
       {/* Massive Solutions Grid */}
-      <section className="py-24 border-t border-white/5 bg-[#0A0A0A]">
+      <section className="py-16 border-t border-white/5 bg-[#0A0A0A]">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center max-w-4xl mx-auto mb-16 relative z-10">
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Comprehensive Capabilities</span>
             </div>
-            <h2 className="text-4xl lg:text-6xl font-black text-white mb-6">Comprehensive Casino Platform Capabilities</h2>
+            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">Comprehensive Casino Platform Capabilities</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
               Our casino platform development company provides an expansive suite of modules designed to deliver a robust, end-to-end operational environment for your brand.
             </p>
@@ -404,7 +404,7 @@ export default function CasinoPlatformDevPage() {
       </section>
 
       {/* Process Section - Hover Expansion Pillars (Creative UI) */}
-      <section className="py-32 bg-[#0A0A0A] relative overflow-hidden border-t border-white/5">
+      <section className="py-20 bg-[#0A0A0A] relative overflow-hidden border-t border-white/5">
 
         {/* Abstract Backgrounds */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none"></div>
@@ -415,7 +415,7 @@ export default function CasinoPlatformDevPage() {
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Methodology</span>
             </div>
-            <h2 className="text-4xl lg:text-6xl font-black text-white mb-6">Development Process</h2>
+            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">Development Process</h2>
             <p className="text-gray-400 text-lg leading-relaxed">
               Hover over the pillars below to explore our comprehensive, end-to-step development pipeline.
             </p>
@@ -498,7 +498,7 @@ export default function CasinoPlatformDevPage() {
       </section>
 
       {/* Why Partner With Us (Key Benefits) */}
-      <section className="py-32 border-t border-white/5 relative bg-gradient-to-b from-[#121212] to-[#0A0A0A] overflow-hidden">
+      <section className="py-20 border-t border-white/5 relative bg-gradient-to-b from-[#121212] to-[#0A0A0A] overflow-hidden">
 
         {/* Abstract Background Elements */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[var(--primary)]/5 blur-[150px] rounded-full pointer-events-none"></div>
@@ -537,7 +537,7 @@ export default function CasinoPlatformDevPage() {
       </section>
 
       {/* Intro to feature marquee wall */}
-      <section className="py-24 border-t border-b border-white/5 bg-[#121212]/30 overflow-hidden relative">
+      <section className="py-16 border-t border-b border-white/5 bg-[#121212]/30 overflow-hidden relative">
         <style>{`
           @keyframes marquee {
             0% { transform: translateX(0); }
@@ -622,7 +622,7 @@ export default function CasinoPlatformDevPage() {
 
       {/* FAQs */}
       {/* FAQs */}
-      <section className="py-24 bg-[#0A0A0A] relative border-t border-white/5">
+      <section className="py-16 bg-[#0A0A0A] relative border-t border-white/5">
         {/* Background glow */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--secondary)]/10 rounded-full blur-[150px]"></div>

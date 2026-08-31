@@ -16,7 +16,7 @@ export default function SportsbookSoftwareDevPage() {
     <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[var(--primary)]/10 rounded-full blur-[150px] pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[var(--secondary)]/10 rounded-full blur-[150px] pointer-events-none"></div>
 
@@ -51,9 +51,9 @@ export default function SportsbookSoftwareDevPage() {
             <div className="w-full lg:w-[40%] flex justify-center lg:justify-end relative group scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0" style={{ perspective: "1000px" }}>
               {/* Visual representation of a Sportsbook UI via Image Asset */}
               <div className="relative w-full aspect-[4/5] max-w-[500px] mx-auto lg:mr-0 flex items-center justify-center group">
-                 <div className="relative w-full h-full mix-blend-screen drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-transform duration-700 ease-out group-hover:-translate-y-4">
+                 <div className="relative w-full h-full drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-transform duration-700 ease-out group-hover:-translate-y-4">
                     <Image
-                      src="/images/all_service/3-1.jpeg"
+                      src="/images/all_service/3-1.png"
                       alt="Sportsbook Software Platform"
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -85,7 +85,7 @@ export default function SportsbookSoftwareDevPage() {
                 A sportsbook requires more than a simple betting interface. Operators need reliable technology that manage markets, odds, player activity, liabilities, payments, and promotional campaigns from a centralized environment.
               </p>
               <div className="relative w-full aspect-video max-w-lg mx-auto mt-6 flex items-center justify-center">
-                 <div className="relative w-full h-full mix-blend-screen">
+                 <div className="relative w-full h-full">
                     <Image
                       src="/images/all_service/3-2.png"
                       alt="Sportsbook Software Features"
@@ -129,7 +129,7 @@ export default function SportsbookSoftwareDevPage() {
       </section>
 
       {/* What We Build - Feature Showcase */}
-      <section className="py-24 relative overflow-hidden bg-[#0A0A0A]">
+      <section className="py-16 relative overflow-hidden bg-[#0A0A0A]">
         {/* Background Accents */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
         <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-[var(--secondary)]/5 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
@@ -265,7 +265,7 @@ export default function SportsbookSoftwareDevPage() {
 
 
       {/* Process Section */}
-      <section className="py-24 bg-[#121212] relative">
+      <section className="py-16 bg-[#121212] relative">
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="flex flex-col lg:flex-row gap-16">
             
@@ -333,7 +333,7 @@ export default function SportsbookSoftwareDevPage() {
       </section>
 
       {/* Comprehensive Solutions */}
-      <section className="py-24">
+      <section className="py-16">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -459,7 +459,7 @@ export default function SportsbookSoftwareDevPage() {
       </section>
 
       {/* Feature Tags Wall */}
-      <section className="py-24 border-t border-b border-white/5 bg-[#0A0A0A] overflow-hidden relative">
+      <section className="py-16 border-t border-b border-white/5 bg-[#0A0A0A] overflow-hidden relative">
         <style>{`
           @keyframes marquee {
             0% { transform: translateX(0); }
@@ -545,7 +545,7 @@ export default function SportsbookSoftwareDevPage() {
 
 
       {/* FAQs */}
-      <section className="py-32 bg-[#121212] border-t border-white/5">
+      <section className="py-20 bg-[#121212] border-t border-white/5">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
             <div className="lg:w-5/12 relative">
