@@ -58,72 +58,18 @@ export default function WhiteLabelPage() {
                             </Link>
                         </div>
 
-                        {/* Right side Abstract UI / Image */}
-                        <div className="w-full lg:w-1/2 flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
-                            <div className="relative w-full max-w-lg aspect-square">
+                        {/* Right side Image */}
+                        <div className="w-full lg:w-1/2 flex justify-center relative mt-12 lg:mt-0">
+                            <div className="relative w-full max-w-lg flex items-center justify-center">
                                 {/* Background Glows */}
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[var(--primary)]/20 to-[var(--secondary)]/20 rounded-full blur-[80px] pointer-events-none z-0"></div>
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] max-w-[500px] max-h-[500px] bg-gradient-to-br from-[var(--primary)]/20 to-[var(--secondary)]/20 rounded-full blur-[80px] pointer-events-none z-0"></div>
 
-                                {/* Main Dashboard Card */}
-                                <div className="relative z-10 w-full h-full glass-card rounded-2xl border border-white/10 p-6 flex flex-col shadow-2xl overflow-hidden transform perspective-1000 rotate-y-[-5deg] rotate-x-[5deg] hover:rotate-0 transition-transform duration-500">
-                                    {/* Top Nav */}
-                                    <div className="flex justify-between items-center border-b border-white/5 pb-4 mb-6">
-                                        <div className="flex gap-3 items-center">
-                                            <div className="w-10 h-10 rounded-lg bg-[var(--primary)]/20 flex items-center justify-center border border-[var(--primary)]/30">
-                                                <LayoutDashboard size={20} className="text-[var(--primary)]" />
-                                            </div>
-                                            <div>
-                                                <div className="h-3 w-24 bg-white/20 rounded mb-1.5"></div>
-                                                <div className="h-2 w-16 bg-white/10 rounded"></div>
-                                            </div>
-                                        </div>
-                                        <div className="flex gap-2">
-                                            <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10"></div>
-                                            <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10"></div>
-                                        </div>
-                                    </div>
-
-                                    {/* Stats Row */}
-                                    <div className="grid grid-cols-2 gap-4 mb-6">
-                                        <div className="bg-[#0A0A0A]/50 rounded-xl p-5 border border-white/5">
-                                            <div className="flex items-center gap-2 mb-3">
-                                                <div className="w-2 h-2 rounded-full bg-[var(--primary)]"></div>
-                                                <div className="h-2 w-16 bg-white/20 rounded"></div>
-                                            </div>
-                                            <div className="text-2xl font-black text-white tracking-wider">124,592</div>
-                                        </div>
-                                        <div className="bg-[#0A0A0A]/50 rounded-xl p-5 border border-white/5">
-                                            <div className="flex items-center gap-2 mb-3">
-                                                <div className="w-2 h-2 rounded-full bg-[var(--secondary)]"></div>
-                                                <div className="h-2 w-16 bg-white/20 rounded"></div>
-                                            </div>
-                                            <div className="text-2xl font-black text-white tracking-wider">$84.2M</div>
-                                        </div>
-                                    </div>
-
-                                    {/* Chart Area */}
-                                    <div className="flex-1 bg-gradient-to-b from-[#0A0A0A]/80 to-[#0A0A0A]/20 rounded-xl border border-white/5 p-5 flex flex-col justify-end relative overflow-hidden group">
-                                        <div className="absolute top-5 left-5 h-2 w-32 bg-white/20 rounded"></div>
-                                        <div className="absolute top-5 right-5 h-2 w-12 bg-white/10 rounded"></div>
-
-                                        <div className="flex items-end gap-3 h-32 mt-8">
-                                            {[40, 60, 45, 80, 55, 90, 75, 100, 65, 85].map((h, i) => (
-                                                <div key={i} className="flex-1 bg-gradient-to-t from-[var(--primary)]/40 to-[var(--primary)]/10 rounded-t-sm hover:from-[var(--primary)]/80 transition-colors cursor-pointer" style={{ height: `${h}%` }}></div>
-                                            ))}
-                                        </div>
-                                    </div>
-
-                                    {/* Floating Element */}
-                                    <div className="absolute -right-4 top-1/3 glass-card rounded-xl p-4 border border-[var(--secondary)]/30 shadow-[0_0_30px_rgba(var(--secondary-rgb),0.3)] animate-[bounce_3s_infinite]">
-                                        <div className="flex items-center gap-3">
-                                            <ShieldCheck size={24} className="text-[var(--secondary)]" />
-                                            <div>
-                                                <div className="h-2 w-16 bg-white/30 rounded mb-1.5"></div>
-                                                <div className="h-1.5 w-10 bg-white/10 rounded"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {/* Main Image */}
+                                <img 
+                                    src="/images/all_service/1-1.png" 
+                                    alt="White Label iGaming Software Solutions" 
+                                    className="w-full h-auto object-contain relative z-10 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+                                />
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { CheckCircle2, ChevronRight, Activity, TrendingUp, Users, Wallet, ShieldCheck, Zap, BarChart3, Smartphone, Target, Layers, Settings, Cpu, LayoutTemplate, Briefcase, CircleDollarSign, Code } from "lucide-react";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTASection from "@/components/ui/CTASection";
@@ -38,9 +39,6 @@ export default function SportsbookSoftwareDevPage() {
                 <p>
                   Our Sportsbook Software Development Company develops scalable betting platforms equipped with real-time odds, live betting, automated risk management, extensive market coverage, PAM, CRM, payment integration responsive user experiences.
                 </p>
-                {/* <p>
-                  Whether you're launching a new sportsbook or upgrading an existing platform, our Sportsbook Software Development Company create a solution your business model and target audience.
-                </p> */}
               </div>
 
               <div className="flex flex-wrap gap-4">
@@ -51,77 +49,22 @@ export default function SportsbookSoftwareDevPage() {
             </div>
 
             <div className="w-full lg:w-[40%] flex justify-center lg:justify-end relative group scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0" style={{ perspective: "1000px" }}>
-              {/* Visual representation of a Sportsbook UI */}
-              <div
-                className="relative w-full max-w-md aspect-[4/5] bg-[#0A0A0A] rounded-[2rem] border border-[var(--primary)]/30 p-4 flex flex-col overflow-hidden transition-all duration-700 ease-out [transform:rotateY(-25deg)_rotateX(15deg)_rotateZ(5deg)] group-hover:[transform:rotateY(0deg)_rotateX(0deg)_rotateZ(0deg)_translateY(-10px)] shadow-[-20px_20px_40px_rgba(0,0,0,0.7)] group-hover:shadow-[0_20px_50px_rgba(var(--primary-rgb),0.2)]"
-              >
-                <div className="absolute -inset-1 bg-gradient-to-br from-[var(--primary)]/10 to-[var(--secondary)]/10 rounded-[2rem] -z-10 blur-xl"></div>
-
-                {/* Header */}
-                <div className="flex justify-between items-center mb-6 px-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full bg-[var(--primary)] animate-pulse"></div>
-                    <span className="text-[var(--primary)] font-bold text-sm">LIVE BETTING</span>
-                  </div>
-                  <div className="h-6 w-16 bg-white/10 rounded text-xs flex items-center justify-center text-white font-bold">78:32</div>
-                </div>
-
-                {/* Main Match Card */}
-                <div className="bg-[#121212] rounded-xl border border-white/5 p-4 mb-4 relative overflow-hidden group">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-[var(--primary)]"></div>
-                  <div className="flex justify-between items-center mb-4 text-white font-bold text-lg">
-                    <span>Team A</span>
-                    <span className="text-[var(--primary)]">2 - 1</span>
-                    <span>Team B</span>
-                  </div>
-
-                  <div className="text-xs text-gray-400 mb-2">Match Winner (1X2)</div>
-                  <div className="flex gap-2">
-                    <div className="flex-1 bg-white/5 hover:bg-[var(--primary)]/20 hover:border-[var(--primary)]/50 cursor-pointer border border-white/5 rounded-lg p-2 text-center transition-colors">
-                      <div className="text-gray-400 text-xs mb-1">1</div>
-                      <div className="text-white font-bold">1.85</div>
-                    </div>
-                    <div className="flex-1 bg-white/5 hover:bg-[var(--primary)]/20 hover:border-[var(--primary)]/50 cursor-pointer border border-white/5 rounded-lg p-2 text-center transition-colors">
-                      <div className="text-gray-400 text-xs mb-1">X</div>
-                      <div className="text-white font-bold">3.40</div>
-                    </div>
-                    <div className="flex-1 bg-white/5 hover:bg-[var(--primary)]/20 hover:border-[var(--primary)]/50 cursor-pointer border border-white/5 rounded-lg p-2 text-center transition-colors">
-                      <div className="text-gray-400 text-xs mb-1">2</div>
-                      <div className="text-white font-bold">4.20</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Secondary Match */}
-                <div className="bg-[#121212] rounded-xl border border-white/5 p-4 mb-4 opacity-70">
-                  <div className="flex justify-between items-center mb-4 text-white font-bold text-sm">
-                    <span>Team C</span>
-                    <span className="text-[var(--secondary)]">0 - 0</span>
-                    <span>Team D</span>
-                  </div>
-                  <div className="flex gap-2">
-                    <div className="flex-1 bg-white/5 border border-white/5 rounded-lg p-2 text-center">
-                      <div className="text-white font-bold text-sm">2.10</div>
-                    </div>
-                    <div className="flex-1 bg-white/5 border border-white/5 rounded-lg p-2 text-center">
-                      <div className="text-white font-bold text-sm">3.10</div>
-                    </div>
-                    <div className="flex-1 bg-white/5 border border-white/5 rounded-lg p-2 text-center">
-                      <div className="text-white font-bold text-sm">2.85</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom Bet Slip Preview */}
-                <div className="mt-auto bg-gradient-to-r from-[var(--primary)]/20 to-[var(--secondary)]/20 rounded-xl p-4 border border-[var(--primary)]/30 backdrop-blur-md">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-white font-bold text-sm">Bet Slip (2)</span>
-                    <span className="text-[var(--primary)] font-bold">Total Odds: 5.27</span>
-                  </div>
-                  <div className="h-10 bg-[var(--primary)] rounded-lg w-full mt-2 flex items-center justify-center text-[var(--btn-text)] font-bold text-sm cursor-pointer hover:bg-[var(--primary)]/90 transition-colors">
-                    Place Bet
-                  </div>
-                </div>
+              {/* Visual representation of a Sportsbook UI via Image Asset */}
+              <div className="relative w-full aspect-[4/5] max-w-[500px] mx-auto lg:mr-0 flex items-center justify-center group">
+                 <div className="relative w-full h-full mix-blend-screen drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-transform duration-700 ease-out group-hover:-translate-y-4">
+                    <Image
+                      src="/images/all_service/3-1.jpeg"
+                      alt="Sportsbook Software Platform"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      quality={85}
+                      className="object-contain"
+                      priority
+                    />
+                 </div>
+                 
+                 {/* Decorative Glow Behind Image */}
+                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/15 blur-[100px] -z-10 rounded-full opacity-60 transition-opacity duration-700 group-hover:opacity-100"></div>
               </div>
             </div>
           </div>
@@ -141,48 +84,20 @@ export default function SportsbookSoftwareDevPage() {
               <p className="text-gray-400 mb-8 leading-relaxed">
                 A sportsbook requires more than a simple betting interface. Operators need reliable technology that manage markets, odds, player activity, liabilities, payments, and promotional campaigns from a centralized environment.
               </p>
-              <div className="relative w-full h-[320px] mt-12 flex items-center justify-center group scale-75 md:scale-90 lg:scale-100 origin-center" style={{ perspective: "1000px" }}>
-                {/* 3D Isometric UI Graphic */}
-                <div 
-                  className="relative w-[260px] h-[260px] transition-all duration-700 ease-out [transform:rotateX(55deg)_rotateZ(-45deg)] group-hover:[transform:rotateX(55deg)_rotateZ(-45deg)_translateY(-10px)]"
-                  style={{ transformStyle: "preserve-3d" }}
-                >
-                  {/* Base Layer */}
-                  <div className="absolute inset-0 bg-[#0A0A0A] rounded-2xl border border-white/10 shadow-[-20px_20px_30px_rgba(0,0,0,0.8)] flex flex-col p-5 justify-between transition-all duration-700 ease-out [transform:translateZ(0px)] group-hover:[transform:translateZ(-10px)]">
-                    <div className="flex justify-between items-center">
-                      <div className="h-2 w-1/3 bg-white/10 rounded-full"></div>
-                      <div className="h-2 w-1/4 bg-white/10 rounded-full"></div>
-                    </div>
-                    <div className="h-24 w-full bg-[#121212] rounded-xl border border-white/5 flex items-center justify-center">
-                       <Activity className="text-white/20" size={32} />
-                    </div>
-                  </div>
-                  
-                  {/* Middle Layer */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/5 to-transparent rounded-2xl border border-[var(--primary)]/20 backdrop-blur-sm flex flex-col p-5 gap-3 opacity-90 transition-all duration-700 ease-out [transform:translateZ(40px)] group-hover:[transform:translateZ(60px)]">
-                    <div className="flex justify-between items-center mb-2">
-                      <div className="flex gap-2">
-                        <div className="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
-                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
-                        <div className="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
-                      </div>
-                      <div className="h-2 w-1/4 bg-[var(--primary)]/30 rounded-full"></div>
-                    </div>
-                    <div className="flex-1 border border-[var(--primary)]/20 rounded-xl flex gap-2 p-3 bg-[#0A0A0A]/50">
-                       <div className="flex-1 bg-[var(--primary)]/10 rounded-lg flex items-end p-2"><div className="w-full h-[40%] bg-[var(--primary)]/30 rounded-sm"></div></div>
-                       <div className="flex-1 bg-[var(--primary)]/10 rounded-lg flex items-end p-2"><div className="w-full h-[70%] bg-[var(--primary)]/40 rounded-sm"></div></div>
-                       <div className="flex-1 bg-[var(--primary)]/10 rounded-lg flex items-end p-2"><div className="w-full h-[100%] bg-[var(--primary)]/50 rounded-sm"></div></div>
-                    </div>
-                  </div>
-
-                  {/* Top Layer */}
-                  <div className="absolute inset-0 bg-[var(--primary)]/5 rounded-2xl border border-[var(--primary)]/30 backdrop-blur-md flex items-center justify-center opacity-90 transition-all duration-700 ease-out [transform:translateZ(80px)] group-hover:[transform:translateZ(120px)]">
-                     <div className="w-20 h-20 rounded-full bg-[#0A0A0A] border-2 border-[var(--primary)] flex flex-col items-center justify-center shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
-                        <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse mb-1"></span>
-                        <span className="text-[var(--primary)] font-black text-xs tracking-widest">LIVE</span>
-                     </div>
-                  </div>
-                </div>
+              <div className="relative w-full aspect-video max-w-lg mx-auto mt-6 flex items-center justify-center">
+                 <div className="relative w-full h-full mix-blend-screen">
+                    <Image
+                      src="/images/all_service/3-2.png"
+                      alt="Sportsbook Software Features"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      quality={85}
+                      className="object-contain"
+                    />
+                 </div>
+                 
+                 {/* Decorative Glow */}
+                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/15 blur-[100px] -z-10 rounded-full opacity-60"></div>
               </div>
             </div>
 

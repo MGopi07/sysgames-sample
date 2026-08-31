@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { CheckCircle2, ChevronRight, MonitorSmartphone, Layers, Globe, ShieldCheck, BarChart3, Database, Cable, Gamepad2, Coins, LayoutDashboard, Users } from "lucide-react";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTASection from "@/components/ui/CTASection";
@@ -261,39 +262,23 @@ export default function CasinoGameAggregationPage() {
                                 ))}
                             </ul>
                         </div>
-                        <div className="relative flex items-center justify-center">
-                            <style>{`
-                                @keyframes float-layer-mid {
-                                    0%, 100% { transform: translateZ(60px); }
-                                    50% { transform: translateZ(70px); }
-                                }
-                                @keyframes float-layer-top {
-                                    0%, 100% { transform: translateZ(120px); }
-                                    50% { transform: translateZ(140px); }
-                                }
-                            `}</style>
-                            <div className="relative w-[280px] h-[280px] md:w-[360px] md:h-[360px] transition-transform duration-1000 ease-out hover:scale-105" style={{ perspective: '1200px' }}>
-                                <div className="absolute inset-0" style={{ transformStyle: 'preserve-3d', transform: 'rotateX(60deg) rotateZ(-45deg)' }}>
-                                    
-                                    {/* Base Platform */}
-                                    <div className="absolute inset-0 bg-[#0A0A0A] border border-white/10 rounded-[2.5rem] shadow-[-20px_20px_40px_rgba(0,0,0,0.8)] flex items-center justify-center overflow-hidden" style={{ transform: 'translateZ(0px)' }}>
-                                        <div className="text-white/10 font-black text-4xl tracking-widest uppercase transform -rotate-z-90">Casino</div>
-                                    </div>
-                                    
-                                    {/* Middle API Layer */}
-                                    <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md border border-[var(--primary)]/40 rounded-[2.5rem] flex flex-col items-center justify-center shadow-[0_20px_40px_rgba(var(--primary-rgb),0.15)]" style={{ animation: 'float-layer-mid 6s ease-in-out infinite' }}>
-                                        <Cable className="text-[var(--primary)] mb-3" size={64} />
-                                        <div className="text-[var(--primary)] font-bold tracking-widest uppercase text-sm">Aggregator API</div>
-                                    </div>
-
-                                    {/* Top Providers Layer */}
-                                    <div className="absolute inset-0 bg-white/[0.02] backdrop-blur-xl border border-white/20 rounded-[2.5rem] p-8 grid grid-cols-2 gap-6 shadow-[0_30px_50px_rgba(0,0,0,0.3)]" style={{ animation: 'float-layer-top 6s ease-in-out infinite 0.5s' }}>
-                                        <div className="bg-white/5 rounded-2xl border border-white/5 flex items-center justify-center"><Gamepad2 className="text-white/30" size={40} /></div>
-                                        <div className="bg-[var(--primary)]/15 rounded-2xl border border-[var(--primary)]/30 flex items-center justify-center shadow-[inset_0_0_20px_rgba(var(--primary-rgb),0.1)]"><Gamepad2 className="text-[var(--primary)]" size={40} /></div>
-                                        <div className="bg-[var(--primary)]/15 rounded-2xl border border-[var(--primary)]/30 flex items-center justify-center shadow-[inset_0_0_20px_rgba(var(--primary-rgb),0.1)]"><Gamepad2 className="text-[var(--primary)]" size={40} /></div>
-                                        <div className="bg-white/5 rounded-2xl border border-white/5 flex items-center justify-center"><Gamepad2 className="text-white/30" size={40} /></div>
-                                    </div>
+                        {/* Image Graphic Right */}
+                        <div className="relative flex justify-center mt-12 lg:mt-0">
+                            <div className="relative w-full aspect-square max-w-[500px] mx-auto group">
+                                <div className="relative w-full h-full transition-transform duration-700 mix-blend-screen">
+                                    <Image
+                                        src="/images/all_service/8-2.png"
+                                        alt="Casino Game Aggregation Provider"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        quality={85}
+                                        className="object-contain drop-shadow-[0_0_50px_rgba(var(--primary-rgb),0.5)]"
+                                        priority
+                                    />
                                 </div>
+                                
+                                {/* Decorative Glow Behind Image */}
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/15 blur-[120px] -z-10 rounded-full opacity-60 transition-opacity duration-700 group-hover:opacity-100"></div>
                             </div>
                         </div>
                     </div>

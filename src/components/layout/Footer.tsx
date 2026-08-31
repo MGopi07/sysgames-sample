@@ -82,9 +82,14 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} SYSGAMES. All rights reserved.
-          </p>
+          <div className="flex flex-col gap-1">
+            <p className="text-sm text-gray-400">
+              &copy; {new Date().getFullYear()} SYSGAMES. All rights reserved.
+            </p>
+            <p className="text-xs text-gray-500">
+              Transforming the future of iGaming with secure, scalable, and innovative solutions.
+            </p>
+          </div>
           <div className="flex gap-6">
             <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Terms & Conditions</Link>

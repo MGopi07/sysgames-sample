@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from "next";
 import Link from 'next/link';
+import Image from 'next/image';
 import { CheckCircle2, ChevronRight, MonitorSmartphone, Settings, ShieldCheck, Wallet, BarChart3, HelpCircle, Layers, Cpu, Globe, Users, Coins, PenTool, LayoutDashboard, Rocket, Gamepad2, Blocks, Wand2, Zap, TrendingUp, Sliders, Waypoints, LifeBuoy, RotateCcw, Code2 } from "lucide-react";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTASection from "@/components/ui/CTASection";
@@ -51,41 +52,25 @@ export default function SlotGameProviderPage() {
                             </div>
                         </div>
 
-                        <div className="w-full lg:w-[45%] flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
-                            {/* Visual representation of Slot Mechanics */}
-                            <div className="relative w-full max-w-lg aspect-square glass-card rounded-3xl border border-white/10 p-8 shadow-2xl flex flex-col justify-center overflow-hidden">
-                                <div className="absolute -inset-1 bg-gradient-to-tr from-[var(--primary)]/20 to-[var(--secondary)]/20 rounded-[3rem] -z-10 blur-xl"></div>
-                                
-                                {/* Slot Reels Visualization */}
-                                <div className="flex gap-4 h-64 bg-[#0A0A0A] rounded-2xl p-4 border border-white/5 relative overflow-hidden shadow-inner">
-                                    {/* Win Line */}
-                                    <div className="absolute top-1/2 left-0 w-full h-1 bg-[var(--primary)]/50 shadow-[0_0_15px_rgba(var(--primary-rgb),0.8)] z-20"></div>
-                                    
-                                    {[1, 2, 3, 4, 5].map(reel => (
-                                        <div key={reel} className="flex-1 bg-white/[0.02] rounded-xl flex flex-col gap-4 overflow-hidden relative">
-                                            <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A] via-transparent to-[#0A0A0A] z-10 pointer-events-none"></div>
-                                            <div className={`flex flex-col gap-4 py-4 animate-[spin_3s_linear_infinite]`} style={{ animationDelay: `${reel * 0.2}s`, animationDuration: `${2 + (reel * 0.5)}s` }}>
-                                                {[1, 2, 3, 4, 5].map(sym => (
-                                                    <div key={sym} className="h-16 w-full rounded-lg bg-white/5 border border-white/10 flex items-center justify-center relative overflow-hidden">
-                                                        {(reel === 2 || reel === 4) && sym === 2 && (
-                                                            <div className="absolute inset-0 bg-[var(--primary)]/20 animate-pulse"></div>
-                                                        )}
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                                <div className="mt-6 flex justify-between items-center bg-white/5 rounded-xl p-4 border border-white/10">
-                                    <div>
-                                        <div className="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Total Win</div>
-                                        <div className="text-xl font-black text-[var(--primary)]">1,250.00</div>
-                                    </div>
-                                    <div className="w-12 h-12 rounded-full bg-gradient-accent flex items-center justify-center cursor-pointer hover:scale-105 transition-transform shadow-[0_0_15px_rgba(var(--primary-rgb),0.4)]">
-                                        <div className="w-4 h-4 border-t-2 border-r-2 border-gray-900 rounded-tr rotate-45"></div>
-                                    </div>
-                                </div>
-                            </div>
+                        {/* Right Side Image Graphic */}
+                        <div className="w-full lg:w-[45%] relative flex justify-center scale-90 lg:scale-100 mt-12 lg:mt-0">
+                          {/* Image Asset with Blend Mode to remove dark backgrounds */}
+                          <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
+                             <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105 mix-blend-screen">
+                                <Image
+                                  src="/images/all_service/7-1.png"
+                                  alt="Slot Game Software Provider"
+                                  fill
+                                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                  quality={85}
+                                  className="object-contain drop-shadow-[0_0_50px_rgba(var(--primary-rgb),0.5)]"
+                                  priority
+                                />
+                             </div>
+                             
+                             {/* Decorative Glow Behind Image */}
+                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/15 blur-[120px] -z-10 rounded-full opacity-60 transition-opacity duration-700 group-hover:opacity-100"></div>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -109,44 +94,21 @@ export default function SlotGameProviderPage() {
                                 A successful online casino needs more large game library. Players expect smooth gameplay, attractive interfaces, fast loading, mobile compatibility, and engaging features. Our Slot Game Software Provider solutions are designed around these expectations while giving operators flexibility to integrate slot content their existing gaming platforms.
                             </p>
 
-                            {/* Isometric UI Pattern Bottom */}
-                            <div className="mt-16 w-full max-w-[280px] mx-auto relative hidden lg:block group perspective-[2000px]">
-                                <div className="relative w-full aspect-square transition-transform duration-1000 ease-in-out group-hover:scale-105" 
-                                     style={{ transformStyle: 'preserve-3d', transform: 'rotateX(55deg) rotateZ(-45deg)' }}>
-                                    
-                                    {/* Layer 1: Foundation Server Rack */}
-                                    <div className="absolute inset-0 bg-[#0A0A0A] border border-white/10 rounded-3xl shadow-[20px_20px_30px_rgba(0,0,0,0.9)] before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-tr before:from-transparent before:to-white/[0.05] before:rounded-3xl transition-all duration-700 group-hover:shadow-[25px_25px_40px_rgba(0,0,0,0.95)]"></div>
-                                    
-                                    {/* Layer 2: Compute logic */}
-                                    <div className="absolute inset-0 bg-[#12141A]/90 border border-[var(--primary)]/20 rounded-3xl flex items-center justify-center backdrop-blur-md transition-all duration-700 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:shadow-[0_0_40px_rgba(var(--primary-rgb),0.1)]"
-                                         style={{ transform: 'translateZ(40px)' }}>
-                                        
-                                        {/* Internal Circuit Details */}
-                                        <div className="absolute inset-6 border border-white/5 rounded-xl"></div>
-                                        
-                                        <div className="grid grid-cols-2 gap-3 w-16 h-16 relative z-10">
-                                            <div className="rounded-lg bg-white/5 border border-white/10 transition-colors duration-500"></div>
-                                            <div className="rounded-lg bg-white/5 border border-white/10 group-hover:bg-[var(--primary)]/30 group-hover:border-[var(--primary)]/50 transition-colors duration-700 delay-100"></div>
-                                            <div className="rounded-lg bg-[var(--primary)]/80 shadow-[0_0_15px_var(--primary)] animate-pulse"></div>
-                                            <div className="rounded-lg bg-white/5 border border-white/10"></div>
-                                        </div>
-                                    </div>
-                                    
-                                    {/* Layer 3: Application Interface Plane */}
-                                    <div className="absolute inset-0 bg-[var(--primary)]/5 border-2 border-[var(--primary)]/30 rounded-3xl flex items-center justify-center backdrop-blur-sm transition-all duration-700 group-hover:-translate-x-2 group-hover:-translate-y-2"
-                                         style={{ transform: 'translateZ(80px)' }}>
-                                    </div>
-                                    
-                                    {/* 2.5D Pop-up Billboard Icon (Root 3D Space) */}
-                                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-700 group-hover:-translate-x-2 group-hover:-translate-y-2" style={{ transformStyle: 'preserve-3d', transform: 'translateZ(100px)' }}>
-                                         {/* Counter-rotate to stand straight up */}
-                                         <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#1A1D24] to-[#0A0A0A] border border-[var(--primary)]/50 shadow-[-10px_20px_30px_rgba(var(--primary-rgb),0.4)] flex items-center justify-center transition-all duration-700 group-hover:-translate-y-4"
-                                              style={{ transform: 'rotateZ(45deg) rotateX(-55deg)' }}>
-                                              <Gamepad2 size={32} className="text-[var(--primary)] drop-shadow-[0_0_8px_rgba(var(--primary-rgb),0.8)]" />
-                                         </div>
-                                    </div>
-                                    
+                            {/* Image Graphic Bottom */}
+                            <div className="mt-16 w-full max-w-md mx-auto relative hidden lg:block group scale-110 2xl:scale-125">
+                                <div className="relative w-full aspect-square transition-transform duration-700 mix-blend-screen">
+                                    <Image
+                                        src="/images/all_service/7-2.png"
+                                        alt="Slot Game Software Solutions"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        quality={85}
+                                        className="object-contain drop-shadow-[0_0_50px_rgba(var(--primary-rgb),0.5)]"
+                                    />
                                 </div>
+                                
+                                {/* Decorative Glow Behind Image */}
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/15 blur-[120px] -z-10 rounded-full opacity-60 transition-opacity duration-700 group-hover:opacity-100"></div>
                             </div>
                         </div>
 

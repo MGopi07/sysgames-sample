@@ -26,17 +26,17 @@ export default function AboutPage() {
       </div>
 
       {/* HERO SECTION */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-24 px-6 z-10">
-        <div className="container mx-auto max-w-7xl">
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-24 z-10">
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Text Content */}
-            <div className="text-left">
-              <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-[var(--primary)]/5 backdrop-blur-md mb-8">
+            <div className="space-y-6 max-w-3xl lg:pr-8 flex flex-col justify-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm self-start">
                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
-                <span className="text-xs font-bold text-[var(--primary)] tracking-widest uppercase">About Us</span>
+                <span className="text-sm font-medium text-[var(--primary)] tracking-wide uppercase">About Us</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-8">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight pr-4">
                 Building Smarter <br />
                 <span className="text-transparent bg-clip-text bg-gradient-accent">
                   iGaming <br />
@@ -44,76 +44,36 @@ export default function AboutPage() {
                 </span>
               </h1>
 
-              <p className="text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed mb-6">
-                We are an iGaming software development company focused on creating reliable, scalable, and flexible technology for businesses entering and growing the online gaming industry. Our goal is simple: build powerful iGaming technology that helps operators launch faster, operate efficiently, and create better player experiences.
-              </p>
-              <p className="text-base text-slate-400 max-w-3xl leading-relaxed mb-10">
-                From online casino and sportsbook platforms to white label solutions, casino game aggregation, slot game technology, retail betting solutions, and betting kiosks, we provide a range of solutions designed around the evolving needs of modern iGaming businesses.
-              </p>
+              <div className="flex flex-col gap-4">
+                <p className="text-lg lg:text-xl text-gray-400 leading-relaxed max-w-xl">
+                  We are an iGaming software development company focused on creating reliable, scalable, and flexible technology for businesses entering and growing the online gaming industry. Our goal is simple: build powerful iGaming technology that helps operators launch faster, operate efficiently, and create better player experiences.
+                </p>
+                <p className="text-base text-gray-500 leading-relaxed max-w-xl">
+                  From online casino and sportsbook platforms to white label solutions, casino game aggregation, slot game technology, retail betting solutions, and betting kiosks, we provide a range of solutions designed around the evolving needs of modern iGaming businesses.
+                </p>
+              </div>
 
-              <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-bold rounded-full transition-all hover:scale-105 shadow-[0_0_20px_rgba(var(--primary-rgb),0.4)]">
-                Talk to Our iGaming Experts
-                <ArrowRight size={20} />
-              </Link>
+              <div className="pt-4">
+                <Link href="/contact" className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium text-[var(--btn-text)] rounded-full group bg-gradient-accent shadow-[0_0_30px_rgba(var(--secondary-rgb),0.3)] hover:shadow-[0_0_40px_rgba(var(--primary-rgb),0.5)] transition-all self-start">
+                  <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-10"></span>
+                  <span className="relative z-10 font-semibold flex items-center gap-2">
+                    Talk to Our iGaming Experts
+                  </span>
+                </Link>
+              </div>
             </div>
 
-            {/* Visual Anchor - Abstract 3D Glassmorphic Grid */}
-            <div className="hidden lg:block relative w-full h-[600px] perspective-1000">
-              <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 via-[var(--primary)]/10 to-transparent rounded-[40px] blur-3xl"></div>
-              <div className="relative w-full h-full transform-gpu rotate-y-[-15deg] rotate-x-[10deg] hover:rotate-y-[0deg] hover:rotate-x-[0deg] transition-transform duration-1000 ease-out">
-                {/* Main Glass Panel */}
-                <div className="absolute inset-4 bg-white/5 backdrop-blur-xl border border-white/20 rounded-[30px] shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[var(--primary)] to-[var(--primary)]/50"></div>
+            {/* Visual Anchor - Image Presentation */}
+            <div className="hidden lg:block relative w-full h-[500px] xl:h-[600px]">
+              {/* Background Glow */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 via-[var(--primary)]/5 to-transparent rounded-full blur-[100px] animate-pulse"></div>
 
-                  {/* Mock Dashboard UI */}
-                  <div className="p-8 h-full flex flex-col gap-6">
-                    <div className="flex justify-between items-center border-b border-white/10 pb-6">
-                      <div className="w-32 h-6 bg-white/10 rounded-full"></div>
-                      <div className="flex gap-2">
-                        <div className="w-3 h-3 rounded-full bg-green-400/80"></div>
-                        <div className="w-3 h-3 rounded-full bg-yellow-400/80"></div>
-                        <div className="w-3 h-3 rounded-full bg-red-400/80"></div>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-[#050505]/50 border border-white/5 rounded-2xl p-6 relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-20 h-20 bg-[var(--primary)]/20 blur-2xl"></div>
-                        <div className="text-gray-400 text-sm mb-2">Platform Scalability</div>
-                        <div className="text-3xl font-black text-white">100k+</div>
-                        <div className="text-[var(--primary)] text-xs mt-2 font-bold">+ Concurrent Users</div>
-                      </div>
-                      <div className="bg-[#050505]/50 border border-white/5 rounded-2xl p-6 relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-20 h-20 bg-[var(--primary)]/20 blur-2xl"></div>
-                        <div className="text-gray-400 text-sm mb-2">API Response</div>
-                        <div className="text-3xl font-black text-white">&lt;50ms</div>
-                        <div className="text-[var(--primary)] text-xs mt-2 font-bold">Latency Optimized</div>
-                      </div>
-                    </div>
-
-                    <div className="flex-1 bg-[#050505]/50 border border-white/5 rounded-2xl p-6 relative overflow-hidden flex items-end">
-                      {/* Decorative Graph */}
-                      <div className="w-full flex items-end gap-2 h-32 opacity-50">
-                        {[40, 60, 45, 80, 55, 90, 75, 100].map((h, i) => (
-                          <div key={i} className="flex-1 bg-gradient-to-t from-[var(--primary)] to-[var(--primary)]/20 rounded-t-sm" style={{ height: `${h}%` }}></div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating Elements */}
-                <div className="absolute -bottom-10 -left-10 bg-[#111111] p-6 rounded-2xl border border-white/10 shadow-2xl backdrop-blur-md animate-bounce-slow">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)]">
-                      <ShieldCheck size={24} />
-                    </div>
-                    <div>
-                      <div className="text-white font-bold">Enterprise Security</div>
-                      <div className="text-gray-400 text-sm">ISO Certified Core</div>
-                    </div>
-                  </div>
-                </div>
+              <div className="relative w-full h-full flex items-center justify-center">
+                <img
+                  src="/images/about/1.png"
+                  alt="iGaming Technology Infrastructure"
+                  className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:scale-[1.02] transition-transform duration-700 ease-out"
+                />
               </div>
             </div>
           </div>
@@ -122,7 +82,7 @@ export default function AboutPage() {
 
       {/* METRICS & TRUST SIGNALS */}
       <section className="relative py-10 z-10 bg-[#111111] border-y border-white/5">
-        <div className="container mx-auto max-w-7xl px-6">
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="flex flex-wrap justify-center lg:justify-between gap-8 text-center lg:text-left">
             {[
               { label: "Platform Uptime", value: "99.9%", color: "text-[var(--primary)]" },
@@ -141,8 +101,8 @@ export default function AboutPage() {
       </section>
 
       {/* WHO WE ARE (Isometric UI Upgrade) */}
-      <section className="relative py-24 lg:py-32 px-6 bg-[#0A0A0A] z-10 overflow-hidden perspective-1000">
-        <div className="container mx-auto max-w-7xl">
+      <section className="relative py-24 lg:py-32 bg-[#0A0A0A] z-10 overflow-hidden perspective-1000">
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             {/* Text Side */}
@@ -171,47 +131,17 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Visual Side - Isometric UI Pattern */}
-            <div className="relative hidden lg:block h-[500px]">
-              <div className="absolute inset-0 bg-[var(--primary)]/5 rounded-full blur-[120px] animate-pulse"></div>
+            {/* Visual Side - Image Presentation */}
+            <div className="hidden lg:block relative w-full h-[500px]">
+              {/* Background Glow */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/10 via-[var(--primary)]/5 to-transparent rounded-full blur-[100px] animate-pulse"></div>
 
-              {/* Isometric Container */}
-              <div className="absolute inset-0 flex items-center justify-center transform-gpu rotate-x-[55deg] rotate-z-[-45deg] scale-90 hover:scale-100 transition-transform duration-700 ease-out group">
-
-                {/* Isometric Grid Base */}
-                <div className="relative grid grid-cols-2 gap-6 w-[400px] h-[400px]">
-
-                  {/* Card 1 (Top Left) */}
-                  <div className="bg-[#111111]/80 backdrop-blur-xl border border-white/20 rounded-2xl shadow-[20px_20px_50px_rgba(0,0,0,0.8)] p-6 transform transition-transform duration-500 hover:-translate-z-4 hover:-translate-y-4 flex flex-col items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/20 to-transparent"></div>
-                    <Cpu size={40} className="text-white mb-4 relative z-10" />
-                    <div className="font-bold text-white text-lg relative z-10">Scalable Tech</div>
-                  </div>
-
-                  {/* Card 2 (Top Right) */}
-                  <div className="bg-[#151515]/80 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[20px_20px_50px_rgba(0,0,0,0.8)] p-6 transform transition-transform duration-500 hover:-translate-z-4 hover:-translate-y-4 translate-z-[20px] -translate-y-2 translate-x-2 flex flex-col items-center justify-center">
-                    <Globe2 size={40} className="text-[var(--primary)] mb-4" />
-                    <div className="font-bold text-white text-lg">Global Reach</div>
-                  </div>
-
-                  {/* Card 3 (Bottom Left) */}
-                  <div className="bg-[#151515]/80 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[20px_20px_50px_rgba(0,0,0,0.8)] p-6 transform transition-transform duration-500 hover:-translate-z-4 hover:-translate-y-4 translate-z-[40px] -translate-y-4 -translate-x-2 flex flex-col items-center justify-center">
-                    <ShieldCheck size={40} className="text-[var(--primary)] mb-4" />
-                    <div className="font-bold text-white text-lg">Secure Core</div>
-                  </div>
-
-                  {/* Card 4 (Bottom Right) */}
-                  <div className="bg-[#111111]/90 backdrop-blur-xl border border-white/20 rounded-2xl shadow-[20px_20px_50px_rgba(0,0,0,0.8)] p-6 transform transition-transform duration-500 hover:-translate-z-4 hover:-translate-y-4 translate-z-[60px] -translate-y-6 flex flex-col items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-tl from-[var(--primary)]/20 to-transparent"></div>
-                    <div className="text-4xl font-black text-white mb-2 relative z-10">10+</div>
-                    <div className="font-medium text-slate-300 text-sm tracking-wider uppercase relative z-10">Years Exp</div>
-                  </div>
-
-                  {/* Floating Connection Lines */}
-                  <div className="absolute top-1/2 left-1/2 w-[120%] h-px bg-gradient-to-r from-transparent via-[var(--primary)]/50 to-transparent -translate-x-1/2 -translate-y-1/2 -rotate-45 translate-z-[30px]"></div>
-                  <div className="absolute top-1/2 left-1/2 w-[120%] h-px bg-gradient-to-r from-transparent via-[var(--primary)]/50 to-transparent -translate-x-1/2 -translate-y-1/2 rotate-45 translate-z-[30px]"></div>
-                </div>
-
+              <div className="relative w-full h-full flex items-center justify-center">
+                <img
+                  src="/images/about/who_we_are.png"
+                  alt="Who We Are - iGaming Infrastructure"
+                  className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:scale-[1.02] transition-transform duration-700 ease-out"
+                />
               </div>
             </div>
 
@@ -220,8 +150,8 @@ export default function AboutPage() {
       </section>
 
       {/* WHAT WE DO (Asymmetrical Bento Grid) */}
-      <section className="relative py-24 px-6 z-10">
-        <div className="container mx-auto max-w-7xl">
+      <section className="relative py-24 z-10">
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 mb-6">
               <LayoutGrid size={14} className="text-[var(--primary)]" />
@@ -236,23 +166,25 @@ export default function AboutPage() {
             {/* Hero Card 1 - Online Casino (Spans 2 cols, 2 rows) */}
             <div className="lg:col-span-2 lg:row-span-2 bg-gradient-to-br from-[#111111] to-[#0A0A0A] border border-white/10 hover:border-[var(--primary)]/50 p-10 rounded-3xl group transition-all duration-500 relative overflow-hidden flex flex-col">
               <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
-              <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#0A0A0A] to-transparent z-10"></div>
+              <div className="absolute bottom-0 left-0 w-full h-[65%] bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent z-10 pointer-events-none"></div>
 
-              <div className="relative z-20">
+              <div className="relative z-20 flex-1 flex flex-col items-start pb-8">
                 <div className="w-16 h-16 rounded-2xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center mb-8 shrink-0 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
                   <MonitorPlay size={32} />
                 </div>
                 <h3 className="text-3xl font-black text-white mb-4">Online Casino Software</h3>
-                <p className="text-slate-400 text-lg leading-relaxed max-w-md">
+                <p className="text-slate-400 text-lg leading-relaxed max-w-[90%] md:max-w-[70%] lg:max-w-md">
                   Build feature-rich online casino platforms with gaming integrations, player management, payment systems, bonuses, reporting, and administrative functionality.
                 </p>
-                <Link href="/services/casino-platform" className="mt-8 inline-flex items-center gap-2 text-[var(--primary)] font-bold group/link w-max bg-[var(--primary)]/5 px-4 py-2 rounded-full border border-[var(--primary)]/20 hover:bg-[var(--primary)] hover:text-black transition-all">
-                  Explore Solution <ArrowRight size={18} className="group-hover/link:translate-x-1 transition-transform" />
-                </Link>
+                <div className="mt-8 mt-auto pt-4">
+                  <Link href="/services/casino-platform" className="inline-flex items-center gap-2 text-[var(--primary)] font-bold group/link w-max bg-[var(--primary)]/5 px-6 py-3 rounded-full border border-[var(--primary)]/20 hover:bg-[var(--primary)] hover:text-black transition-all shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
+                    Explore Solution <ArrowRight size={18} className="group-hover/link:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
               </div>
 
               {/* Abstract UI Mockup Background (Bottom Right) */}
-              <div className="absolute -bottom-10 -right-10 w-[80%] h-[60%] transform group-hover:-translate-y-4 group-hover:-translate-x-4 transition-transform duration-700 ease-out flex gap-4 z-0 opacity-80 group-hover:opacity-100">
+              <div className="absolute -bottom-12 -right-8 w-[85%] md:w-[65%] lg:w-[55%] h-[55%] transform group-hover:-translate-y-4 group-hover:-translate-x-4 transition-transform duration-700 ease-out flex gap-4 z-0 opacity-60 group-hover:opacity-100 pointer-events-none">
 
                 {/* Mock Card 1 */}
                 <div className="w-1/2 h-full bg-[#1A1A1A]/80 backdrop-blur-md rounded-tl-3xl border-t border-l border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] p-6 relative overflow-hidden flex flex-col gap-4 translate-y-12">
@@ -340,8 +272,8 @@ export default function AboutPage() {
       </section>
 
       {/* MISSION & VISION (Enhanced with Cyan Secondary Accent) */}
-      <section className="relative py-24 px-6 bg-[#0A0A0A] border-y border-white/5 z-10">
-        <div className="container mx-auto max-w-7xl">
+      <section className="relative py-24 bg-[#0A0A0A] border-y border-white/5 z-10">
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12">
 
             {/* Mission (Primary Accent) */}
@@ -442,8 +374,8 @@ export default function AboutPage() {
       </section>
 
       {/* OUR APPROACH (Horizontal Timeline Stepper) */}
-      <section className="relative py-24 px-6 z-10 overflow-hidden">
-        <div className="container mx-auto max-w-7xl">
+      <section className="relative py-24 z-10 overflow-hidden">
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Our Approach</h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">We follow a structured approach to help transform an idea into a practical iGaming technology solution.</p>
@@ -515,8 +447,8 @@ export default function AboutPage() {
       </section>
 
       {/* WHY CHOOSE US? */}
-      <section className="relative py-24 px-6 bg-[#0A0A0A] border-y border-white/5 z-10">
-        <div className="container mx-auto max-w-7xl">
+      <section className="relative py-24 bg-[#0A0A0A] border-y border-white/5 z-10">
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 mb-6">
               <ShieldCheck size={14} className="text-[var(--primary)]" />
@@ -559,8 +491,8 @@ export default function AboutPage() {
                 icon: <Handshake size={24} />
               }
             ].map((item, i) => (
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className="group relative flex-1 lg:hover:flex-[3] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] bg-[#111111] hover:bg-[#151515] border border-white/5 hover:border-[var(--primary)]/30 rounded-3xl overflow-hidden cursor-pointer flex flex-col items-center py-4 lg:py-5 shadow-lg"
               >
                 {/* Number Circle (Top) */}
@@ -570,7 +502,7 @@ export default function AboutPage() {
 
                 {/* Unexpanded State (Rotated Text) - Hidden on mobile, visible on desktop until hover */}
                 <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center pointer-events-none opacity-100 group-hover:opacity-0 transition-opacity duration-500 z-10">
-                  <h3 
+                  <h3
                     className="text-base font-bold text-slate-300 tracking-wider whitespace-nowrap group-hover:text-white transition-colors"
                     style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
                   >
@@ -586,15 +518,15 @@ export default function AboutPage() {
 
                 {/* Expanded State (Horizontal Text & Description) - Visible only on desktop hover */}
                 <div className="hidden lg:flex absolute top-[70px] bottom-[50px] left-1/2 -translate-x-1/2 w-[240px] xl:w-[280px] flex-col justify-center opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none group-hover:pointer-events-auto z-10">
-                   <h3 className="text-xl xl:text-2xl font-bold text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-700">{item.title}</h3>
-                   <p className="text-slate-400 leading-snug text-sm xl:text-base translate-y-4 group-hover:translate-y-0 transition-transform duration-700 delay-75">{item.desc}</p>
+                  <h3 className="text-xl xl:text-2xl font-bold text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-700">{item.title}</h3>
+                  <p className="text-slate-400 leading-snug text-sm xl:text-base translate-y-4 group-hover:translate-y-0 transition-transform duration-700 delay-75">{item.desc}</p>
                 </div>
 
                 {/* Icon (Bottom) */}
                 <div className="mt-auto shrink-0 text-slate-500 group-hover:text-[var(--primary)] transition-colors duration-500 z-20 lg:group-hover:opacity-0 lg:group-hover:translate-y-4">
                   {item.icon}
                 </div>
-                
+
                 {/* Glow Effect */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--primary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-0"></div>
               </div>
@@ -604,8 +536,8 @@ export default function AboutPage() {
       </section>
 
       {/* CORE VALUES (Horizontal Interactive Cards) */}
-      <section className="relative py-24 px-6 z-10">
-        <div className="container mx-auto max-w-7xl">
+      <section className="relative py-24 z-10">
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/20 bg-[var(--primary)]/10 mb-6">
               <Lightbulb size={14} className="text-[var(--primary)]" />
@@ -639,11 +571,11 @@ export default function AboutPage() {
       </section>
 
       {/* TECH DESIGNED AROUND YOU & RESPONSIBLE TECH */}
-      <section className="relative py-24 px-6 bg-[#050505] border-y border-white/5 z-10 overflow-hidden">
+      <section className="relative py-24 bg-[#050505] border-y border-white/5 z-10 overflow-hidden">
         {/* Subtle background glow */}
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[var(--primary)]/10 to-transparent"></div>
-        
-        <div className="container mx-auto max-w-7xl">
+
+        <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
 
             {/* Tech List */}
@@ -667,8 +599,8 @@ export default function AboutPage() {
                   "Bonus & Promotion Tools", "Administrative Dashboards", "Reporting & Analytics",
                   "Security Controls", "Scalable Infrastructure", "Multi-Language Support"
                 ].map((item, i) => (
-                  <div 
-                    key={i} 
+                  <div
+                    key={i}
                     className="group flex items-center gap-4 bg-gradient-to-r from-white/[0.03] to-transparent border border-white/5 p-4 rounded-2xl hover:bg-white/[0.08] hover:border-[var(--primary)]/30 transition-all duration-300"
                   >
                     <div className="w-7 h-7 rounded-full bg-black/50 border border-white/10 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 transition-all duration-300">
@@ -688,10 +620,10 @@ export default function AboutPage() {
                 <div className="absolute -bottom-6 -right-6 opacity-[0.02] group-hover:opacity-[0.08] text-[var(--primary)] group-hover:-translate-y-4 group-hover:scale-110 transition-all duration-700 pointer-events-none">
                   <ShieldCheck size={180} />
                 </div>
-                
+
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-5 relative z-10 flex items-center gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 flex items-center justify-center shrink-0 shadow-inner group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.15)] transition-all duration-500">
-                     <ShieldCheck size={26} className="text-slate-400 group-hover:text-[var(--primary)] transition-colors duration-500" />
+                    <ShieldCheck size={26} className="text-slate-400 group-hover:text-[var(--primary)] transition-colors duration-500" />
                   </div>
                   Responsible Tech
                 </h3>
@@ -706,10 +638,10 @@ export default function AboutPage() {
                 <div className="absolute -bottom-6 -right-6 opacity-[0.02] group-hover:opacity-[0.08] text-[var(--primary)] group-hover:-translate-y-4 group-hover:scale-110 transition-all duration-700 pointer-events-none">
                   <Users size={180} />
                 </div>
-                
+
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-5 relative z-10 flex items-center gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 flex items-center justify-center shrink-0 shadow-inner group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.15)] transition-all duration-500">
-                     <Users size={26} className="text-slate-400 group-hover:text-[var(--primary)] transition-colors duration-500" />
+                    <Users size={26} className="text-slate-400 group-hover:text-[var(--primary)] transition-colors duration-500" />
                   </div>
                   Operators & Players
                 </h3>

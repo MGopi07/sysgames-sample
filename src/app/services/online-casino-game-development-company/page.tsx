@@ -60,21 +60,16 @@ export default function OnlineCasinoGameDevPage() {
 
                         <div className="w-full lg:w-[45%] relative mt-12 lg:mt-0 flex justify-center scale-75 md:scale-90 lg:scale-100 origin-center">
                             {/* Graphic Container */}
-                            <div className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
-                                <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 to-transparent mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-700"></div>
-                                <Image
-                                    src="/images/casino-games.png"
+                            <div className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden  group">
+                                {/* <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 to-transparent mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-700"></div> */}
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img
+                                    src="/images/all_service/2-1.png"
                                     alt="Casino Games Development"
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="w-full h-full object-cover transition-transform duration-700 "
                                 />
                                 {/* Overlay UI elements to make it look alive */}
-                                <div className="absolute top-6 left-6 z-20 flex gap-2">
-                                    <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-                                    <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                                    <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
-                                </div>
+                                
                                 <div className="absolute bottom-6 right-6 z-20 glass-card px-4 py-2 flex items-center gap-3 rounded-full border border-white/20">
                                     <span className="relative flex h-3 w-3">
                                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>

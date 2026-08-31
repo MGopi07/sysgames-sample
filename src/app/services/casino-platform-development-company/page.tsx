@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { CheckCircle2, ChevronRight, LayoutDashboard, Settings, Smartphone, ShieldCheck, Database, CreditCard, Users, Layers, Zap, Gift, Server, Shield, Coins, BarChart3, Lock, Target, Globe } from "lucide-react";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTASection from "@/components/ui/CTASection";
@@ -50,44 +51,24 @@ export default function CasinoPlatformDevPage() {
               </div>
             </div>
 
-            {/* Right Side Abstract Graphic */}
-            <div className="w-full lg:w-2/5 relative flex justify-center scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
-              <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 to-[var(--secondary)]/20 blur-[100px] rounded-full"></div>
-              <div className="relative w-full aspect-square perspective-1000">
-                {/* Floating Glass Panels */}
-                <div className="absolute inset-0 transform rotate-y-[-15deg] rotate-x-[10deg] hover:rotate-y-[-5deg] hover:rotate-x-[5deg] transition-transform duration-1000">
-                  <div className="absolute top-10 left-10 right-10 bottom-10 bg-[#121212]/80 backdrop-blur-md border border-white/10 rounded-3xl shadow-2xl p-6 flex flex-col overflow-hidden">
-                    <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
-
-                    <div className="relative z-10 flex justify-between items-center mb-6">
-                      <div className="h-4 w-24 bg-[var(--primary)]/30 rounded-full"></div>
-                      <div className="h-8 w-8 bg-white/10 rounded-full"></div>
-                    </div>
-
-                    <div className="relative z-10 flex-1 grid grid-cols-2 gap-4">
-                      <div className="bg-gradient-to-br from-[var(--primary)]/20 to-transparent border border-[var(--primary)]/30 rounded-2xl flex flex-col justify-end p-4">
-                        <div className="h-8 w-8 bg-[var(--primary)]/50 rounded-lg mb-4"></div>
-                        <div className="h-3 w-16 bg-white/40 rounded-full mb-2"></div>
-                        <div className="h-2 w-10 bg-white/20 rounded-full"></div>
-                      </div>
-                      <div className="bg-gradient-to-br from-[var(--secondary)]/20 to-transparent border border-[var(--secondary)]/30 rounded-2xl flex flex-col justify-end p-4">
-                        <div className="h-8 w-8 bg-[var(--secondary)]/50 rounded-lg mb-4"></div>
-                        <div className="h-3 w-16 bg-white/40 rounded-full mb-2"></div>
-                        <div className="h-2 w-10 bg-white/20 rounded-full"></div>
-                      </div>
-                      <div className="bg-white/5 border border-white/10 rounded-2xl p-4 col-span-2 flex items-center gap-4">
-                        <div className="h-10 w-10 bg-white/10 rounded-full shrink-0"></div>
-                        <div className="w-full">
-                          <div className="h-2 w-full bg-white/10 rounded-full mb-2"></div>
-                          <div className="h-2 w-2/3 bg-white/10 rounded-full"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Floating Accent Layers */}
-                  <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-[var(--primary)]/10 backdrop-blur-lg border border-[var(--primary)]/30 rounded-2xl animate-pulse"></div>
-                  <div className="absolute -top-6 -left-6 w-28 h-28 bg-[var(--secondary)]/10 backdrop-blur-lg border border-[var(--secondary)]/30 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-                </div>
+            {/* Right Side Image Graphic */}
+            <div className="w-full lg:w-2/5 relative flex justify-center scale-90 lg:scale-100 mt-12 lg:mt-0">
+              {/* Image Asset with Blend Mode to remove dark backgrounds */}
+              <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
+                 <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105 mix-blend-screen">
+                    <Image
+                      src="/images/all_service/4-1.png"
+                      alt="Casino Platform Development"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      quality={85}
+                      className="object-contain drop-shadow-[0_0_50px_rgba(var(--secondary-rgb),0.5)]"
+                      priority
+                    />
+                 </div>
+                 
+                 {/* Decorative Glow Behind Image */}
+                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--secondary)]/15 blur-[120px] -z-10 rounded-full opacity-60 transition-opacity duration-700 group-hover:opacity-100"></div>
               </div>
             </div>
 

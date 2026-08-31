@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { CheckCircle2, ChevronRight, LayoutDashboard, MonitorSmartphone, ShieldCheck, Wallet, BarChart3, HelpCircle, Settings, Target, Layers, Cpu, Globe, Users, Coins, Store, Terminal, Trophy, TrendingUp, Zap, Network, Webhook, Lock, MapPin } from "lucide-react";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTASection from "@/components/ui/CTASection";
@@ -190,32 +191,25 @@ export default function RetailBettingShopProviderPage() {
                             </div>
                         </div>
 
-                        <div className="w-full lg:w-1/2 flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
-                            <div className="relative w-full max-w-lg aspect-square glass-card rounded-3xl border border-white/10 p-8 shadow-2xl flex flex-col">
-                                <div className="flex justify-between items-center border-b border-white/10 pb-4 mb-6">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-xl bg-[var(--primary)]/20 flex items-center justify-center border border-[var(--primary)]/30">
-                                            <MonitorSmartphone className="text-[var(--primary)]" size={20} />
-                                        </div>
-                                        <div>
-                                            <div className="h-4 w-32 bg-white/20 rounded mb-2"></div>
-                                            <div className="h-2 w-20 bg-white/10 rounded"></div>
-                                        </div>
-                                    </div>
-                                    <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center">
-                                        <div className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></div>
-                                    </div>
-                                </div>
-                                <div className="grid grid-cols-2 gap-4 flex-1">
-                                    {[1, 2, 3, 4].map(i => (
-                                        <div key={i} className="bg-white/5 rounded-2xl border border-white/5 p-4 flex flex-col justify-end">
-                                            <div className="w-8 h-8 rounded-full bg-white/10 mb-auto"></div>
-                                            <div className="h-2 w-full bg-white/10 rounded mb-2"></div>
-                                            <div className="h-2 w-2/3 bg-white/10 rounded"></div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
+                        {/* Right Side Image Graphic */}
+                        <div className="w-full lg:w-1/2 relative flex justify-center scale-90 lg:scale-100 mt-12 lg:mt-0">
+                          {/* Image Asset with Blend Mode to remove dark backgrounds */}
+                          <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
+                             <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105 mix-blend-screen">
+                                <Image
+                                  src="/images/all_service/5-1.png"
+                                  alt="Retail Betting Shop Software"
+                                  fill
+                                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                  quality={85}
+                                  className="object-contain drop-shadow-[0_0_50px_rgba(var(--primary-rgb),0.5)]"
+                                  priority
+                                />
+                             </div>
+                             
+                             {/* Decorative Glow Behind Image */}
+                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/15 blur-[120px] -z-10 rounded-full opacity-60 transition-opacity duration-700 group-hover:opacity-100"></div>
+                          </div>
                         </div>
                     </div>
                 </div>

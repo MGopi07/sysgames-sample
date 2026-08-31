@@ -98,7 +98,7 @@ export default function FactsFigures() {
           </motion.h2>
         </div>
 
-        <div className="relative z-10">
+        <div id="statsCounter" className="relative z-10">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
             {statistics.map((stat, index) => (
               <motion.div

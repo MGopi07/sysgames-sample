@@ -14,7 +14,7 @@ export default function BlogSinglePage({ params }: { params: { slug: string } })
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-10 pointer-events-none"></div>
 
         {/* Top Header */}
-        <div className="container mx-auto max-w-4xl px-6 mb-12 text-center relative z-10 flex flex-col items-center">
+        <div className="container mx-auto max-w-4xl px-6 lg:px-12 mb-12 text-center relative z-10 flex flex-col items-center">
             <h1 className="text-3xl md:text-5xl lg:text-[54px] leading-[1.1] font-black text-white uppercase tracking-wider mb-6">
                 The Future Of Enterprise Casino Platforms
             </h1>
@@ -29,7 +29,7 @@ export default function BlogSinglePage({ params }: { params: { slug: string } })
             </div>
         </div>
 
-        <div className="container mx-auto max-w-7xl px-6 relative z-10">
+        <div className="container mx-auto px-6 lg:px-12 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 
                 {/* Left Column: Main Content */}
