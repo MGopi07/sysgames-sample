@@ -197,7 +197,7 @@ export default function RetailBettingShopProviderPage() {
                           <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
                              <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105">
                                 <Image
-                                  src="/images/all_service/5-1.png"
+                                  src="/images/all_service/5-1.webp"
                                   alt="Retail Betting Shop Software"
                                   fill
                                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

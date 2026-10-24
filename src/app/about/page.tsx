@@ -45,7 +45,7 @@ export default function AboutPage() {
               </h1>
 
               <div className="flex flex-col gap-4">
-                <p className="text-lg lg:text-xl text-gray-400 leading-relaxed max-w-xl">
+                <p className="text-lg text-gray-400 leading-relaxed max-w-xl">
                   We are an iGaming software development company focused on creating reliable, scalable, and flexible technology for businesses entering and growing the online gaming industry. Our goal is simple: build powerful iGaming technology that helps operators launch faster, operate efficiently, and create better player experiences.
                 </p>
                 <p className="text-base text-gray-500 leading-relaxed max-w-xl">
@@ -70,7 +70,7 @@ export default function AboutPage() {
 
               <div className="relative w-full h-full flex items-center justify-center">
                 <img
-                  src="/images/about/1.png"
+                  src="/images/about/1.webp"
                   alt="iGaming Technology Infrastructure"
                   className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:scale-[1.02] transition-transform duration-700 ease-out"
                 />
@@ -138,7 +138,7 @@ export default function AboutPage() {
 
               <div className="relative w-full h-full flex items-center justify-center">
                 <img
-                  src="/images/about/who_we_are.png"
+                  src="/images/about/who_we_are.webp"
                   alt="Who We Are - iGaming Infrastructure"
                   className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:scale-[1.02] transition-transform duration-700 ease-out"
                 />

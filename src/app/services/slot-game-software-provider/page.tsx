@@ -40,9 +40,9 @@ export default function SlotGameProviderPage() {
                                 <p>
                                     As an experienced Slot Game Software Provider, we offer configurable gaming technology can support different casino business models and integration requirements. From classic slot mechanics and modern video slots to feature-rich games bonus rounds, free spins, jackpots, and interactive gameplay, our solutions can be adapted to your platform.
                                 </p>
-                                <p>
+                                {/* <p>
                                     Our Slot Game Software Provider services combine game technology, engaging interfaces, integration capabilities, mobile compatibility, and scalable infrastructure to help businesses build and expand their online slot portfolios.
-                                </p>
+                                </p> */}
                             </div>
 
                             <div className="flex flex-wrap gap-4">
@@ -58,18 +58,18 @@ export default function SlotGameProviderPage() {
                           <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
                              <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105">
                                 <Image
-                                  src="/images/all_service/7-1.png"
+                                  src="/images/all_service/7-1.webp"
                                   alt="Slot Game Software Provider"
                                   fill
                                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                   quality={85}
-                                  className="object-contain drop-shadow-[0_0_50px_rgba(var(--primary-rgb),0.5)]"
+                                  className="object-contain drop-shadow-[0_0_30px_rgba(var(--primary-rgb),0.2)]"
                                   priority
                                 />
                              </div>
                              
                              {/* Decorative Glow Behind Image */}
-                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/15 blur-[120px] -z-10 rounded-full opacity-60 transition-opacity duration-700 group-hover:opacity-100"></div>
+                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/10 blur-[80px] -z-10 rounded-full opacity-30 transition-opacity duration-700 group-hover:opacity-60"></div>
                           </div>
                         </div>
                     </div>
@@ -98,17 +98,17 @@ export default function SlotGameProviderPage() {
                             <div className="mt-16 w-full max-w-md mx-auto relative hidden lg:block group scale-110 2xl:scale-125">
                                 <div className="relative w-full aspect-square transition-transform duration-700">
                                     <Image
-                                        src="/images/all_service/7-2.png"
+                                        src="/images/all_service/7-2.webp"
                                         alt="Slot Game Software Solutions"
                                         fill
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         quality={85}
-                                        className="object-contain drop-shadow-[0_0_50px_rgba(var(--primary-rgb),0.5)]"
+                                        className="object-contain drop-shadow-[0_0_30px_rgba(var(--primary-rgb),0.2)]"
                                     />
                                 </div>
                                 
                                 {/* Decorative Glow Behind Image */}
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/15 blur-[120px] -z-10 rounded-full opacity-60 transition-opacity duration-700 group-hover:opacity-100"></div>
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/10 blur-[80px] -z-10 rounded-full opacity-30 transition-opacity duration-700 group-hover:opacity-60"></div>
                             </div>
                         </div>
 
@@ -388,7 +388,7 @@ export default function SlotGameProviderPage() {
             {/* Development Process */}
             <section className="py-16 border-t border-white/5 relative overflow-hidden bg-[#0A0A0A]">
                 {/* Background Elements */}
-                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] pointer-events-none"></div>
+                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.webp')] opacity-[0.03] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[var(--primary)]/10 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
                 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
@@ -485,7 +485,7 @@ export default function SlotGameProviderPage() {
                                     
                                     {/* Base Infrastructure Layer */}
                                     <div className="absolute w-64 h-64 bg-white/[0.02] border border-white/10 rounded-3xl shadow-2xl transition-transform duration-1000 group-hover:[transform:translateZ(-15px)]">
-                                        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 rounded-3xl"></div>
+                                        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.webp')] opacity-10 rounded-3xl"></div>
                                     </div>
                                     
                                     {/* Middle Platform Layer */}

@@ -39,9 +39,9 @@ export default function SportsbookKioskProviderPage() {
                                 <p>
                                     As an experienced Sportsbook Kiosk Software Provider, Deliver configurable kiosk technology that can support sportsbook operations across betting shops, retail locations, gaming venues, and other permitted environments. Our solutions bring betting markets, odds, ticketing, player accounts, payment functionality, centralized management together a single platform.
                                 </p>
-                                <p>
+                                {/* <p>
                                     Whether you launching a new sportsbook kiosk network or upgrading an existing retail betting operation, our Sportsbook Kiosk Software Provider services around your business requirements, target markets, branding & operational model.
-                                </p>
+                                </p> */}
                             </div>
 
                             <div className="flex flex-wrap gap-4">
@@ -56,7 +56,7 @@ export default function SportsbookKioskProviderPage() {
                             <div className="relative w-full max-w-[500px] flex justify-center items-center">
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/20 rounded-full blur-[80px] -z-10"></div>
                                 <img
-                                    src="/images/all_service/6-1.png"
+                                    src="/images/all_service/6-1.webp"
                                     alt="Sportsbook Kiosk Software Provider Interface"
                                     className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
                                 />

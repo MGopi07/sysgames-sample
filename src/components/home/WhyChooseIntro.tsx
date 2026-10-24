@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Network, Shield, Zap } from "lucide-react";
 
 export default function WhyChooseIntro() {
@@ -82,9 +83,11 @@ export default function WhyChooseIntro() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-[var(--primary)]/10 rounded-full blur-[100px] pointer-events-none"></div>
 
             <div className="relative w-full max-w-[600px] lg:max-w-[750px] xl:max-w-[850px] flex items-center justify-center z-10">
-              <img 
-                src="/images/why_choose.png" 
+              <Image 
+                src="/images/why_choose.webp" 
                 alt="Why Choose Us" 
+                width={800}
+                height={600}
                 className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(var(--primary-rgb),0.2)]"
                 style={{ 
                   WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%)', 

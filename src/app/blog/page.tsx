@@ -36,7 +36,7 @@ export default function BlogPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
             {posts.map((post) => (
                 <Link href={`/blog/sample-post-${post}`} key={post} className="group flex flex-col h-full">
-                    <div className="glass-card flex-grow p-4 md:p-6 rounded-[2rem] border border-white/5 relative overflow-hidden transition-all duration-500 hover:border-[var(--primary)]/40 hover:-translate-y-2 bg-[#121212]/80 backdrop-blur-xl">
+                    <div className="glass-card flex-grow p-3 rounded-[2rem] border border-white/5 relative overflow-hidden transition-all duration-500 hover:border-[var(--primary)]/40 hover:-translate-y-2 bg-[#121212]/80 backdrop-blur-xl">
                         
                         {/* Hover Glow effect top */}
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-[var(--primary)]/20 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>

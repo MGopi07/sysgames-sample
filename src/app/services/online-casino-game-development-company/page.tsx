@@ -64,7 +64,7 @@ export default function OnlineCasinoGameDevPage() {
                                 {/* <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 to-transparent mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-700"></div> */}
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
-                                    src="/images/all_service/2-1.png"
+                                    src="/images/all_service/2-1.webp"
                                     alt="Casino Games Development"
                                     className="w-full h-full object-cover transition-transform duration-700 "
                                 />

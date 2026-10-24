@@ -57,7 +57,7 @@ export default function CasinoPlatformDevPage() {
               <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
                  <div className="relative w-full h-full transition-transform duration-700">
                     <Image
-                      src="/images/all_service/4-1.png"
+                      src="/images/all_service/4-1.webp"
                       alt="Casino Platform Development"
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

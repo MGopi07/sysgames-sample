@@ -27,6 +27,8 @@ export const metadata: Metadata = {
 
 
 
+import AnimationProvider from "@/components/AnimationProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,12 +37,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col relative`}>
-        <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
-
+        <AnimationProvider>
+          <Header />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </AnimationProvider>
       </body>
     </html>
   );

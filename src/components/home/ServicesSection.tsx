@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { services } from "@/data/services";
 import Link from "next/link";
+import Image from "next/image";
 import { CheckCircle2, ChevronRight, Gamepad2, Dices, Trophy, Layers, Store, MonitorUp, Coins, Network } from "lucide-react";
 
 const nodeIcons = [Gamepad2, Dices, Trophy, Layers, Store, MonitorUp, Coins, Network];
@@ -112,11 +113,12 @@ export default function ServicesSection() {
                     </div>
 
                     <div className="w-full lg:w-1/2 h-[250px] sm:h-[300px] lg:h-auto relative overflow-hidden rounded-xl bg-[#050505] border border-white/5 shadow-2xl shrink-0">
-                      <img
-                        src={`/images/services/${["1.png", "2.png", "3.png", "4.png", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg"][index]}`}
+                      <Image
+                        src={`/images/services/${["1.webp", "2.webp", "3.webp", "4.webp", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg"][index]}`}
                         alt={service.heading}
+                        width={600}
+                        height={400}
                         className="absolute inset-0 w-full h-full object-contain opacity-100"
-                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
                       />
                     </div>
 

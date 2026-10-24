@@ -4,7 +4,9 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [75, 85],
   },
-  /* config options here */
+  experimental: {
+    optimizePackageImports: ['lucide-react', 'framer-motion'],
+  },
 };
 
 export default nextConfig;

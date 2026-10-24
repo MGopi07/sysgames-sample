@@ -79,7 +79,7 @@ export default function CasinoGameAggregationPage() {
                                 {/* Central API Hub */}
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 rounded-3xl bg-gradient-to-br from-[#121212] to-[#0A0A0A] backdrop-blur-2xl border border-[var(--primary)]/40 shadow-[0_0_50px_rgba(var(--primary-rgb),0.3)] flex flex-col items-center justify-center z-30 group cursor-default overflow-hidden">
                                     <div className="absolute inset-0 bg-[var(--primary)]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                    <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay"></div>
+                                    <div className="absolute inset-0 bg-[url('/noise.webp')] opacity-10 mix-blend-overlay"></div>
                                     <Database className="text-[var(--primary)] mb-2 drop-shadow-[0_0_15px_rgba(var(--primary-rgb),1)] group-hover:scale-110 transition-transform duration-500" size={40} />
                                     <span className="text-xs font-black text-white tracking-[0.2em] bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300 mt-1">AGGREGATOR</span>
                                     <div className="mt-2 px-3 py-1 rounded-full bg-[var(--primary)]/10 border border-[var(--primary)]/20">
@@ -267,7 +267,7 @@ export default function CasinoGameAggregationPage() {
                             <div className="relative w-full aspect-square max-w-[500px] mx-auto group">
                                 <div className="relative w-full h-full transition-transform duration-700">
                                     <Image
-                                        src="/images/all_service/8-2.png"
+                                        src="/images/all_service/8-2.webp"
                                         alt="Casino Game Aggregation Provider"
                                         fill
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -289,7 +289,7 @@ export default function CasinoGameAggregationPage() {
                             <div className="relative w-full aspect-square max-w-[500px] mx-auto group flex items-center justify-center">
                                 <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105">
                                     <Image
-                                        src="/images/all_service/8-3.png"
+                                        src="/images/all_service/8-3.webp"
                                         alt="iGaming Platforms Casino Game Aggregation"
                                         fill
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

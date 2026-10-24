@@ -66,7 +66,7 @@ export default function WhiteLabelPage() {
 
                                 {/* Main Image */}
                                 <img 
-                                    src="/images/all_service/1-1.png" 
+                                    src="/images/all_service/1-1.webp" 
                                     alt="White Label iGaming Software Solutions" 
                                     className="w-full h-auto object-contain relative z-10 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]"
                                 />
@@ -268,17 +268,17 @@ export default function WhiteLabelPage() {
                             {
                                 title: "White Label Online Casino",
                                 desc: "Support branded online casino operations with slots, table games, live casino content, player accounts, payments, bonuses & administration.",
-                                image: "/images/all_service/4-1.png"
+                                image: "/images/all_service/4-1.webp"
                             },
                             {
                                 title: "White Label Sportsbook",
                                 desc: "Create a branded sportsbook experience with supported betting markets, odds integrations, player wallets, promotions, and reporting.",
-                                image: "/images/all_service/3-1.png"
+                                image: "/images/all_service/3-1.webp"
                             },
                             {
                                 title: "White Label Sweepstakes",
                                 desc: "Configured for sweepstakes business models with branded player experiences, promotions, account management, and administrative controls.",
-                                image: "/images/all_service/2-1.png"
+                                image: "/images/all_service/2-1.webp"
                             }
                         ].map((model, idx) => (
                             <label key={idx} className="group relative h-[320px] rounded-3xl overflow-hidden border border-white/10 cursor-pointer shadow-2xl bg-[#0A0A0A] block">

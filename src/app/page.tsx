@@ -1,12 +1,15 @@
+import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 import HeroSlider from "@/components/home/HeroSlider";
-import WhyChooseIntro from "@/components/home/WhyChooseIntro";
-import ServicesSection from "@/components/home/ServicesSection";
-import BenefitsSection from "@/components/home/BenefitsSection";
-import FactsFigures from "@/components/home/FactsFigures";
-import GlobalSolutions from "@/components/home/GlobalSolutions";
-import FAQSection from "@/components/home/FAQSection";
-import ClientReviews from "@/components/home/ClientReviews";
-import FinalCTA from "@/components/home/FinalCTA";
+
+const WhyChooseIntro = dynamic(() => import("@/components/home/WhyChooseIntro"));
+const ServicesSection = dynamic(() => import("@/components/home/ServicesSection"));
+const BenefitsSection = dynamic(() => import("@/components/home/BenefitsSection"));
+const FactsFigures = dynamic(() => import("@/components/home/FactsFigures"));
+const GlobalSolutions = dynamic(() => import("@/components/home/GlobalSolutions"));
+const FAQSection = dynamic(() => import("@/components/home/FAQSection"));
+const ClientReviews = dynamic(() => import("@/components/home/ClientReviews"));
+const FinalCTA = dynamic(() => import("@/components/home/FinalCTA"));
 
 export default function Home() {
   return (
@@ -14,29 +17,31 @@ export default function Home() {
       {/* SECTION 1 - HERO SLIDER */}
       <HeroSlider />
       
-      {/* SECTION 2 - WHY CHOOSE AN iGAMING SOFTWARE DEVELOPMENT COMPANY */}
-      <WhyChooseIntro />
-      
-      {/* SECTION 3 - B2B iGAMING SOFTWARE DEVELOPMENT SERVICES */}
-      <ServicesSection />
-      
-      {/* SECTION 4 - WHY CHOOSE AN iGAMING SOFTWARE DEVELOPMENT COMPANY (FEATURES) */}
-      <BenefitsSection />
-      
-      {/* SECTION 5 - FACTS & FIGURES */}
-      <FactsFigures />
-      
-      {/* SECTION 6 - GLOBAL iGAMING SOLUTIONS */}
-      <GlobalSolutions />
-      
-      {/* SECTION 7 - FAQ */}
-      <FAQSection />
-      
-      {/* SECTION 8 - CLIENT REVIEWS */}
-      <ClientReviews />
-      
-      {/* FINAL CTA SECTION */}
-      <FinalCTA />
+      <Suspense fallback={null}>
+        {/* SECTION 2 - WHY CHOOSE AN iGAMING SOFTWARE DEVELOPMENT COMPANY */}
+        <WhyChooseIntro />
+        
+        {/* SECTION 3 - B2B iGAMING SOFTWARE DEVELOPMENT SERVICES */}
+        <ServicesSection />
+        
+        {/* SECTION 4 - WHY CHOOSE AN iGAMING SOFTWARE DEVELOPMENT COMPANY (FEATURES) */}
+        <BenefitsSection />
+        
+        {/* SECTION 5 - FACTS & FIGURES */}
+        <FactsFigures />
+        
+        {/* SECTION 6 - GLOBAL iGAMING SOLUTIONS */}
+        <GlobalSolutions />
+        
+        {/* SECTION 7 - FAQ */}
+        <FAQSection />
+        
+        {/* SECTION 8 - CLIENT REVIEWS */}
+        <ClientReviews />
+        
+        {/* FINAL CTA SECTION */}
+        <FinalCTA />
+      </Suspense>
     </>
   );
 }

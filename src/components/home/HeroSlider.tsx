@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 import { heroSlides } from "@/data/heroSlides";
 import HeroHubVisual from "./HeroHubVisual";
@@ -29,7 +29,7 @@ export default function HeroSlider() {
   }, [currentIndex, isPlaying]);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-[#0A0A0A] flex items-center pt-16 pb-12 lg:pt-16 lg:pb-16">
+    <div className="relative min-h-screen w-full overflow-hidden bg-[#0A0A0A] flex items-center pt-24 pb-32 lg:pt-32 lg:pb-32">
       {/* Abstract Backgrounds based on slide visual */}
       <div className="absolute inset-0 z-0 opacity-40">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--secondary)]/30 rounded-full blur-[150px]"></div>
@@ -39,7 +39,7 @@ export default function HeroSlider() {
       </div>
 
       <AnimatePresence mode="wait">
-        <motion.div
+        <m.div
           key={currentIndex}
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -49,7 +49,7 @@ export default function HeroSlider() {
         >
           {/* Content */}
           <div className="space-y-6 max-w-3xl lg:pr-8 lg:min-h-[480px] flex flex-col justify-center">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -57,9 +57,9 @@ export default function HeroSlider() {
             >
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-medium text-[var(--primary)] tracking-wide uppercase">{heroSlides[currentIndex].eyebrow}</span>
-            </motion.div>
+            </m.div>
 
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
@@ -86,9 +86,9 @@ export default function HeroSlider() {
                   return heroSlides[currentIndex].headline;
                 })()}
               </h1>
-            </motion.div>
+            </m.div>
 
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
@@ -97,9 +97,9 @@ export default function HeroSlider() {
               <p className="text-lg lg:text-xl text-gray-400 leading-relaxed max-w-xl">
                 {heroSlides[currentIndex].paragraph}
               </p>
-            </motion.div>
+            </m.div>
 
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
@@ -112,7 +112,7 @@ export default function HeroSlider() {
               <p className="text-sm text-gray-400/80 font-medium tracking-wide">
                 Experience the next generation of iGaming platforms.
               </p>
-            </motion.div>
+            </m.div>
           </div>
 
           {/* Visual abstract representation */}
@@ -123,7 +123,7 @@ export default function HeroSlider() {
             {currentIndex === 2 && <PredictionVisual />}
             {currentIndex === 3 && <GlobalVisual />}
           </div>
-        </motion.div>
+        </m.div>
       </AnimatePresence>
 
       {/* Controls */}
@@ -174,29 +174,33 @@ export default function HeroSlider() {
 /* --- Unique Visual Components --- */
 
 const CasinoVisual = () => (
-  <motion.div
+  <m.div
     id="aviatorSimulator"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.4, duration: 0.8 }}
     className="relative w-full h-full flex items-center justify-center"
   >
-    <motion.div
+    <m.div
       animate={{ y: [0, -15, 0] }}
       transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       className="relative w-full h-full max-w-xl mx-auto flex items-center justify-center z-20"
     >
-      <img
-        src="/images/banner/2.png"
+      <Image
+        src="/images/banner/2.webp"
         alt="Casino Platform"
+        width={600}
+        height={600}
+        priority={false}
+        sizes="(max-width: 768px) 100vw, 600px"
         className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]"
       />
-    </motion.div>
-  </motion.div>
+    </m.div>
+  </m.div>
 );
 
 const EcosystemVisual = () => (
-  <motion.div
+  <m.div
     id="ecosystemSimulator"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
@@ -206,60 +210,72 @@ const EcosystemVisual = () => (
     <div className="absolute inset-0 border border-white/10 rounded-full animate-[spin_60s_linear_infinite]"></div>
     <div className="absolute inset-8 border border-white/5 rounded-full animate-[spin_40s_linear_infinite_reverse]"></div>
 
-    <motion.div
+    <m.div
       animate={{ y: [0, -15, 0] }}
       transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       className="relative w-full h-full max-w-xl mx-auto flex items-center justify-center z-20"
     >
-      <img
-        src="/images/banner/1.png"
+      <Image
+        src="/images/banner/1.webp"
         alt="Ecosystem Platform"
+        width={600}
+        height={600}
+        priority={true}
+        sizes="(max-width: 768px) 100vw, 600px"
         className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]"
       />
-    </motion.div>
-  </motion.div>
+    </m.div>
+  </m.div>
 );
 
 const PredictionVisual = () => (
-  <motion.div
+  <m.div
     id="predictionVisual"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.4, duration: 0.8 }}
     className="relative w-full h-full flex items-center justify-center"
   >
-    <motion.div
+    <m.div
       animate={{ y: [0, -15, 0] }}
       transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       className="relative w-full h-full max-w-xl mx-auto flex items-center justify-center z-20"
     >
-      <img
-        src="/images/banner/3.png"
+      <Image
+        src="/images/banner/3.webp"
         alt="Prediction Market Software"
+        width={600}
+        height={600}
+        priority={false}
+        sizes="(max-width: 768px) 100vw, 600px"
         className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]"
       />
-    </motion.div>
-  </motion.div>
+    </m.div>
+  </m.div>
 );
 
 const GlobalVisual = () => (
-  <motion.div
+  <m.div
     id="paymentFlow"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.4, duration: 0.8 }}
     className="relative w-full h-full flex items-center justify-center"
   >
-    <motion.div
+    <m.div
       animate={{ y: [0, -15, 0] }}
       transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       className="relative w-full h-full max-w-xl mx-auto flex items-center justify-center z-20"
     >
-      <img
-        src="/images/banner/4.png"
+      <Image
+        src="/images/banner/4.webp"
         alt="Global iGaming Technology"
+        width={600}
+        height={600}
+        priority={false}
+        sizes="(max-width: 768px) 100vw, 600px"
         className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]"
       />
-    </motion.div>
-  </motion.div>
+    </m.div>
+  </m.div>
 );

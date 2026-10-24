@@ -53,7 +53,7 @@ export default function SportsbookSoftwareDevPage() {
               <div className="relative w-full aspect-[4/5] max-w-[500px] mx-auto lg:mr-0 flex items-center justify-center group">
                  <div className="relative w-full h-full drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-transform duration-700 ease-out group-hover:-translate-y-4">
                     <Image
-                      src="/images/all_service/3-1.png"
+                      src="/images/all_service/3-1.webp"
                       alt="Sportsbook Software Platform"
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -87,7 +87,7 @@ export default function SportsbookSoftwareDevPage() {
               <div className="relative w-full aspect-video max-w-lg mx-auto mt-6 flex items-center justify-center">
                  <div className="relative w-full h-full">
                     <Image
-                      src="/images/all_service/3-2.png"
+                      src="/images/all_service/3-2.webp"
                       alt="Sportsbook Software Features"
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
