@@ -2,14 +2,16 @@
 
 @theme {
   --color-background: #0A0A0A;
-  --color-secondary: #121212;
-  --color-card: #121A2A;
-  --color-surface: #161F31;
+  --color-foreground: #FFFFFF;
+  --color-primary: #F72585;
+  --color-secondary: #7209B7;
+
+  --color-card: #121217;
+  --color-surface: #1A1A22;
   --color-primary-text: #FFFFFF;
   --color-secondary-text: #94A3B8;
   --color-border: rgba(255, 255, 255, 0.1);
-  --color-accent-blue: #D4FF00;
-  --color-accent-violet: #9FCC00;
+  --color-accent-lime: #D4FF00;
   
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
@@ -76,7 +78,7 @@
   }
 
   .glass-card {
-    background: rgba(18, 26, 42, 0.6);
+    background: rgba(18, 18, 23, 0.65);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.05);
   }

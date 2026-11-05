@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Globe, Briefcase, Mail, ChevronRight } from "lucide-react";
 
 const FooterLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
@@ -21,11 +22,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
           {/* Column 1 */}
           <div className="lg:col-span-4 space-y-6 lg:pr-8">
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center font-bold text-[var(--btn-text)] shadow-[0_0_15px_rgba(var(--secondary-rgb),0.5)]">
-                S
-              </div>
-              <span className="font-bold text-xl tracking-tight text-white uppercase">SYSGAMES</span>
+            <Link href="/" className="inline-block group">
+              <Image
+                src="/images/logo/logo.png"
+                alt="SYSGAMES"
+                width={180}
+                height={40}
+                className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Global B2B technology company providing premium iGaming software solutions built for scalability, security, and exceptional user experiences.

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, ChevronRight, Home, Info, Layers, BookOpen, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,6 +11,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +19,29 @@ export default function Header() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Lock body scroll when off-canvas mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
+  // Close mobile menu on ESC key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
   const servicesList = [
@@ -34,10 +59,14 @@ export default function Header() {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-[#0A0A0A]/80 backdrop-blur-md py-3" : "bg-transparent py-5"}`}>
       <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center font-bold text-[var(--btn-text)] shadow-[0_0_15px_rgba(var(--secondary-rgb),0.5)]">
-            S
-          </div>
-          <span className="font-bold text-xl tracking-tight text-white uppercase">SYSGAMES</span>
+          <Image
+            src="/images/logo/logo.png"
+            alt="SYSGAMES"
+            width={180}
+            height={40}
+            className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -103,75 +132,165 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Mobile Toggle */}
-        <button id="mobileMenuBtn" aria-label="Toggle mobile menu" className="lg:hidden text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        {/* Mobile Toggle Button */}
+        <button
+          id="mobileMenuBtn"
+          aria-label="Open mobile menu"
+          className="lg:hidden relative p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[var(--primary)]/50 text-white transition-all active:scale-95 flex items-center justify-center focus:outline-none"
+          onClick={() => setIsMobileMenuOpen(true)}
+        >
+          <Menu size={22} />
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      <motion.div
-        id="mobileNav"
-        initial={false}
-        animate={{ opacity: isMobileMenuOpen ? 1 : 0, height: isMobileMenuOpen ? "100vh" : 0 }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
-        className={`lg:hidden absolute top-full left-0 w-full bg-[#121212] border-t border-white/10 overflow-y-auto pb-32 z-50 ${isMobileMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
-      >
-        <div className="flex flex-col p-6">
-          {/* Home */}
-          <Link href="/" className={`flex items-center gap-4 py-4 border-b border-white/5 transition-colors ${pathname === '/' ? 'text-[var(--primary)]' : 'text-gray-300 hover:text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>
-            <Home size={22} className={pathname === '/' ? 'text-[var(--primary)]' : 'text-gray-500'} />
-            <span className="text-xl font-medium tracking-wide">Home</span>
-          </Link>
+      {/* Off-Canvas Mobile Menu Drawer */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 z-[100] lg:hidden">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              className="absolute inset-0 bg-black/75 backdrop-blur-sm"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
 
-          {/* About */}
-          <Link href="/about" className={`flex items-center gap-4 py-4 border-b border-white/5 transition-colors ${pathname === '/about' ? 'text-[var(--primary)]' : 'text-gray-300 hover:text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>
-            <Info size={22} className={pathname === '/about' ? 'text-[var(--primary)]' : 'text-gray-500'} />
-            <span className="text-xl font-medium tracking-wide">About</span>
-          </Link>
+            {/* Offcanvas Drawer Content */}
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 28, stiffness: 280 }}
+              className="absolute top-0 right-0 h-full w-[85%] max-w-sm sm:max-w-md bg-[#0D0D11] border-l border-white/10 shadow-2xl flex flex-col justify-between"
+            >
+              {/* Drawer Header */}
+              <div className="flex items-center justify-between p-6 border-b border-white/10 bg-[#0A0A0E]">
+                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
+                  <Image
+                    src="/images/logo/logo.png"
+                    alt="SYSGAMES"
+                    width={150}
+                    height={34}
+                    className="h-8 w-auto object-contain"
+                  />
+                </Link>
+                <button
+                  aria-label="Close menu"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-gray-300 hover:text-white transition-all active:scale-95"
+                >
+                  <X size={20} />
+                </button>
+              </div>
 
-          {/* Services Dropdown */}
-          <div className="py-4 border-b border-white/5">
-            <div className={`flex items-center gap-4 mb-4 cursor-default ${pathname?.startsWith('/services') ? 'text-[var(--primary)]' : 'text-gray-300'}`}>
-              <Layers size={22} className={pathname?.startsWith('/services') ? 'text-[var(--primary)]' : 'text-gray-500'} />
-              <span className="text-xl font-medium tracking-wide">Services</span>
-            </div>
-            <div className="flex flex-col pl-10 gap-3 border-l-2 border-white/10 ml-3 relative">
-              {pathname?.startsWith('/services') && (
-                <div className="absolute left-[-2px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-[var(--primary)] to-transparent"></div>
-              )}
-              {servicesList.map((item, idx) => {
-                const isActive = pathname === item.href;
-                return (
-                  <Link key={idx} href={item.href} className={`flex items-center justify-between py-2 transition-colors ${isActive ? 'text-[var(--primary)] font-bold' : 'text-gray-400 hover:text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>
-                    <span className="text-base">{item.name}</span>
-                    {isActive && <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] shadow-[0_0_8px_rgba(var(--primary-rgb),1)] mr-2"></div>}
-                  </Link>
-                )
-              })}
-            </div>
+              {/* Drawer Navigation Links */}
+              <div className="flex-1 overflow-y-auto px-6 py-4 space-y-1">
+                {/* Home */}
+                <Link
+                  href="/"
+                  className={`flex items-center gap-3.5 px-3 py-3 rounded-xl transition-all ${pathname === '/' ? 'bg-[var(--primary)]/10 text-[var(--primary)] font-semibold border border-[var(--primary)]/30' : 'text-gray-300 hover:text-white hover:bg-white/5'}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Home size={20} className={pathname === '/' ? 'text-[var(--primary)]' : 'text-gray-400'} />
+                  <span className="text-base tracking-wide">Home</span>
+                </Link>
+
+                {/* About */}
+                <Link
+                  href="/about"
+                  className={`flex items-center gap-3.5 px-3 py-3 rounded-xl transition-all ${pathname === '/about' ? 'bg-[var(--primary)]/10 text-[var(--primary)] font-semibold border border-[var(--primary)]/30' : 'text-gray-300 hover:text-white hover:bg-white/5'}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Info size={20} className={pathname === '/about' ? 'text-[var(--primary)]' : 'text-gray-400'} />
+                  <span className="text-base tracking-wide">About</span>
+                </Link>
+
+                {/* Services Accordion */}
+                <div className="pt-1">
+                  <button
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                    className={`w-full flex items-center justify-between px-3 py-3 rounded-xl transition-all ${pathname?.startsWith('/services') ? 'bg-[var(--primary)]/10 text-[var(--primary)] font-semibold border border-[var(--primary)]/30' : 'text-gray-300 hover:text-white hover:bg-white/5'}`}
+                  >
+                    <div className="flex items-center gap-3.5">
+                      <Layers size={20} className={pathname?.startsWith('/services') ? 'text-[var(--primary)]' : 'text-gray-400'} />
+                      <span className="text-base tracking-wide">Services</span>
+                    </div>
+                    <ChevronDown
+                      size={18}
+                      className={`text-gray-400 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180 text-[var(--primary)]' : ''}`}
+                    />
+                  </button>
+
+                  <AnimatePresence>
+                    {isMobileServicesOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.25, ease: "easeInOut" }}
+                        className="overflow-hidden pl-4 pr-1 py-1"
+                      >
+                        <div className="flex flex-col gap-1 border-l-2 border-white/10 pl-3 my-1">
+                          {servicesList.map((item, idx) => {
+                            const isActive = pathname === item.href;
+                            return (
+                              <Link
+                                key={idx}
+                                href={item.href}
+                                className={`flex items-center justify-between px-3 py-2 text-sm rounded-lg transition-all ${isActive ? 'text-[var(--primary)] font-semibold bg-[var(--primary)]/10' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
+                                onClick={() => setIsMobileMenuOpen(false)}
+                              >
+                                <span>{item.name}</span>
+                                {isActive && <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] shadow-[0_0_8px_rgba(var(--primary-rgb),1)]"></div>}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                {/* Blog */}
+                <Link
+                  href="/blog"
+                  className={`flex items-center gap-3.5 px-3 py-3 rounded-xl transition-all ${pathname === '/blog' ? 'bg-[var(--primary)]/10 text-[var(--primary)] font-semibold border border-[var(--primary)]/30' : 'text-gray-300 hover:text-white hover:bg-white/5'}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <BookOpen size={20} className={pathname === '/blog' ? 'text-[var(--primary)]' : 'text-gray-400'} />
+                  <span className="text-base tracking-wide">Blog</span>
+                </Link>
+
+                {/* Contact Us */}
+                <Link
+                  href="/contact"
+                  className={`flex items-center gap-3.5 px-3 py-3 rounded-xl transition-all ${pathname === '/contact' ? 'bg-[var(--primary)]/10 text-[var(--primary)] font-semibold border border-[var(--primary)]/30' : 'text-gray-300 hover:text-white hover:bg-white/5'}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Mail size={20} className={pathname === '/contact' ? 'text-[var(--primary)]' : 'text-gray-400'} />
+                  <span className="text-base tracking-wide">Contact Us</span>
+                </Link>
+              </div>
+
+              {/* Drawer Footer */}
+              <div className="p-6 border-t border-white/10 bg-[#0A0A0E] space-y-4">
+                <Link
+                  href="#contact"
+                  className="flex items-center justify-center w-full py-3.5 bg-gradient-accent text-[var(--btn-text)] font-bold rounded-xl shadow-[0_0_20px_rgba(var(--secondary-rgb),0.3)] active:scale-95 transition-all uppercase tracking-wider text-sm"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Let's Connect
+                </Link>
+                <p className="text-xs text-center text-gray-500">
+                  &copy; {new Date().getFullYear()} SYSGAMES. All rights reserved.
+                </p>
+              </div>
+            </motion.div>
           </div>
-
-          {/* Blog */}
-          <Link href="/blog" className={`flex items-center gap-4 py-4 border-b border-white/5 transition-colors ${pathname === '/blog' ? 'text-[var(--primary)]' : 'text-gray-300 hover:text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>
-            <BookOpen size={22} className={pathname === '/blog' ? 'text-[var(--primary)]' : 'text-gray-500'} />
-            <span className="text-xl font-medium tracking-wide">Blog</span>
-          </Link>
-
-          {/* Contact Us */}
-          <Link href="/contact" className={`flex items-center gap-4 py-4 border-b border-white/5 transition-colors ${pathname === '/contact' ? 'text-[var(--primary)]' : 'text-gray-300 hover:text-white'}`} onClick={() => setIsMobileMenuOpen(false)}>
-            <Mail size={22} className={pathname === '/contact' ? 'text-[var(--primary)]' : 'text-gray-500'} />
-            <span className="text-xl font-medium tracking-wide">Contact Us</span>
-          </Link>
-
-          {/* CTA Button */}
-          <div className="pt-8">
-            <Link href="#contact" className="flex items-center justify-center w-full py-4 bg-[var(--primary)] text-[#0A0A0A] font-black rounded-xl shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)] active:scale-95 transition-all uppercase tracking-widest" onClick={() => setIsMobileMenuOpen(false)}>
-              Let's Connect
-            </Link>
-          </div>
-        </div>
-      </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
