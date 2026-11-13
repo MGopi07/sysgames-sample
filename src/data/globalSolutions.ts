@@ -9,72 +9,72 @@ export const globalSolutions: GlobalSolution[] = [
     id: "market-regulations",
     category: "Market Regulations",
     statements: [
-      "iGaming Software Development Company solutions are designed around market-specific requirements and flexible regulatory configurations.",
-      "An experienced iGaming Software Development Company monitors industry developments to help operators adapt their technology.",
-      "Our iGaming Software Development Company solutions support configurable features for different markets and business models.",
-      "A professional iGaming Software Development Company can provide compliance-focused technical functionality and market-specific controls.",
-      "An established iGaming Software Development Company helps operators prepare platforms for evolving market expectations.",
-      "While legal advice should come from qualified professionals, an iGaming Software Development Company can provide technology designed to support compliance processes."
+      "Sysgames software solutions are designed around market-specific requirements and flexible regulatory configurations.",
+      "Sysgames continuously monitors industry developments to help operators adapt their technology proactively.",
+      "Our Sysgames software solutions support configurable features for different jurisdictions and business models.",
+      "Sysgames provides compliance-focused technical functionality and robust market-specific controls.",
+      "Sysgames helps operators prepare their platforms for evolving market expectations and compliance mandates.",
+      "While legal advice should come from qualified professionals, Sysgames provides technology designed to support compliance processes."
     ]
   },
   {
     id: "certifications",
     category: "Certifications",
     statements: [
-      "An iGaming Software Development Company focuses on platform security, data protection, and reliable infrastructure.",
-      "A security-focused iGaming Software Development Company can implement encryption, authentication, access controls, and monitoring.",
-      "Our iGaming Software Development Company solutions are designed with privacy and security-focused architecture.",
-      "Choosing a professional iGaming Software Development Company helps operators build technology around dependable security practices.",
-      "An experienced iGaming Software Development Company understands the importance of security standards and certifications.",
-      "A reliable iGaming Software Development Company can continuously improve platform protection as technology requirements evolve."
+      "Sysgames focuses on enterprise-grade platform security, data protection, and reliable infrastructure.",
+      "Sysgames implements cutting-edge encryption, authentication, granular access controls, and 24/7 monitoring.",
+      "Our Sysgames solutions are engineered with privacy and security-first architecture at every tier.",
+      "Choosing Sysgames helps operators build technology around dependable security practices and verified frameworks.",
+      "Sysgames understands the importance of international security standards and regulatory certifications.",
+      "Sysgames continuously improves platform protection as global technology and security requirements evolve."
     ]
   },
   {
     id: "events-offering",
     category: "Events Offering",
     statements: [
-      "An iGaming Software Development Company can provide extensive sports and event coverage for regional audiences.",
-      "A global iGaming Software Development Company understands that different markets have different sports preferences.",
-      "Our iGaming Software Development Company solutions can support football, cricket, basketball, tennis, and other popular sports.",
-      "An experienced iGaming Software Development Company helps operators create sportsbook experiences with relevant event selections.",
-      "A flexible iGaming Software Development Company can configure event categories according to target markets.",
-      "A professional iGaming Software Development Company provides scalable event management capabilities for growing sportsbook operations."
+      "Sysgames provides extensive sports and event coverage tailored for global and regional audiences.",
+      "Sysgames understands that different markets have unique sports preferences, event formats, and betting habits.",
+      "Our Sysgames solutions support football, cricket, basketball, tennis, esports, and other popular global sports.",
+      "Sysgames helps operators create dynamic sportsbook experiences with relevant, localized event selections.",
+      "Sysgames configures event categories, tournament structures, and markets according to target geographies.",
+      "Sysgames provides scalable event management capabilities for rapidly growing sportsbook operations."
     ]
   },
   {
     id: "front-end",
     category: "Front-End Configurability",
     statements: [
-      "An iGaming Software Development Company can provide customizable front-end technology for distinctive digital experiences.",
-      "A flexible iGaming Software Development Company enables customization of layouts, languages, navigation, content, and odds formats.",
-      "Our iGaming Software Development Company solutions support consistent branding across different devices and platforms.",
-      "An experienced iGaming Software Development Company provides configurable components for efficient front-end management.",
-      "A modern iGaming Software Development Company can use widget-based architecture to simplify interface customization.",
-      "A professional iGaming Software Development Company combines usability, performance, branding, and flexibility for engaging player experiences."
+      "Sysgames provides customizable front-end technology for distinctive, branded digital experiences.",
+      "Sysgames enables deep customization of layouts, languages, navigation, content, and odds formats.",
+      "Our Sysgames solutions support consistent, high-performance branding across desktop, mobile, and tablets.",
+      "Sysgames provides configurable UI components for efficient front-end management and faster iteration.",
+      "Sysgames uses modern, widget-based architecture to simplify interface customization and feature rollout.",
+      "Sysgames combines usability, performance, branding, and flexibility for captivating player experiences."
     ]
   },
   {
     id: "bonus-tools",
     category: "Region-Specific Bonus Tools",
     statements: [
-      "An iGaming Software Development Company can provide flexible bonus and promotional tools for different regional audiences.",
-      "A specialized iGaming Software Development Company can configure rewards, campaigns, incentives, and promotional offers.",
-      "Our iGaming Software Development Company solutions allow promotional strategies to adapt to market preferences.",
-      "An experienced iGaming Software Development Company can help operators create targeted campaigns for different player segments.",
-      "A flexible iGaming Software Development Company supports configurable bonus rules and promotional workflows.",
-      "A professional iGaming Software Development Company combines promotional functionality with scalable architecture for changing business requirements."
+      "Sysgames provides flexible bonus and promotional engines tailored for diverse regional player bases.",
+      "Sysgames configures customizable rewards, loyalty tiers, deposit incentives, and targeted promotional offers.",
+      "Our Sysgames solutions allow promotional strategies to adapt dynamically to regional player preferences.",
+      "Sysgames empowers operators to create targeted campaigns for distinct player segments and VIP tiers.",
+      "Sysgames supports configurable bonus wagering rules, automated limits, and promotional workflows.",
+      "Sysgames combines high-converting promotional functionality with scalable back-office architecture."
     ]
   },
   {
     id: "scalable-solutions",
     category: "Scalable Global Solutions",
     statements: [
-      "An iGaming Software Development Company provides scalable technology for operators targeting multiple markets.",
-      "An experienced iGaming Software Development Company combines flexible architecture, integrations, localization, and reliable infrastructure.",
-      "Our iGaming Software Development Company solutions can support growing player bases, games, payments, and operational requirements.",
-      "A trusted iGaming Software Development Company helps operators establish a strong foundation for long-term growth.",
-      "A global iGaming Software Development Company can support multiple languages, currencies, markets, and third-party integrations.",
-      "A professional iGaming Software Development Company provides scalable technology that can evolve with changing business objectives."
+      "Sysgames provides scalable technology engineered for operators targeting multiple international markets.",
+      "Sysgames combines flexible architecture, unified integrations, localization, and high-availability infrastructure.",
+      "Our Sysgames solutions scale effortlessly with growing player bases, games, payment rails, and transaction volumes.",
+      "A partnership with Sysgames establishes a solid, sovereign foundation for sustained long-term expansion.",
+      "Sysgames supports multiple languages, localized currencies, crypto options, and third-party integrations.",
+      "Sysgames delivers modular technology that evolves in lockstep with your strategic business objectives."
     ]
   }
 ];

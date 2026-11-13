@@ -158,19 +158,19 @@ export default function RetailBettingShopProviderPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
+            <section className="relative pt-20 sm:pt-24 pb-6 sm:pb-10 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-16 items-center">
+                    <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-16 items-center">
                         <div className="lg:w-1/2">
                             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Premium Technology</span>
                             </div>
 
-                            <h1 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">
+                            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">
                                 Retail Betting Shop Software Provider for <span className="text-transparent bg-clip-text bg-gradient-accent">Modern Betting Operations</span>
                             </h1>
 
@@ -185,16 +185,16 @@ export default function RetailBettingShopProviderPage() {
                             </div>
 
                             <div className="flex flex-wrap gap-4">
-                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                                <Link href="#contact" className="inline-flex items-center justify-center px-6 py-3.5 sm:px-8 sm:py-4 text-base font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
                                     Talk to Our Retail Betting Experts <ChevronRight className="ml-2" />
                                 </Link>
                             </div>
                         </div>
 
                         {/* Right Side Image Graphic */}
-                        <div className="w-full lg:w-1/2 relative flex justify-center scale-90 lg:scale-100 mt-12 lg:mt-0">
+                        <div className="w-full lg:w-1/2 relative flex justify-center mt-4 sm:mt-6 lg:mt-0">
                           {/* Image Asset with Blend Mode to remove dark backgrounds */}
-                          <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
+                          <div className="relative w-full aspect-[4/3] max-w-[340px] sm:max-w-[440px] lg:max-w-[600px] mx-auto flex items-center justify-center group">
                              <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105">
                                 <Image
                                   src="/images/all_service/5-1.webp"
@@ -216,14 +216,14 @@ export default function RetailBettingShopProviderPage() {
             </section>
 
             {/* Why Choose Us */}
-            <section className="py-16 bg-[#121212] border-t border-white/5">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">Why Choose Our Retail Betting Shop Software Provider Solution?</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Why Choose Our Retail Betting Shop Software Provider Solution?</h2>
                         <p className="text-gray-400">
                             A modern betting shop needs more than a basic betting terminal. Operators require connected technology that provides visibility and control across the entire retail network.
                         </p>
@@ -263,14 +263,14 @@ export default function RetailBettingShopProviderPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Platform Ecosystem</span>
                         </div>
-                        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">Retail Betting Shop Software</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Retail Betting Shop Software</h2>
                         <p className="text-gray-400 text-lg leading-relaxed">
                             Our retail betting shop software provider platform provides core technology required to operate physical sportsbook locations. The software can connect betting terminals, sportsbook systems, odds feeds, markets, transactions, risk controls, and reporting tools.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {modulesData.map((mod, idx) => (
-                            <div key={idx} className="group relative bg-[#0D0D0D] border border-white/5 rounded-[2rem] p-8 lg:p-10 overflow-hidden hover:bg-[#111] transition-all duration-500 flex flex-col h-full shadow-lg hover:shadow-2xl hover:border-[var(--primary)]/30">
+                            <div key={idx} className="group relative bg-[#0D0D0D] border border-white/5 rounded-2xl sm:rounded-[2rem] p-5 sm:p-8 lg:p-10 overflow-hidden hover:bg-[#111] transition-all duration-500 flex flex-col h-full shadow-lg hover:shadow-2xl hover:border-[var(--primary)]/30">
 
                                 {/* Bottom right abstract number */}
                                 <div className="absolute -bottom-8 -right-6 text-[10rem] font-black text-white/[0.02] pointer-events-none group-hover:text-[var(--primary)]/[0.05] transition-colors duration-500 leading-none select-none z-0">
@@ -282,22 +282,22 @@ export default function RetailBettingShopProviderPage() {
 
                                 <div className="relative z-10 flex flex-col h-full">
                                     {/* Header */}
-                                    <div className="flex items-center gap-5 mb-8">
-                                        <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[var(--primary)] group-hover:scale-110 group-hover:bg-[var(--primary)]/20 transition-all shadow-[inset_0_0_20px_rgba(255,255,255,0.02)] shrink-0">
-                                            <mod.icon size={24} strokeWidth={2} />
+                                    <div className="flex items-center gap-3.5 sm:gap-5 mb-5 sm:mb-8">
+                                        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[var(--primary)] group-hover:scale-110 group-hover:bg-[var(--primary)]/20 transition-all shadow-[inset_0_0_20px_rgba(255,255,255,0.02)] shrink-0">
+                                            <mod.icon size={22} strokeWidth={2} />
                                         </div>
-                                        <h3 className="text-2xl font-bold text-white group-hover:text-[var(--primary)] transition-colors leading-tight">{mod.title}</h3>
+                                        <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-[var(--primary)] transition-colors leading-tight">{mod.title}</h3>
                                     </div>
 
                                     {/* Intro */}
-                                    <div className="text-gray-400 text-[15px] leading-relaxed mb-8 space-y-4">
+                                    <div className="text-gray-400 text-[14px] sm:text-[15px] leading-relaxed mb-6 sm:mb-8 space-y-3 sm:space-y-4">
                                         {mod.intro.map((p, i) => (
                                             <p key={i}>{p}</p>
                                         ))}
                                     </div>
 
                                     {/* Features Box */}
-                                    <div className="mb-8 mt-auto bg-black/40 border border-white/5 rounded-2xl p-6 backdrop-blur-sm group-hover:border-[var(--primary)]/20 transition-colors">
+                                    <div className="mb-6 sm:mb-8 mt-auto bg-black/40 border border-white/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 backdrop-blur-sm group-hover:border-[var(--primary)]/20 transition-colors">
                                         <h4 className="text-[11px] font-bold text-white/50 uppercase tracking-[0.2em] mb-5">Included Features</h4>
                                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6">
                                             {mod.features.map((f, i) => (
@@ -329,7 +329,7 @@ export default function RetailBettingShopProviderPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Workflow</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-4">Retail Betting Shop Development Process</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">Retail Betting Shop Development Process</h2>
                         <p className="text-gray-400">Our structured approach ensures successful deployment across your entire retail network.</p>
                     </div>
 
@@ -365,7 +365,7 @@ export default function RetailBettingShopProviderPage() {
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-1/2">
-                            <h2 className="text-4xl font-bold text-white mb-6">Benefits of Working With a Retail Betting Shop Software Provider</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Benefits of Working With a Retail Betting Shop Software Provider</h2>
                             <div className="w-12 h-1 bg-gradient-accent rounded-full mb-8"></div>
                             <p className="text-gray-400 mb-8 leading-relaxed">
                                 Partnering with a specialized retail betting shop software provider gives operators access to dedicated retail sportsbook technology. The right provider brings multiple retail sportsbook components together through one technology ecosystem.
@@ -411,7 +411,7 @@ export default function RetailBettingShopProviderPage() {
                                 <span className="text-sm font-semibold text-[var(--primary)] tracking-widest uppercase">FAQ</span>
                             </div>
 
-                            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                                 Frequently Asked Questions
                             </h2>
 

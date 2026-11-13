@@ -34,7 +34,7 @@ export default function ServicesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl lg:text-6xl font-black text-white mb-6 leading-tight"
+            className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-4 sm:mb-6 leading-tight"
           >
             Trusted <span className="text-transparent bg-clip-text bg-gradient-accent drop-shadow-[0_0_25px_rgba(var(--primary-rgb),0.4)]">B2B iGaming</span> Software Provider
           </motion.h2>
@@ -43,7 +43,7 @@ export default function ServicesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-gray-400 text-lg max-w-2xl mx-auto"
+            className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed"
           >
             Scroll down to explore our comprehensive suite of modular, enterprise-grade iGaming solutions.
           </motion.p>

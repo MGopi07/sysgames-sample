@@ -65,7 +65,7 @@ export default function HeroSlider() {
               transition={{ delay: 0.3 }}
               className="flex items-start"
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
                 {(() => {
                   const parts = heroSlides[currentIndex].headline.split('\n');
                   if (parts.length > 1) {

@@ -26,13 +26,13 @@ export default function WhyChooseIntro() {
                 <span className="text-[11px] font-bold text-[var(--primary)] tracking-widest uppercase">Enterprise Solutions</span>
               </div>
               
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 sm:mb-8">
                 Why Choose <span className="text-transparent bg-clip-text bg-gradient-accent">Us</span>
               </h2>
               
-              <div className="text-gray-300 text-lg leading-relaxed mb-10 space-y-6">
-                <p className="text-xl text-gray-100 font-medium leading-snug">
-                  As a leading B2B iGaming software development company, we provide enterprise-grade solutions tailored for operators looking to scale globally.
+              <div className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed mb-8 sm:mb-10 space-y-4 sm:space-y-6">
+                <p className="text-base sm:text-lg lg:text-xl text-gray-100 font-medium leading-snug">
+                  As Sysgames, a leading B2B software development company, we provide enterprise-grade solutions tailored for operators looking to scale globally.
                 </p>
                 <p className="text-base text-gray-400">
                   Our powerful ecosystem delivers comprehensive tools that ensure you have total control over your platform, unparalleled security, and seamless API integrations designed for maximum growth in a highly regulated landscape.

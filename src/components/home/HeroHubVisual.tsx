@@ -56,7 +56,7 @@ export default function HeroHubVisual() {
         
         <Gamepad2 size={36} className="text-[var(--primary)] mb-1.5 relative z-10 group-hover:scale-110 transition-transform" />
         <span className="text-white font-bold text-center text-sm leading-tight relative z-10">
-          iGaming<br />Platform
+          SYSGAMES<br />Platform
         </span>
       </motion.div>
 

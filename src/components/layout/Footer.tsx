@@ -51,7 +51,7 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <h4 className="text-white font-semibold mb-6">Services</h4>
             <ul className="space-y-3">
-              <FooterLink href="/services/white-label-igaming-software-solutions">iGaming</FooterLink>
+              <FooterLink href="/services/white-label-igaming-software-solutions">White Label iGaming</FooterLink>
               <FooterLink href="/services/online-casino-game-development-company">Casino Games</FooterLink>
               <FooterLink href="/services/sportsbook-software-development-company">Sports Book</FooterLink>
               <FooterLink href="/services/casino-platform-development-company">Casino Platform</FooterLink>

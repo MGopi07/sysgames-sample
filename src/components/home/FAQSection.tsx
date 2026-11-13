@@ -54,7 +54,7 @@ export default function FAQSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight"
             >
               Frequently Asked Questions
             </motion.h2>
@@ -85,7 +85,7 @@ export default function FAQSection() {
           </div>
 
           {/* Right Side: Scrollable Accordion */}
-          <div className="lg:col-span-7 space-y-4">
+          <div className="lg:col-span-7 space-y-3 sm:space-y-3.5">
             {faqs.slice(0, 10).map((faq, index) => {
               const isOpen = openId === faq.id;
               return (
@@ -96,7 +96,7 @@ export default function FAQSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.05 }}
-                  className={`glass-card rounded-2xl border transition-all duration-300 relative overflow-hidden ${isOpen
+                  className={`glass-card rounded-xl border transition-all duration-300 relative overflow-hidden ${isOpen
                     ? "border-[var(--primary)]/40 bg-white/5 shadow-[0_0_30px_rgba(var(--primary-rgb),0.05)]"
                     : "border-white/5 hover:border-white/10"
                     }`}
@@ -108,25 +108,25 @@ export default function FAQSection() {
 
                   <button
                     onClick={() => toggleFaq(faq.id)}
-                    className="w-full flex items-center justify-between p-6 lg:p-8 text-left relative z-10 focus:outline-none"
+                    className="w-full flex items-center justify-between p-4 sm:p-5 lg:py-4.5 lg:px-6 text-left relative z-10 focus:outline-none"
                     aria-expanded={isOpen}
                     aria-controls={`faq-answer-${faq.id}`}
                   >
-                    <div className="flex gap-4 lg:gap-6 items-center">
-                      <span className={`font-mono text-sm px-3 py-1.5 rounded-lg border flex-shrink-0 transition-colors duration-300 ${isOpen
+                    <div className="flex gap-3 sm:gap-4 items-center">
+                      <span className={`font-mono text-xs font-semibold px-2.5 py-1 rounded-md border flex-shrink-0 transition-colors duration-300 ${isOpen
                         ? "border-[var(--primary)]/30 text-[var(--primary)] bg-[var(--primary)]/10 shadow-[0_0_10px_rgba(var(--primary-rgb),0.2)]"
                         : "border-white/10 text-gray-400 bg-white/5"
                         }`}>
                         {(index + 1).toString().padStart(2, '0')}
                       </span>
-                      <span className={`font-semibold text-base lg:text-lg transition-colors duration-300 ${isOpen ? "text-white" : "text-gray-300"}`}>
+                      <span className={`font-medium sm:font-semibold text-sm sm:text-[15px] lg:text-base leading-snug transition-colors duration-300 ${isOpen ? "text-white" : "text-gray-300"}`}>
                         {faq.question}
                       </span>
                     </div>
 
-                    <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ml-4 transition-all duration-300 ${isOpen ? "bg-[var(--primary)]/10" : "bg-white/5"
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ml-3 transition-all duration-300 ${isOpen ? "bg-[var(--primary)]/10" : "bg-white/5"
                       }`}>
-                      <ChevronDown className={`transition-transform duration-500 ${isOpen ? "rotate-180 text-[var(--primary)]" : "text-gray-400"
+                      <ChevronDown size={16} className={`transition-transform duration-500 ${isOpen ? "rotate-180 text-[var(--primary)]" : "text-gray-400"
                         }`} />
                     </div>
                   </button>
@@ -141,9 +141,9 @@ export default function FAQSection() {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="overflow-hidden relative z-10"
                       >
-                        <div className="p-6 lg:p-8 pt-0 lg:pt-0 ml-4 lg:ml-6 pl-[3.5rem] lg:pl-[4.5rem]">
-                          <div className="w-8 h-[1px] bg-gradient-to-r from-[var(--primary)]/50 to-transparent mb-4"></div>
-                          <p className="text-gray-400 leading-relaxed text-base md:text-lg">
+                        <div className="px-4 pb-4 sm:px-5 sm:pb-5 lg:px-6 lg:pb-5 pt-0 ml-1 sm:ml-2 pl-9 sm:pl-11 lg:pl-12">
+                          <div className="w-8 h-[1px] bg-gradient-to-r from-[var(--primary)]/50 to-transparent mb-3"></div>
+                          <p className="text-gray-400 leading-relaxed text-xs sm:text-sm lg:text-[15px]">
                             {faq.answer}
                           </p>
                         </div>

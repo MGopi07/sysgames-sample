@@ -73,14 +73,14 @@ export default function AdvantagesCarousel() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+            <div className="flex flex-col md:flex-row justify-between items-end gap-6 sm:gap-8 mb-8 sm:mb-16">
                 <div className="max-w-2xl">
-                    <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                    <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-4 sm:mb-6">
                         <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                         <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                     </div>
-                    <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">Why Choose Our Casino Game Aggregation Provider?</h2>
-                    <p className="text-gray-400 text-lg leading-relaxed">
+                    <h2 className="text-[23px] sm:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-4 sm:mb-6 leading-tight">Why Choose Our Casino Game Aggregation Provider?</h2>
+                    <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">
                         Managing multiple casino game providers individually can create additional technical and operational complexity. Our solution helps operators expand their gaming portfolio while reducing the effort associated with maintaining separate integrations.
                     </p>
                 </div>
@@ -107,20 +107,20 @@ export default function AdvantagesCarousel() {
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
                 {items.map((item, idx) => (
-                    <div key={idx} className="shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.3333%-16px)] snap-start glass-card p-8 rounded-3xl border border-white/5 hover:border-[var(--primary)]/40 hover:bg-[#121212] transition-all duration-300 group flex flex-col relative overflow-hidden shadow-xl hover:-translate-y-2">
+                    <div key={idx} className="shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.3333%-16px)] snap-start glass-card p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-white/5 hover:border-[var(--primary)]/40 hover:bg-[#121212] transition-all duration-300 group flex flex-col relative overflow-hidden shadow-xl hover:-translate-y-2">
                         
                         {/* Large Faint Background Icon */}
                         <div className="absolute -bottom-6 -right-6 opacity-[0.03] group-hover:opacity-[0.06] group-hover:scale-125 transition-all duration-700 pointer-events-none">
                             <item.icon size={160} className="text-white" />
                         </div>
 
-                        <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-[var(--primary)]/20 group-hover:border-[var(--primary)]/40 transition-all duration-300 relative z-10">
-                            <item.icon className="text-gray-400 group-hover:text-[var(--primary)] transition-colors duration-300" size={32} />
+                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 sm:mb-8 group-hover:scale-110 group-hover:bg-[var(--primary)]/20 group-hover:border-[var(--primary)]/40 transition-all duration-300 relative z-10">
+                            <item.icon className="text-gray-400 group-hover:text-[var(--primary)] transition-colors duration-300" size={26} />
                         </div>
                         
                         <div className="relative z-10">
-                            <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors">{item.title}</h3>
-                            <p className="text-gray-400 leading-relaxed">{item.desc}</p>
+                            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 group-hover:text-[var(--primary)] transition-colors">{item.title}</h3>
+                            <p className="text-gray-400 text-sm sm:text-base leading-relaxed">{item.desc}</p>
                         </div>
                     </div>
                 ))}

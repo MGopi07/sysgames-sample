@@ -16,19 +16,19 @@ export default function SportsbookKioskProviderPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
+            <section className="relative pt-20 sm:pt-24 pb-6 sm:pb-10 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-16 items-center">
+                    <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-16 items-center">
                         <div className="lg:w-[55%]">
                             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Self-Service Solutions</span>
                             </div>
 
-                            <h1 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
+                            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
                                 Sportsbook Kiosk Software Provider for <span className="text-transparent bg-clip-text bg-gradient-accent">Modern Betting Businesses</span>
                             </h1>
 
@@ -45,15 +45,15 @@ export default function SportsbookKioskProviderPage() {
                             </div>
 
                             <div className="flex flex-wrap gap-4">
-                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
-                                    Talk to Our Sportsbook Kiosk Experts <ChevronRight className="ml-2" />
+                                <Link href="#contact" className="inline-flex items-center justify-center px-6 py-3.5 sm:px-8 sm:py-4 text-base font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                                    Talk to Our Experts <ChevronRight className="ml-2" />
                                 </Link>
                             </div>
                         </div>
 
-                        <div className="w-full lg:w-[45%] flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
+                        <div className="w-full lg:w-[45%] flex justify-center relative mt-4 sm:mt-6 lg:mt-0">
                             {/* Visual representation of a Kiosk UI */}
-                            <div className="relative w-full max-w-[500px] flex justify-center items-center">
+                            <div className="relative w-full max-w-[340px] sm:max-w-[440px] lg:max-w-[500px] flex justify-center items-center">
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[var(--primary)]/20 rounded-full blur-[80px] -z-10"></div>
                                 <img
                                     src="/images/all_service/6-1.webp"
@@ -67,15 +67,15 @@ export default function SportsbookKioskProviderPage() {
             </section>
 
             {/* Why Choose Us */}
-            <section className="py-16 bg-[#121212] border-t border-white/5">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                    <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-16">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-4 sm:mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">Why Choose Our Sportsbook Kiosk Software Provider Solutions?</h2>
-                        <p className="text-gray-400 mb-4">
+                        <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">Why Choose Our Sportsbook Kiosk Software Provider Solutions?</h2>
+                        <p className="text-gray-400 text-sm sm:text-base mb-4 leading-relaxed">
                             Traditional retail betting operations require staff to manage customer requests, betting slips, transactions, and ticket processing. Self-service sportsbook kiosks help operators create a more efficient betting experience reducing dependence on manual processes.
                             Our Sportsbook Kiosk Software Provider solutions are built to help operators manage self-service betting experiences through modern software, intuitive interfaces, centralized administration, sportsbook integrations.
                         </p>
@@ -120,7 +120,7 @@ export default function SportsbookKioskProviderPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Capabilities</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">Complete Sportsbook Kiosk Software Solutions</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Complete Sportsbook Kiosk Software Solutions</h2>
                         <p className="text-gray-400 mb-4">
                             As a Sportsbook Kiosk Software Provider, Understand operators need more than a touchscreen interface. A successful kiosk network requires sportsbook integration, betting functionality, transaction management, security, reporting & centralized administration.
                         </p>
@@ -158,27 +158,27 @@ export default function SportsbookKioskProviderPage() {
             </section>
 
             {/* Split Content: Retail Shops & Customization */}
-            <section className="py-16 bg-[#121212] border-y border-white/5 relative overflow-hidden">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#121212] border-y border-white/5 relative overflow-hidden">
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--primary)]/5 rounded-full blur-[100px] pointer-events-none"></div>
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
                         
                         {/* Retail Shops */}
                         <div>
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-4 sm:mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Target Markets</span>
                             </div>
-                            <h2 className="text-3xl font-bold text-white mb-6">Sportsbook Kiosk Software for Retail Betting Shops</h2>
-                            <p className="text-gray-400 mb-4 leading-relaxed">
+                            <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">Sportsbook Kiosk Software for Retail Betting Shops</h2>
+                            <p className="text-gray-400 text-sm sm:text-base mb-3 sm:mb-4 leading-relaxed">
                                 Retail betting shops remain an important channel operators looking to provide customers with convenient in-person betting experiences. A Sportsbook Kiosk Software Provider can help businesses complement traditional cashier-based betting with self-service terminals.
                             </p>
-                            <p className="text-gray-400 mb-8 leading-relaxed">
+                            <p className="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed">
                                 Sportsbook kiosks can be deployed in suitable retail environments to allow customers browse available markets and complete supported betting workflows independently.
                             </p>
                             
-                            <h3 className="text-xl font-bold text-white mb-4">Benefits for Retail Betting Operators</h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Benefits for Retail Betting Operators</h3>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                                 {[
                                     "Reduce reliance on manual betting processes.", 
                                     "Provide customers with additional self-service options.", 
@@ -189,25 +189,25 @@ export default function SportsbookKioskProviderPage() {
                                     "Collect operational data through centralized reporting.", 
                                     "Scale kiosk deployments as the retail network expands."
                                 ].map((item, idx) => (
-                                    <div key={idx} className="group relative flex items-start gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/5 hover:bg-gradient-to-br hover:from-[var(--primary)]/10 hover:to-transparent hover:border-[var(--primary)]/30 transition-all duration-300 hover:-translate-y-1">
-                                        <div className="w-6 h-6 rounded-full bg-[var(--primary)]/10 flex items-center justify-center shrink-0 border border-[var(--primary)]/20 group-hover:bg-[var(--primary)] transition-all duration-300 shadow-[0_0_10px_rgba(var(--primary-rgb),0)] group-hover:shadow-[0_0_10px_rgba(var(--primary-rgb),0.5)]">
-                                            <ChevronRight size={14} className="text-[var(--primary)] group-hover:text-black transition-colors" strokeWidth={3} />
+                                    <div key={idx} className="group relative flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white/[0.02] border border-white/5 hover:bg-gradient-to-br hover:from-[var(--primary)]/10 hover:to-transparent hover:border-[var(--primary)]/30 transition-all duration-300 hover:-translate-y-1">
+                                        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[var(--primary)]/10 flex items-center justify-center shrink-0 border border-[var(--primary)]/20 group-hover:bg-[var(--primary)] transition-all duration-300 shadow-[0_0_10px_rgba(var(--primary-rgb),0)] group-hover:shadow-[0_0_10px_rgba(var(--primary-rgb),0.5)] mt-0.5">
+                                            <ChevronRight size={12} className="text-[var(--primary)] group-hover:text-black transition-colors" strokeWidth={3} />
                                         </div>
-                                        <span className="text-sm font-medium text-gray-400 group-hover:text-white transition-colors leading-relaxed">{item}</span>
+                                        <span className="text-xs sm:text-sm font-medium text-gray-400 group-hover:text-white transition-colors leading-relaxed">{item}</span>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
                         {/* Customization */}
-                        <div className="glass-card p-10 rounded-3xl border border-white/10 relative">
-                            <h2 className="text-3xl font-bold text-white mb-6">Custom Sportsbook Kiosk Software</h2>
-                            <p className="text-gray-400 mb-8 leading-relaxed">
+                        <div className="glass-card p-4 sm:p-6 lg:p-10 rounded-2xl sm:rounded-3xl border border-white/10 relative">
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-3 sm:mb-6 leading-tight">Custom Sportsbook Kiosk Software</h2>
+                            <p className="text-gray-400 mb-4 sm:mb-8 text-sm sm:text-base leading-relaxed">
                                 Every sportsbook operator has different requirements. That's our Sportsbook Kiosk Software Provider services be configured around your business model rather than forcing your operation into a one-size-fits-all system.
                             </p>
-                            <p className="text-gray-400 mb-6 font-medium">Customization options can include:</p>
-                            <div className="overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-b from-white/[0.04] to-black/40 mt-6 shadow-[inset_0_0_20px_rgba(255,255,255,0.02),0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-sm">
-                                <table className="w-full text-left text-[13px] sm:text-sm text-gray-300 block md:table">
+                            <p className="text-gray-400 mb-3 sm:mb-6 text-sm sm:text-base font-medium">Customization options can include:</p>
+                            <div className="overflow-hidden rounded-xl sm:rounded-2xl border border-white/[0.08] bg-gradient-to-b from-white/[0.04] to-black/40 mt-3 sm:mt-6 shadow-[inset_0_0_20px_rgba(255,255,255,0.02),0_8px_30px_rgba(0,0,0,0.5)] backdrop-blur-sm">
+                                <table className="w-full text-left text-xs sm:text-sm text-gray-300 block md:table">
                                     <tbody className="divide-y divide-white/[0.05] block md:table-row-group">
                                         {[
                                             ["Kiosk interface design", "Brand colors and logos"],
@@ -219,16 +219,16 @@ export default function SportsbookKioskProviderPage() {
                                             ["Kiosk monitoring", "Remote configuration"]
                                         ].map((row, idx) => (
                                             <tr key={idx} className="hover:bg-white/[0.06] even:bg-white/[0.01] transition-colors group/row block md:table-row border-b border-white/5 md:border-b-0">
-                                                <td className="px-5 py-3.5 sm:px-6 sm:py-4 border-b md:border-b-0 md:border-r border-white/[0.05] block md:table-cell w-full md:w-1/2">
-                                                    <div className="flex items-center gap-3">
-                                                        <CheckCircle2 size={16} strokeWidth={2.5} className="text-[var(--primary)]/70 group-hover/row:text-[var(--primary)] group-hover/row:shadow-[0_0_10px_var(--primary)] transition-all shrink-0 rounded-full" />
+                                                <td className="px-3.5 py-2.5 sm:px-6 sm:py-4 border-b md:border-b-0 md:border-r border-white/[0.05] block md:table-cell w-full md:w-1/2">
+                                                    <div className="flex items-center gap-2.5 sm:gap-3">
+                                                        <CheckCircle2 size={14} strokeWidth={2.5} className="text-[var(--primary)]/70 group-hover/row:text-[var(--primary)] group-hover/row:shadow-[0_0_10px_var(--primary)] transition-all shrink-0 rounded-full" />
                                                         <span className="font-medium group-hover/row:text-white transition-colors">{row[0]}</span>
                                                     </div>
                                                 </td>
-                                                <td className="px-5 py-3.5 sm:px-6 sm:py-4 block md:table-cell w-full md:w-1/2">
+                                                <td className="px-3.5 py-2.5 sm:px-6 sm:py-4 block md:table-cell w-full md:w-1/2">
                                                     {row[1] && (
-                                                        <div className="flex items-center gap-3">
-                                                            <CheckCircle2 size={16} strokeWidth={2.5} className="text-[var(--primary)]/70 group-hover/row:text-[var(--primary)] group-hover/row:shadow-[0_0_10px_var(--primary)] transition-all shrink-0 rounded-full" />
+                                                        <div className="flex items-center gap-2.5 sm:gap-3">
+                                                            <CheckCircle2 size={14} strokeWidth={2.5} className="text-[var(--primary)]/70 group-hover/row:text-[var(--primary)] group-hover/row:shadow-[0_0_10px_var(--primary)] transition-all shrink-0 rounded-full" />
                                                             <span className="font-medium group-hover/row:text-white transition-colors">{row[1]}</span>
                                                         </div>
                                                     )}
@@ -238,7 +238,7 @@ export default function SportsbookKioskProviderPage() {
                                     </tbody>
                                 </table>
                             </div>
-                            <p className="text-gray-400 mt-8 leading-relaxed text-sm">
+                            <p className="text-gray-400 mt-4 sm:mt-8 leading-relaxed text-xs sm:text-sm">
                                 Our team can help determine which functionality is appropriate your sportsbook, target market, and operating environment.
                             </p>
                         </div>
@@ -255,7 +255,7 @@ export default function SportsbookKioskProviderPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Process</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-4">How Our Sportsbook Kiosk Software Works</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">How Our Sportsbook Kiosk Software Works</h2>
                     </div>
 
                     <div className="relative">
@@ -314,7 +314,7 @@ export default function SportsbookKioskProviderPage() {
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold text-white mb-6">Why Work With a Sportsbook Kiosk Software Provider?</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Why Work With a Sportsbook Kiosk Software Provider?</h2>
                             <p className="text-gray-400 mb-4 leading-relaxed text-lg">
                                 Choosing the right Sportsbook Kiosk Software Provider can have a direct impact on your retail sportsbook's operational efficiency and customer experience.
                             </p>
@@ -344,16 +344,16 @@ export default function SportsbookKioskProviderPage() {
                         </div>
                         
                         <div className="relative h-full">
-                            <div className="sticky top-32 glass-card p-10 md:p-12 rounded-[2.5rem] border border-white/10 bg-gradient-to-b from-[#121212] to-[#0A0A0A] overflow-hidden group shadow-[0_20px_50px_-15px_rgba(0,0,0,0.8)]">
+                            <div className="sticky top-32 glass-card p-6 sm:p-10 md:p-12 rounded-2xl sm:rounded-[2.5rem] border border-white/10 bg-gradient-to-b from-[#121212] to-[#0A0A0A] overflow-hidden group shadow-[0_20px_50px_-15px_rgba(0,0,0,0.8)]">
                                 {/* Ambient Background Glow */}
                                 <div className="absolute top-0 right-0 w-80 h-80 bg-[var(--primary)]/10 rounded-full blur-[100px] group-hover:bg-[var(--primary)]/20 transition-colors duration-700 pointer-events-none"></div>
                                 
                                 <div className="relative z-10">
-                                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[var(--primary)]/20 to-[var(--primary)]/5 flex items-center justify-center mb-8 border border-[var(--primary)]/20 shadow-[0_0_30px_rgba(var(--primary-rgb),0.1)] group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">
-                                        <ShieldCheck className="text-[var(--primary)] drop-shadow-[0_0_15px_rgba(var(--primary-rgb),0.8)]" size={36} strokeWidth={1.5} />
+                                    <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[var(--primary)]/20 to-[var(--primary)]/5 flex items-center justify-center mb-6 sm:mb-8 border border-[var(--primary)]/20 shadow-[0_0_30px_rgba(var(--primary-rgb),0.1)] group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">
+                                        <ShieldCheck className="text-[var(--primary)] drop-shadow-[0_0_15px_rgba(var(--primary-rgb),0.8)]" size={30} strokeWidth={1.5} />
                                     </div>
                                     
-                                    <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-[var(--primary)] transition-all duration-500">
+                                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-[var(--primary)] transition-all duration-500">
                                         Sportsbook Kiosk Software Provider With Scalable Technology
                                     </h3>
                                     
@@ -384,7 +384,7 @@ export default function SportsbookKioskProviderPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Features</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">Key Features of Our Sportsbook Kiosk Software</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Key Features of Our Sportsbook Kiosk Software</h2>
                     </div>
                     
                     <div className="max-w-5xl mx-auto bg-gradient-to-br from-[#1A1A1A] to-[#121212] rounded-[2rem] border border-white/5 overflow-hidden shadow-[0_20px_50px_-15px_rgba(0,0,0,0.8)] relative">
@@ -442,7 +442,7 @@ export default function SportsbookKioskProviderPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Environments</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">Kiosk Software Provider for Different Betting Environments</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Kiosk Software Provider for Different Betting Environments</h2>
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -454,7 +454,7 @@ export default function SportsbookKioskProviderPage() {
                         ].map((item, idx) => (
                             <div key={idx} className="group relative rounded-3xl p-[1px] bg-white/5 hover:bg-gradient-to-br hover:from-[var(--primary)] hover:to-[var(--primary)]/10 transition-all duration-700 hover:shadow-[0_0_40px_rgba(var(--primary-rgb),0.15)] hover:-translate-y-2 cursor-default">
                                 {/* Inner Card Container */}
-                                <div className="bg-[#0A0A0A] rounded-[23px] h-full p-8 md:p-10 relative overflow-hidden z-10 flex flex-col justify-between">
+                                <div className="bg-[#0A0A0A] rounded-[23px] h-full p-6 sm:p-8 md:p-10 relative overflow-hidden z-10 flex flex-col justify-between">
                                     
                                     {/* Massive Watermark Icon */}
                                     <div className="absolute -top-6 -right-6 text-white/5 group-hover:text-[var(--primary)]/5 group-hover:scale-125 transition-all duration-700 pointer-events-none group-hover:rotate-12">
@@ -462,11 +462,11 @@ export default function SportsbookKioskProviderPage() {
                                     </div>
                                     
                                     <div className="relative z-20">
-                                        <div className="w-16 h-16 rounded-2xl bg-[var(--primary)]/5 border border-[var(--primary)]/20 flex items-center justify-center mb-8 group-hover:bg-[var(--primary)] group-hover:border-[var(--primary)] transition-all duration-500 shadow-lg">
-                                            <item.icon className="text-[var(--primary)] group-hover:text-black transition-colors duration-500" size={28} strokeWidth={1.5} />
+                                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--primary)]/5 border border-[var(--primary)]/20 flex items-center justify-center mb-6 sm:mb-8 group-hover:bg-[var(--primary)] group-hover:border-[var(--primary)] transition-all duration-500 shadow-lg">
+                                            <item.icon className="text-[var(--primary)] group-hover:text-black transition-colors duration-500" size={24} strokeWidth={1.5} />
                                         </div>
                                         
-                                        <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors duration-500">{item.title}</h3>
+                                        <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 group-hover:text-[var(--primary)] transition-colors duration-500">{item.title}</h3>
                                         <p className="text-[16px] text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">{item.desc}</p>
                                     </div>
                                 </div>
@@ -487,7 +487,7 @@ export default function SportsbookKioskProviderPage() {
                                     <span className="text-xs font-bold text-[var(--primary)] tracking-wider uppercase">FAQ</span>
                                 </div>
                                 
-                                <h2 className="text-4xl lg:text-[42px] font-bold text-white mb-6 leading-[1.2]">
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                                     Frequently Asked Questions
                                 </h2>
                                 

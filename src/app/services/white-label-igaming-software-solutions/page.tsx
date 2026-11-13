@@ -16,12 +16,12 @@ export default function WhiteLabelPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
+            <section className="relative pt-20 sm:pt-24 pb-6 sm:pb-10 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                    <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-20">
                         {/* Left Content */}
                         <div className="lg:w-1/2">
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
@@ -29,11 +29,11 @@ export default function WhiteLabelPage() {
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Premium Solutions</span>
                             </div>
 
-                            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                                 White Label iGaming Software Solutions, Built Around <span className="text-transparent bg-clip-text bg-gradient-accent">Your Brand</span>
                             </h1>
 
-                            <p className="text-lg text-gray-400 mb-8 leading-relaxed">
+                            <p className="text-sm sm:text-base lg:text-lg text-gray-400 mb-8 leading-relaxed">
                                 Launching an iGaming business from scratch requires considerable time, technology, integrations, and operational planning. Our White Label iGaming Software Solutions provide an established platform foundation that can be adapted to your brand, business model, and target market.
                             </p>
 
@@ -53,14 +53,14 @@ export default function WhiteLabelPage() {
                                 ))}
                             </div>
 
-                            <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                            <Link href="#contact" className="inline-flex items-center justify-center px-6 py-3.5 sm:px-8 sm:py-4 text-base font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
                                 Let's Talk About Your Launch <ChevronRight className="ml-2" />
                             </Link>
                         </div>
 
                         {/* Right side Image */}
-                        <div className="w-full lg:w-1/2 flex justify-center relative mt-12 lg:mt-0">
-                            <div className="relative w-full max-w-lg flex items-center justify-center">
+                        <div className="w-full lg:w-1/2 flex justify-center relative mt-4 sm:mt-6 lg:mt-0">
+                            <div className="relative w-full max-w-[340px] sm:max-w-[440px] lg:max-w-lg flex items-center justify-center">
                                 {/* Background Glows */}
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] max-w-[500px] max-h-[500px] bg-gradient-to-br from-[var(--primary)]/20 to-[var(--secondary)]/20 rounded-full blur-[80px] pointer-events-none z-0"></div>
 
@@ -77,7 +77,7 @@ export default function WhiteLabelPage() {
             </section>
 
             {/* Why Choose Section */}
-            <section className="py-16 bg-[#0A0A0A] relative overflow-hidden">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#0A0A0A] relative overflow-hidden">
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
                     <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
                         <div className="lg:w-1/2">
@@ -85,10 +85,10 @@ export default function WhiteLabelPage() {
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Why Choose Us</span>
                             </div>
-                            <h2 className="text-4xl font-bold text-white mb-6">Why Choose White Label iGaming Software Solutions?</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">Why Choose White Label iGaming Software Solutions?</h2>
                             <div className="w-12 h-1 bg-gradient-accent rounded-full mb-8"></div>
 
-                            <p className="text-gray-400 text-lg mb-8 leading-relaxed">
+                            <p className="text-gray-400 text-sm sm:text-base lg:text-lg mb-8 leading-relaxed">
                                 Building an iGaming platform independently is complex, costly, and time-consuming. Our white-label solutions eliminate these hurdles by providing a robust, established technology foundation. Move from planning to deployment in record time while maintaining full control over your brand identity.
                             </p>
 
@@ -191,11 +191,11 @@ export default function WhiteLabelPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Core Features</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">What's Included in Our Solutions?</h2>
-                        <p className="text-gray-400">Everything you need to launch and operate a successful iGaming platform under one unified environment.</p>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">What's Included in Our Solutions?</h2>
+                        <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">Everything you need to launch and operate a successful iGaming platform under one unified environment.</p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 sm:gap-y-16">
                         {[
                             {
                                 icon: LayoutDashboard,
@@ -238,14 +238,14 @@ export default function WhiteLabelPage() {
                                 desc: "Configurable player controls, session limits, and market-specific monitoring."
                             }
                         ].map((feature, idx) => (
-                            <div key={idx} className="flex gap-6 group relative">
+                            <div key={idx} className="flex gap-4 sm:gap-6 group relative">
                                 <div className="absolute -inset-6 bg-gradient-to-r from-white/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500 pointer-events-none"></div>
-                                <div className="w-16 h-16 rounded-full border-2 border-[var(--primary)]/20 bg-[var(--primary)]/5 flex items-center justify-center shrink-0 group-hover:border-[var(--primary)] group-hover:bg-[var(--primary)]/10 group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.3)] group-hover:-translate-y-1 transition-all duration-500 relative z-10">
-                                    <feature.icon className="text-[var(--primary)] transition-colors duration-500" size={26} />
+                                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-2 border-[var(--primary)]/20 bg-[var(--primary)]/5 flex items-center justify-center shrink-0 group-hover:border-[var(--primary)] group-hover:bg-[var(--primary)]/10 group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.3)] group-hover:-translate-y-1 transition-all duration-500 relative z-10">
+                                    <feature.icon className="text-[var(--primary)] transition-colors duration-500 w-5 h-5 sm:w-6 sm:h-6" />
                                 </div>
-                                <div className="relative z-10 pt-2">
-                                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[var(--primary)] transition-colors duration-300">{feature.title}</h3>
-                                    <p className="text-gray-400 leading-relaxed">{feature.desc}</p>
+                                <div className="relative z-10 pt-1 sm:pt-2">
+                                    <h3 className="text-lg sm:text-xl font-bold text-white mb-1.5 sm:mb-2 group-hover:text-[var(--primary)] transition-colors duration-300">{feature.title}</h3>
+                                    <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">{feature.desc}</p>
                                 </div>
                             </div>
                         ))}
@@ -261,7 +261,7 @@ export default function WhiteLabelPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Business Models</span>
                         </div>
-                        <h2 className="text-3xl font-bold text-white">Solutions for Different Business Models</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">Solutions for Different Business Models</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
@@ -296,7 +296,7 @@ export default function WhiteLabelPage() {
                                 {/* Content container */}
                                 <div className="absolute inset-0 flex flex-col justify-end p-6 pointer-events-none">
                                     <div className="transform translate-y-0 lg:translate-y-8 lg:group-hover:translate-y-0 peer-checked:translate-y-0 transition-transform duration-500 ease-out">
-                                        <h3 className="text-2xl font-bold text-white drop-shadow-md leading-tight">{model.title}</h3>
+                                        <h3 className="text-lg sm:text-xl font-bold text-white drop-shadow-md leading-tight">{model.title}</h3>
 
                                         {/* Description that reveals on hover or tap */}
                                         <div className="grid grid-rows-[1fr] lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] peer-checked:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out">
@@ -326,8 +326,8 @@ export default function WhiteLabelPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Workflow</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-4">The Launch Process</h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">A streamlined, transparent, and proven methodology to get your custom iGaming brand to market quickly.</p>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 leading-tight">The Launch Process</h2>
+                        <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed">A streamlined, transparent, and proven methodology to get your custom iGaming brand to market quickly.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -351,7 +351,7 @@ export default function WhiteLabelPage() {
                                     {idx < 4 && <div className="h-[1px] flex-1 bg-white/5 hidden lg:block"></div>}
                                 </div>
 
-                                <h3 className="text-xl font-bold text-white mb-3 leading-snug group-hover:text-[var(--primary)] transition-colors relative z-10">{item.title}</h3>
+                                <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-2 sm:mb-3 leading-snug group-hover:text-[var(--primary)] transition-colors relative z-10">{item.title}</h3>
                                 <p className="text-sm text-gray-400 leading-relaxed flex-1 relative z-10">{item.desc}</p>
                             </div>
                         ))}
@@ -379,7 +379,7 @@ export default function WhiteLabelPage() {
                                 <span className="text-sm font-semibold text-[var(--primary)] tracking-widest uppercase">Answers</span>
                             </div>
 
-                            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                                 Frequently Asked Questions
                             </h2>
 

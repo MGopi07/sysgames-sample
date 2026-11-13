@@ -16,26 +16,26 @@ export default function OnlineCasinoGameDevPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
+            <section className="relative pt-20 sm:pt-24 pb-6 sm:pb-10 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-16 items-center">
+                    <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-16 items-center">
                         <div className="lg:w-[55%] lg:pr-8">
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Expert Game Studio</span>
                             </div>
 
-                            <h1 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
+                            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
                                 Build Engaging Casino Games
-                                <span className="block text-xl lg:text-2xl mt-4 font-bold text-gray-300">
+                                <span className="block text-lg sm:text-xl lg:text-2xl mt-4 font-bold text-gray-300">
                                     With an <span className="text-transparent bg-clip-text bg-gradient-accent">Online Casino Game Development Company</span>
                                 </span>
                             </h1>
 
-                            <p className="text-lg text-gray-400 mb-8 leading-relaxed max-w-2xl">
+                            <p className="text-sm sm:text-base lg:text-lg text-gray-400 mb-8 leading-relaxed max-w-2xl">
                                 A successful casino game needs more than attractive graphics and a spin button. It needs thoughtful mechanics, balanced mathematics, engaging visuals, responsive interfaces, and reliable performance. Our Online Casino Game Development Company creates gaming experiences designed around your brand, audience, and business objectives.
                             </p>
 
@@ -52,21 +52,21 @@ export default function OnlineCasinoGameDevPage() {
                             </div>
 
                             <div className="flex flex-wrap gap-4">
-                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                                <Link href="#contact" className="inline-flex items-center justify-center px-6 py-3.5 sm:px-8 sm:py-4 text-base font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
                                     Talk to Our Team <ChevronRight className="ml-2" />
                                 </Link>
                             </div>
                         </div>
 
-                        <div className="w-full lg:w-[45%] relative mt-12 lg:mt-0 flex justify-center scale-75 md:scale-90 lg:scale-100 origin-center">
+                        <div className="w-full lg:w-[45%] relative mt-4 sm:mt-6 lg:mt-0 flex justify-center">
                             {/* Graphic Container */}
-                            <div className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden  group">
+                            <div className="relative w-full aspect-[4/3] max-w-[340px] sm:max-w-[440px] lg:max-w-none rounded-3xl overflow-hidden group">
                                 {/* <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 to-transparent mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-700"></div> */}
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src="/images/all_service/2-1.webp"
                                     alt="Casino Games Development"
-                                    className="w-full h-full object-cover transition-transform duration-700 "
+                                    className="w-full h-full object-cover transition-transform duration-700"
                                 />
                                 {/* Overlay UI elements to make it look alive */}
                                 
@@ -84,7 +84,7 @@ export default function OnlineCasinoGameDevPage() {
             </section>
 
             {/* Custom Casino Game Development */}
-            <section className="py-20 border-t border-white/5 bg-[#121212]/50">
+            <section className="py-10 sm:py-14 lg:py-20 border-t border-white/5 bg-[#121212]/50">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-1/2">
@@ -92,12 +92,12 @@ export default function OnlineCasinoGameDevPage() {
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Bespoke Solutions</span>
                             </div>
-                            <h2 className="text-4xl font-bold text-white mb-6">Custom Casino Game Development</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">Custom Casino Game Development</h2>
                             <div className="w-12 h-1 bg-gradient-accent rounded-full mb-8"></div>
-                            <p className="mb-6 leading-relaxed">
+                            <p className="text-sm sm:text-base text-gray-400 mb-6 leading-relaxed">
                                 Our Online Casino Game Development Company creates original casino games instead of relying exclusively on generic templates. We develop concepts around brand identity, target audience, market preferences, and desired gameplay experience.
                             </p>
-                            <p className="mb-8 leading-relaxed">
+                            <p className="text-sm sm:text-base text-gray-400 mb-8 leading-relaxed">
                                 We support the complete development lifecycle, from initial concept, game mechanics, and art production, to development, testing, integration, and deployment. A professional Online Casino Game Development Company helps transform your initial idea into a complete, market-ready casino game.
                             </p>
                         </div>
@@ -146,8 +146,8 @@ export default function OnlineCasinoGameDevPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Game Formats</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">Our Game Development Expertise</h2>
-                        <p className="text-gray-400">We develop diverse, high-performance gaming portfolios across all major casino categories.</p>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">Our Game Development Expertise</h2>
+                        <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">We develop diverse, high-performance gaming portfolios across all major casino categories.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -258,8 +258,8 @@ export default function OnlineCasinoGameDevPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Core Disciplines</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">The Anatomy of a Hit Game</h2>
-                        <p className="text-gray-400">Mastery across four key pillars is required to build a successful and profitable casino game.</p>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">The Anatomy of a Hit Game</h2>
+                        <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">Mastery across four key pillars is required to build a successful and profitable casino game.</p>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
@@ -274,7 +274,7 @@ export default function OnlineCasinoGameDevPage() {
                                 <div className="relative z-10">
                                     <div className="flex items-center gap-4 mb-8">
                                         <div className="w-8 h-px bg-gradient-to-r from-[var(--primary)] to-transparent"></div>
-                                        <h3 className="text-3xl font-black text-white tracking-tight">Mathematics</h3>
+                                        <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight">Mathematics</h3>
                                     </div>
                                     <p className="text-gray-400 mb-10 leading-relaxed text-lg max-w-md">
                                         Rigorous mathematical modeling defines game behavior, balancing payout structures with optimal engagement metrics.
@@ -298,7 +298,7 @@ export default function OnlineCasinoGameDevPage() {
                                 <div className="relative z-10">
                                     <div className="flex items-center gap-4 mb-8">
                                         <div className="w-8 h-px bg-gradient-to-r from-[var(--primary)] to-transparent"></div>
-                                        <h3 className="text-3xl font-black text-white tracking-tight">Mechanics</h3>
+                                        <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight">Mechanics</h3>
                                     </div>
                                     <p className="text-gray-400 mb-10 leading-relaxed text-lg max-w-md">
                                         Deep, engaging gameplay systems engineered to create interaction, variety, and extended session times.
@@ -322,7 +322,7 @@ export default function OnlineCasinoGameDevPage() {
                                 <div className="relative z-10">
                                     <div className="flex items-center gap-4 mb-8">
                                         <div className="w-8 h-px bg-gradient-to-r from-[var(--primary)] to-transparent"></div>
-                                        <h3 className="text-3xl font-black text-white tracking-tight">UI/UX Design</h3>
+                                        <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight">UI/UX Design</h3>
                                     </div>
                                     <p className="text-gray-400 mb-10 leading-relaxed text-lg max-w-md">
                                         Crystal-clear interfaces built for intuitive navigation, responsive feedback, and maximum visual appeal.
@@ -346,7 +346,7 @@ export default function OnlineCasinoGameDevPage() {
                                 <div className="relative z-10">
                                     <div className="flex items-center gap-4 mb-8">
                                         <div className="w-8 h-px bg-gradient-to-r from-[var(--primary)] to-transparent"></div>
-                                        <h3 className="text-3xl font-black text-white tracking-tight">Art & Animation</h3>
+                                        <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight">Art & Animation</h3>
                                     </div>
                                     <p className="text-gray-400 mb-10 leading-relaxed text-lg max-w-md">
                                         High-fidelity visual storytelling that establishes identity through 3D art, effects, and cohesive environments.
@@ -376,8 +376,8 @@ export default function OnlineCasinoGameDevPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Workflow</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-4">Our Game Development Process</h2>
-                        <p className="text-gray-400">A structured workflow to move ideas from concept to deployment.</p>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 leading-tight">Our Game Development Process</h2>
+                        <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">A structured workflow to move ideas from concept to deployment.</p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -424,8 +424,8 @@ export default function OnlineCasinoGameDevPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Post-Production</span>
                         </div>
-                        <h2 className="text-3xl md:text-4xl font-black text-white mb-4">Beyond Development</h2>
-                        <p className="text-gray-400 text-lg">Deploying a flawless, high-performing game requires rigorous post-production.</p>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3 sm:mb-4 leading-tight">Beyond Development</h2>
+                        <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">Deploying a flawless, high-performing game requires rigorous post-production.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -440,7 +440,7 @@ export default function OnlineCasinoGameDevPage() {
                                     <Code className="text-[var(--primary)]" size={32} />
                                 </div>
 
-                                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors relative z-10">Casino Game Integration</h3>
+                                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-[var(--primary)] transition-colors relative z-10">Casino Game Integration</h3>
                                 <p className="text-gray-400 leading-relaxed relative z-10 flex-grow">Developing the game is only part of the process. We support seamless integration with PAM systems, wallets, APIs, aggregators, and analytics platforms.</p>
                             </div>
                         </div>
@@ -456,7 +456,7 @@ export default function OnlineCasinoGameDevPage() {
                                     <ShieldCheck className="text-[var(--primary)]" size={32} />
                                 </div>
 
-                                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors relative z-10">Testing and QA</h3>
+                                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-[var(--primary)] transition-colors relative z-10">Testing and QA</h3>
                                 <p className="text-gray-400 leading-relaxed relative z-10 flex-grow">Quality assurance is essential. We use structured testing processes to identify functional, mathematical, performance, compatibility, and security issues.</p>
                             </div>
                         </div>
@@ -472,7 +472,7 @@ export default function OnlineCasinoGameDevPage() {
                                     <Zap className="text-[var(--primary)]" size={32} />
                                 </div>
 
-                                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors relative z-10">High-Performance Build</h3>
+                                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-[var(--primary)] transition-colors relative z-10">High-Performance Build</h3>
                                 <p className="text-gray-400 leading-relaxed relative z-10 flex-grow">Game assets, animations, interfaces, and backend architecture are optimized to provide smooth, responsive gameplay and reduced resource consumption.</p>
                             </div>
                         </div>
@@ -500,7 +500,7 @@ export default function OnlineCasinoGameDevPage() {
                                 <span className="text-sm font-semibold text-[var(--primary)] tracking-widest uppercase">Answers</span>
                             </div>
 
-                            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                                 Frequently Asked Questions
                             </h2>
 

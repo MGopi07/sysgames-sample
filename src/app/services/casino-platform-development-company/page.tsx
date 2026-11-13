@@ -16,14 +16,14 @@ export default function CasinoPlatformDevPage() {
     <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-24 pb-12 overflow-hidden">
+      <section className="relative lg:min-h-[90vh] flex items-center pt-20 sm:pt-24 pb-6 sm:pb-10 lg:pt-32 lg:pb-12 overflow-hidden">
         {/* Background Grid & Glow */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_20%,transparent_100%)]"></div>
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[var(--primary)]/10 rounded-full blur-[150px] pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[var(--secondary)]/10 rounded-full blur-[150px] pointer-events-none"></div>
 
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-16">
+          <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-16">
 
             <div className="lg:w-3/5">
               <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-[var(--primary)]/10 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(var(--primary-rgb),0.1)]">
@@ -31,30 +31,30 @@ export default function CasinoPlatformDevPage() {
                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Scalable Technology</span>
               </div>
 
-              <h1 className="text-4xl lg:text-5xl xl:text-5xl font-black text-white mb-8 leading-[1.15] tracking-tight">
-                A <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)]">Casino Platform Development Company</span><br /> for Scalable Online Casino Businesses
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 sm:mb-8 leading-[1.15] tracking-tight">
+                A <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)]">Casino Platform Development Company</span><br className="hidden sm:block" /> for Scalable Online Casino Businesses
               </h1>
 
-              <div className="space-y-6 mb-10">
-                <p className="text-xl text-gray-300 leading-relaxed border-l-2 border-[var(--primary)]/50 pl-6">
+              <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
+                <p className="text-sm sm:text-base lg:text-lg text-gray-300 leading-relaxed border-l-2 border-[var(--primary)]/50 pl-4 sm:pl-6">
                   Launching an online casino requires more than a collection of games. Operators need a reliable technology foundation that connects games, players, payments, wallets, promotions, analytics, security, and back-office operations.
                 </p>
-                <p className="text-lg text-gray-400 leading-relaxed pl-6">
+                <p className="text-sm sm:text-base text-gray-400 leading-relaxed pl-4 sm:pl-6">
                   As a casino platform development company, we build customizable casino platforms designed around your business model, target audience, operational requirements, and growth plans.
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-5">
-                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[#0A0A0A] bg-[var(--primary)] rounded-xl hover:bg-white hover:text-black transition-all shadow-[0_0_20px_rgba(var(--primary-rgb),0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] group">
-                  Talk to Our Experts <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <div className="flex flex-wrap gap-4">
+                <Link href="#contact" className="inline-flex items-center justify-center px-6 py-3.5 sm:px-8 sm:py-4 text-base font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                  Talk to Our Experts <ChevronRight className="ml-2" />
                 </Link>
               </div>
             </div>
 
             {/* Right Side Image Graphic */}
-            <div className="w-full lg:w-2/5 relative flex justify-center scale-90 lg:scale-100 mt-12 lg:mt-0">
+            <div className="w-full lg:w-2/5 relative flex justify-center mt-4 sm:mt-6 lg:mt-0">
               {/* Image Asset with Blend Mode to remove dark backgrounds */}
-              <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
+              <div className="relative w-full aspect-[4/3] max-w-[340px] sm:max-w-[440px] lg:max-w-[600px] mx-auto flex items-center justify-center group">
                  <div className="relative w-full h-full transition-transform duration-700">
                     <Image
                       src="/images/all_service/4-1.webp"
@@ -77,7 +77,7 @@ export default function CasinoPlatformDevPage() {
       </section>
 
       {/* Why Choose Us - Bento Box UI */}
-      <section className="py-16 border-t border-white/5 bg-[#121212]/50 relative overflow-hidden">
+      <section className="py-10 sm:py-14 lg:py-16 border-t border-white/5 bg-[#121212]/50 relative overflow-hidden">
         {/* Abstract Background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none"></div>
 
@@ -87,8 +87,8 @@ export default function CasinoPlatformDevPage() {
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">The Edge</span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">Why Choose Our Casino Platform?</h2>
-            <p className="text-xl text-gray-400">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">Why Choose Our Casino Platform?</h2>
+            <p className="text-sm sm:text-base lg:text-lg text-gray-400 leading-relaxed">
               A modern casino platform should provide operators control, flexibility, security, and the ability to scale. We combine essential technologies within one centralized ecosystem.
             </p>
           </div>
@@ -112,7 +112,7 @@ export default function CasinoPlatformDevPage() {
               </div>
 
               <div className="mt-auto relative z-20">
-                <h3 className="text-3xl font-black text-white mb-3 group-hover:text-[var(--primary)] transition-colors">Custom Platform Architecture</h3>
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white mb-2 sm:mb-3 group-hover:text-[var(--primary)] transition-colors">Custom Platform Architecture</h3>
                 <p className="text-gray-400 text-lg leading-relaxed">Build casino technology around your specific business requirements, workflows, and long-term expansion goals rather than conforming to fixed constraints.</p>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function CasinoPlatformDevPage() {
                 <Target size={36} className="text-[var(--primary)]" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white mb-2">CRM & Marketing Functionality</h3>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1.5 sm:mb-2">CRM & Marketing Functionality</h3>
                 <p className="text-gray-400">Create highly targeted player segments, dynamic promotions, and automated engagement campaigns to maximize retention.</p>
               </div>
             </div>
@@ -169,20 +169,20 @@ export default function CasinoPlatformDevPage() {
                 <CreditCard size={36} className="text-[var(--secondary)]" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white mb-2">Global Payment Integration</h3>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1.5 sm:mb-2">Global Payment Integration</h3>
                 <p className="text-gray-400">Connect supported local and international fiat gateways along with modern cryptocurrency processing solutions.</p>
               </div>
             </div>
 
             {/* 8. Mobile Compatibility (4x1 Banner) */}
-            <div className="col-span-1 md:col-span-2 lg:col-span-4 bg-gradient-to-r from-[var(--primary)]/10 via-[#0A0A0A] to-[var(--secondary)]/10 border border-white/10 hover:border-white/30 rounded-3xl p-8 relative overflow-hidden group transition-all duration-500 flex flex-col md:flex-row items-center justify-between gap-8 mt-2">
+            <div className="col-span-1 md:col-span-2 lg:col-span-4 bg-gradient-to-r from-[var(--primary)]/10 via-[#0A0A0A] to-[var(--secondary)]/10 border border-white/10 hover:border-white/30 rounded-3xl p-6 sm:p-8 relative overflow-hidden group transition-all duration-500 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 mt-2">
 
               <div className="md:w-2/3 relative z-10">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 mb-3 sm:mb-4">
                   <Smartphone size={14} className="text-white" />
                   <span className="text-xs font-bold text-white uppercase tracking-wider">Mobile-First</span>
                 </div>
-                <h3 className="text-3xl font-black text-white mb-3">Flawless Mobile Compatibility</h3>
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white mb-2 sm:mb-3">Flawless Mobile Compatibility</h3>
                 <p className="text-gray-300 text-lg">Deliver consistent, blazing-fast casino experiences across desktop, tablet, and all mobile devices without sacrificing visual quality or load times.</p>
               </div>
 
@@ -213,8 +213,8 @@ export default function CasinoPlatformDevPage() {
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Comprehensive Capabilities</span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">Comprehensive Casino Platform Capabilities</h2>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">Comprehensive Casino Platform Capabilities</h2>
+            <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">
               Our casino platform development company provides an expansive suite of modules designed to deliver a robust, end-to-end operational environment for your brand.
             </p>
           </div>
@@ -354,22 +354,22 @@ export default function CasinoPlatformDevPage() {
                 {/* Background Glow */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[var(--primary)]/10 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
 
-                <div className="p-8 md:p-10 flex-1 flex flex-col relative z-10">
-                  <div className="flex items-center gap-5 mb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 transition-all duration-500 shrink-0 shadow-[inset_0_0_20px_rgba(255,255,255,0.02)]">
+                <div className="p-5 sm:p-8 md:p-10 flex-1 flex flex-col relative z-10">
+                  <div className="flex items-center gap-3.5 sm:gap-5 mb-4 sm:mb-6">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 transition-all duration-500 shrink-0 shadow-[inset_0_0_20px_rgba(255,255,255,0.02)]">
                       {section.icon}
                     </div>
-                    <h3 className="text-2xl font-bold text-white group-hover:text-[var(--primary)] transition-colors duration-300">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-[var(--primary)] transition-colors duration-300">
                       {section.title}
                     </h3>
                   </div>
 
-                  <p className="text-gray-400 text-[17px] leading-relaxed mb-10 flex-1">
+                  <p className="text-gray-400 text-[15px] sm:text-[17px] leading-relaxed mb-6 sm:mb-10 flex-1">
                     {section.desc}
                   </p>
 
                   {section.features && (
-                    <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 backdrop-blur-sm hover:border-[var(--primary)]/20 transition-colors duration-500">
+                    <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-4 sm:p-6 backdrop-blur-sm hover:border-[var(--primary)]/20 transition-colors duration-500">
                       <h4 className="text-[11px] font-black text-[var(--primary)] uppercase tracking-widest mb-5 flex items-center gap-2 drop-shadow-[0_0_10px_rgba(var(--primary-rgb),0.3)]">
                         <Settings size={14} className="text-[var(--primary)] transition-colors duration-300 animate-[spin_10s_linear_infinite]" /> Key Features
                       </h4>
@@ -415,9 +415,9 @@ export default function CasinoPlatformDevPage() {
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Methodology</span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">Development Process</h2>
-            <p className="text-gray-400 text-lg leading-relaxed">
-              Hover over the pillars below to explore our comprehensive, end-to-step development pipeline.
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">Development Process</h2>
+            <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">
+              Explore our comprehensive, end-to-end development pipeline.
             </p>
           </div>
 
@@ -481,14 +481,14 @@ export default function CasinoPlatformDevPage() {
               { step: "07", title: "Deployment", desc: "Preparing the fully-tested platform for deployment and executing a smooth, secure launch.", icon: Globe },
               { step: "08", title: "Ongoing Support", desc: "Providing technical maintenance, continuous updates, optimization, and feature enhancements after launch.", icon: Database }
             ].map((item, idx) => (
-              <div key={idx} className="bg-[#121212] border border-white/5 rounded-3xl p-8 flex flex-col gap-6 relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-6 text-7xl font-black text-white/5">{item.step}</div>
-                <div className="w-16 h-16 rounded-2xl bg-[var(--primary)]/10 border border-[var(--primary)]/20 flex items-center justify-center text-[var(--primary)] relative z-10">
-                  <item.icon size={32} />
+              <div key={idx} className="bg-[#121212] border border-white/5 rounded-3xl p-5 sm:p-8 flex flex-col gap-4 sm:gap-6 relative overflow-hidden">
+                <div className="absolute top-0 right-0 p-4 sm:p-6 text-5xl sm:text-7xl font-black text-white/5">{item.step}</div>
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--primary)]/10 border border-[var(--primary)]/20 flex items-center justify-center text-[var(--primary)] relative z-10">
+                  <item.icon size={26} />
                 </div>
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-bold text-white mb-3">{item.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{item.desc}</p>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">{item.title}</h3>
+                  <p className="text-gray-400 text-[14px] sm:text-base leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -506,8 +506,8 @@ export default function CasinoPlatformDevPage() {
 
         <div className="container mx-auto px-6 lg:px-12 text-center relative z-10">
           <div className="mb-20">
-            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">Why Partner With a Casino Platform Development Company?</h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">Why Partner With a Casino Platform Development Company?</h2>
+            <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-3xl mx-auto leading-relaxed">
               Working with a specialized casino platform development company gives operators access to dedicated casino technology and development expertise. A reliable casino platform development company can bring these components together into one connected casino ecosystem.
             </p>
           </div>
@@ -569,22 +569,22 @@ export default function CasinoPlatformDevPage() {
                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Ecosystem</span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-white leading-tight">Build Your Casino Platform With Scalable Technology</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">Build Your Casino Platform With Scalable Technology</h2>
             </div>
 
             <div className="lg:w-7/12 relative">
               <div className="absolute -left-10 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent hidden lg:block"></div>
-              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+              <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed mb-6">
                 Your casino platform is the foundation of your online gaming operation. It needs to connect games, players, payments, wallets, promotions, analytics, security, and administration through a reliable technology ecosystem.
               </p>
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">
                 Our casino platform development company provides custom, white-label, and turnkey casino platform solutions designed to support different operator requirements.
               </p>
             </div>
           </div>
 
-          <div className="text-center mt-24 mb-4">
-            <h3 className="text-3xl lg:text-4xl font-bold text-white tracking-tight">Build With</h3>
+          <div className="text-center mt-14 sm:mt-24 mb-4">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">Build With</h3>
           </div>
         </div>
 
@@ -641,7 +641,7 @@ export default function CasinoPlatformDevPage() {
                 <span className="text-sm font-semibold text-[var(--primary)] tracking-widest uppercase">FAQ</span>
               </div>
 
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 Frequently Asked Questions
               </h2>
 

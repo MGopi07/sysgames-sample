@@ -15,7 +15,7 @@ export default function FinalCTA({
       <span className="text-transparent bg-clip-text bg-gradient-accent">Global iGaming Empire?</span>
     </>
   ),
-  description = "Partner with the leading iGaming software development company and launch a highly scalable, secure, and fully customized platform today."
+  description = "Partner with Sysgames, the leading software development company, and launch a highly scalable, secure, and fully customized platform today."
 }: FinalCTAProps) {
   return (
     <section className="py-16 relative overflow-hidden bg-[#0A0A0A]">
@@ -27,19 +27,19 @@ export default function FinalCTA({
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_20%,transparent_100%)]"></div>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="glass-card rounded-[2.5rem] border border-white/10 p-8 lg:px-14 lg:py-16 text-center relative overflow-hidden shadow-2xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+        <div className="glass-card rounded-3xl lg:rounded-[2.5rem] border border-white/10 p-6 sm:p-8 lg:px-14 lg:py-16 text-center relative overflow-hidden shadow-2xl">
           {/* Internal glowing elements */}
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-[var(--primary)]/30 rounded-full blur-[100px]"></div>
           <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[var(--secondary)]/30 rounded-full blur-[100px]"></div>
 
-          <div className="relative z-10 max-w-4xl mx-auto space-y-8">
+          <div className="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-8">
 
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight"
             >
               {title}
             </motion.h2>
@@ -49,7 +49,7 @@ export default function FinalCTA({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+              className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
             >
               {description}
             </motion.p>
@@ -59,11 +59,11 @@ export default function FinalCTA({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
             >
-              <Link href="#contact" className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-bold text-[var(--btn-text)] rounded-full group bg-gradient-accent shadow-[0_0_30px_rgba(var(--secondary-rgb),0.4)] hover:shadow-[0_0_50px_rgba(var(--primary-rgb),0.6)] transition-all w-full sm:w-auto text-base">
+              <Link href="#contact" className="relative inline-flex items-center justify-center px-6 py-3.5 sm:px-8 sm:py-4 overflow-hidden font-bold text-[var(--btn-text)] rounded-full group bg-gradient-accent shadow-[0_0_30px_rgba(var(--secondary-rgb),0.4)] hover:shadow-[0_0_50px_rgba(var(--primary-rgb),0.6)] transition-all w-full sm:w-auto text-sm sm:text-base">
                 <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-10"></span>
-                <span className="relative z-10 flex items-center gap-2">Contact Us <ArrowRight size={20} /></span>
+                <span className="relative z-10 flex items-center gap-2">Contact Us <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" /></span>
               </Link>
             </motion.div>
 
@@ -73,16 +73,16 @@ export default function FinalCTA({
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 1 }}
-              className="pt-5 flex flex-wrap justify-center gap-6 lg:gap-12 opacity-70"
+              className="pt-2 sm:pt-4 flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-12 opacity-70"
             >
-              <div className="flex items-center gap-2 text-white/80 font-medium">
-                <Server size={20} className="text-[var(--primary)]" /> 100% Platform Ownership
+              <div className="flex items-center gap-2 text-white/80 font-medium text-xs sm:text-sm lg:text-base">
+                <Server className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--primary)] flex-shrink-0" /> 100% Platform Ownership
               </div>
-              <div className="flex items-center gap-2 text-white/80 font-medium">
-                <Shield size={20} className="text-[var(--secondary)]" /> Zero GGR Share
+              <div className="flex items-center gap-2 text-white/80 font-medium text-xs sm:text-sm lg:text-base">
+                <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--secondary)] flex-shrink-0" /> Zero GGR Share
               </div>
-              <div className="flex items-center gap-2 text-white/80 font-medium">
-                <Globe size={20} className="text-[var(--primary)]" /> Global Reach
+              <div className="flex items-center gap-2 text-white/80 font-medium text-xs sm:text-sm lg:text-base">
+                <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--primary)] flex-shrink-0" /> Global Reach
               </div>
             </motion.div>
 

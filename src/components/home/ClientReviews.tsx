@@ -46,9 +46,9 @@ export default function ClientReviews() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl lg:text-5xl font-bold text-white mb-4"
+              className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight"
             >
-              iGaming Software Development Company – Client Reviews
+              Sysgames – Client Reviews
             </motion.h2>
             <div className="w-20 h-1 bg-gradient-accent rounded-full"></div>
           </div>

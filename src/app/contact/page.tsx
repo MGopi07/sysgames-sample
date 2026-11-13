@@ -3,9 +3,9 @@ import React from 'react';
 import { Mail, MapPin, Phone, MessageSquare, Send, Globe2, Building2, Terminal } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: "Contact Us | iGaming Software Development Company",
-    description: "Contact our iGaming software development team discuss casino, sportsbook, white label, slot game, game aggregation custom iGaming software solutions.",
-    keywords: "Contact iGaming Software Company, iGaming Software Development Company, iGaming Software Provider, iGaming Technology Provider, iGaming Solutions, Casino Software Development, Sportsbook Software Development",
+    title: "Contact Us | Sysgames Software Development Company",
+    description: "Contact the Sysgames software development team to discuss casino, sportsbook, white label, slot game, game aggregation, and custom software solutions.",
+    keywords: "Contact Sysgames, Sysgames Software Development Company, Sysgames Solutions Provider, Casino Software Development, Sportsbook Software Development",
 };
 
 export default function ContactPage() {
@@ -104,7 +104,7 @@ export default function ContactPage() {
                         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[var(--primary)]/5 blur-[100px] rounded-full pointer-events-none"></div>
                         
                         <div className="relative z-10">
-                            <h3 className="text-2xl font-black text-white uppercase tracking-wider mb-2">Send us a message</h3>
+                            <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wider mb-2">Send us a message</h3>
                             <p className="text-gray-400 mb-8 text-sm font-medium">Our enterprise team typically responds within 2 hours.</p>
 
                             <form className="space-y-6">

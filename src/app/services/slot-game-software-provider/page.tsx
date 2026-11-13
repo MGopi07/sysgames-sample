@@ -17,19 +17,19 @@ export default function SlotGameProviderPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
+            <section className="relative pt-20 sm:pt-24 pb-6 sm:pb-10 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-16 items-center">
+                    <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-16 items-center">
                         <div className="lg:w-[55%]">
                             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Premium Slot Development</span>
                             </div>
 
-                            <h1 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
+                            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
                                 Slot Game Software Provider for <span className="text-transparent bg-clip-text bg-gradient-accent">Modern Casinos</span>
                             </h1>
 
@@ -46,16 +46,16 @@ export default function SlotGameProviderPage() {
                             </div>
 
                             <div className="flex flex-wrap gap-4">
-                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                                <Link href="#contact" className="inline-flex items-center justify-center px-6 py-3.5 sm:px-8 sm:py-4 text-base font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
                                     Discuss Your Slot Game Project <ChevronRight className="ml-2" />
                                 </Link>
                             </div>
                         </div>
 
                         {/* Right Side Image Graphic */}
-                        <div className="w-full lg:w-[45%] relative flex justify-center scale-90 lg:scale-100 mt-12 lg:mt-0">
+                        <div className="w-full lg:w-[45%] relative flex justify-center mt-4 sm:mt-6 lg:mt-0">
                           {/* Image Asset with Blend Mode to remove dark backgrounds */}
-                          <div className="relative w-full aspect-square max-w-[600px] mx-auto flex items-center justify-center group">
+                          <div className="relative w-full aspect-[4/3] max-w-[340px] sm:max-w-[440px] lg:max-w-[600px] mx-auto flex items-center justify-center group">
                              <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105">
                                 <Image
                                   src="/images/all_service/7-1.webp"
@@ -77,7 +77,7 @@ export default function SlotGameProviderPage() {
             </section>
 
             {/* Why Choose Us */}
-            <section className="py-16 bg-[#121212] border-t border-white/5">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#121212] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
                         
@@ -87,7 +87,7 @@ export default function SlotGameProviderPage() {
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                             </div>
-                            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight">
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-8 leading-tight">
                                 Why Choose Our Slot Game Software Provider Solutions?
                             </h2>
                             <p className="text-gray-400 text-[16px] leading-relaxed">
@@ -141,7 +141,7 @@ export default function SlotGameProviderPage() {
                                                 0{idx + 1}
                                             </div>
                                             
-                                            <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[var(--primary)] transition-colors duration-300 relative z-10">{item.title}</h3>
+                                            <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-4 group-hover:text-[var(--primary)] transition-colors duration-300 relative z-10">{item.title}</h3>
                                             <p className="text-gray-400 text-[15.5px] leading-relaxed group-hover:text-gray-300 transition-colors relative z-10 lg:pr-12">{item.desc}</p>
                                             
                                             {/* Animated Progress Bar under text */}
@@ -164,7 +164,7 @@ export default function SlotGameProviderPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Portfolio</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">Complete Slot Game Software Solutions</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Complete Slot Game Software Solutions</h2>
                         <p className="text-gray-400">Our solutions provide the technical and commercial requirements for casino operators and gaming platforms to create, integrate, and manage online slot games.</p>
                     </div>
 
@@ -201,7 +201,7 @@ export default function SlotGameProviderPage() {
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Bespoke Production</span>
                             </div>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Custom Slot Game Development</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Custom Slot Game Development</h2>
                             <p className="text-gray-400 mb-8 leading-relaxed text-[15px]">
                                 Not every casino wants the same gaming portfolio. Our Slot Game Software Provider services can include custom slot game development for businesses want original concepts rather than relying exclusively on standard game libraries.
                             </p>
@@ -234,7 +234,7 @@ export default function SlotGameProviderPage() {
                                 <Layers size={160} strokeWidth={1} className="text-white" />
                             </div>
 
-                            <h2 className="text-3xl font-bold text-white mb-6 relative z-10">Slot Game API Integration</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 relative z-10">Slot Game API Integration</h2>
                             <p className="text-gray-400 mb-10 leading-relaxed text-[15px] relative z-10">
                                 Integration is an important part of modern casino technology. Our solutions support API-based connections with compatible casino platforms, aggregators, wallets, and back-office systems.
                             </p>
@@ -272,21 +272,21 @@ export default function SlotGameProviderPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Ecosystem Support</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">Slot Software for Diverse Platforms</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Slot Software for Diverse Platforms</h2>
                         <p className="text-gray-400">Our solutions can help operators expand their casino portfolios with configurable slot technology across multiple platform types.</p>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Operators Card */}
-                        <div className="relative p-10 rounded-[2rem] bg-gradient-to-br from-[#1A1C23] to-[#0A0A0A] border border-white/5 overflow-hidden group shadow-2xl">
+                        <div className="relative p-6 sm:p-10 rounded-2xl sm:rounded-[2rem] bg-gradient-to-br from-[#1A1C23] to-[#0A0A0A] border border-white/5 overflow-hidden group shadow-2xl">
                             {/* Background Ambient Glow */}
                             <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--primary)]/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 group-hover:bg-[var(--primary)]/20 transition-colors duration-700"></div>
                             
                             <div className="relative z-10">
-                                <div className="w-14 h-14 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center mb-8 shadow-inner group-hover:border-[var(--primary)]/40 group-hover:bg-[var(--primary)]/5 transition-all duration-500">
-                                    <Users className="text-[var(--primary)]" size={28} />
+                                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center mb-6 sm:mb-8 shadow-inner group-hover:border-[var(--primary)]/40 group-hover:bg-[var(--primary)]/5 transition-all duration-500">
+                                    <Users className="text-[var(--primary)]" size={26} />
                                 </div>
-                                <h3 className="text-3xl font-bold text-white mb-4">For Casino Operators</h3>
+                                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-3 sm:mb-4">For Casino Operators</h3>
                                 <p className="text-gray-400 mb-10 leading-relaxed text-[15px]">
                                     Online casino operators need game variety, performance, integration flexibility, and player-friendly experiences. We provide multiple slot themes, classic and video formats, varying volatility profiles, and promotional content.
                                 </p>
@@ -337,7 +337,7 @@ export default function SlotGameProviderPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Features</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-6">Key Features of Our Slot Game Software</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Key Features of Our Slot Game Software</h2>
                     </div>
                     
                     <div className="max-w-5xl mx-auto bg-gradient-to-br from-[#1A1A1A] to-[#121212] rounded-[2rem] border border-white/5 overflow-hidden shadow-[0_20px_50px_-15px_rgba(0,0,0,0.8)] relative">
@@ -397,7 +397,7 @@ export default function SlotGameProviderPage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Process</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-4">How Our Services Work</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">How Our Services Work</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -455,7 +455,7 @@ export default function SlotGameProviderPage() {
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Expertise</span>
                             </div>
 
-                            <h2 className="text-4xl font-bold text-white mb-6">Why Work With Our Slot Game Software Provider?</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Why Work With Our Slot Game Software Provider?</h2>
                             
                             <p className="text-gray-400 mb-8 leading-relaxed text-lg">
                                 We combine engaging game mechanics with scalable architecture and seamless integrations to support growing casino operations.
@@ -512,8 +512,8 @@ export default function SlotGameProviderPage() {
                             </div>
                         </div>
                         
-                        <div className="glass-card p-10 rounded-3xl border border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-transparent">
-                            <h3 className="text-2xl font-bold text-white mb-6">Benefits of Choosing Us</h3>
+                        <div className="glass-card p-6 sm:p-10 rounded-2xl sm:rounded-3xl border border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-transparent">
+                            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Benefits of Choosing Us</h3>
                             <ul className="space-y-4">
                                 {[
                                     { t: "Expand Your Casino Portfolio", d: "with additional slot titles and gaming formats." },
@@ -546,7 +546,7 @@ export default function SlotGameProviderPage() {
                                     <span className="text-xs font-bold text-[var(--primary)] tracking-wider uppercase">FAQ</span>
                                 </div>
                                 
-                                <h2 className="text-4xl lg:text-[42px] font-bold text-white mb-6 leading-[1.2]">
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                                     Frequently Asked Questions
                                 </h2>
                                 

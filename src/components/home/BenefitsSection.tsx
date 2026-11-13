@@ -46,9 +46,9 @@ export default function BenefitsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight"
+            className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight"
           >
-            Why Choose an iGaming Software Development Company
+            Why Choose Sysgames Software Development
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, scale: 0 }}

@@ -18,25 +18,25 @@ export default function CasinoGameAggregationPage() {
         <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
             {/* Hero Section */}
-            <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
+            <section className="relative pt-20 sm:pt-24 pb-6 sm:pb-10 lg:pt-32 lg:pb-12 overflow-hidden">
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[var(--secondary)]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-16 items-center">
+                    <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-16 items-center">
                         <div className="lg:w-[55%]">
                             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">One Integration. Thousands of Games.</span>
                             </div>
 
-                            <h1 className="text-4xl lg:text-5xl xl:text-5xl font-black text-white mb-6 leading-[1.1]">
+                            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 leading-[1.1]">
                                 Casino Game <br className="hidden lg:block" />
                                 Aggregation Provider
                                 for a <span className="text-transparent bg-clip-text bg-gradient-accent">Broader Portfolio</span>
                             </h1>
 
-                            <div className="space-y-4 mb-8 text-lg text-gray-400 leading-relaxed max-w-2xl">
+                            <div className="space-y-4 mb-8 text-sm sm:text-base lg:text-lg text-gray-400 leading-relaxed max-w-2xl">
                                 <p>
                                     Integrating games from multiple studios individually is time-consuming. Our Casino Game Aggregation Provider solution helps operators connect multiple game providers through a single, streamlined platform.
                                 </p>
@@ -46,13 +46,13 @@ export default function CasinoGameAggregationPage() {
                             </div>
 
                             <div className="flex flex-wrap gap-4">
-                                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
-                                    Discuss Your Aggregation Requirements <ChevronRight className="ml-2" />
+                                <Link href="#contact" className="inline-flex items-center justify-center px-6 py-3.5 sm:px-8 sm:py-4 text-base font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                                    Let's Connect <ChevronRight className="ml-2" />
                                 </Link>
                             </div>
                         </div>
 
-                        <div className="w-full lg:w-[45%] flex justify-center relative scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0">
+                        <div className="w-full lg:w-[45%] flex justify-center relative mt-4 sm:mt-6 lg:mt-0">
                             <style>{`
                                 @keyframes float-slow {
                                     0% { transform: translateY(0px); }
@@ -68,7 +68,7 @@ export default function CasinoGameAggregationPage() {
                             `}</style>
                             
                             {/* Premium Dynamic Aggregation Visual */}
-                            <div className="relative w-full max-w-lg aspect-square flex items-center justify-center">
+                            <div className="relative w-[320px] sm:w-[440px] lg:w-full max-w-lg aspect-square flex items-center justify-center scale-[0.82] sm:scale-100 origin-center -my-6 sm:my-0">
                                 {/* Ambient Glow */}
                                 <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/10 to-[var(--secondary)]/10 rounded-full blur-[80px] animate-pulse"></div>
                                 
@@ -154,9 +154,9 @@ export default function CasinoGameAggregationPage() {
                                     </span>
                                     <span className="text-[9px] font-bold text-white tracking-widest uppercase">15,000+ Games</span>
                                 </div>
-                                <div className="absolute bottom-8 left-2 px-4 py-2 bg-[var(--secondary)]/10 backdrop-blur-md border border-[var(--secondary)]/20 shadow-xl rounded-full flex items-center gap-2 z-40 animate-[float-slow_5s_ease-in-out_infinite_alternate_reverse]">
-                                    <Cable size={14} className="text-[var(--secondary)]" />
-                                    <span className="text-[9px] font-bold text-[var(--secondary)] tracking-widest uppercase">Single API</span>
+                                <div className="absolute bottom-8 left-2 px-4 py-2 bg-white/[0.05] backdrop-blur-md border border-white/10 shadow-xl rounded-full flex items-center gap-2 z-40 animate-[float-slow_5s_ease-in-out_infinite_alternate_reverse]">
+                                    <Cable size={14} className="text-white" />
+                                    <span className="text-[9px] font-bold text-white tracking-widest uppercase">Single API</span>
                                 </div>
                             </div>
                         </div>
@@ -165,20 +165,20 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Why Choose Us - Carousel UI */}
-            <section className="py-16 bg-[#0A0A0A] relative overflow-hidden border-t border-white/5">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#0A0A0A] relative overflow-hidden border-t border-white/5">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none"></div>
                 <AdvantagesCarousel />
             </section>
 
             {/* Platform Features Grid -> Expanding Accordion */}
-            <section className="py-16 bg-[#0A0A0A] relative overflow-hidden">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#0A0A0A] relative overflow-hidden">
                 <div className="container mx-auto px-6 lg:px-12">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                    <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-16">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-4 sm:mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Capabilities</span>
                         </div>
-                        <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 sm:mb-6 leading-tight">
                             What Does Our Aggregation <br className="hidden lg:block" />
                             Platform Include?
                         </h2>
@@ -194,7 +194,7 @@ export default function CasinoGameAggregationPage() {
                             { icon: ShieldCheck, title: "Centralized Management", desc: "Manage game availability, provider connections, configurations, supported content through centralized administration environment." },
                             { icon: BarChart3, title: "Reporting & Data", desc: "Access relevant gaming and operational information through supported reporting functionality, helping operators understand content performance and platform activity." }
                         ].map((module, idx) => (
-                            <div key={idx} className="group relative flex-none lg:flex-[1] lg:hover:flex-[5] lg:max-w-[380px] h-auto lg:h-full transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] overflow-hidden bg-[#121212] border border-white/5 hover:border-[var(--primary)]/30 rounded-3xl cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.1)]">
+                            <div key={idx} className="group relative flex-none lg:flex-[1] lg:hover:flex-[5] lg:max-w-[380px] h-auto lg:h-full transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] overflow-hidden bg-[#121212] border border-white/5 hover:border-[var(--primary)]/30 rounded-2xl sm:rounded-3xl cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.1)] p-5 sm:p-6 lg:p-0">
                                 
                                 {/* Vertical Slim State */}
                                 <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-between py-10 opacity-100 group-hover:opacity-0 transition-opacity duration-500">
@@ -210,15 +210,15 @@ export default function CasinoGameAggregationPage() {
                                     <module.icon className="text-gray-600" size={28} />
                                 </div>
 
-                                {/* Expanded State */}
-                                <div className="relative lg:absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[280px] lg:w-[320px] flex flex-col justify-center opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none group-hover:pointer-events-auto z-20">
-                                    {/* Fixed width inner container prevents text re-wrapping during flex expansion */}
+                                {/* Content State */}
+                                <div className="relative lg:absolute top-0 bottom-0 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-[320px] flex flex-col justify-center opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-auto z-20">
+                                    {/* Inner container */}
                                     <div className="w-full">
-                                        <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-2xl bg-[var(--primary)]/20 flex items-center justify-center mb-4 lg:mb-6 border border-[var(--primary)]/30 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
-                                            <module.icon className="text-[var(--primary)]" size={28} />
+                                        <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl bg-[var(--primary)]/20 flex items-center justify-center mb-3 sm:mb-4 lg:mb-6 border border-[var(--primary)]/30 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
+                                            <module.icon className="text-[var(--primary)]" size={24} />
                                         </div>
-                                        <h3 className="text-xl lg:text-3xl font-black text-white mb-3 lg:mb-4 leading-tight whitespace-normal translate-y-4 group-hover:translate-y-0 transition-transform duration-700">{module.title}</h3>
-                                        <p className="text-gray-400 leading-relaxed text-sm lg:text-base whitespace-normal opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-700 delay-75 lg:translate-y-4 group-hover:translate-y-0">
+                                        <h3 className="text-lg sm:text-xl lg:text-3xl font-black text-white mb-2 sm:mb-3 lg:mb-4 leading-tight whitespace-normal translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-700">{module.title}</h3>
+                                        <p className="text-gray-400 leading-relaxed text-sm lg:text-base whitespace-normal opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-700 delay-75 translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0">
                                             {module.desc}
                                         </p>
                                     </div>
@@ -230,13 +230,13 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Operator & Platform Sections (Zigzag) */}
-            <section className="py-16 bg-[#121212] border-t border-white/5 relative overflow-hidden">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#121212] border-t border-white/5 relative overflow-hidden">
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
 
                     {/* Online Casino Operators */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-10 sm:mb-16">
                         <div>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation Provider for Online Casino Operators</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation Provider for Online Casino Operators</h2>
                             <p className="text-gray-400 mb-6 leading-relaxed">
                                 Online casino operators need a diverse game portfolio to serve different player preferences. Working with a Casino Game Aggregation Provider can help operators expand their game lobby while reducing the complexity of managing multiple technical integrations.
                             </p>
@@ -263,8 +263,8 @@ export default function CasinoGameAggregationPage() {
                             </ul>
                         </div>
                         {/* Image Graphic Right */}
-                        <div className="relative flex justify-center mt-12 lg:mt-0">
-                            <div className="relative w-full aspect-square max-w-[500px] mx-auto group">
+                        <div className="relative flex justify-center mt-4 sm:mt-6 lg:mt-0">
+                            <div className="relative w-full aspect-[4/3] max-w-[340px] sm:max-w-[440px] lg:max-w-[500px] mx-auto group">
                                 <div className="relative w-full h-full transition-transform duration-700">
                                     <Image
                                         src="/images/all_service/8-2.webp"
@@ -284,9 +284,9 @@ export default function CasinoGameAggregationPage() {
                     </div>
 
                     {/* iGaming Platforms */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
-                        <div className="order-2 lg:order-1 relative flex justify-center mt-12 lg:mt-0">
-                            <div className="relative w-full aspect-square max-w-[500px] mx-auto group flex items-center justify-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-10 sm:mb-16">
+                        <div className="order-2 lg:order-1 relative flex justify-center mt-4 sm:mt-6 lg:mt-0">
+                            <div className="relative w-full aspect-[4/3] max-w-[340px] sm:max-w-[440px] lg:max-w-[500px] mx-auto group flex items-center justify-center">
                                 <div className="relative w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-105">
                                     <Image
                                         src="/images/all_service/8-3.webp"
@@ -302,7 +302,7 @@ export default function CasinoGameAggregationPage() {
                             </div>
                         </div>
                         <div className="order-1 lg:order-2">
-                            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation Provider for iGaming Platforms</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation Provider for iGaming Platforms</h2>
                             <p className="text-gray-400 mb-6 leading-relaxed">
                                 iGaming platforms often need to support multiple casino providers, sportsbook products, payment systems, wallets, and player management tools. A Casino Game Aggregation Provider can act as an important technology layer within this ecosystem.
                             </p>
@@ -322,7 +322,7 @@ export default function CasinoGameAggregationPage() {
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Connectivity</span>
                             </div>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation API</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation API</h2>
                             <p className="text-gray-400 leading-relaxed mb-12">
                                 A reliable API is essential when connecting a casino platform multiple game providers. Our Casino Game Aggregation Provider solution can offer supported API connectivity for game launches, content information, player sessions, wallet transactions, and other required functions.
                             </p>
@@ -390,7 +390,7 @@ export default function CasinoGameAggregationPage() {
                                 </div>
                             </div>
                             <div className="order-1 lg:order-2">
-                                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Content Aggregation for Slots</h2>
+                                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Content Aggregation for Slots</h2>
                                 <p className="text-gray-400 mb-6 leading-relaxed">
                                     Slots represent one of the largest categories of online casino content. Our Casino Game Aggregation Provider solution help operators expand their slot portfolio by connecting supported slot studios through a centralized aggregation layer.
                                 </p>
@@ -401,9 +401,9 @@ export default function CasinoGameAggregationPage() {
                         </div>
 
                         {/* Live Casino */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                             <div>
-                                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation for Live Casino</h2>
+                                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation for Live Casino</h2>
                                 <p className="text-gray-400 mb-6 leading-relaxed">
                                     Live casino content can add a more interactive experience to an online gaming platform. A Casino Game Aggregation Provider can help operators connect supported live casino providers and make available games accessible through the casino lobby.
                                 </p>
@@ -412,7 +412,7 @@ export default function CasinoGameAggregationPage() {
                                 </p>
                             </div>
                             <div>
-                                <div className="glass-card p-10 rounded-3xl border border-white/10">
+                                <div className="glass-card p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-white/10">
                                     <h3 className="text-xl font-bold text-white mb-6">Available live casino content may include:</h3>
                                     <ul className="grid grid-cols-2 gap-4">
                                         {["Live blackjack", "Live roulette", "Live baccarat", "Game shows", "Poker-style games", "Other supported live dealer formats"].map((item, i) => (
@@ -427,17 +427,17 @@ export default function CasinoGameAggregationPage() {
                         </div>
 
                         {/* Table Games */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                             <div className="order-2 lg:order-1">
-                                <div className="glass-card p-10 rounded-3xl border border-white/10 relative overflow-hidden group">
+                                <div className="glass-card p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-white/10 relative overflow-hidden group">
                                     <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                    <Coins size={48} className="text-white mb-6" />
-                                    <h3 className="text-xl font-bold text-white mb-4">Classic Casino Experiences</h3>
+                                    <Coins size={40} className="text-white mb-4 sm:mb-6" />
+                                    <h3 className="text-xl font-bold text-white mb-3 sm:mb-4">Classic Casino Experiences</h3>
                                     <p className="text-gray-400 text-sm leading-relaxed">Operators can create a broader casino lobby with supported roulette, blackjack, baccarat, poker, and specialty table games while managing content through a centralized aggregation environment.</p>
                                 </div>
                             </div>
                             <div className="order-1 lg:order-2">
-                                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation for Table Games</h2>
+                                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Casino Game Aggregation for Table Games</h2>
                                 <p className="text-gray-400 leading-relaxed">
                                     Slots and live casino, our Casino Game Aggregation Provider platform can support access to available table game content from integrated providers.
                                 </p>
@@ -448,21 +448,21 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Benefits & Key Features */}
-            <section className="py-16 bg-[#121212] border-t border-white/5 relative overflow-hidden">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#121212] border-t border-white/5 relative overflow-hidden">
                 {/* Background accents */}
                 <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-[#0A0A0A] to-transparent pointer-events-none"></div>
                 <div className="absolute -left-[20%] top-1/4 w-[600px] h-[600px] bg-[var(--primary)]/5 rounded-full blur-[120px] pointer-events-none"></div>
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-[1fr_450px] gap-16 items-start">
+                    <div className="grid grid-cols-1 lg:grid-cols-[1fr_450px] gap-8 sm:gap-12 lg:gap-16 items-start">
                         
                         {/* Left Side: Benefits */}
                         <div>
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-4 sm:mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                             </div>
-                            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-10 leading-tight">Benefits of Working With a Casino Game Aggregation Provider</h2>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-10 leading-tight">Benefits of Working With a Casino Game Aggregation Provider</h2>
                             
                             <div className="space-y-4">
                                 {[
@@ -473,12 +473,12 @@ export default function CasinoGameAggregationPage() {
                                     { t: "Scalable Technology", d: "As your casino business grows, your Casino Game Aggregation Provider solution can support additional providers and content where technically and commercially available." },
                                     { t: "Improved Player Experience", d: "A broader and better-organized game lobby can make it easier for players to discover games that match their interests." }
                                 ].map((item, idx) => (
-                                    <div key={idx} className="group flex items-start gap-6 p-6 rounded-3xl bg-white/[0.02] border border-white/5 hover:bg-[var(--primary)]/5 hover:border-[var(--primary)]/30 transition-all duration-300 shadow-lg hover:shadow-[0_10px_30px_rgba(var(--primary-rgb),0.05)]">
-                                        <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-[#0A0A0A] border border-white/10 flex items-center justify-center text-xl font-black text-white group-hover:text-[var(--primary)] group-hover:scale-110 group-hover:border-[var(--primary)]/50 transition-all duration-500 shadow-[inset_0_0_20px_rgba(255,255,255,0.02)]">
+                                    <div key={idx} className="group flex items-start gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-white/[0.02] border border-white/5 hover:bg-[var(--primary)]/5 hover:border-[var(--primary)]/30 transition-all duration-300 shadow-lg hover:shadow-[0_10px_30px_rgba(var(--primary-rgb),0.05)]">
+                                        <div className="flex-shrink-0 w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-[#0A0A0A] border border-white/10 flex items-center justify-center text-base sm:text-xl font-black text-white group-hover:text-[var(--primary)] group-hover:scale-110 group-hover:border-[var(--primary)]/50 transition-all duration-500 shadow-[inset_0_0_20px_rgba(255,255,255,0.02)]">
                                             {idx + 1}
                                         </div>
                                         <div>
-                                            <h4 className="text-xl font-bold text-white mb-2 group-hover:text-[var(--primary)] transition-colors duration-300">{item.t}</h4>
+                                            <h4 className="text-lg sm:text-xl font-bold text-white mb-1.5 sm:mb-2 group-hover:text-[var(--primary)] transition-colors duration-300">{item.t}</h4>
                                             <p className="text-gray-400 leading-relaxed text-sm md:text-base">{item.d}</p>
                                         </div>
                                     </div>
@@ -488,12 +488,12 @@ export default function CasinoGameAggregationPage() {
 
                         {/* Right Side: Key Features Panel */}
                         <div className="sticky top-32 glass-card p-1 rounded-[2.5rem] bg-gradient-to-b from-white/10 to-transparent">
-                            <div className="bg-[#0A0A0A] rounded-[2.4rem] p-8 md:p-10 h-full relative overflow-hidden">
+                            <div className="bg-[#0A0A0A] rounded-[2.4rem] p-5 sm:p-8 md:p-10 h-full relative overflow-hidden">
                                 {/* Abstract glowing orb in corner */}
                                 <div className="absolute -top-32 -right-32 w-80 h-80 bg-[var(--primary)]/20 rounded-full blur-[100px] pointer-events-none"></div>
                                 
-                                <h3 className="text-2xl font-bold text-white mb-8 relative z-10 flex items-center gap-3">
-                                    <Layers className="text-[var(--primary)]" size={28} />
+                                <h3 className="text-xl sm:text-2xl font-bold text-white mb-5 sm:mb-8 relative z-10 flex items-center gap-3">
+                                    <Layers className="text-[var(--primary)]" size={26} />
                                     Platform Features
                                 </h3>
                                 
@@ -528,14 +528,14 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Development Process */}
-            <section className="py-16 bg-[#0A0A0A] border-t border-white/5">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#0A0A0A] border-t border-white/5">
                 <div className="container mx-auto px-6 lg:px-12">
-                    <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                    <div className="text-center mb-8 sm:mb-16">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-4 sm:mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Workflow</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-white mb-4">How Our Casino Game Aggregation Provider Works</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">How Our Casino Game Aggregation Provider Works</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -547,7 +547,7 @@ export default function CasinoGameAggregationPage() {
                             { step: "5", title: "Test the Integration", desc: "The integration is tested across supported game launches, player sessions, wallet functions, transactions, content delivery, and reporting." },
                             { step: "6", title: "Launch Your Casino Content", desc: "Once the integration is ready, supported casino games can be made available through your platform. Additional providers and content can be added as your operation grows." }
                         ].map((item, idx) => (
-                            <div key={idx} className="bg-[#121212] border border-white/5 rounded-2xl p-6 relative overflow-hidden group hover:border-[var(--primary)]/40 transition-colors">
+                            <div key={idx} className="bg-[#121212] border border-white/5 rounded-2xl p-5 sm:p-6 relative overflow-hidden group hover:border-[var(--primary)]/40 transition-colors">
                                 <div className="absolute top-4 right-4 text-5xl font-black text-white/5 group-hover:text-[var(--primary)]/10 transition-colors">
                                     0{item.step}
                                 </div>
@@ -560,15 +560,15 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Why Choose Our... Solutions */}
-            <section className="py-16 bg-[#121212] border-t border-white/5 relative overflow-hidden">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#121212] border-t border-white/5 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                    <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-16">
+                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-4 sm:mb-6">
                             <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                             <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
                         </div>
-                        <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">Why Choose Our Provider Solutions?</h2>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 sm:mb-6 leading-tight">Why Choose Our Provider Solutions?</h2>
                     </div>
 
                     <ProviderSolutionsSlider />
@@ -576,17 +576,17 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* Business Models */}
-            <section className="py-16 bg-[#0A0A0A] border-t border-white/5 relative overflow-hidden">
+            <section className="py-10 sm:py-14 lg:py-16 bg-[#0A0A0A] border-t border-white/5 relative overflow-hidden">
                 <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[var(--secondary)]/5 rounded-full blur-[100px] pointer-events-none"></div>
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-16 items-start">
+                    <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-start">
                         <div className="lg:w-1/3 lg:sticky lg:top-32 relative">
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-4 sm:mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Scalability</span>
                             </div>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Built for Different Business Models</h2>
-                            <p className="text-gray-400 leading-relaxed mb-12">
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">Built for Different Business Models</h2>
+                            <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-6 sm:mb-12">
                                 Our aggregation technology is designed to adapt to your specific technical architecture and commercial requirements, whether you operate a standalone casino or a massive B2B platform.
                             </p>
 
@@ -636,9 +636,9 @@ export default function CasinoGameAggregationPage() {
                                     { title: "Casino Aggregators", desc: "Create or expand an ecosystem that connects supported game studios with casino operators and gaming platforms." },
                                     { title: "Crypto Casinos", desc: "Integrate flexible gaming content that can support crypto-based wagers and decentralized platform architectures." }
                                 ].map((item, idx) => (
-                                    <div key={idx} className={`bg-[#121212] border border-white/5 rounded-2xl p-8 relative overflow-hidden group hover:border-[var(--secondary)]/30 transition-all duration-300 flex flex-col justify-center`}>
+                                    <div key={idx} className={`bg-[#121212] border border-white/5 rounded-2xl p-5 sm:p-8 relative overflow-hidden group hover:border-[var(--secondary)]/30 transition-all duration-300 flex flex-col justify-center`}>
                                         <div className="absolute top-0 left-0 w-1 h-full bg-[var(--secondary)]/30 group-hover:w-full group-hover:bg-[var(--secondary)]/5 transition-all duration-500"></div>
-                                        <h3 className="text-lg font-bold text-white mb-3 relative z-10 group-hover:text-[var(--secondary)] transition-colors">{item.title}</h3>
+                                        <h3 className="text-lg font-bold text-white mb-2 sm:mb-3 relative z-10 group-hover:text-[var(--secondary)] transition-colors">{item.title}</h3>
                                         <p className="text-gray-400 leading-relaxed text-sm relative z-10">{item.desc}</p>
                                     </div>
                                 ))}
@@ -649,19 +649,18 @@ export default function CasinoGameAggregationPage() {
             </section>
 
             {/* FAQs */}
-            {/* FAQs */}
-            <section className="py-16 lg:py-20 bg-[#0A0A0A] relative border-t border-white/5">
+            <section className="py-10 sm:py-14 lg:py-20 bg-[#0A0A0A] relative border-t border-white/5">
                 {/* Background glow wrapped to prevent overflow without breaking sticky */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--primary)]/5 rounded-full blur-[150px]"></div>
                 </div>
 
                 <div className="container mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start relative">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-20 items-start relative">
                         
                         {/* Left Side: Container that sticks */}
                         <div className="lg:col-span-5 lg:sticky lg:top-[15vh] flex flex-col justify-start">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-4 sm:mb-6 w-fit shadow-[0_0_15px_rgba(var(--primary-rgb),0.1)]">
                                 <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--primary)]"></span>
@@ -669,11 +668,11 @@ export default function CasinoGameAggregationPage() {
                                 <span className="text-sm font-semibold text-[var(--primary)] tracking-widest uppercase">Answers</span>
                             </div>
 
-                            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                                 Frequently Asked Questions
                             </h2>
 
-                            <p className="text-gray-400 text-lg leading-relaxed mb-8">
+                            <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
                                 Find answers to common questions about Casino Game Aggregation Providers and how this technology can support your online gaming operation.
                             </p>
 

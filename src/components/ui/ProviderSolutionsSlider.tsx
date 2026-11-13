@@ -62,15 +62,15 @@ export default function ProviderSolutionsSlider() {
                 {items.map((item, idx) => (
                     <div 
                         key={idx} 
-                        className={`glass-card rounded-2xl p-8 border border-white/5 hover:border-[var(--primary)]/40 hover:bg-[#1a1a1a] transition-all duration-300 group shrink-0 w-[85%] sm:w-[60%] md:w-auto snap-center md:snap-align-none 
+                        className={`glass-card rounded-2xl p-5 sm:p-8 border border-white/5 hover:border-[var(--primary)]/40 hover:bg-[#1a1a1a] transition-all duration-300 group shrink-0 w-[85%] sm:w-[60%] md:w-auto snap-center md:snap-align-none 
                             ${idx >= coreItems.length ? 'md:hidden' : ''} 
                             ${idx === 0 ? 'md:col-span-2 lg:col-span-3 bg-gradient-to-r from-white/[0.02] to-[var(--primary)]/5' : ''}
                         `}
                     >
-                        <div className={`w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform ${idx === 0 || idx === coreItems.length || idx === coreItems.length*2 ? 'bg-[var(--primary)]/20 border-[var(--primary)]/30' : 'group-hover:border-[var(--primary)]/30 group-hover:bg-[var(--primary)]/10'}`}>
+                        <div className={`w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform ${idx === 0 || idx === coreItems.length || idx === coreItems.length*2 ? 'bg-[var(--primary)]/20 border-[var(--primary)]/30' : 'group-hover:border-[var(--primary)]/30 group-hover:bg-[var(--primary)]/10'}`}>
                             <item.icon className={idx === 0 || idx === coreItems.length || idx === coreItems.length*2 ? 'text-[var(--primary)]' : 'text-gray-400 group-hover:text-[var(--primary)]'} size={24} />
                         </div>
-                        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[var(--primary)] transition-colors">{item.title}</h3>
+                        <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-[var(--primary)] transition-colors">{item.title}</h3>
                         <p className="text-gray-400 leading-relaxed text-sm">{item.desc}</p>
                     </div>
                 ))}

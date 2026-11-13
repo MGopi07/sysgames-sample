@@ -9,9 +9,9 @@ import {
 import FinalCTA from '@/components/home/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'About Us | iGaming Software Development Company',
-  description: 'Learn about our iGaming software development company, mission, vision, technology expertise, and goals for delivering scalable casino, sportsbook, and gaming solutions.',
-  keywords: 'iGaming Software Development Company, iGaming Software Company, iGaming Technology Company, iGaming Software Provider, iGaming Solutions Provider, Online Casino Software Company, Sportsbook Software Company, Casino Software Development, Sportsbook Software Development, iGaming Platform Development'
+  title: 'About Us | Sysgames Software Development Company',
+  description: 'Learn about Sysgames, our mission, vision, technology expertise, and goals for delivering scalable casino, sportsbook, and gaming solutions.',
+  keywords: 'Sysgames Software Development Company, Sysgames Software Company, Sysgames Technology Company, Sysgames Solutions Provider, Online Casino Software Company, Sportsbook Software Company, Casino Software Development, Sportsbook Software Development'
 };
 
 export default function AboutPage() {
@@ -36,7 +36,7 @@ export default function AboutPage() {
                 <span className="text-sm font-medium text-[var(--primary)] tracking-wide uppercase">About Us</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-5xl font-black text-white leading-tight tracking-tight pr-4">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight pr-4">
                 Building Smarter <br />
                 <span className="text-transparent bg-clip-text bg-gradient-accent">
                   iGaming <br />
@@ -45,11 +45,11 @@ export default function AboutPage() {
               </h1>
 
               <div className="flex flex-col gap-4">
-                <p className="text-lg text-gray-400 leading-relaxed max-w-xl">
-                  We are an iGaming software development company focused on creating reliable, scalable, and flexible technology for businesses entering and growing the online gaming industry. Our goal is simple: build powerful iGaming technology that helps operators launch faster, operate efficiently, and create better player experiences.
+                <p className="text-sm sm:text-base lg:text-lg text-gray-400 leading-relaxed max-w-xl">
+                  We are Sysgames, a premier software development company focused on creating reliable, scalable, and flexible technology for businesses entering and growing the online gaming industry. Our goal is simple: build powerful technology that helps operators launch faster, operate efficiently, and create better player experiences.
                 </p>
                 <p className="text-base text-gray-500 leading-relaxed max-w-xl">
-                  From online casino and sportsbook platforms to white label solutions, casino game aggregation, slot game technology, retail betting solutions, and betting kiosks, we provide a range of solutions designed around the evolving needs of modern iGaming businesses.
+                  From online casino and sportsbook platforms to white label solutions, casino game aggregation, slot game technology, retail betting solutions, and betting kiosks, we provide a range of solutions designed around the evolving needs of modern gaming businesses.
                 </p>
               </div>
 
@@ -57,7 +57,7 @@ export default function AboutPage() {
                 <Link href="/contact" className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium text-[var(--btn-text)] rounded-full group bg-gradient-accent shadow-[0_0_30px_rgba(var(--secondary-rgb),0.3)] hover:shadow-[0_0_40px_rgba(var(--primary-rgb),0.5)] transition-all self-start">
                   <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-10"></span>
                   <span className="relative z-10 font-semibold flex items-center gap-2">
-                    Talk to Our iGaming Experts
+                    Talk to Our Sysgames Experts
                   </span>
                 </Link>
               </div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
                 <Users size={14} className="text-gray-400" />
                 <span className="text-xs font-bold text-gray-300 tracking-wider uppercase">Company Overview</span>
               </div>
-              <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Who We Are</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-4 sm:mb-6 leading-tight">Who We Are</h2>
               <div className="w-20 h-1.5 bg-gradient-accent rounded-full mb-10"></div>
 
               <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
@@ -157,7 +157,7 @@ export default function AboutPage() {
               <LayoutGrid size={14} className="text-[var(--primary)]" />
               <span className="text-xs font-bold text-[var(--primary)] tracking-wider uppercase">Our Services</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-white mb-6">What We Do</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-4 sm:mb-6 leading-tight">What We Do</h2>
             <p className="text-slate-400 max-w-2xl text-lg leading-relaxed">We develop and provide iGaming solutions across multiple areas of the gaming ecosystem.</p>
           </div>
 
@@ -172,7 +172,7 @@ export default function AboutPage() {
                 <div className="w-16 h-16 rounded-2xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center mb-8 shrink-0 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
                   <MonitorPlay size={32} />
                 </div>
-                <h3 className="text-3xl font-black text-white mb-4">Online Casino Software</h3>
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white mb-3 sm:mb-4">Online Casino Software</h3>
                 <p className="text-slate-400 text-lg leading-relaxed max-w-[90%] md:max-w-[70%] lg:max-w-md">
                   Build feature-rich online casino platforms with gaming integrations, player management, payment systems, bonuses, reporting, and administrative functionality.
                 </p>
@@ -227,7 +227,7 @@ export default function AboutPage() {
                   <Target size={28} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Sportsbook Software</h3>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2 sm:mb-3">Sportsbook Software</h3>
                   <p className="text-slate-400 leading-relaxed">
                     Create sportsbook platforms with betting markets, odds integrations, player accounts, wallets, risk management, and flexible administration.
                   </p>
@@ -243,7 +243,7 @@ export default function AboutPage() {
                   <Building2 size={28} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-3">White Label iGaming</h3>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2 sm:mb-3">White Label iGaming</h3>
                   <p className="text-slate-400 leading-relaxed">
                     Launch a branded casino or sportsbook platform using an established technology foundation that can be configured around your requirements.
                   </p>
@@ -287,7 +287,7 @@ export default function AboutPage() {
                   <div className="w-16 h-16 rounded-2xl bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)] shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
                     <Target size={32} />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-black text-white">Our Mission</h2>
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight">Our Mission</h2>
                 </div>
 
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -334,7 +334,7 @@ export default function AboutPage() {
                   <div className="w-16 h-16 rounded-2xl bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)] shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]">
                     <Lightbulb size={32} />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-black text-white">Our Vision</h2>
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight">Our Vision</h2>
                 </div>
 
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -377,7 +377,7 @@ export default function AboutPage() {
       <section className="relative py-16 z-10 overflow-hidden">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Our Approach</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-4 sm:mb-6 leading-tight">Our Approach</h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">We follow a structured approach to help transform an idea into a practical iGaming technology solution.</p>
           </div>
 
@@ -454,7 +454,7 @@ export default function AboutPage() {
               <ShieldCheck size={14} className="text-[var(--primary)]" />
               <span className="text-xs font-bold text-[var(--primary)] tracking-wider uppercase">The Advantage</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Why Choose Us?</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-4 sm:mb-6 leading-tight">Why Choose Us?</h2>
           </div>
 
           {/* Interactive Piano Key Accordion */}
@@ -543,7 +543,7 @@ export default function AboutPage() {
               <Lightbulb size={14} className="text-[var(--primary)]" />
               <span className="text-xs font-bold text-[var(--primary)] tracking-wider uppercase">Our DNA</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Our Core Values</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-4 sm:mb-6 leading-tight">Our Core Values</h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">Principles that guide our engineering, communication, and client relationships.</p>
           </div>
 
@@ -584,7 +584,7 @@ export default function AboutPage() {
                 <Cpu size={14} className="text-[var(--primary)]" />
                 <span className="text-xs font-bold text-[var(--primary)] tracking-wider uppercase">Platform Features</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-4 sm:mb-6 leading-tight">
                 Technology Designed <br className="hidden md:block" />
                 <span className="text-transparent bg-clip-text bg-gradient-accent">Around Your Business</span>
               </h2>
@@ -615,37 +615,37 @@ export default function AboutPage() {
             {/* Responsible Tech & Operators/Players */}
             <div className="space-y-6 lg:space-y-8 relative z-10">
               {/* Card 1 */}
-              <div className="bg-gradient-to-br from-[#121212] to-[#0A0A0A] border border-white/5 hover:border-[var(--primary)]/30 p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden group transition-all duration-500 shadow-2xl hover:-translate-y-1">
+              <div className="bg-gradient-to-br from-[#121212] to-[#0A0A0A] border border-white/5 hover:border-[var(--primary)]/30 p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-[2.5rem] relative overflow-hidden group transition-all duration-500 shadow-2xl hover:-translate-y-1">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--primary)]/5 rounded-full blur-[80px] -mr-32 -mt-32 transition-all duration-700 group-hover:bg-[var(--primary)]/15 pointer-events-none"></div>
                 <div className="absolute -bottom-6 -right-6 opacity-[0.02] group-hover:opacity-[0.08] text-[var(--primary)] group-hover:-translate-y-4 group-hover:scale-110 transition-all duration-700 pointer-events-none">
                   <ShieldCheck size={180} />
                 </div>
 
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-5 relative z-10 flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 flex items-center justify-center shrink-0 shadow-inner group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.15)] transition-all duration-500">
-                    <ShieldCheck size={26} className="text-slate-400 group-hover:text-[var(--primary)] transition-colors duration-500" />
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-5 relative z-10 flex items-center gap-3.5 sm:gap-4">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 flex items-center justify-center shrink-0 shadow-inner group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.15)] transition-all duration-500">
+                    <ShieldCheck size={24} className="text-slate-400 group-hover:text-[var(--primary)] transition-colors duration-500" />
                   </div>
                   Responsible Tech
                 </h3>
-                <p className="text-slate-400 leading-relaxed relative z-10 text-lg">
+                <p className="text-slate-400 leading-relaxed relative z-10 text-[15px] sm:text-lg">
                   iGaming is a highly regulated industry where technology must be developed with appropriate compliance considerations. Our solutions can seamlessly incorporate KYC workflows, responsible gaming tools, advanced player controls, and secure transaction monitoring.
                 </p>
               </div>
 
               {/* Card 2 */}
-              <div className="bg-gradient-to-br from-[#121212] to-[#0A0A0A] border border-white/5 hover:border-[var(--primary)]/30 p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden group transition-all duration-500 shadow-2xl hover:-translate-y-1">
+              <div className="bg-gradient-to-br from-[#121212] to-[#0A0A0A] border border-white/5 hover:border-[var(--primary)]/30 p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-[2.5rem] relative overflow-hidden group transition-all duration-500 shadow-2xl hover:-translate-y-1">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--primary)]/5 rounded-full blur-[80px] -mr-32 -mt-32 transition-all duration-700 group-hover:bg-[var(--primary)]/15 pointer-events-none"></div>
                 <div className="absolute -bottom-6 -right-6 opacity-[0.02] group-hover:opacity-[0.08] text-[var(--primary)] group-hover:-translate-y-4 group-hover:scale-110 transition-all duration-700 pointer-events-none">
                   <Users size={180} />
                 </div>
 
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-5 relative z-10 flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 flex items-center justify-center shrink-0 shadow-inner group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.15)] transition-all duration-500">
-                    <Users size={26} className="text-slate-400 group-hover:text-[var(--primary)] transition-colors duration-500" />
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-5 relative z-10 flex items-center gap-3.5 sm:gap-4">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 group-hover:border-[var(--primary)]/50 group-hover:bg-[var(--primary)]/10 flex items-center justify-center shrink-0 shadow-inner group-hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.15)] transition-all duration-500">
+                    <Users size={24} className="text-slate-400 group-hover:text-[var(--primary)] transition-colors duration-500" />
                   </div>
                   Operators & Players
                 </h3>
-                <p className="text-slate-400 leading-relaxed relative z-10 text-lg">
+                <p className="text-slate-400 leading-relaxed relative z-10 text-[15px] sm:text-lg">
                   A successful platform must provide total control, extreme scalability, and granular reporting for operators while simultaneously delivering an intuitive, highly responsive, and engaging experience for players. We build for both.
                 </p>
               </div>
@@ -660,7 +660,7 @@ export default function AboutPage() {
         title={
           <>
             Ready to Build Your <br />
-            <span className="text-transparent bg-clip-text bg-gradient-accent">iGaming Platform?</span>
+            <span className="text-transparent bg-clip-text bg-gradient-accent">Sysgames Platform?</span>
           </>
         }
         description={

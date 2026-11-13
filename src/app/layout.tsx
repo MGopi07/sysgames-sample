@@ -7,21 +7,21 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "iGaming Software Development Company | iGaming Solutions Provider",
-  description: "Leading iGaming software development company offering casino, sportsbook, sweepstakes, and prediction market solutions with 100% platform ownership and zero GGR share.",
-  keywords: "iGaming software development company, iGaming solutions provider, iGaming software, casino software development, online casino software, sportsbook software development",
+  title: "Sysgames Software Development Company | Sysgames Solutions Provider",
+  description: "Leading Sysgames software development company offering casino, sportsbook, sweepstakes, and prediction market solutions with 100% platform ownership and zero GGR share.",
+  keywords: "Sysgames software development company, Sysgames solutions provider, Sysgames software, casino software development, online casino software, sportsbook software development",
   alternates: {
     canonical: "https://www.yourdomain.com",
   },
   openGraph: {
-    title: "iGaming Software Development Company",
-    description: "Leading iGaming software development company offering casino, sportsbook, sweepstakes, and prediction market solutions.",
+    title: "Sysgames Software Development Company",
+    description: "Leading Sysgames software development company offering casino, sportsbook, sweepstakes, and prediction market solutions.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "iGaming Software Development Company",
-    description: "Leading iGaming software development company offering casino, sportsbook, sweepstakes, and prediction market solutions.",
+    title: "Sysgames Software Development Company",
+    description: "Leading Sysgames software development company offering casino, sportsbook, sweepstakes, and prediction market solutions.",
   }
 };
 

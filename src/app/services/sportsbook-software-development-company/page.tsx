@@ -16,23 +16,23 @@ export default function SportsbookSoftwareDevPage() {
     <div className="bg-[#0A0A0A] min-h-screen text-gray-300">
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-12 overflow-hidden">
+      <section className="relative pt-20 sm:pt-24 pb-6 sm:pb-10 lg:pt-32 lg:pb-12 overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[var(--primary)]/10 rounded-full blur-[150px] pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[var(--secondary)]/10 rounded-full blur-[150px] pointer-events-none"></div>
 
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center">
+          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-8 items-center">
             <div className="lg:w-[60%]">
               <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[var(--primary)]/30 bg-gradient-to-r from-[var(--primary)]/20 to-[var(--primary)]/5 backdrop-blur-md shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)] mb-6">
                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advanced Betting Tech</span>
               </div>
 
-              <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 A Sportsbook Software <span className="text-transparent bg-clip-text bg-gradient-accent">Development Company</span> Built for Fast-Moving Betting Markets
               </h1>
 
-              <div className="text-lg lg:text-xl text-gray-400 mb-10 space-y-4 leading-relaxed">
+              <div className="text-sm sm:text-base lg:text-lg text-gray-400 mb-6 sm:mb-8 space-y-3 sm:space-y-4 leading-relaxed">
                 <p>
                   Sports betting is fast-paced industry where odds, markets, player activity, event conditions can change within seconds. A reliable platform needs technology that can respond quickly while giving operators control over risk, markets, payments, and player management.
                 </p>
@@ -42,15 +42,15 @@ export default function SportsbookSoftwareDevPage() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Link href="#contact" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                <Link href="#contact" className="inline-flex items-center justify-center px-6 py-3.5 sm:px-8 sm:py-4 text-base font-bold text-[var(--btn-text)] bg-gradient-accent rounded-full hover:scale-105 transition-transform shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
                   Talk to Our Sportsbook Team <ChevronRight className="ml-2" />
                 </Link>
               </div>
             </div>
 
-            <div className="w-full lg:w-[40%] flex justify-center lg:justify-end relative group scale-75 md:scale-90 lg:scale-100 origin-center mt-12 lg:mt-0" style={{ perspective: "1000px" }}>
+            <div className="w-full lg:w-[40%] flex justify-center lg:justify-end relative group mt-4 sm:mt-6 lg:mt-0" style={{ perspective: "1000px" }}>
               {/* Visual representation of a Sportsbook UI via Image Asset */}
-              <div className="relative w-full aspect-[4/5] max-w-[500px] mx-auto lg:mr-0 flex items-center justify-center group">
+              <div className="relative w-full aspect-[4/3] max-w-[340px] sm:max-w-[420px] lg:max-w-[500px] mx-auto lg:mr-0 flex items-center justify-center group">
                  <div className="relative w-full h-full drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-transform duration-700 ease-out group-hover:-translate-y-4">
                     <Image
                       src="/images/all_service/3-1.webp"
@@ -72,7 +72,7 @@ export default function SportsbookSoftwareDevPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 border-t border-white/5 bg-[#121212]/50">
+      <section className="py-10 sm:py-14 lg:py-20 border-t border-white/5 bg-[#121212]/50">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2">
@@ -80,7 +80,7 @@ export default function SportsbookSoftwareDevPage() {
                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advantages</span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">Why Operators Choose Our Sportsbook Software</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">Why Operators Choose Our Sportsbook Software</h2>
               <p className="text-gray-400 mb-8 leading-relaxed">
                 A sportsbook requires more than a simple betting interface. Operators need reliable technology that manage markets, odds, player activity, liabilities, payments, and promotional campaigns from a centralized environment.
               </p>
@@ -140,7 +140,7 @@ export default function SportsbookSoftwareDevPage() {
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">What We Build</span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Core Sportsbook Features</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Core Sportsbook Features</h2>
             <p className="text-gray-400 text-lg">Everything needed to power a competitive and engaging sports betting ecosystem.</p>
           </div>
 
@@ -200,40 +200,40 @@ export default function SportsbookSoftwareDevPage() {
                 features: ["Debit and credit cards", "Bank payments", "E-wallets", "Alternative payment methods", "Digital wallets", "Cryptocurrency", "Stablecoins", "Regional payment methods"]
               }
             ].map((section, idx) => (
-              <div key={idx} className="relative bg-[#111111] rounded-[32px] p-8 lg:p-14 border border-white/5 overflow-hidden group hover:border-[var(--primary)]/20 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+              <div key={idx} className="relative bg-[#111111] rounded-[24px] sm:rounded-[32px] p-5 sm:p-8 lg:p-14 border border-white/5 overflow-hidden group hover:border-[var(--primary)]/20 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
                 {/* Massive Background Number */}
-                <div className="absolute -bottom-8 -right-8 text-[180px] lg:text-[240px] font-black text-white/[0.02] select-none pointer-events-none group-hover:text-[var(--primary)]/[0.04] transition-colors duration-700 leading-none">
+                <div className="absolute -bottom-8 -right-8 text-[120px] sm:text-[180px] lg:text-[240px] font-black text-white/[0.02] select-none pointer-events-none group-hover:text-[var(--primary)]/[0.04] transition-colors duration-700 leading-none">
                   0{idx + 1}
                 </div>
                 
-                <div className="relative z-10 flex flex-col lg:flex-row gap-12 lg:gap-20">
+                <div className="relative z-10 flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-20">
                   {/* Left Column: Content */}
                   <div className="lg:w-5/12 flex flex-col">
-                     <div className="flex items-center gap-5 mb-8">
-                       <div className="w-16 h-16 shrink-0 rounded-2xl bg-white/[0.03] group-hover:bg-[var(--primary)]/10 transition-colors duration-500 flex items-center justify-center border border-white/5">
-                         <section.icon className="text-[var(--primary)]" size={30} />
+                     <div className="flex items-center gap-3.5 sm:gap-5 mb-5 sm:mb-8">
+                       <div className="w-12 h-12 sm:w-16 sm:h-16 shrink-0 rounded-xl sm:rounded-2xl bg-white/[0.03] group-hover:bg-[var(--primary)]/10 transition-colors duration-500 flex items-center justify-center border border-white/5">
+                         <section.icon className="text-[var(--primary)] w-6 h-6 sm:w-7 sm:h-7" />
                        </div>
-                       <h3 className="text-3xl font-bold text-white">{section.title}</h3>
+                       <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-snug">{section.title}</h3>
                      </div>
-                     <div className="space-y-5 mb-10 flex-1">
+                     <div className="space-y-3 sm:space-y-5 mb-5 sm:mb-10 flex-1">
                        {section.paras.map((p, i) => (
-                         <p key={i} className="text-gray-400 leading-relaxed text-[16px]">{p}</p>
+                         <p key={i} className="text-gray-400 leading-relaxed text-[14px] sm:text-[16px]">{p}</p>
                        ))}
                      </div>
-                     <div className="p-5 bg-gradient-to-r from-[var(--primary)]/10 to-transparent rounded-2xl border-l-4 border-[var(--primary)] text-[14px] text-gray-300">
+                     <div className="p-3.5 sm:p-5 bg-gradient-to-r from-[var(--primary)]/10 to-transparent rounded-xl sm:rounded-2xl border-l-4 border-[var(--primary)] text-[13px] sm:text-[14px] text-gray-300">
                        <strong className="text-white block mb-1">Advantage:</strong> {section.conclusion}
                      </div>
                   </div>
 
                   {/* Right Column: Features Chips */}
                   <div className="lg:w-7/12">
-                     <div className="bg-[#0A0A0A]/50 rounded-[24px] p-8 border border-white/5 h-full">
-                       <h4 className="text-[13px] font-black text-[var(--primary)] tracking-widest uppercase mb-6 flex items-center gap-2">
+                     <div className="bg-[#0A0A0A]/50 rounded-[18px] sm:rounded-[24px] p-4 sm:p-6 lg:p-8 border border-white/5 h-full">
+                       <h4 className="text-[12px] sm:text-[13px] font-black text-[var(--primary)] tracking-widest uppercase mb-3.5 sm:mb-6 flex items-center gap-2">
                          <ChevronRight size={16} /> {section.featuresTitle}
                        </h4>
-                       <div className="flex flex-wrap gap-2.5">
+                       <div className="flex flex-wrap gap-2 sm:gap-2.5">
                          {section.features.map((f, i) => (
-                           <div key={i} className="px-4 py-2.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-[14px] font-medium group-hover:border-white/20 hover:!bg-[var(--primary)] hover:!text-black hover:!border-[var(--primary)] transition-all cursor-default">
+                           <div key={i} className="px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-[12.5px] sm:text-[14px] font-medium group-hover:border-white/20 hover:!bg-[var(--primary)] hover:!text-black hover:!border-[var(--primary)] transition-all cursor-default">
                              {f}
                            </div>
                          ))}
@@ -241,13 +241,13 @@ export default function SportsbookSoftwareDevPage() {
 
                        {section.extraFeatures && (
                          <>
-                           <div className="w-full h-px bg-white/5 my-8"></div>
-                           <h4 className="text-[13px] font-black text-[var(--secondary)] tracking-widest uppercase mb-6 flex items-center gap-2">
+                           <div className="w-full h-px bg-white/5 my-4 sm:my-8"></div>
+                           <h4 className="text-[12px] sm:text-[13px] font-black text-[var(--secondary)] tracking-widest uppercase mb-3.5 sm:mb-6 flex items-center gap-2">
                              <ChevronRight size={16} /> {section.extraTitle}
                            </h4>
-                           <div className="flex flex-wrap gap-2.5">
+                           <div className="flex flex-wrap gap-2 sm:gap-2.5">
                              {section.extraFeatures.map((f, i) => (
-                               <div key={i} className="px-4 py-2.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-[14px] font-medium group-hover:border-white/20 hover:!bg-[var(--secondary)] hover:!text-black hover:!border-[var(--secondary)] transition-all cursor-default">
+                               <div key={i} className="px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-[12.5px] sm:text-[14px] font-medium group-hover:border-white/20 hover:!bg-[var(--secondary)] hover:!text-black hover:!border-[var(--secondary)] transition-all cursor-default">
                                  {f}
                                </div>
                              ))}
@@ -276,7 +276,7 @@ export default function SportsbookSoftwareDevPage() {
                   <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                   <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Workflow</span>
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">How Our Sportsbook Development Process Works</h2>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">How Our Sportsbook Development Process Works</h2>
                 <p className="text-gray-400 text-lg leading-relaxed mb-8">From initial market research to deployment and ongoing support, we ensure a seamless execution of your vision.</p>
                 
                 {/* Premium Decorative Graphic */}
@@ -318,10 +318,10 @@ export default function SportsbookSoftwareDevPage() {
                     {/* The Dot on the timeline */}
                     <div className="absolute -left-[42px] md:-left-[58px] top-1 w-5 h-5 rounded-full bg-[#121212] border-4 border-white/10 group-hover:border-[var(--primary)] group-hover:bg-[var(--primary)] transition-all duration-300"></div>
                     
-                    <div className="bg-[#0A0A0A] border border-white/5 rounded-2xl p-8 hover:border-[var(--primary)]/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(var(--primary-rgb),0.1)]">
-                       <span className="text-[var(--primary)] font-black text-sm mb-3 block uppercase tracking-widest">Step {item.step}</span>
-                       <h3 className="text-2xl font-bold text-white mb-3">{item.title}</h3>
-                       <p className="text-gray-400 leading-relaxed text-[15px]">{item.desc}</p>
+                    <div className="bg-[#0A0A0A] border border-white/5 rounded-2xl p-5 sm:p-8 hover:border-[var(--primary)]/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(var(--primary-rgb),0.1)]">
+                       <span className="text-[var(--primary)] font-black text-xs sm:text-sm mb-2 sm:mb-3 block uppercase tracking-widest">Step {item.step}</span>
+                       <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">{item.title}</h3>
+                       <p className="text-gray-400 leading-relaxed text-[14px] sm:text-[15px]">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -340,7 +340,7 @@ export default function SportsbookSoftwareDevPage() {
               <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
               <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Solutions</span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Comprehensive Sportsbook Capabilities</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Comprehensive Sportsbook Capabilities</h2>
             <p className="text-gray-400 text-lg">Everything you need to build, manage, and scale a world-class sportsbook platform.</p>
           </div>
 
@@ -427,14 +427,14 @@ export default function SportsbookSoftwareDevPage() {
                 features: ["Custom sportsbook development", "Sports betting software development", "White-label sportsbook development", "Turnkey sportsbook development", "Live betting software development", "Odds engine development", "Risk management development", "PAM development", "CRM integration", "Bet Builder development", "Cash Out development", "Mobile sportsbook development", "Crypto sportsbook development", "Payment integration", "API integration", "Sportsbook UI/UX development", "Sportsbook testing", "Sportsbook maintenance"]
               }
             ].map((feature, idx) => (
-              <div key={idx} className="bg-[#121212] border border-white/5 rounded-3xl p-8 hover:border-[var(--primary)]/30 hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col h-full group">
-                 <div className="flex items-start justify-between mb-6">
-                   <div className="w-14 h-14 rounded-2xl bg-white/[0.03] group-hover:bg-[var(--primary)]/10 flex items-center justify-center border border-white/10 group-hover:border-[var(--primary)]/20 transition-colors">
-                     <feature.icon className="text-[var(--primary)]" size={28} />
+              <div key={idx} className="bg-[#121212] border border-white/5 rounded-3xl p-5 sm:p-8 hover:border-[var(--primary)]/30 hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col h-full group">
+                 <div className="flex items-start justify-between mb-4 sm:mb-6">
+                   <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-white/[0.03] group-hover:bg-[var(--primary)]/10 flex items-center justify-center border border-white/10 group-hover:border-[var(--primary)]/20 transition-colors">
+                     <feature.icon className="text-[var(--primary)]" size={26} />
                    </div>
                  </div>
-                 <h3 className="text-2xl font-bold text-white mb-4">{feature.title}</h3>
-                 <p className="text-gray-400 text-[15px] leading-relaxed mb-8">{feature.intro}</p>
+                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">{feature.title}</h3>
+                 <p className="text-gray-400 text-[14px] sm:text-[15px] leading-relaxed mb-6 sm:mb-8">{feature.intro}</p>
                  
                  <div className="flex-1">
                    <h4 className="text-sm font-black text-white uppercase tracking-widest mb-4 flex items-center gap-2 border-b border-white/5 pb-2">
@@ -491,7 +491,7 @@ export default function SportsbookSoftwareDevPage() {
                 <span className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse"></span>
                 <span className="text-sm font-bold text-[var(--primary)] tracking-widest uppercase">Advanced Tech</span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-white leading-tight">Ready to Build a Smarter Sportsbook?</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight">Ready to Build a Smarter Sportsbook?</h2>
             </div>
             
             <div className="lg:w-7/12 relative">
@@ -505,8 +505,8 @@ export default function SportsbookSoftwareDevPage() {
             </div>
           </div>
           
-          <div className="text-center mt-24 mb-4">
-            <h3 className="text-3xl lg:text-4xl font-bold text-white tracking-tight">Build Your Sportsbook With</h3>
+          <div className="text-center mt-14 sm:mt-24 mb-4">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">Build Your Sportsbook With</h3>
           </div>
         </div>
 
@@ -555,7 +555,7 @@ export default function SportsbookSoftwareDevPage() {
                   <span className="text-xs font-bold text-[var(--primary)] tracking-wider uppercase">FAQ</span>
                 </div>
                 
-                <h2 className="text-4xl lg:text-[42px] font-bold text-white mb-6 leading-[1.2]">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                   Frequently Asked Questions
                 </h2>
                 

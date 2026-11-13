@@ -39,7 +39,7 @@ export default function GlobalSolutions() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl lg:text-5xl font-bold text-white leading-tight text-balance"
+            className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight text-balance mb-4"
           >
             Global iGaming Solutions Built for{" "}
             <span className="text-transparent bg-clip-text bg-gradient-accent drop-shadow-[0_0_15px_rgba(var(--secondary-rgb),0.3)]">
@@ -92,14 +92,14 @@ export default function GlobalSolutions() {
                 className="relative z-10 h-full flex flex-col"
               >
                 {/* Header */}
-                <div className="flex items-center gap-5 mb-10 pb-8 border-b border-white/10 relative">
+                <div className="flex items-center gap-3.5 sm:gap-5 mb-6 sm:mb-10 pb-5 sm:pb-8 border-b border-white/10 relative">
                   <div className="absolute bottom-0 left-0 w-32 h-[1px] bg-gradient-to-r from-[var(--primary)] to-transparent"></div>
-                  <div className="text-white bg-gradient-accent p-4 rounded-2xl shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)]">
+                  <div className="text-white bg-gradient-accent p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-[0_0_30px_rgba(var(--primary-rgb),0.3)] shrink-0">
                     {getCategoryIcon(activeContent.id)}
                   </div>
                   <div>
-                    <h3 className="text-3xl font-bold text-white tracking-tight mb-1">{activeContent.category}</h3>
-                    <p className="text-[var(--secondary)] text-sm font-semibold tracking-wider uppercase">Platform Capabilities</p>
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white tracking-tight mb-1">{activeContent.category}</h3>
+                    <p className="text-[var(--secondary)] text-xs sm:text-sm font-semibold tracking-wider uppercase">Platform Capabilities</p>
                   </div>
                 </div>
 
